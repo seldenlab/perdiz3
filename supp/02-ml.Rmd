@@ -1,0 +1,3 @@
+# Machine learning
+
+Details associated with the machine learning analysis can be accessed in the GitHub repository [here](https://github.com/aksel-blaise/perdiz3/blob/main/ml/perdiz-svm.ipynb).
