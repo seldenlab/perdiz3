@@ -57,7 +57,7 @@ Reproducibility projects in [psychology](https://osf.io/ezcuj/) and [cancer biol
 
 Components of the undertaking presented in this volume are novel, and this basic research endeavour is rooted in archaeological epistemology. Sharing data is not enough, and if investigators share only data absent their analysis code, that places a substantive burden on those who may seek to build upon or replicate their work in the future. In this instance, the choice to pursue a replicable work flow occurs based on the simple fact that this work is foundational, and meant to begin a meaningful discussion related to projectile morphology.
 
-The data and analysis code associated with this project can be accessed through this document or the [GitHub](https://github.com/aksel-blaise/perdiz3) repository.
+The data and analysis code associated with this project can be accessed through this document or the [GitHub](https://seldenlab.github.io/perdiz3/) repository, and is digitally curated on the Open Science Framework ([DOI 10.17605/OSF.IO/VZHJR](https://osf.io/vzhjr/)).
 
 ## Colophon
 

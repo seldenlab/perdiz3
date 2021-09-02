@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 1 Linear morphometrics | Supplementary materials for manuscript: Differential design intent for Perdiz arrow points recovered from Caddo burial contexts?</title>
+  <title>Chapter 1 Linear morphometrics | Supplementary materials for manuscript: Differential design intent for Perdiz arrow points from Caddo burial contexts in two landscapes of practice</title>
   <meta name="description" content="Morphology of Perdiz arrow points." />
   <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 1 Linear morphometrics | Supplementary materials for manuscript: Differential design intent for Perdiz arrow points recovered from Caddo burial contexts?" />
+  <meta property="og:title" content="Chapter 1 Linear morphometrics | Supplementary materials for manuscript: Differential design intent for Perdiz arrow points from Caddo burial contexts in two landscapes of practice" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 1 Linear morphometrics | Supplementary materials for manuscript: Differential design intent for Perdiz arrow points recovered from Caddo burial contexts?" />
+  <meta name="twitter:title" content="Chapter 1 Linear morphometrics | Supplementary materials for manuscript: Differential design intent for Perdiz arrow points from Caddo burial contexts in two landscapes of practice" />
   
   <meta name="twitter:description" content="Morphology of Perdiz arrow points." />
   
@@ -216,7 +216,7 @@ div.csl-indent {
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Supplementary materials for manuscript: Differential design intent for Perdiz arrow points recovered from Caddo burial contexts?</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Supplementary materials for manuscript: Differential design intent for Perdiz arrow points from Caddo burial contexts in two landscapes of practice</a>
           </h1>
         </div>
 
@@ -234,80 +234,89 @@ div.csl-indent {
 <span id="cb5-6"><a href="linear-morphometrics-1.html#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="co">#devtools::install_github(&quot;daattali/ggExtra&quot;)</span></span>
 <span id="cb5-7"><a href="linear-morphometrics-1.html#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-8"><a href="linear-morphometrics-1.html#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="co"># load libraries</span></span>
-<span id="cb5-9"><a href="linear-morphometrics-1.html#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span>
-<span id="cb5-10"><a href="linear-morphometrics-1.html#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb5-11"><a href="linear-morphometrics-1.html#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RRPP)</span>
-<span id="cb5-12"><a href="linear-morphometrics-1.html#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggpubr)</span>
-<span id="cb5-13"><a href="linear-morphometrics-1.html#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggfortify)</span>
-<span id="cb5-14"><a href="linear-morphometrics-1.html#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(cluster)</span>
-<span id="cb5-15"><a href="linear-morphometrics-1.html#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(wesanderson)</span>
-<span id="cb5-16"><a href="linear-morphometrics-1.html#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggExtra)</span></code></pre></div>
+<span id="cb5-9"><a href="linear-morphometrics-1.html#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span></code></pre></div>
+<pre><code>## here() starts at E:/github/selden.chapter</code></pre>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="linear-morphometrics-1.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div>
+<pre><code>## -- Attaching packages ---------------------------------------------------------------------------------------- tidyverse 1.3.1 --</code></pre>
+<pre><code>## v ggplot2 3.3.5     v purrr   0.3.4
+## v tibble  3.1.4     v dplyr   1.0.7
+## v tidyr   1.1.3     v stringr 1.4.0
+## v readr   2.0.1     v forcats 0.5.1</code></pre>
+<pre><code>## -- Conflicts ------------------------------------------------------------------------------------------- tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()</code></pre>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="linear-morphometrics-1.html#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RRPP)</span>
+<span id="cb11-2"><a href="linear-morphometrics-1.html#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggpubr)</span>
+<span id="cb11-3"><a href="linear-morphometrics-1.html#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggfortify)</span>
+<span id="cb11-4"><a href="linear-morphometrics-1.html#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(cluster)</span>
+<span id="cb11-5"><a href="linear-morphometrics-1.html#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(wesanderson)</span>
+<span id="cb11-6"><a href="linear-morphometrics-1.html#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggExtra)</span></code></pre></div>
 <div id="read-data-and-define-variables" class="section level2" number="1.1">
 <h2><span class="header-section-number">1.1</span> Read data and define variables</h2>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="linear-morphometrics-1.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># read data</span></span>
-<span id="cb6-2"><a href="linear-morphometrics-1.html#cb6-2" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;qdata.csv&quot;</span>, <span class="at">header =</span> <span class="cn">TRUE</span>, <span class="at">as.is=</span><span class="cn">TRUE</span>)</span>
-<span id="cb6-3"><a href="linear-morphometrics-1.html#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-4"><a href="linear-morphometrics-1.html#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># define variables</span></span>
-<span id="cb6-5"><a href="linear-morphometrics-1.html#cb6-5" aria-hidden="true" tabindex="-1"></a>maxl <span class="ot">&lt;-</span> data<span class="sc">$</span>maxl <span class="co"># maximum length</span></span>
-<span id="cb6-6"><a href="linear-morphometrics-1.html#cb6-6" aria-hidden="true" tabindex="-1"></a>maxw <span class="ot">&lt;-</span> data<span class="sc">$</span>maxw <span class="co"># maximum width</span></span>
-<span id="cb6-7"><a href="linear-morphometrics-1.html#cb6-7" aria-hidden="true" tabindex="-1"></a>maxth <span class="ot">&lt;-</span> data<span class="sc">$</span>maxth <span class="co"># maximum thickness</span></span>
-<span id="cb6-8"><a href="linear-morphometrics-1.html#cb6-8" aria-hidden="true" tabindex="-1"></a>maxstl <span class="ot">&lt;-</span> data<span class="sc">$</span>maxstl <span class="co"># maximum stem length</span></span>
-<span id="cb6-9"><a href="linear-morphometrics-1.html#cb6-9" aria-hidden="true" tabindex="-1"></a>maxstw <span class="ot">&lt;-</span> data<span class="sc">$</span>maxstw <span class="co"># maximum stem width</span></span>
-<span id="cb6-10"><a href="linear-morphometrics-1.html#cb6-10" aria-hidden="true" tabindex="-1"></a>reg <span class="ot">&lt;-</span> data<span class="sc">$</span>region <span class="co"># region</span></span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="linear-morphometrics-1.html#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># read data</span></span>
+<span id="cb12-2"><a href="linear-morphometrics-1.html#cb12-2" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;qdata.csv&quot;</span>, <span class="at">header =</span> <span class="cn">TRUE</span>, <span class="at">as.is=</span><span class="cn">TRUE</span>)</span>
+<span id="cb12-3"><a href="linear-morphometrics-1.html#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-4"><a href="linear-morphometrics-1.html#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="co"># define variables</span></span>
+<span id="cb12-5"><a href="linear-morphometrics-1.html#cb12-5" aria-hidden="true" tabindex="-1"></a>maxl <span class="ot">&lt;-</span> data<span class="sc">$</span>maxl <span class="co"># maximum length</span></span>
+<span id="cb12-6"><a href="linear-morphometrics-1.html#cb12-6" aria-hidden="true" tabindex="-1"></a>maxw <span class="ot">&lt;-</span> data<span class="sc">$</span>maxw <span class="co"># maximum width</span></span>
+<span id="cb12-7"><a href="linear-morphometrics-1.html#cb12-7" aria-hidden="true" tabindex="-1"></a>maxth <span class="ot">&lt;-</span> data<span class="sc">$</span>maxth <span class="co"># maximum thickness</span></span>
+<span id="cb12-8"><a href="linear-morphometrics-1.html#cb12-8" aria-hidden="true" tabindex="-1"></a>maxstl <span class="ot">&lt;-</span> data<span class="sc">$</span>maxstl <span class="co"># maximum stem length</span></span>
+<span id="cb12-9"><a href="linear-morphometrics-1.html#cb12-9" aria-hidden="true" tabindex="-1"></a>maxstw <span class="ot">&lt;-</span> data<span class="sc">$</span>maxstw <span class="co"># maximum stem width</span></span>
+<span id="cb12-10"><a href="linear-morphometrics-1.html#cb12-10" aria-hidden="true" tabindex="-1"></a>reg <span class="ot">&lt;-</span> data<span class="sc">$</span>region <span class="co"># region</span></span></code></pre></div>
 </div>
 <div id="boxplots-for-variable-by-raw-material" class="section level2" number="1.2">
 <h2><span class="header-section-number">1.2</span> Boxplots for <em>variable</em> by <em>raw material</em></h2>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="linear-morphometrics-1.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># boxplot of maximum length ~ region</span></span>
-<span id="cb7-2"><a href="linear-morphometrics-1.html#cb7-2" aria-hidden="true" tabindex="-1"></a>regionmaxl <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> region, <span class="at">y =</span> maxl, <span class="at">color =</span> region)) <span class="sc">+</span> </span>
-<span id="cb7-3"><a href="linear-morphometrics-1.html#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">notch =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
-<span id="cb7-4"><a href="linear-morphometrics-1.html#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_dotplot</span>(<span class="at">binaxis =</span> <span class="st">&#39;y&#39;</span>,<span class="at">stackdir =</span> <span class="st">&#39;center&#39;</span>,<span class="at">dotsize =</span> <span class="fl">0.3</span>) <span class="sc">+</span></span>
-<span id="cb7-5"><a href="linear-morphometrics-1.html#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_colour_manual</span>(<span class="at">values =</span> <span class="fu">wes_palette</span>(<span class="st">&quot;Moonrise2&quot;</span>)) <span class="sc">+</span></span>
-<span id="cb7-6"><a href="linear-morphometrics-1.html#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;none&quot;</span>) <span class="sc">+</span></span>
-<span id="cb7-7"><a href="linear-morphometrics-1.html#cb7-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&#39;Community&#39;</span>, <span class="at">y =</span> <span class="st">&#39;MaxL&#39;</span>)</span>
-<span id="cb7-8"><a href="linear-morphometrics-1.html#cb7-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-9"><a href="linear-morphometrics-1.html#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="co"># boxplot of maximum width ~ region</span></span>
-<span id="cb7-10"><a href="linear-morphometrics-1.html#cb7-10" aria-hidden="true" tabindex="-1"></a>regionmaxw <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> region, <span class="at">y =</span> maxw, <span class="at">color =</span> region)) <span class="sc">+</span> </span>
-<span id="cb7-11"><a href="linear-morphometrics-1.html#cb7-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">notch =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
-<span id="cb7-12"><a href="linear-morphometrics-1.html#cb7-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_dotplot</span>(<span class="at">binaxis =</span> <span class="st">&#39;y&#39;</span>,<span class="at">stackdir =</span> <span class="st">&#39;center&#39;</span>,<span class="at">dotsize =</span> <span class="fl">0.3</span>) <span class="sc">+</span></span>
-<span id="cb7-13"><a href="linear-morphometrics-1.html#cb7-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_colour_manual</span>(<span class="at">values =</span> <span class="fu">wes_palette</span>(<span class="st">&quot;Moonrise2&quot;</span>)) <span class="sc">+</span></span>
-<span id="cb7-14"><a href="linear-morphometrics-1.html#cb7-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;none&quot;</span>) <span class="sc">+</span></span>
-<span id="cb7-15"><a href="linear-morphometrics-1.html#cb7-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&#39;Community&#39;</span>, <span class="at">y =</span> <span class="st">&#39;MaxW&#39;</span>)</span>
-<span id="cb7-16"><a href="linear-morphometrics-1.html#cb7-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-17"><a href="linear-morphometrics-1.html#cb7-17" aria-hidden="true" tabindex="-1"></a><span class="co"># boxplot of maximum thickness ~ region</span></span>
-<span id="cb7-18"><a href="linear-morphometrics-1.html#cb7-18" aria-hidden="true" tabindex="-1"></a>regionmaxth <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> region, <span class="at">y =</span> maxth, <span class="at">color =</span> region)) <span class="sc">+</span> </span>
-<span id="cb7-19"><a href="linear-morphometrics-1.html#cb7-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">notch =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
-<span id="cb7-20"><a href="linear-morphometrics-1.html#cb7-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_dotplot</span>(<span class="at">binaxis =</span> <span class="st">&#39;y&#39;</span>,<span class="at">stackdir =</span> <span class="st">&#39;center&#39;</span>,<span class="at">dotsize =</span> <span class="fl">0.3</span>) <span class="sc">+</span></span>
-<span id="cb7-21"><a href="linear-morphometrics-1.html#cb7-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_colour_manual</span>(<span class="at">values =</span> <span class="fu">wes_palette</span>(<span class="st">&quot;Moonrise2&quot;</span>)) <span class="sc">+</span></span>
-<span id="cb7-22"><a href="linear-morphometrics-1.html#cb7-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;none&quot;</span>) <span class="sc">+</span></span>
-<span id="cb7-23"><a href="linear-morphometrics-1.html#cb7-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&#39;Community&#39;</span>, <span class="at">y =</span> <span class="st">&#39;MaxTh&#39;</span>)</span>
-<span id="cb7-24"><a href="linear-morphometrics-1.html#cb7-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-25"><a href="linear-morphometrics-1.html#cb7-25" aria-hidden="true" tabindex="-1"></a><span class="co"># boxplot of stem length ~ region</span></span>
-<span id="cb7-26"><a href="linear-morphometrics-1.html#cb7-26" aria-hidden="true" tabindex="-1"></a>regionmaxstl <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> region, <span class="at">y =</span> maxstl, <span class="at">color =</span> region)) <span class="sc">+</span> </span>
-<span id="cb7-27"><a href="linear-morphometrics-1.html#cb7-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">notch =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
-<span id="cb7-28"><a href="linear-morphometrics-1.html#cb7-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_dotplot</span>(<span class="at">binaxis =</span> <span class="st">&#39;y&#39;</span>,<span class="at">stackdir =</span> <span class="st">&#39;center&#39;</span>,<span class="at">dotsize =</span> <span class="fl">0.3</span>) <span class="sc">+</span></span>
-<span id="cb7-29"><a href="linear-morphometrics-1.html#cb7-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_colour_manual</span>(<span class="at">values =</span> <span class="fu">wes_palette</span>(<span class="st">&quot;Moonrise2&quot;</span>)) <span class="sc">+</span></span>
-<span id="cb7-30"><a href="linear-morphometrics-1.html#cb7-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;none&quot;</span>) <span class="sc">+</span></span>
-<span id="cb7-31"><a href="linear-morphometrics-1.html#cb7-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&#39;Community&#39;</span>, <span class="at">y =</span> <span class="st">&#39;StemL&#39;</span>)</span>
-<span id="cb7-32"><a href="linear-morphometrics-1.html#cb7-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-33"><a href="linear-morphometrics-1.html#cb7-33" aria-hidden="true" tabindex="-1"></a><span class="co"># boxplot of stem width ~ region</span></span>
-<span id="cb7-34"><a href="linear-morphometrics-1.html#cb7-34" aria-hidden="true" tabindex="-1"></a>regionmaxstw <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> region, <span class="at">y =</span> maxstw, <span class="at">color =</span> region)) <span class="sc">+</span> </span>
-<span id="cb7-35"><a href="linear-morphometrics-1.html#cb7-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">notch =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
-<span id="cb7-36"><a href="linear-morphometrics-1.html#cb7-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_dotplot</span>(<span class="at">binaxis =</span> <span class="st">&#39;y&#39;</span>, <span class="at">stackdir =</span> <span class="st">&#39;center&#39;</span>, <span class="at">dotsize =</span> <span class="fl">0.3</span>) <span class="sc">+</span></span>
-<span id="cb7-37"><a href="linear-morphometrics-1.html#cb7-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_colour_manual</span>(<span class="at">values =</span> <span class="fu">wes_palette</span>(<span class="st">&quot;Moonrise2&quot;</span>)) <span class="sc">+</span></span>
-<span id="cb7-38"><a href="linear-morphometrics-1.html#cb7-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;none&quot;</span>) <span class="sc">+</span></span>
-<span id="cb7-39"><a href="linear-morphometrics-1.html#cb7-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&#39;Community&#39;</span>, <span class="at">y =</span> <span class="st">&#39;StemW&#39;</span>)</span>
-<span id="cb7-40"><a href="linear-morphometrics-1.html#cb7-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-41"><a href="linear-morphometrics-1.html#cb7-41" aria-hidden="true" tabindex="-1"></a><span class="co"># render figure</span></span>
-<span id="cb7-42"><a href="linear-morphometrics-1.html#cb7-42" aria-hidden="true" tabindex="-1"></a>regionfigure <span class="ot">&lt;-</span> <span class="fu">ggarrange</span>(regionmaxl, regionmaxw, regionmaxth, regionmaxstl, regionmaxstw,</span>
-<span id="cb7-43"><a href="linear-morphometrics-1.html#cb7-43" aria-hidden="true" tabindex="-1"></a>                  <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">&quot;a&quot;</span>,<span class="st">&quot;b&quot;</span>,<span class="st">&quot;c&quot;</span>,<span class="st">&quot;d&quot;</span>,<span class="st">&quot;e&quot;</span>),</span>
-<span id="cb7-44"><a href="linear-morphometrics-1.html#cb7-44" aria-hidden="true" tabindex="-1"></a>                  <span class="at">ncol =</span> <span class="dv">2</span>, <span class="at">nrow =</span> <span class="dv">3</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="linear-morphometrics-1.html#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># boxplot of maximum length ~ region</span></span>
+<span id="cb13-2"><a href="linear-morphometrics-1.html#cb13-2" aria-hidden="true" tabindex="-1"></a>regionmaxl <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> region, <span class="at">y =</span> maxl, <span class="at">color =</span> region)) <span class="sc">+</span> </span>
+<span id="cb13-3"><a href="linear-morphometrics-1.html#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">notch =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb13-4"><a href="linear-morphometrics-1.html#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_dotplot</span>(<span class="at">binaxis =</span> <span class="st">&#39;y&#39;</span>,<span class="at">stackdir =</span> <span class="st">&#39;center&#39;</span>,<span class="at">dotsize =</span> <span class="fl">0.3</span>) <span class="sc">+</span></span>
+<span id="cb13-5"><a href="linear-morphometrics-1.html#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_colour_manual</span>(<span class="at">values =</span> <span class="fu">wes_palette</span>(<span class="st">&quot;Moonrise2&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb13-6"><a href="linear-morphometrics-1.html#cb13-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;none&quot;</span>) <span class="sc">+</span></span>
+<span id="cb13-7"><a href="linear-morphometrics-1.html#cb13-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&#39;Community&#39;</span>, <span class="at">y =</span> <span class="st">&#39;MaxL&#39;</span>)</span>
+<span id="cb13-8"><a href="linear-morphometrics-1.html#cb13-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-9"><a href="linear-morphometrics-1.html#cb13-9" aria-hidden="true" tabindex="-1"></a><span class="co"># boxplot of maximum width ~ region</span></span>
+<span id="cb13-10"><a href="linear-morphometrics-1.html#cb13-10" aria-hidden="true" tabindex="-1"></a>regionmaxw <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> region, <span class="at">y =</span> maxw, <span class="at">color =</span> region)) <span class="sc">+</span> </span>
+<span id="cb13-11"><a href="linear-morphometrics-1.html#cb13-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">notch =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb13-12"><a href="linear-morphometrics-1.html#cb13-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_dotplot</span>(<span class="at">binaxis =</span> <span class="st">&#39;y&#39;</span>,<span class="at">stackdir =</span> <span class="st">&#39;center&#39;</span>,<span class="at">dotsize =</span> <span class="fl">0.3</span>) <span class="sc">+</span></span>
+<span id="cb13-13"><a href="linear-morphometrics-1.html#cb13-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_colour_manual</span>(<span class="at">values =</span> <span class="fu">wes_palette</span>(<span class="st">&quot;Moonrise2&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb13-14"><a href="linear-morphometrics-1.html#cb13-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;none&quot;</span>) <span class="sc">+</span></span>
+<span id="cb13-15"><a href="linear-morphometrics-1.html#cb13-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&#39;Community&#39;</span>, <span class="at">y =</span> <span class="st">&#39;MaxW&#39;</span>)</span>
+<span id="cb13-16"><a href="linear-morphometrics-1.html#cb13-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-17"><a href="linear-morphometrics-1.html#cb13-17" aria-hidden="true" tabindex="-1"></a><span class="co"># boxplot of maximum thickness ~ region</span></span>
+<span id="cb13-18"><a href="linear-morphometrics-1.html#cb13-18" aria-hidden="true" tabindex="-1"></a>regionmaxth <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> region, <span class="at">y =</span> maxth, <span class="at">color =</span> region)) <span class="sc">+</span> </span>
+<span id="cb13-19"><a href="linear-morphometrics-1.html#cb13-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">notch =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb13-20"><a href="linear-morphometrics-1.html#cb13-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_dotplot</span>(<span class="at">binaxis =</span> <span class="st">&#39;y&#39;</span>,<span class="at">stackdir =</span> <span class="st">&#39;center&#39;</span>,<span class="at">dotsize =</span> <span class="fl">0.3</span>) <span class="sc">+</span></span>
+<span id="cb13-21"><a href="linear-morphometrics-1.html#cb13-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_colour_manual</span>(<span class="at">values =</span> <span class="fu">wes_palette</span>(<span class="st">&quot;Moonrise2&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb13-22"><a href="linear-morphometrics-1.html#cb13-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;none&quot;</span>) <span class="sc">+</span></span>
+<span id="cb13-23"><a href="linear-morphometrics-1.html#cb13-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&#39;Community&#39;</span>, <span class="at">y =</span> <span class="st">&#39;MaxTh&#39;</span>)</span>
+<span id="cb13-24"><a href="linear-morphometrics-1.html#cb13-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-25"><a href="linear-morphometrics-1.html#cb13-25" aria-hidden="true" tabindex="-1"></a><span class="co"># boxplot of stem length ~ region</span></span>
+<span id="cb13-26"><a href="linear-morphometrics-1.html#cb13-26" aria-hidden="true" tabindex="-1"></a>regionmaxstl <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> region, <span class="at">y =</span> maxstl, <span class="at">color =</span> region)) <span class="sc">+</span> </span>
+<span id="cb13-27"><a href="linear-morphometrics-1.html#cb13-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">notch =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb13-28"><a href="linear-morphometrics-1.html#cb13-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_dotplot</span>(<span class="at">binaxis =</span> <span class="st">&#39;y&#39;</span>,<span class="at">stackdir =</span> <span class="st">&#39;center&#39;</span>,<span class="at">dotsize =</span> <span class="fl">0.3</span>) <span class="sc">+</span></span>
+<span id="cb13-29"><a href="linear-morphometrics-1.html#cb13-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_colour_manual</span>(<span class="at">values =</span> <span class="fu">wes_palette</span>(<span class="st">&quot;Moonrise2&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb13-30"><a href="linear-morphometrics-1.html#cb13-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;none&quot;</span>) <span class="sc">+</span></span>
+<span id="cb13-31"><a href="linear-morphometrics-1.html#cb13-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&#39;Community&#39;</span>, <span class="at">y =</span> <span class="st">&#39;StemL&#39;</span>)</span>
+<span id="cb13-32"><a href="linear-morphometrics-1.html#cb13-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-33"><a href="linear-morphometrics-1.html#cb13-33" aria-hidden="true" tabindex="-1"></a><span class="co"># boxplot of stem width ~ region</span></span>
+<span id="cb13-34"><a href="linear-morphometrics-1.html#cb13-34" aria-hidden="true" tabindex="-1"></a>regionmaxstw <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> region, <span class="at">y =</span> maxstw, <span class="at">color =</span> region)) <span class="sc">+</span> </span>
+<span id="cb13-35"><a href="linear-morphometrics-1.html#cb13-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">notch =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb13-36"><a href="linear-morphometrics-1.html#cb13-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_dotplot</span>(<span class="at">binaxis =</span> <span class="st">&#39;y&#39;</span>, <span class="at">stackdir =</span> <span class="st">&#39;center&#39;</span>, <span class="at">dotsize =</span> <span class="fl">0.3</span>) <span class="sc">+</span></span>
+<span id="cb13-37"><a href="linear-morphometrics-1.html#cb13-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_colour_manual</span>(<span class="at">values =</span> <span class="fu">wes_palette</span>(<span class="st">&quot;Moonrise2&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb13-38"><a href="linear-morphometrics-1.html#cb13-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;none&quot;</span>) <span class="sc">+</span></span>
+<span id="cb13-39"><a href="linear-morphometrics-1.html#cb13-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&#39;Community&#39;</span>, <span class="at">y =</span> <span class="st">&#39;StemW&#39;</span>)</span>
+<span id="cb13-40"><a href="linear-morphometrics-1.html#cb13-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-41"><a href="linear-morphometrics-1.html#cb13-41" aria-hidden="true" tabindex="-1"></a><span class="co"># render figure</span></span>
+<span id="cb13-42"><a href="linear-morphometrics-1.html#cb13-42" aria-hidden="true" tabindex="-1"></a>regionfigure <span class="ot">&lt;-</span> <span class="fu">ggarrange</span>(regionmaxl, regionmaxw, regionmaxth, regionmaxstl, regionmaxstw,</span>
+<span id="cb13-43"><a href="linear-morphometrics-1.html#cb13-43" aria-hidden="true" tabindex="-1"></a>                  <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">&quot;a&quot;</span>,<span class="st">&quot;b&quot;</span>,<span class="st">&quot;c&quot;</span>,<span class="st">&quot;d&quot;</span>,<span class="st">&quot;e&quot;</span>),</span>
+<span id="cb13-44"><a href="linear-morphometrics-1.html#cb13-44" aria-hidden="true" tabindex="-1"></a>                  <span class="at">ncol =</span> <span class="dv">2</span>, <span class="at">nrow =</span> <span class="dv">3</span>)</span></code></pre></div>
 <pre><code>## Bin width defaults to 1/30 of the range of the data. Pick better value with `binwidth`.
 ## Bin width defaults to 1/30 of the range of the data. Pick better value with `binwidth`.
 ## Bin width defaults to 1/30 of the range of the data. Pick better value with `binwidth`.
 ## Bin width defaults to 1/30 of the range of the data. Pick better value with `binwidth`.
 ## Bin width defaults to 1/30 of the range of the data. Pick better value with `binwidth`.</code></pre>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="linear-morphometrics-1.html#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="do">## plot figure</span></span>
-<span id="cb9-2"><a href="linear-morphometrics-1.html#cb9-2" aria-hidden="true" tabindex="-1"></a>regionfigure</span></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="linear-morphometrics-1.html#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="do">## plot figure</span></span>
+<span id="cb15-2"><a href="linear-morphometrics-1.html#cb15-2" aria-hidden="true" tabindex="-1"></a>regionfigure</span></code></pre></div>
 <div class="figure"><span style="display:block;" id="fig:boxregion"></span>
 <img src="supp_files/figure-html/boxregion-1.png" alt="Boxplots for maximum length, width, thickness, stem length, and stem width for Perdiz arrow points." width="100%" />
 <p class="caption">
@@ -317,28 +326,28 @@ Figure 1.1: Boxplots for maximum length, width, thickness, stem length, and stem
 </div>
 <div id="principal-components-analysis" class="section level2" number="1.3">
 <h2><span class="header-section-number">1.3</span> Principal Components Analysis</h2>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="linear-morphometrics-1.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># attributes for plot</span></span>
-<span id="cb10-2"><a href="linear-morphometrics-1.html#cb10-2" aria-hidden="true" tabindex="-1"></a>df<span class="ot">&lt;-</span>data[<span class="fu">c</span>(<span class="dv">4</span><span class="sc">:</span><span class="dv">8</span>)]</span>
-<span id="cb10-3"><a href="linear-morphometrics-1.html#cb10-3" aria-hidden="true" tabindex="-1"></a>pch.gps.gp <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">15</span>,<span class="dv">16</span>)[<span class="fu">as.factor</span>(reg)]</span>
-<span id="cb10-4"><a href="linear-morphometrics-1.html#cb10-4" aria-hidden="true" tabindex="-1"></a>col.gps.gp <span class="ot">&lt;-</span> <span class="fu">wes_palette</span>(<span class="st">&quot;Moonrise2&quot;</span>)[<span class="fu">as.factor</span>(reg)]</span>
-<span id="cb10-5"><a href="linear-morphometrics-1.html#cb10-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-6"><a href="linear-morphometrics-1.html#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="do">## pca plot</span></span>
-<span id="cb10-7"><a href="linear-morphometrics-1.html#cb10-7" aria-hidden="true" tabindex="-1"></a>pca <span class="ot">&lt;-</span> <span class="fu">autoplot</span>(<span class="fu">prcomp</span>(df),</span>
-<span id="cb10-8"><a href="linear-morphometrics-1.html#cb10-8" aria-hidden="true" tabindex="-1"></a>                <span class="at">data =</span> data,</span>
-<span id="cb10-9"><a href="linear-morphometrics-1.html#cb10-9" aria-hidden="true" tabindex="-1"></a>                <span class="at">asp =</span> <span class="dv">1</span>,</span>
-<span id="cb10-10"><a href="linear-morphometrics-1.html#cb10-10" aria-hidden="true" tabindex="-1"></a>                <span class="at">shape =</span> pch.gps.gp,</span>
-<span id="cb10-11"><a href="linear-morphometrics-1.html#cb10-11" aria-hidden="true" tabindex="-1"></a>                <span class="at">colour =</span> <span class="st">&quot;region&quot;</span>,</span>
-<span id="cb10-12"><a href="linear-morphometrics-1.html#cb10-12" aria-hidden="true" tabindex="-1"></a>                <span class="at">variance_percentage =</span> <span class="cn">TRUE</span>,</span>
-<span id="cb10-13"><a href="linear-morphometrics-1.html#cb10-13" aria-hidden="true" tabindex="-1"></a>                <span class="at">loadings =</span> <span class="cn">TRUE</span>, </span>
-<span id="cb10-14"><a href="linear-morphometrics-1.html#cb10-14" aria-hidden="true" tabindex="-1"></a>                <span class="at">loadings.colour =</span> <span class="st">&#39;blue&#39;</span>,</span>
-<span id="cb10-15"><a href="linear-morphometrics-1.html#cb10-15" aria-hidden="true" tabindex="-1"></a>                <span class="at">loadings.label =</span> <span class="cn">TRUE</span>,</span>
-<span id="cb10-16"><a href="linear-morphometrics-1.html#cb10-16" aria-hidden="true" tabindex="-1"></a>                <span class="at">loadings.label.size =</span> <span class="dv">3</span>,</span>
-<span id="cb10-17"><a href="linear-morphometrics-1.html#cb10-17" aria-hidden="true" tabindex="-1"></a>                <span class="at">frame =</span> <span class="cn">TRUE</span>,</span>
-<span id="cb10-18"><a href="linear-morphometrics-1.html#cb10-18" aria-hidden="true" tabindex="-1"></a>                <span class="at">frame.type =</span> <span class="st">&#39;t&#39;</span>) <span class="sc">+</span></span>
-<span id="cb10-19"><a href="linear-morphometrics-1.html#cb10-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">wes_palette</span>(<span class="st">&quot;Moonrise2&quot;</span>)) <span class="sc">+</span></span>
-<span id="cb10-20"><a href="linear-morphometrics-1.html#cb10-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_colour_manual</span>(<span class="at">values =</span> <span class="fu">wes_palette</span>(<span class="st">&quot;Moonrise2&quot;</span>))</span>
-<span id="cb10-21"><a href="linear-morphometrics-1.html#cb10-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-22"><a href="linear-morphometrics-1.html#cb10-22" aria-hidden="true" tabindex="-1"></a><span class="fu">ggMarginal</span>(pca, <span class="at">groupColour =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="linear-morphometrics-1.html#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># attributes for plot</span></span>
+<span id="cb16-2"><a href="linear-morphometrics-1.html#cb16-2" aria-hidden="true" tabindex="-1"></a>df<span class="ot">&lt;-</span>data[<span class="fu">c</span>(<span class="dv">4</span><span class="sc">:</span><span class="dv">8</span>)]</span>
+<span id="cb16-3"><a href="linear-morphometrics-1.html#cb16-3" aria-hidden="true" tabindex="-1"></a>pch.gps.gp <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">15</span>,<span class="dv">16</span>)[<span class="fu">as.factor</span>(reg)]</span>
+<span id="cb16-4"><a href="linear-morphometrics-1.html#cb16-4" aria-hidden="true" tabindex="-1"></a>col.gps.gp <span class="ot">&lt;-</span> <span class="fu">wes_palette</span>(<span class="st">&quot;Moonrise2&quot;</span>)[<span class="fu">as.factor</span>(reg)]</span>
+<span id="cb16-5"><a href="linear-morphometrics-1.html#cb16-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-6"><a href="linear-morphometrics-1.html#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="do">## pca plot</span></span>
+<span id="cb16-7"><a href="linear-morphometrics-1.html#cb16-7" aria-hidden="true" tabindex="-1"></a>pca <span class="ot">&lt;-</span> <span class="fu">autoplot</span>(<span class="fu">prcomp</span>(df),</span>
+<span id="cb16-8"><a href="linear-morphometrics-1.html#cb16-8" aria-hidden="true" tabindex="-1"></a>                <span class="at">data =</span> data,</span>
+<span id="cb16-9"><a href="linear-morphometrics-1.html#cb16-9" aria-hidden="true" tabindex="-1"></a>                <span class="at">asp =</span> <span class="dv">1</span>,</span>
+<span id="cb16-10"><a href="linear-morphometrics-1.html#cb16-10" aria-hidden="true" tabindex="-1"></a>                <span class="at">shape =</span> pch.gps.gp,</span>
+<span id="cb16-11"><a href="linear-morphometrics-1.html#cb16-11" aria-hidden="true" tabindex="-1"></a>                <span class="at">colour =</span> <span class="st">&quot;region&quot;</span>,</span>
+<span id="cb16-12"><a href="linear-morphometrics-1.html#cb16-12" aria-hidden="true" tabindex="-1"></a>                <span class="at">variance_percentage =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb16-13"><a href="linear-morphometrics-1.html#cb16-13" aria-hidden="true" tabindex="-1"></a>                <span class="at">loadings =</span> <span class="cn">TRUE</span>, </span>
+<span id="cb16-14"><a href="linear-morphometrics-1.html#cb16-14" aria-hidden="true" tabindex="-1"></a>                <span class="at">loadings.colour =</span> <span class="st">&#39;blue&#39;</span>,</span>
+<span id="cb16-15"><a href="linear-morphometrics-1.html#cb16-15" aria-hidden="true" tabindex="-1"></a>                <span class="at">loadings.label =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb16-16"><a href="linear-morphometrics-1.html#cb16-16" aria-hidden="true" tabindex="-1"></a>                <span class="at">loadings.label.size =</span> <span class="dv">3</span>,</span>
+<span id="cb16-17"><a href="linear-morphometrics-1.html#cb16-17" aria-hidden="true" tabindex="-1"></a>                <span class="at">frame =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb16-18"><a href="linear-morphometrics-1.html#cb16-18" aria-hidden="true" tabindex="-1"></a>                <span class="at">frame.type =</span> <span class="st">&#39;t&#39;</span>) <span class="sc">+</span></span>
+<span id="cb16-19"><a href="linear-morphometrics-1.html#cb16-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">wes_palette</span>(<span class="st">&quot;Moonrise2&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb16-20"><a href="linear-morphometrics-1.html#cb16-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_colour_manual</span>(<span class="at">values =</span> <span class="fu">wes_palette</span>(<span class="st">&quot;Moonrise2&quot;</span>))</span>
+<span id="cb16-21"><a href="linear-morphometrics-1.html#cb16-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-22"><a href="linear-morphometrics-1.html#cb16-22" aria-hidden="true" tabindex="-1"></a><span class="fu">ggMarginal</span>(pca, <span class="at">groupColour =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
 <div class="figure"><span style="display:block;" id="fig:pcaregion"></span>
 <img src="supp_files/figure-html/pcaregion-1.png" alt="Principal components analysis by raw material." width="100%" />
 <p class="caption">
@@ -350,12 +359,12 @@ Figure 1.2: Principal components analysis by raw material.
 <h2><span class="header-section-number">1.4</span> Analyses of Variance (ANOVA) for <em>variable</em> ~ <em>region</em></h2>
 <div id="maximum-length-of-perdiz-arrow-points" class="section level3" number="1.4.1">
 <h3><span class="header-section-number">1.4.1</span> <em>Maximum length</em> of Perdiz arrow points</h3>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="linear-morphometrics-1.html#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># anova = maximum length ~ region</span></span>
-<span id="cb11-2"><a href="linear-morphometrics-1.html#cb11-2" aria-hidden="true" tabindex="-1"></a>regionml <span class="ot">&lt;-</span> <span class="fu">lm.rrpp</span>(maxl <span class="sc">~</span> region, </span>
-<span id="cb11-3"><a href="linear-morphometrics-1.html#cb11-3" aria-hidden="true" tabindex="-1"></a>                  <span class="at">SS.type =</span> <span class="st">&quot;I&quot;</span>, </span>
-<span id="cb11-4"><a href="linear-morphometrics-1.html#cb11-4" aria-hidden="true" tabindex="-1"></a>                  <span class="at">data =</span> data, <span class="at">iter =</span> <span class="dv">9999</span>, </span>
-<span id="cb11-5"><a href="linear-morphometrics-1.html#cb11-5" aria-hidden="true" tabindex="-1"></a>                  <span class="at">print.progress =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb11-6"><a href="linear-morphometrics-1.html#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(regionml)</span></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="linear-morphometrics-1.html#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># anova = maximum length ~ region</span></span>
+<span id="cb17-2"><a href="linear-morphometrics-1.html#cb17-2" aria-hidden="true" tabindex="-1"></a>regionml <span class="ot">&lt;-</span> <span class="fu">lm.rrpp</span>(maxl <span class="sc">~</span> region, </span>
+<span id="cb17-3"><a href="linear-morphometrics-1.html#cb17-3" aria-hidden="true" tabindex="-1"></a>                  <span class="at">SS.type =</span> <span class="st">&quot;I&quot;</span>, </span>
+<span id="cb17-4"><a href="linear-morphometrics-1.html#cb17-4" aria-hidden="true" tabindex="-1"></a>                  <span class="at">data =</span> data, <span class="at">iter =</span> <span class="dv">9999</span>, </span>
+<span id="cb17-5"><a href="linear-morphometrics-1.html#cb17-5" aria-hidden="true" tabindex="-1"></a>                  <span class="at">print.progress =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb17-6"><a href="linear-morphometrics-1.html#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(regionml)</span></code></pre></div>
 <pre><code>## 
 ## Analysis of Variance, using Residual Randomization
 ## Permutation procedure: Randomization of null model residuals 
@@ -375,13 +384,13 @@ Figure 1.2: Principal components analysis by raw material.
 </div>
 <div id="maximum-width-of-perdiz-arrow-points" class="section level3" number="1.4.2">
 <h3><span class="header-section-number">1.4.2</span> <em>Maximum width</em> of Perdiz arrow points</h3>
-<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="linear-morphometrics-1.html#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># anova = maximum width ~ region</span></span>
-<span id="cb13-2"><a href="linear-morphometrics-1.html#cb13-2" aria-hidden="true" tabindex="-1"></a>regionmw <span class="ot">&lt;-</span> <span class="fu">lm.rrpp</span>(maxw <span class="sc">~</span> region, </span>
-<span id="cb13-3"><a href="linear-morphometrics-1.html#cb13-3" aria-hidden="true" tabindex="-1"></a>                  <span class="at">SS.type =</span> <span class="st">&quot;I&quot;</span>, </span>
-<span id="cb13-4"><a href="linear-morphometrics-1.html#cb13-4" aria-hidden="true" tabindex="-1"></a>                  <span class="at">data =</span> data, </span>
-<span id="cb13-5"><a href="linear-morphometrics-1.html#cb13-5" aria-hidden="true" tabindex="-1"></a>                  <span class="at">iter =</span> <span class="dv">9999</span>, </span>
-<span id="cb13-6"><a href="linear-morphometrics-1.html#cb13-6" aria-hidden="true" tabindex="-1"></a>                  <span class="at">print.progress =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb13-7"><a href="linear-morphometrics-1.html#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(regionmw)</span></code></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="linear-morphometrics-1.html#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># anova = maximum width ~ region</span></span>
+<span id="cb19-2"><a href="linear-morphometrics-1.html#cb19-2" aria-hidden="true" tabindex="-1"></a>regionmw <span class="ot">&lt;-</span> <span class="fu">lm.rrpp</span>(maxw <span class="sc">~</span> region, </span>
+<span id="cb19-3"><a href="linear-morphometrics-1.html#cb19-3" aria-hidden="true" tabindex="-1"></a>                  <span class="at">SS.type =</span> <span class="st">&quot;I&quot;</span>, </span>
+<span id="cb19-4"><a href="linear-morphometrics-1.html#cb19-4" aria-hidden="true" tabindex="-1"></a>                  <span class="at">data =</span> data, </span>
+<span id="cb19-5"><a href="linear-morphometrics-1.html#cb19-5" aria-hidden="true" tabindex="-1"></a>                  <span class="at">iter =</span> <span class="dv">9999</span>, </span>
+<span id="cb19-6"><a href="linear-morphometrics-1.html#cb19-6" aria-hidden="true" tabindex="-1"></a>                  <span class="at">print.progress =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb19-7"><a href="linear-morphometrics-1.html#cb19-7" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(regionmw)</span></code></pre></div>
 <pre><code>## 
 ## Analysis of Variance, using Residual Randomization
 ## Permutation procedure: Randomization of null model residuals 
@@ -401,13 +410,13 @@ Figure 1.2: Principal components analysis by raw material.
 </div>
 <div id="maximum-thickness-of-perdiz-arrow-points" class="section level3" number="1.4.3">
 <h3><span class="header-section-number">1.4.3</span> <em>Maximum thickness</em> of Perdiz arrow points</h3>
-<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="linear-morphometrics-1.html#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># anova = maximum thickness ~ region</span></span>
-<span id="cb15-2"><a href="linear-morphometrics-1.html#cb15-2" aria-hidden="true" tabindex="-1"></a>regionmth <span class="ot">&lt;-</span> <span class="fu">lm.rrpp</span>(maxth <span class="sc">~</span> region, </span>
-<span id="cb15-3"><a href="linear-morphometrics-1.html#cb15-3" aria-hidden="true" tabindex="-1"></a>                   <span class="at">SS.type =</span> <span class="st">&quot;I&quot;</span>, </span>
-<span id="cb15-4"><a href="linear-morphometrics-1.html#cb15-4" aria-hidden="true" tabindex="-1"></a>                   <span class="at">data =</span> data, </span>
-<span id="cb15-5"><a href="linear-morphometrics-1.html#cb15-5" aria-hidden="true" tabindex="-1"></a>                   <span class="at">iter =</span> <span class="dv">9999</span>, </span>
-<span id="cb15-6"><a href="linear-morphometrics-1.html#cb15-6" aria-hidden="true" tabindex="-1"></a>                   <span class="at">print.progress =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb15-7"><a href="linear-morphometrics-1.html#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(regionmth)</span></code></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="linear-morphometrics-1.html#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># anova = maximum thickness ~ region</span></span>
+<span id="cb21-2"><a href="linear-morphometrics-1.html#cb21-2" aria-hidden="true" tabindex="-1"></a>regionmth <span class="ot">&lt;-</span> <span class="fu">lm.rrpp</span>(maxth <span class="sc">~</span> region, </span>
+<span id="cb21-3"><a href="linear-morphometrics-1.html#cb21-3" aria-hidden="true" tabindex="-1"></a>                   <span class="at">SS.type =</span> <span class="st">&quot;I&quot;</span>, </span>
+<span id="cb21-4"><a href="linear-morphometrics-1.html#cb21-4" aria-hidden="true" tabindex="-1"></a>                   <span class="at">data =</span> data, </span>
+<span id="cb21-5"><a href="linear-morphometrics-1.html#cb21-5" aria-hidden="true" tabindex="-1"></a>                   <span class="at">iter =</span> <span class="dv">9999</span>, </span>
+<span id="cb21-6"><a href="linear-morphometrics-1.html#cb21-6" aria-hidden="true" tabindex="-1"></a>                   <span class="at">print.progress =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb21-7"><a href="linear-morphometrics-1.html#cb21-7" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(regionmth)</span></code></pre></div>
 <pre><code>## 
 ## Analysis of Variance, using Residual Randomization
 ## Permutation procedure: Randomization of null model residuals 
@@ -425,13 +434,13 @@ Figure 1.2: Principal components analysis by raw material.
 </div>
 <div id="maximum-stem-length-of-perdiz-arrow-points" class="section level3" number="1.4.4">
 <h3><span class="header-section-number">1.4.4</span> <em>Maximum stem length</em> of Perdiz arrow points</h3>
-<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="linear-morphometrics-1.html#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># anova = maximum stem length ~ region</span></span>
-<span id="cb17-2"><a href="linear-morphometrics-1.html#cb17-2" aria-hidden="true" tabindex="-1"></a>regionmstl <span class="ot">&lt;-</span> <span class="fu">lm.rrpp</span>(maxstl <span class="sc">~</span> region, </span>
-<span id="cb17-3"><a href="linear-morphometrics-1.html#cb17-3" aria-hidden="true" tabindex="-1"></a>                    <span class="at">SS.type =</span> <span class="st">&quot;I&quot;</span>, </span>
-<span id="cb17-4"><a href="linear-morphometrics-1.html#cb17-4" aria-hidden="true" tabindex="-1"></a>                    <span class="at">data =</span> data, </span>
-<span id="cb17-5"><a href="linear-morphometrics-1.html#cb17-5" aria-hidden="true" tabindex="-1"></a>                    <span class="at">iter =</span> <span class="dv">9999</span>, </span>
-<span id="cb17-6"><a href="linear-morphometrics-1.html#cb17-6" aria-hidden="true" tabindex="-1"></a>                    <span class="at">print.progress =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb17-7"><a href="linear-morphometrics-1.html#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(regionmstl)</span></code></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="linear-morphometrics-1.html#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># anova = maximum stem length ~ region</span></span>
+<span id="cb23-2"><a href="linear-morphometrics-1.html#cb23-2" aria-hidden="true" tabindex="-1"></a>regionmstl <span class="ot">&lt;-</span> <span class="fu">lm.rrpp</span>(maxstl <span class="sc">~</span> region, </span>
+<span id="cb23-3"><a href="linear-morphometrics-1.html#cb23-3" aria-hidden="true" tabindex="-1"></a>                    <span class="at">SS.type =</span> <span class="st">&quot;I&quot;</span>, </span>
+<span id="cb23-4"><a href="linear-morphometrics-1.html#cb23-4" aria-hidden="true" tabindex="-1"></a>                    <span class="at">data =</span> data, </span>
+<span id="cb23-5"><a href="linear-morphometrics-1.html#cb23-5" aria-hidden="true" tabindex="-1"></a>                    <span class="at">iter =</span> <span class="dv">9999</span>, </span>
+<span id="cb23-6"><a href="linear-morphometrics-1.html#cb23-6" aria-hidden="true" tabindex="-1"></a>                    <span class="at">print.progress =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb23-7"><a href="linear-morphometrics-1.html#cb23-7" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(regionmstl)</span></code></pre></div>
 <pre><code>## 
 ## Analysis of Variance, using Residual Randomization
 ## Permutation procedure: Randomization of null model residuals 
@@ -451,13 +460,13 @@ Figure 1.2: Principal components analysis by raw material.
 </div>
 <div id="maximum-stem-width-of-perdiz-arrow-points" class="section level3" number="1.4.5">
 <h3><span class="header-section-number">1.4.5</span> <em>Maximum stem width</em> of Perdiz arrow points</h3>
-<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="linear-morphometrics-1.html#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># anova = maximum stem width ~ region</span></span>
-<span id="cb19-2"><a href="linear-morphometrics-1.html#cb19-2" aria-hidden="true" tabindex="-1"></a>regionmstw <span class="ot">&lt;-</span> <span class="fu">lm.rrpp</span>(maxstw <span class="sc">~</span> region, </span>
-<span id="cb19-3"><a href="linear-morphometrics-1.html#cb19-3" aria-hidden="true" tabindex="-1"></a>                    <span class="at">SS.type =</span> <span class="st">&quot;I&quot;</span>, </span>
-<span id="cb19-4"><a href="linear-morphometrics-1.html#cb19-4" aria-hidden="true" tabindex="-1"></a>                    <span class="at">data =</span> data, </span>
-<span id="cb19-5"><a href="linear-morphometrics-1.html#cb19-5" aria-hidden="true" tabindex="-1"></a>                    <span class="at">iter =</span> <span class="dv">9999</span>, </span>
-<span id="cb19-6"><a href="linear-morphometrics-1.html#cb19-6" aria-hidden="true" tabindex="-1"></a>                    <span class="at">print.progress =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb19-7"><a href="linear-morphometrics-1.html#cb19-7" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(regionmstw)</span></code></pre></div>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="linear-morphometrics-1.html#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># anova = maximum stem width ~ region</span></span>
+<span id="cb25-2"><a href="linear-morphometrics-1.html#cb25-2" aria-hidden="true" tabindex="-1"></a>regionmstw <span class="ot">&lt;-</span> <span class="fu">lm.rrpp</span>(maxstw <span class="sc">~</span> region, </span>
+<span id="cb25-3"><a href="linear-morphometrics-1.html#cb25-3" aria-hidden="true" tabindex="-1"></a>                    <span class="at">SS.type =</span> <span class="st">&quot;I&quot;</span>, </span>
+<span id="cb25-4"><a href="linear-morphometrics-1.html#cb25-4" aria-hidden="true" tabindex="-1"></a>                    <span class="at">data =</span> data, </span>
+<span id="cb25-5"><a href="linear-morphometrics-1.html#cb25-5" aria-hidden="true" tabindex="-1"></a>                    <span class="at">iter =</span> <span class="dv">9999</span>, </span>
+<span id="cb25-6"><a href="linear-morphometrics-1.html#cb25-6" aria-hidden="true" tabindex="-1"></a>                    <span class="at">print.progress =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb25-7"><a href="linear-morphometrics-1.html#cb25-7" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(regionmstw)</span></code></pre></div>
 <pre><code>## 
 ## Analysis of Variance, using Residual Randomization
 ## Permutation procedure: Randomization of null model residuals 
