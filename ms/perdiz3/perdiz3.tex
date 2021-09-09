@@ -1,0 +1,184 @@
+% !TeX program = pdfLaTeX
+\documentclass[smallextended]{svjour3}       % onecolumn (second format)
+%\documentclass[twocolumn]{svjour3}          % twocolumn
+%
+\smartqed  % flush right qed marks, e.g. at end of proof
+%
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+
+\usepackage[hyphens]{url} % not crucial - just used below for the URL
+\usepackage{hyperref}
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%
+% \usepackage{mathptmx}      % use Times fonts if available on your TeX system
+%
+% insert here the call for the packages your document requires
+%\usepackage{latexsym}
+% etc.
+%
+% please place your own definitions here and don't use \def but
+% \newcommand{}{}
+%
+% Insert the name of "your journal" with
+% \journalname{myjournal}
+%
+
+%% load any required packages here
+
+
+
+% Pandoc citation processing
+
+
+\begin{document}
+
+\title{Perdiz arrow points from Caddo burial contexts aid in defining
+discrete behavioral regions \thanks{Components of the analytical
+workflow were developed and funded by a Preservation Technology and
+Training grant (P14AP00138) to RZS from the National Center for
+Preservation Technology and Training, as well as grants to RZS from the
+Caddo Nation of Oklahoma, National Forests and Grasslands in Texas
+(15-PA-11081300-033) and the United States Forest Service
+(20-PA-11081300-074).} }
+
+
+
+\author{  Robert Z. Selden 1 \and  John E. Dockall 2 \and  }
+
+    \authorrunning{ Selden and Dockall }
+
+\institute{
+        Robert Z. Selden 1 \at
+     Heritage Research Center and Department of Biology, Stephen F.
+Austin State University; and Cultural Heritage Department, Jean Monnet
+University \\
+     \email{\href{mailto:zselden@sfasu.edu}{\nolinkurl{zselden@sfasu.edu}}}  %  \\
+%             \emph{Present address:} of F. Author  %  if needed
+    \and
+        John E. Dockall 2 \at
+     Cox\textbar McClain Environmental Consultants, Inc. \\
+     \email{\href{mailto:johnd@coxmcclain.com}{\nolinkurl{johnd@coxmcclain.com}}}  %  \\
+%             \emph{Present address:} of F. Author  %  if needed
+    \and
+    }
+
+\date{Received: date / Accepted: date}
+% The correct dates will be entered by the editor
+
+
+\maketitle
+
+\begin{abstract}
+Recent research in the ancestral Caddo area has yielded evidence for
+distinct \emph{behavioral regions}, across which material culture from
+Caddo burials---Hickory Engraved and Smithport Plain bottles as well as
+Gahagan bifaces---have been found to express significant morphological
+differences. This inquiry assesses whether Perdiz arrow points from
+Caddo burials, assumed to reflect design intent, may differ across the
+same geography, and extend the pattern of shape differences to a third
+category of Caddo material culture. Perdiz arrow points collected from
+the geographies of the northern and southern Caddo communities of
+practice defined in a recent social network analysis were employed to
+test the hypothesis that morphological attributes differ, and are
+predictable, between the two communities. Results indicate significant
+between-community differences in maximum length, width, stem length, and
+stem width, but not thickness. Using the same traditional metrics
+combined with the tools of machine learning, a predictive
+model---support vector machine---was designed to assess the degree to
+which community differences could be predicted, achieving a receiver
+operator curve score of 97 percent, and an accuracy score of 94 percent.
+The subsequent geometric morphometric analysis identified significant
+differences in Perdiz arrow point shape and size, coupled with
+significant results for modularity and morphological integration. These
+findings bolster the argument for the establishment of at least two
+discrete \emph{behavioral regions} in the ancestral Caddo area defined
+by discernible morphological differences across three categories of
+Caddo material culture.
+\\
+\keywords{
+        American Southeast \and
+        Caddo \and
+        Texas \and
+        archaeoinformatics \and
+        computational archaeology \and
+        machine learning \and
+        museum studies \and
+        digital humanities \and
+        STEM \and
+    }
+
+
+\end{abstract}
+
+
+\def\spacingset#1{\renewcommand{\baselinestretch}%
+{#1}\small\normalsize} \spacingset{1}
+
+
+\hypertarget{intro}{%
+\section{Introduction}\label{intro}}
+
+Perdiz arrow points generally follow two distinct manufacturing
+trajectories; one that enlists flakes, and the other, blade flakes
+(Dockall, et al.~2020:I-120 - I-121; Johnson 1994:66-80; Ricklis
+1994:213-214; Selden Jr, et al.~2021:2). Lithic tool stone in the Caddo
+area of northeast Texas is relatively sparse, consists primarily of
+chert, quartzite, and silicified wood characteristic of the local
+geological formations, which may contribute to local variation in both
+morphology and size (Banks 1990:Figure 2.1; Selden Jr, et al.~2021:
+Figure 2). It has been demonstrated elsewhere that Perdiz arrow points
+from northeast Texas vary significantly by time, raw material, and
+burial context (Selden Jr, et al.~2021 and supplementary materials). In
+outline, Perdiz arrow points possess a:
+
+\begin{quote}
+{[}t{]}riangular blade with edges usually quite straight but sometimes
+slightly convex or concave. Shoulders sometimes at right angles to stem
+but usually well barbed. Stem contracted, often quite sharp at base, but
+may be somewhat rounded. Occasionally, specimen may be worked on one
+face only or mainly on one face \ldots{} {[}w{]}orkmanship generally
+good, sometimes exceedingly fine with minutely serrated blade edges
+(Suhm, et al.~1954:504).
+\end{quote}
+
+A social network analysis of Historic Caddo (post-CE 1680) sites in
+northeast Texas demonstrated two spatially distinct communities of
+practice (Selden Jr.~2021a). The network analysis was limited to
+Historic Caddo types; however, Formative Early Caddo (CE 800 -- 1200)
+Gahagan bifaces and Caddo bottle types have been found to express
+significantly different morphologies between the same two areas (Selden
+Jr.~2018a, 2018b, 2019, 2021b), extending the temporal range of the
+shape boundary. Gahagan bifaces from the ancestral Caddo area also
+differ significantly in shape, size, and form from those recovered at
+central Texas sites (Selden Jr., et al.~2020), suggestive of a second
+shape boundary between the Caddo region and central Texas.
+
+\hypertarget{sec:1}{%
+\section{Section title}\label{sec:1}}
+
+Text with citations by \cite{Galyardt14mmm}.
+
+\hypertarget{sec:2}{%
+\subsection{Subsection title}\label{sec:2}}
+
+as required. Don't forget to give each section and subsection a unique
+label (see Sect. \ref{sec:1}).
+
+\hypertarget{paragraph-headings}{%
+\paragraph{Paragraph headings}\label{paragraph-headings}}
+
+Use paragraph headings as needed.
+
+\begin{align}
+a^2+b^2=c^2
+\end{align}
+
+
+\bibliographystyle{model5-names}
+\bibliography{mybibfile.bib}
+
+\end{document}
