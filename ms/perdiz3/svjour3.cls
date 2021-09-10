@@ -456,7 +456,7 @@ used inside of \string\title, \string\author,\MessageBreak
 and \string\date\space prior to \string\maketitle}}
 %
 \def\maketitle{\par\let\thanks=\orithanks
-\ch@ckobl{journalname}{Noname}
+\ch@ckobl{journalname}{Chapter}
 \ch@ckobl{date}{the date of receipt and acceptance should be inserted
 later}
 \ch@ckobl{title}{A title should be given}
@@ -534,7 +534,7 @@ later}
 \hbox to0pt{\vbox{\baselineskip=10dd\hrule\hbox
 to\hsize{\vrule\kern3pt\vbox{\kern3pt
 \hbox{\bfseries\@journalname\ manuscript No.}
-\hbox{(will be inserted by the editor)}
+\hbox{(ms.2021.001-selden.dockall)}
 \kern3pt}\hfil\kern3pt\vrule}\hrule}%
 \hss}}}
 %
