@@ -27,6 +27,7 @@ boxplot-centroid-size
 principal-components-analysis-1
 minimamaxima-of-pc12-with-warp-grids
 composite-pca-with-warp-grids
+procrustes-anova-allometry
 procrustes-anova-shape-and-size
 modularity
 morphological-integration

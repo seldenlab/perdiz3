@@ -24,7 +24,7 @@
 <meta name="author" content="Robert Z. Selden, Jr. and John E. Dockall" />
 
 
-<meta name="date" content="2021-09-09" />
+<meta name="date" content="2021-09-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -198,10 +198,11 @@ div.csl-indent {
 <li class="chapter" data-level="3.4.1" data-path="geometric-morphometrics-1.html"><a href="geometric-morphometrics-1.html#minimamaxima-of-pc12-with-warp-grids"><i class="fa fa-check"></i><b>3.4.1</b> Minima/maxima of PC1/2 with warp grids</a></li>
 <li class="chapter" data-level="3.4.2" data-path="geometric-morphometrics-1.html"><a href="geometric-morphometrics-1.html#composite-pca-with-warp-grids"><i class="fa fa-check"></i><b>3.4.2</b> Composite PCA with warp grids</a></li>
 </ul></li>
-<li class="chapter" data-level="3.5" data-path="geometric-morphometrics-1.html"><a href="geometric-morphometrics-1.html#procrustes-anova-shape-and-size"><i class="fa fa-check"></i><b>3.5</b> Procrustes ANOVA: Shape and size</a></li>
-<li class="chapter" data-level="3.6" data-path="geometric-morphometrics-1.html"><a href="geometric-morphometrics-1.html#modularity"><i class="fa fa-check"></i><b>3.6</b> Modularity</a></li>
-<li class="chapter" data-level="3.7" data-path="geometric-morphometrics-1.html"><a href="geometric-morphometrics-1.html#morphological-integration"><i class="fa fa-check"></i><b>3.7</b> Morphological integration</a></li>
-<li class="chapter" data-level="3.8" data-path="geometric-morphometrics-1.html"><a href="geometric-morphometrics-1.html#mean-shapes"><i class="fa fa-check"></i><b>3.8</b> Mean shapes</a></li>
+<li class="chapter" data-level="3.5" data-path="geometric-morphometrics-1.html"><a href="geometric-morphometrics-1.html#procrustes-anova-allometry"><i class="fa fa-check"></i><b>3.5</b> Procrustes ANOVA: Allometry</a></li>
+<li class="chapter" data-level="3.6" data-path="geometric-morphometrics-1.html"><a href="geometric-morphometrics-1.html#procrustes-anova-shape-and-size"><i class="fa fa-check"></i><b>3.6</b> Procrustes ANOVA: Shape and size</a></li>
+<li class="chapter" data-level="3.7" data-path="geometric-morphometrics-1.html"><a href="geometric-morphometrics-1.html#modularity"><i class="fa fa-check"></i><b>3.7</b> Modularity</a></li>
+<li class="chapter" data-level="3.8" data-path="geometric-morphometrics-1.html"><a href="geometric-morphometrics-1.html#morphological-integration"><i class="fa fa-check"></i><b>3.8</b> Morphological integration</a></li>
+<li class="chapter" data-level="3.9" data-path="geometric-morphometrics-1.html"><a href="geometric-morphometrics-1.html#mean-shapes"><i class="fa fa-check"></i><b>3.9</b> Mean shapes</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
@@ -228,77 +229,70 @@ div.csl-indent {
 <h1><span class="header-section-number">Chapter 3</span> Geometric morphometrics</h1>
 <div id="load-packages-data" class="section level2" number="3.1">
 <h2><span class="header-section-number">3.1</span> Load packages + data</h2>
-<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="geometric-morphometrics-1.html#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># download most recent software version</span></span>
-<span id="cb27-2"><a href="geometric-morphometrics-1.html#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="co">#devtools::install_github(&quot;geomorphR/geomorph&quot;, ref = &quot;Stable&quot;, build_vignettes = TRUE)</span></span>
-<span id="cb27-3"><a href="geometric-morphometrics-1.html#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="co">#devtools::install_github(&quot;mlcollyer/RRPP&quot;)</span></span>
-<span id="cb27-4"><a href="geometric-morphometrics-1.html#cb27-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-5"><a href="geometric-morphometrics-1.html#cb27-5" aria-hidden="true" tabindex="-1"></a><span class="co"># load analysis packages</span></span>
-<span id="cb27-6"><a href="geometric-morphometrics-1.html#cb27-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span>
-<span id="cb27-7"><a href="geometric-morphometrics-1.html#cb27-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(StereoMorph)</span>
-<span id="cb27-8"><a href="geometric-morphometrics-1.html#cb27-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(geomorph)</span></code></pre></div>
-<pre><code>## Loading required package: rgl</code></pre>
-<pre><code>## Loading required package: Matrix</code></pre>
-<pre><code>## 
-## Attaching package: &#39;Matrix&#39;</code></pre>
-<pre><code>## The following objects are masked from &#39;package:tidyr&#39;:
-## 
-##     expand, pack, unpack</code></pre>
-<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="geometric-morphometrics-1.html#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb32-2"><a href="geometric-morphometrics-1.html#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb32-3"><a href="geometric-morphometrics-1.html#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(wesanderson)</span>
-<span id="cb32-4"><a href="geometric-morphometrics-1.html#cb32-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-5"><a href="geometric-morphometrics-1.html#cb32-5" aria-hidden="true" tabindex="-1"></a><span class="co"># read shape data and define number of sLMs</span></span>
-<span id="cb32-6"><a href="geometric-morphometrics-1.html#cb32-6" aria-hidden="true" tabindex="-1"></a>shapes <span class="ot">&lt;-</span> <span class="fu">readShapes</span>(<span class="st">&quot;shapes&quot;</span>)</span>
-<span id="cb32-7"><a href="geometric-morphometrics-1.html#cb32-7" aria-hidden="true" tabindex="-1"></a>shapesGM <span class="ot">&lt;-</span> <span class="fu">readland.shapes</span>(shapes, <span class="at">nCurvePts =</span> <span class="fu">c</span>(<span class="dv">10</span>,<span class="dv">3</span>,<span class="dv">5</span>,<span class="dv">5</span>,<span class="dv">3</span>,<span class="dv">10</span>))</span>
-<span id="cb32-8"><a href="geometric-morphometrics-1.html#cb32-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-9"><a href="geometric-morphometrics-1.html#cb32-9" aria-hidden="true" tabindex="-1"></a><span class="co"># read qualitative data</span></span>
-<span id="cb32-10"><a href="geometric-morphometrics-1.html#cb32-10" aria-hidden="true" tabindex="-1"></a>qdata <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;qdata.csv&quot;</span>,</span>
-<span id="cb32-11"><a href="geometric-morphometrics-1.html#cb32-11" aria-hidden="true" tabindex="-1"></a>                  <span class="at">header =</span> <span class="cn">TRUE</span>,</span>
-<span id="cb32-12"><a href="geometric-morphometrics-1.html#cb32-12" aria-hidden="true" tabindex="-1"></a>                  <span class="at">row.names =</span> <span class="dv">1</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="geometric-morphometrics-1.html#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># download most recent software version</span></span>
+<span id="cb25-2"><a href="geometric-morphometrics-1.html#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="co">#devtools::install_github(&quot;geomorphR/geomorph&quot;, ref = &quot;Stable&quot;, build_vignettes = TRUE)</span></span>
+<span id="cb25-3"><a href="geometric-morphometrics-1.html#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="co">#devtools::install_github(&quot;mlcollyer/RRPP&quot;)</span></span>
+<span id="cb25-4"><a href="geometric-morphometrics-1.html#cb25-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-5"><a href="geometric-morphometrics-1.html#cb25-5" aria-hidden="true" tabindex="-1"></a><span class="co"># load analysis packages</span></span>
+<span id="cb25-6"><a href="geometric-morphometrics-1.html#cb25-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span>
+<span id="cb25-7"><a href="geometric-morphometrics-1.html#cb25-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(StereoMorph)</span>
+<span id="cb25-8"><a href="geometric-morphometrics-1.html#cb25-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(geomorph)</span>
+<span id="cb25-9"><a href="geometric-morphometrics-1.html#cb25-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb25-10"><a href="geometric-morphometrics-1.html#cb25-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb25-11"><a href="geometric-morphometrics-1.html#cb25-11" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(wesanderson)</span>
+<span id="cb25-12"><a href="geometric-morphometrics-1.html#cb25-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-13"><a href="geometric-morphometrics-1.html#cb25-13" aria-hidden="true" tabindex="-1"></a><span class="co"># read shape data and define number of sLMs</span></span>
+<span id="cb25-14"><a href="geometric-morphometrics-1.html#cb25-14" aria-hidden="true" tabindex="-1"></a>shapes <span class="ot">&lt;-</span> <span class="fu">readShapes</span>(<span class="st">&quot;shapes&quot;</span>)</span>
+<span id="cb25-15"><a href="geometric-morphometrics-1.html#cb25-15" aria-hidden="true" tabindex="-1"></a>shapesGM <span class="ot">&lt;-</span> <span class="fu">readland.shapes</span>(shapes, <span class="at">nCurvePts =</span> <span class="fu">c</span>(<span class="dv">10</span>,<span class="dv">3</span>,<span class="dv">5</span>,<span class="dv">5</span>,<span class="dv">3</span>,<span class="dv">10</span>))</span>
+<span id="cb25-16"><a href="geometric-morphometrics-1.html#cb25-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-17"><a href="geometric-morphometrics-1.html#cb25-17" aria-hidden="true" tabindex="-1"></a><span class="co"># read qualitative data</span></span>
+<span id="cb25-18"><a href="geometric-morphometrics-1.html#cb25-18" aria-hidden="true" tabindex="-1"></a>qdata <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;qdata.csv&quot;</span>,</span>
+<span id="cb25-19"><a href="geometric-morphometrics-1.html#cb25-19" aria-hidden="true" tabindex="-1"></a>                  <span class="at">header =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb25-20"><a href="geometric-morphometrics-1.html#cb25-20" aria-hidden="true" tabindex="-1"></a>                  <span class="at">row.names =</span> <span class="dv">1</span>)</span></code></pre></div>
 </div>
 <div id="generalised-procrustes-analysis" class="section level2" number="3.2">
 <h2><span class="header-section-number">3.2</span> Generalised Procrustes Analysis</h2>
-<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="geometric-morphometrics-1.html#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># gpa</span></span>
-<span id="cb33-2"><a href="geometric-morphometrics-1.html#cb33-2" aria-hidden="true" tabindex="-1"></a>Y.gpa <span class="ot">&lt;-</span> <span class="fu">gpagen</span>(shapesGM, <span class="at">print.progress =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb33-3"><a href="geometric-morphometrics-1.html#cb33-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-4"><a href="geometric-morphometrics-1.html#cb33-4" aria-hidden="true" tabindex="-1"></a><span class="do">## plot</span></span>
-<span id="cb33-5"><a href="geometric-morphometrics-1.html#cb33-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(Y.gpa)</span></code></pre></div>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="geometric-morphometrics-1.html#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># gpa</span></span>
+<span id="cb26-2"><a href="geometric-morphometrics-1.html#cb26-2" aria-hidden="true" tabindex="-1"></a>Y.gpa <span class="ot">&lt;-</span> <span class="fu">gpagen</span>(shapesGM, <span class="at">print.progress =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb26-3"><a href="geometric-morphometrics-1.html#cb26-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-4"><a href="geometric-morphometrics-1.html#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="do">## plot</span></span>
+<span id="cb26-5"><a href="geometric-morphometrics-1.html#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(Y.gpa)</span></code></pre></div>
 <p><img src="supp_files/figure-html/gpa-1.png" width="100%" /></p>
-<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="geometric-morphometrics-1.html#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># dataframe</span></span>
-<span id="cb34-2"><a href="geometric-morphometrics-1.html#cb34-2" aria-hidden="true" tabindex="-1"></a>gdf <span class="ot">&lt;-</span> <span class="fu">geomorph.data.frame</span>(<span class="at">shape =</span> Y.gpa<span class="sc">$</span>coords,</span>
-<span id="cb34-3"><a href="geometric-morphometrics-1.html#cb34-3" aria-hidden="true" tabindex="-1"></a>                           <span class="at">size =</span> Y.gpa<span class="sc">$</span>Csize,</span>
-<span id="cb34-4"><a href="geometric-morphometrics-1.html#cb34-4" aria-hidden="true" tabindex="-1"></a>                           <span class="at">region =</span> qdata<span class="sc">$</span>region)</span>
-<span id="cb34-5"><a href="geometric-morphometrics-1.html#cb34-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-6"><a href="geometric-morphometrics-1.html#cb34-6" aria-hidden="true" tabindex="-1"></a><span class="co"># add centroid size to qdata</span></span>
-<span id="cb34-7"><a href="geometric-morphometrics-1.html#cb34-7" aria-hidden="true" tabindex="-1"></a>qdata<span class="sc">$</span>csz <span class="ot">&lt;-</span> Y.gpa<span class="sc">$</span>Csize</span></code></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="geometric-morphometrics-1.html#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># dataframe</span></span>
+<span id="cb27-2"><a href="geometric-morphometrics-1.html#cb27-2" aria-hidden="true" tabindex="-1"></a>gdf <span class="ot">&lt;-</span> <span class="fu">geomorph.data.frame</span>(<span class="at">shape =</span> Y.gpa<span class="sc">$</span>coords,</span>
+<span id="cb27-3"><a href="geometric-morphometrics-1.html#cb27-3" aria-hidden="true" tabindex="-1"></a>                           <span class="at">size =</span> Y.gpa<span class="sc">$</span>Csize,</span>
+<span id="cb27-4"><a href="geometric-morphometrics-1.html#cb27-4" aria-hidden="true" tabindex="-1"></a>                           <span class="at">region =</span> qdata<span class="sc">$</span>region)</span>
+<span id="cb27-5"><a href="geometric-morphometrics-1.html#cb27-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-6"><a href="geometric-morphometrics-1.html#cb27-6" aria-hidden="true" tabindex="-1"></a><span class="co"># add centroid size to qdata</span></span>
+<span id="cb27-7"><a href="geometric-morphometrics-1.html#cb27-7" aria-hidden="true" tabindex="-1"></a>qdata<span class="sc">$</span>csz <span class="ot">&lt;-</span> Y.gpa<span class="sc">$</span>Csize</span></code></pre></div>
 </div>
 <div id="boxplot-centroid-size" class="section level2" number="3.3">
 <h2><span class="header-section-number">3.3</span> Boxplot (centroid size)</h2>
-<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="geometric-morphometrics-1.html#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co"># attributes</span></span>
-<span id="cb35-2"><a href="geometric-morphometrics-1.html#cb35-2" aria-hidden="true" tabindex="-1"></a>csz <span class="ot">&lt;-</span> qdata<span class="sc">$</span>csz</span>
-<span id="cb35-3"><a href="geometric-morphometrics-1.html#cb35-3" aria-hidden="true" tabindex="-1"></a>region <span class="ot">&lt;-</span> qdata<span class="sc">$</span>region</span>
-<span id="cb35-4"><a href="geometric-morphometrics-1.html#cb35-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-5"><a href="geometric-morphometrics-1.html#cb35-5" aria-hidden="true" tabindex="-1"></a><span class="co"># palette</span></span>
-<span id="cb35-6"><a href="geometric-morphometrics-1.html#cb35-6" aria-hidden="true" tabindex="-1"></a>pal <span class="ot">=</span> <span class="fu">wes_palette</span>(<span class="st">&quot;Moonrise2&quot;</span>)</span>
-<span id="cb35-7"><a href="geometric-morphometrics-1.html#cb35-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-8"><a href="geometric-morphometrics-1.html#cb35-8" aria-hidden="true" tabindex="-1"></a><span class="co"># boxplot of Perdiz arrow points by region</span></span>
-<span id="cb35-9"><a href="geometric-morphometrics-1.html#cb35-9" aria-hidden="true" tabindex="-1"></a>csz.temp <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(qdata, <span class="fu">aes</span>(<span class="at">x =</span> region, <span class="at">y =</span> csz, <span class="at">color =</span> region)) <span class="sc">+</span></span>
-<span id="cb35-10"><a href="geometric-morphometrics-1.html#cb35-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">notch =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
-<span id="cb35-11"><a href="geometric-morphometrics-1.html#cb35-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_dotplot</span>(<span class="at">binaxis =</span> <span class="st">&#39;y&#39;</span>, <span class="at">stackdir =</span> <span class="st">&#39;center&#39;</span>, <span class="at">dotsize =</span> <span class="fl">0.3</span>) <span class="sc">+</span></span>
-<span id="cb35-12"><a href="geometric-morphometrics-1.html#cb35-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> pal) <span class="sc">+</span></span>
-<span id="cb35-13"><a href="geometric-morphometrics-1.html#cb35-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;none&quot;</span>) <span class="sc">+</span></span>
-<span id="cb35-14"><a href="geometric-morphometrics-1.html#cb35-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&#39;Region&#39;</span>, <span class="at">y =</span> <span class="st">&#39;Centroid Size&#39;</span>)</span>
-<span id="cb35-15"><a href="geometric-morphometrics-1.html#cb35-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-16"><a href="geometric-morphometrics-1.html#cb35-16" aria-hidden="true" tabindex="-1"></a><span class="do">## render plot</span></span>
-<span id="cb35-17"><a href="geometric-morphometrics-1.html#cb35-17" aria-hidden="true" tabindex="-1"></a>csz.temp</span></code></pre></div>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="geometric-morphometrics-1.html#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># attributes</span></span>
+<span id="cb28-2"><a href="geometric-morphometrics-1.html#cb28-2" aria-hidden="true" tabindex="-1"></a>csz <span class="ot">&lt;-</span> qdata<span class="sc">$</span>csz</span>
+<span id="cb28-3"><a href="geometric-morphometrics-1.html#cb28-3" aria-hidden="true" tabindex="-1"></a>region <span class="ot">&lt;-</span> qdata<span class="sc">$</span>region</span>
+<span id="cb28-4"><a href="geometric-morphometrics-1.html#cb28-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-5"><a href="geometric-morphometrics-1.html#cb28-5" aria-hidden="true" tabindex="-1"></a><span class="co"># palette</span></span>
+<span id="cb28-6"><a href="geometric-morphometrics-1.html#cb28-6" aria-hidden="true" tabindex="-1"></a>pal <span class="ot">=</span> <span class="fu">wes_palette</span>(<span class="st">&quot;Moonrise2&quot;</span>)</span>
+<span id="cb28-7"><a href="geometric-morphometrics-1.html#cb28-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-8"><a href="geometric-morphometrics-1.html#cb28-8" aria-hidden="true" tabindex="-1"></a><span class="co"># boxplot of Perdiz arrow points by region</span></span>
+<span id="cb28-9"><a href="geometric-morphometrics-1.html#cb28-9" aria-hidden="true" tabindex="-1"></a>csz.temp <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(qdata, <span class="fu">aes</span>(<span class="at">x =</span> region, <span class="at">y =</span> csz, <span class="at">color =</span> region)) <span class="sc">+</span></span>
+<span id="cb28-10"><a href="geometric-morphometrics-1.html#cb28-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">notch =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb28-11"><a href="geometric-morphometrics-1.html#cb28-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_dotplot</span>(<span class="at">binaxis =</span> <span class="st">&#39;y&#39;</span>, <span class="at">stackdir =</span> <span class="st">&#39;center&#39;</span>, <span class="at">dotsize =</span> <span class="fl">0.3</span>) <span class="sc">+</span></span>
+<span id="cb28-12"><a href="geometric-morphometrics-1.html#cb28-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> pal) <span class="sc">+</span></span>
+<span id="cb28-13"><a href="geometric-morphometrics-1.html#cb28-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;none&quot;</span>) <span class="sc">+</span></span>
+<span id="cb28-14"><a href="geometric-morphometrics-1.html#cb28-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&#39;Region&#39;</span>, <span class="at">y =</span> <span class="st">&#39;Centroid Size&#39;</span>)</span>
+<span id="cb28-15"><a href="geometric-morphometrics-1.html#cb28-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-16"><a href="geometric-morphometrics-1.html#cb28-16" aria-hidden="true" tabindex="-1"></a><span class="do">## render plot</span></span>
+<span id="cb28-17"><a href="geometric-morphometrics-1.html#cb28-17" aria-hidden="true" tabindex="-1"></a>csz.temp</span></code></pre></div>
 <pre><code>## Bin width defaults to 1/30 of the range of the data. Pick better value with `binwidth`.</code></pre>
 <p><img src="supp_files/figure-html/box-1.png" width="100%" /></p>
 </div>
 <div id="principal-components-analysis-1" class="section level2" number="3.4">
 <h2><span class="header-section-number">3.4</span> Principal Components Analysis</h2>
-<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="geometric-morphometrics-1.html#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co"># pca</span></span>
-<span id="cb37-2"><a href="geometric-morphometrics-1.html#cb37-2" aria-hidden="true" tabindex="-1"></a>pca <span class="ot">&lt;-</span> <span class="fu">gm.prcomp</span>(Y.gpa<span class="sc">$</span>coords)</span>
-<span id="cb37-3"><a href="geometric-morphometrics-1.html#cb37-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(pca)</span></code></pre></div>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="geometric-morphometrics-1.html#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># pca</span></span>
+<span id="cb30-2"><a href="geometric-morphometrics-1.html#cb30-2" aria-hidden="true" tabindex="-1"></a>pca <span class="ot">&lt;-</span> <span class="fu">gm.prcomp</span>(Y.gpa<span class="sc">$</span>coords)</span>
+<span id="cb30-3"><a href="geometric-morphometrics-1.html#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(pca)</span></code></pre></div>
 <pre><code>## 
 ## Ordination type: Principal Component Analysis 
 ## Centering by OLS mean
@@ -331,58 +325,110 @@ div.csl-indent {
 ## Eigenvalues            2.374219e-09 1.963601e-09 1.208301e-09 6.656422e-10 4.846033e-10 2.571792e-10 1.910708e-10 8.289472e-11
 ## Proportion of Variance 1.954869e-07 1.616777e-07 9.948832e-08 5.480723e-08 3.990096e-08 2.117546e-08 1.573227e-08 6.825333e-09
 ## Cumulative Proportion  9.999996e-01 9.999998e-01 9.999999e-01 9.999999e-01 1.000000e+00 1.000000e+00 1.000000e+00 1.000000e+00</code></pre>
-<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="geometric-morphometrics-1.html#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co"># set plot parameters</span></span>
-<span id="cb39-2"><a href="geometric-morphometrics-1.html#cb39-2" aria-hidden="true" tabindex="-1"></a>pch.gps <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">15</span>,<span class="dv">17</span>)[<span class="fu">as.factor</span>(region)]</span>
-<span id="cb39-3"><a href="geometric-morphometrics-1.html#cb39-3" aria-hidden="true" tabindex="-1"></a>col.gps <span class="ot">&lt;-</span> pal[<span class="fu">as.factor</span>(region)]</span>
-<span id="cb39-4"><a href="geometric-morphometrics-1.html#cb39-4" aria-hidden="true" tabindex="-1"></a>col.hull <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;#798E87&quot;</span>, <span class="st">&quot;#C27D38&quot;</span>)</span>
-<span id="cb39-5"><a href="geometric-morphometrics-1.html#cb39-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb39-6"><a href="geometric-morphometrics-1.html#cb39-6" aria-hidden="true" tabindex="-1"></a><span class="do">## pca plot</span></span>
-<span id="cb39-7"><a href="geometric-morphometrics-1.html#cb39-7" aria-hidden="true" tabindex="-1"></a>pc.plot <span class="ot">&lt;-</span> <span class="fu">plot</span>(pca,</span>
-<span id="cb39-8"><a href="geometric-morphometrics-1.html#cb39-8" aria-hidden="true" tabindex="-1"></a>                <span class="at">asp =</span> <span class="dv">1</span>,</span>
-<span id="cb39-9"><a href="geometric-morphometrics-1.html#cb39-9" aria-hidden="true" tabindex="-1"></a>                <span class="at">pch =</span> pch.gps,</span>
-<span id="cb39-10"><a href="geometric-morphometrics-1.html#cb39-10" aria-hidden="true" tabindex="-1"></a>                <span class="at">col =</span> col.gps)</span>
-<span id="cb39-11"><a href="geometric-morphometrics-1.html#cb39-11" aria-hidden="true" tabindex="-1"></a><span class="fu">shapeHulls</span>(pc.plot,</span>
-<span id="cb39-12"><a href="geometric-morphometrics-1.html#cb39-12" aria-hidden="true" tabindex="-1"></a>           <span class="at">groups =</span> region,</span>
-<span id="cb39-13"><a href="geometric-morphometrics-1.html#cb39-13" aria-hidden="true" tabindex="-1"></a>           <span class="at">group.cols =</span> col.hull)</span></code></pre></div>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="geometric-morphometrics-1.html#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># set plot parameters</span></span>
+<span id="cb32-2"><a href="geometric-morphometrics-1.html#cb32-2" aria-hidden="true" tabindex="-1"></a>pch.gps <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">15</span>,<span class="dv">17</span>)[<span class="fu">as.factor</span>(region)]</span>
+<span id="cb32-3"><a href="geometric-morphometrics-1.html#cb32-3" aria-hidden="true" tabindex="-1"></a>col.gps <span class="ot">&lt;-</span> pal[<span class="fu">as.factor</span>(region)]</span>
+<span id="cb32-4"><a href="geometric-morphometrics-1.html#cb32-4" aria-hidden="true" tabindex="-1"></a>col.hull <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;#798E87&quot;</span>, <span class="st">&quot;#C27D38&quot;</span>)</span>
+<span id="cb32-5"><a href="geometric-morphometrics-1.html#cb32-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-6"><a href="geometric-morphometrics-1.html#cb32-6" aria-hidden="true" tabindex="-1"></a><span class="do">## pca plot</span></span>
+<span id="cb32-7"><a href="geometric-morphometrics-1.html#cb32-7" aria-hidden="true" tabindex="-1"></a>pc.plot <span class="ot">&lt;-</span> <span class="fu">plot</span>(pca,</span>
+<span id="cb32-8"><a href="geometric-morphometrics-1.html#cb32-8" aria-hidden="true" tabindex="-1"></a>                <span class="at">asp =</span> <span class="dv">1</span>,</span>
+<span id="cb32-9"><a href="geometric-morphometrics-1.html#cb32-9" aria-hidden="true" tabindex="-1"></a>                <span class="at">pch =</span> pch.gps,</span>
+<span id="cb32-10"><a href="geometric-morphometrics-1.html#cb32-10" aria-hidden="true" tabindex="-1"></a>                <span class="at">col =</span> col.gps)</span>
+<span id="cb32-11"><a href="geometric-morphometrics-1.html#cb32-11" aria-hidden="true" tabindex="-1"></a><span class="fu">shapeHulls</span>(pc.plot,</span>
+<span id="cb32-12"><a href="geometric-morphometrics-1.html#cb32-12" aria-hidden="true" tabindex="-1"></a>           <span class="at">groups =</span> region,</span>
+<span id="cb32-13"><a href="geometric-morphometrics-1.html#cb32-13" aria-hidden="true" tabindex="-1"></a>           <span class="at">group.cols =</span> col.hull)</span></code></pre></div>
 <p><img src="supp_files/figure-html/pca-1.png" width="100%" /></p>
 <div id="minimamaxima-of-pc12-with-warp-grids" class="section level3" number="3.4.1">
 <h3><span class="header-section-number">3.4.1</span> Minima/maxima of PC1/2 with warp grids</h3>
-<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="geometric-morphometrics-1.html#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co"># plot x/y maxima/minima</span></span>
-<span id="cb40-2"><a href="geometric-morphometrics-1.html#cb40-2" aria-hidden="true" tabindex="-1"></a><span class="do">## x - minima</span></span>
-<span id="cb40-3"><a href="geometric-morphometrics-1.html#cb40-3" aria-hidden="true" tabindex="-1"></a>mean.shape <span class="ot">&lt;-</span> <span class="fu">mshape</span>(Y.gpa<span class="sc">$</span>coords)</span>
-<span id="cb40-4"><a href="geometric-morphometrics-1.html#cb40-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plotRefToTarget</span>(pca<span class="sc">$</span>shapes<span class="sc">$</span>shapes.comp1<span class="sc">$</span>min, </span>
-<span id="cb40-5"><a href="geometric-morphometrics-1.html#cb40-5" aria-hidden="true" tabindex="-1"></a>                mean.shape)</span></code></pre></div>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="geometric-morphometrics-1.html#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># plot x/y maxima/minima</span></span>
+<span id="cb33-2"><a href="geometric-morphometrics-1.html#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="do">## x - minima</span></span>
+<span id="cb33-3"><a href="geometric-morphometrics-1.html#cb33-3" aria-hidden="true" tabindex="-1"></a>mean.shape <span class="ot">&lt;-</span> <span class="fu">mshape</span>(Y.gpa<span class="sc">$</span>coords)</span>
+<span id="cb33-4"><a href="geometric-morphometrics-1.html#cb33-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plotRefToTarget</span>(pca<span class="sc">$</span>shapes<span class="sc">$</span>shapes.comp1<span class="sc">$</span>min, </span>
+<span id="cb33-5"><a href="geometric-morphometrics-1.html#cb33-5" aria-hidden="true" tabindex="-1"></a>                mean.shape)</span></code></pre></div>
 <p><img src="supp_files/figure-html/min.max-1.png" width="100%" /></p>
-<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="geometric-morphometrics-1.html#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="do">## x - maxima</span></span>
-<span id="cb41-2"><a href="geometric-morphometrics-1.html#cb41-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plotRefToTarget</span>(pca<span class="sc">$</span>shapes<span class="sc">$</span>shapes.comp1<span class="sc">$</span>max, </span>
-<span id="cb41-3"><a href="geometric-morphometrics-1.html#cb41-3" aria-hidden="true" tabindex="-1"></a>                mean.shape)</span></code></pre></div>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="geometric-morphometrics-1.html#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="do">## x - maxima</span></span>
+<span id="cb34-2"><a href="geometric-morphometrics-1.html#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plotRefToTarget</span>(pca<span class="sc">$</span>shapes<span class="sc">$</span>shapes.comp1<span class="sc">$</span>max, </span>
+<span id="cb34-3"><a href="geometric-morphometrics-1.html#cb34-3" aria-hidden="true" tabindex="-1"></a>                mean.shape)</span></code></pre></div>
 <p><img src="supp_files/figure-html/min.max-2.png" width="100%" /></p>
-<div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="geometric-morphometrics-1.html#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="do">## y - minima</span></span>
-<span id="cb42-2"><a href="geometric-morphometrics-1.html#cb42-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plotRefToTarget</span>(pca<span class="sc">$</span>shapes<span class="sc">$</span>shapes.comp2<span class="sc">$</span>min, </span>
-<span id="cb42-3"><a href="geometric-morphometrics-1.html#cb42-3" aria-hidden="true" tabindex="-1"></a>                mean.shape)</span></code></pre></div>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="geometric-morphometrics-1.html#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="do">## y - minima</span></span>
+<span id="cb35-2"><a href="geometric-morphometrics-1.html#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plotRefToTarget</span>(pca<span class="sc">$</span>shapes<span class="sc">$</span>shapes.comp2<span class="sc">$</span>min, </span>
+<span id="cb35-3"><a href="geometric-morphometrics-1.html#cb35-3" aria-hidden="true" tabindex="-1"></a>                mean.shape)</span></code></pre></div>
 <p><img src="supp_files/figure-html/min.max-3.png" width="100%" /></p>
-<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="geometric-morphometrics-1.html#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="do">## y - maxima</span></span>
-<span id="cb43-2"><a href="geometric-morphometrics-1.html#cb43-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plotRefToTarget</span>(pca<span class="sc">$</span>shapes<span class="sc">$</span>shapes.comp2<span class="sc">$</span>max, </span>
-<span id="cb43-3"><a href="geometric-morphometrics-1.html#cb43-3" aria-hidden="true" tabindex="-1"></a>                mean.shape)</span></code></pre></div>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="geometric-morphometrics-1.html#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="do">## y - maxima</span></span>
+<span id="cb36-2"><a href="geometric-morphometrics-1.html#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plotRefToTarget</span>(pca<span class="sc">$</span>shapes<span class="sc">$</span>shapes.comp2<span class="sc">$</span>max, </span>
+<span id="cb36-3"><a href="geometric-morphometrics-1.html#cb36-3" aria-hidden="true" tabindex="-1"></a>                mean.shape)</span></code></pre></div>
 <p><img src="supp_files/figure-html/min.max-4.png" width="100%" /></p>
 </div>
 <div id="composite-pca-with-warp-grids" class="section level3" number="3.4.2">
 <h3><span class="header-section-number">3.4.2</span> Composite PCA with warp grids</h3>
-<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="geometric-morphometrics-1.html#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="do">## plot composite pca with PC1/2 max/min</span></span>
-<span id="cb44-2"><a href="geometric-morphometrics-1.html#cb44-2" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">&#39;figures/gm-pca.jpg&#39;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="geometric-morphometrics-1.html#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="do">## plot composite pca with PC1/2 max/min</span></span>
+<span id="cb37-2"><a href="geometric-morphometrics-1.html#cb37-2" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">&#39;figures/gm-pca.jpg&#39;</span>)</span></code></pre></div>
 <p><img src="figures/gm-pca.jpg" width="100%" /></p>
 </div>
 </div>
-<div id="procrustes-anova-shape-and-size" class="section level2" number="3.5">
-<h2><span class="header-section-number">3.5</span> Procrustes ANOVA: Shape and size</h2>
-<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="geometric-morphometrics-1.html#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="co"># shape</span></span>
-<span id="cb45-2"><a href="geometric-morphometrics-1.html#cb45-2" aria-hidden="true" tabindex="-1"></a>fit.sh.reg <span class="ot">&lt;-</span> <span class="fu">procD.lm</span>(shape <span class="sc">~</span> region,</span>
-<span id="cb45-3"><a href="geometric-morphometrics-1.html#cb45-3" aria-hidden="true" tabindex="-1"></a>                       <span class="at">data =</span> gdf,</span>
-<span id="cb45-4"><a href="geometric-morphometrics-1.html#cb45-4" aria-hidden="true" tabindex="-1"></a>                       <span class="at">print.progress =</span> <span class="cn">FALSE</span>,</span>
-<span id="cb45-5"><a href="geometric-morphometrics-1.html#cb45-5" aria-hidden="true" tabindex="-1"></a>                       <span class="at">iter =</span> <span class="dv">9999</span>)</span>
-<span id="cb45-6"><a href="geometric-morphometrics-1.html#cb45-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb45-7"><a href="geometric-morphometrics-1.html#cb45-7" aria-hidden="true" tabindex="-1"></a><span class="co"># shape</span></span>
-<span id="cb45-8"><a href="geometric-morphometrics-1.html#cb45-8" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(fit.sh.reg)</span></code></pre></div>
+<div id="procrustes-anova-allometry" class="section level2" number="3.5">
+<h2><span class="header-section-number">3.5</span> Procrustes ANOVA: Allometry</h2>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="geometric-morphometrics-1.html#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co"># allometry</span></span>
+<span id="cb38-2"><a href="geometric-morphometrics-1.html#cb38-2" aria-hidden="true" tabindex="-1"></a>fit.size <span class="ot">&lt;-</span> <span class="fu">procD.lm</span>(shape <span class="sc">~</span> size, </span>
+<span id="cb38-3"><a href="geometric-morphometrics-1.html#cb38-3" aria-hidden="true" tabindex="-1"></a>                     <span class="at">data =</span> gdf, </span>
+<span id="cb38-4"><a href="geometric-morphometrics-1.html#cb38-4" aria-hidden="true" tabindex="-1"></a>                     <span class="at">print.progress =</span> <span class="cn">FALSE</span>, </span>
+<span id="cb38-5"><a href="geometric-morphometrics-1.html#cb38-5" aria-hidden="true" tabindex="-1"></a>                     <span class="at">iter =</span> <span class="dv">9999</span>)</span>
+<span id="cb38-6"><a href="geometric-morphometrics-1.html#cb38-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-7"><a href="geometric-morphometrics-1.html#cb38-7" aria-hidden="true" tabindex="-1"></a><span class="co"># allometry</span></span>
+<span id="cb38-8"><a href="geometric-morphometrics-1.html#cb38-8" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(fit.size)</span></code></pre></div>
+<pre><code>## 
+## Analysis of Variance, using Residual Randomization
+## Permutation procedure: Randomization of null model residuals 
+## Number of permutations: 10000 
+## Estimation method: Ordinary Least Squares 
+## Sums of Squares and Cross-products: Type I 
+## Effect sizes (Z) based on F distributions
+## 
+##           Df      SS       MS     Rsq      F      Z Pr(&gt;F)    
+## size       1 0.11834 0.118340 0.14763 11.258 3.7912  1e-04 ***
+## Residuals 65 0.68324 0.010511 0.85237                         
+## Total     66 0.80158                                          
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Call: procD.lm(f1 = shape ~ size, iter = 9999, data = gdf, print.progress = FALSE)</code></pre>
+<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="geometric-morphometrics-1.html#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co"># allometry plots</span></span>
+<span id="cb40-2"><a href="geometric-morphometrics-1.html#cb40-2" aria-hidden="true" tabindex="-1"></a><span class="do">## regscore (Drake and Klingenberg 2008)</span></span>
+<span id="cb40-3"><a href="geometric-morphometrics-1.html#cb40-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(fit.size, </span>
+<span id="cb40-4"><a href="geometric-morphometrics-1.html#cb40-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">type =</span> <span class="st">&quot;regression&quot;</span>, </span>
+<span id="cb40-5"><a href="geometric-morphometrics-1.html#cb40-5" aria-hidden="true" tabindex="-1"></a>     <span class="at">reg.type =</span> <span class="st">&quot;RegScore&quot;</span>, </span>
+<span id="cb40-6"><a href="geometric-morphometrics-1.html#cb40-6" aria-hidden="true" tabindex="-1"></a>     <span class="at">predictor =</span> <span class="fu">log</span>(gdf<span class="sc">$</span>size), </span>
+<span id="cb40-7"><a href="geometric-morphometrics-1.html#cb40-7" aria-hidden="true" tabindex="-1"></a>     <span class="at">pch =</span> pch.gps, </span>
+<span id="cb40-8"><a href="geometric-morphometrics-1.html#cb40-8" aria-hidden="true" tabindex="-1"></a>     <span class="at">col =</span> col.gps)</span></code></pre></div>
+<p><img src="supp_files/figure-html/allom-1.png" width="100%" /></p>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="geometric-morphometrics-1.html#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="do">## common allometric component (Mitteroecker 2004)</span></span>
+<span id="cb41-2"><a href="geometric-morphometrics-1.html#cb41-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plotAllometry</span>(fit.size, </span>
+<span id="cb41-3"><a href="geometric-morphometrics-1.html#cb41-3" aria-hidden="true" tabindex="-1"></a>              <span class="at">size =</span> gdf<span class="sc">$</span>size, </span>
+<span id="cb41-4"><a href="geometric-morphometrics-1.html#cb41-4" aria-hidden="true" tabindex="-1"></a>              <span class="at">logsz =</span> <span class="cn">TRUE</span>, </span>
+<span id="cb41-5"><a href="geometric-morphometrics-1.html#cb41-5" aria-hidden="true" tabindex="-1"></a>              <span class="at">method =</span> <span class="st">&quot;CAC&quot;</span>, </span>
+<span id="cb41-6"><a href="geometric-morphometrics-1.html#cb41-6" aria-hidden="true" tabindex="-1"></a>              <span class="at">pch =</span> pch.gps, </span>
+<span id="cb41-7"><a href="geometric-morphometrics-1.html#cb41-7" aria-hidden="true" tabindex="-1"></a>              <span class="at">col =</span> col.gps)</span></code></pre></div>
+<p><img src="supp_files/figure-html/allom-2.png" width="100%" /></p>
+<div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="geometric-morphometrics-1.html#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="do">## size-shape pca (Mitteroecker 2004)</span></span>
+<span id="cb42-2"><a href="geometric-morphometrics-1.html#cb42-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plotAllometry</span>(fit.size, </span>
+<span id="cb42-3"><a href="geometric-morphometrics-1.html#cb42-3" aria-hidden="true" tabindex="-1"></a>              <span class="at">size =</span> gdf<span class="sc">$</span>size, </span>
+<span id="cb42-4"><a href="geometric-morphometrics-1.html#cb42-4" aria-hidden="true" tabindex="-1"></a>              <span class="at">logsz =</span> <span class="cn">TRUE</span>, </span>
+<span id="cb42-5"><a href="geometric-morphometrics-1.html#cb42-5" aria-hidden="true" tabindex="-1"></a>              <span class="at">method =</span> <span class="st">&quot;size.shape&quot;</span>, </span>
+<span id="cb42-6"><a href="geometric-morphometrics-1.html#cb42-6" aria-hidden="true" tabindex="-1"></a>              <span class="at">pch =</span> pch.gps, </span>
+<span id="cb42-7"><a href="geometric-morphometrics-1.html#cb42-7" aria-hidden="true" tabindex="-1"></a>              <span class="at">col =</span> col.gps)</span></code></pre></div>
+<p><img src="supp_files/figure-html/allom-3.png" width="100%" /></p>
+</div>
+<div id="procrustes-anova-shape-and-size" class="section level2" number="3.6">
+<h2><span class="header-section-number">3.6</span> Procrustes ANOVA: Shape and size</h2>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="geometric-morphometrics-1.html#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co"># shape</span></span>
+<span id="cb43-2"><a href="geometric-morphometrics-1.html#cb43-2" aria-hidden="true" tabindex="-1"></a>fit.sh.reg <span class="ot">&lt;-</span> <span class="fu">procD.lm</span>(shape <span class="sc">~</span> region,</span>
+<span id="cb43-3"><a href="geometric-morphometrics-1.html#cb43-3" aria-hidden="true" tabindex="-1"></a>                       <span class="at">data =</span> gdf,</span>
+<span id="cb43-4"><a href="geometric-morphometrics-1.html#cb43-4" aria-hidden="true" tabindex="-1"></a>                       <span class="at">print.progress =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb43-5"><a href="geometric-morphometrics-1.html#cb43-5" aria-hidden="true" tabindex="-1"></a>                       <span class="at">iter =</span> <span class="dv">9999</span>)</span>
+<span id="cb43-6"><a href="geometric-morphometrics-1.html#cb43-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-7"><a href="geometric-morphometrics-1.html#cb43-7" aria-hidden="true" tabindex="-1"></a><span class="co"># shape</span></span>
+<span id="cb43-8"><a href="geometric-morphometrics-1.html#cb43-8" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(fit.sh.reg)</span></code></pre></div>
 <pre><code>## 
 ## Analysis of Variance, using Residual Randomization
 ## Permutation procedure: Randomization of null model residuals 
@@ -399,14 +445,14 @@ div.csl-indent {
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 ## 
 ## Call: procD.lm(f1 = shape ~ region, iter = 9999, data = gdf, print.progress = FALSE)</code></pre>
-<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="geometric-morphometrics-1.html#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="co"># size</span></span>
-<span id="cb47-2"><a href="geometric-morphometrics-1.html#cb47-2" aria-hidden="true" tabindex="-1"></a>fit.sz.reg <span class="ot">&lt;-</span> <span class="fu">procD.lm</span>(size <span class="sc">~</span> region,</span>
-<span id="cb47-3"><a href="geometric-morphometrics-1.html#cb47-3" aria-hidden="true" tabindex="-1"></a>                       <span class="at">data =</span> gdf,</span>
-<span id="cb47-4"><a href="geometric-morphometrics-1.html#cb47-4" aria-hidden="true" tabindex="-1"></a>                       <span class="at">print.progress =</span> <span class="cn">FALSE</span>,</span>
-<span id="cb47-5"><a href="geometric-morphometrics-1.html#cb47-5" aria-hidden="true" tabindex="-1"></a>                       <span class="at">iter =</span> <span class="dv">9999</span>)</span>
-<span id="cb47-6"><a href="geometric-morphometrics-1.html#cb47-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb47-7"><a href="geometric-morphometrics-1.html#cb47-7" aria-hidden="true" tabindex="-1"></a><span class="co"># size</span></span>
-<span id="cb47-8"><a href="geometric-morphometrics-1.html#cb47-8" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(fit.sz.reg)</span></code></pre></div>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="geometric-morphometrics-1.html#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="co"># size</span></span>
+<span id="cb45-2"><a href="geometric-morphometrics-1.html#cb45-2" aria-hidden="true" tabindex="-1"></a>fit.sz.reg <span class="ot">&lt;-</span> <span class="fu">procD.lm</span>(size <span class="sc">~</span> region,</span>
+<span id="cb45-3"><a href="geometric-morphometrics-1.html#cb45-3" aria-hidden="true" tabindex="-1"></a>                       <span class="at">data =</span> gdf,</span>
+<span id="cb45-4"><a href="geometric-morphometrics-1.html#cb45-4" aria-hidden="true" tabindex="-1"></a>                       <span class="at">print.progress =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb45-5"><a href="geometric-morphometrics-1.html#cb45-5" aria-hidden="true" tabindex="-1"></a>                       <span class="at">iter =</span> <span class="dv">9999</span>)</span>
+<span id="cb45-6"><a href="geometric-morphometrics-1.html#cb45-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-7"><a href="geometric-morphometrics-1.html#cb45-7" aria-hidden="true" tabindex="-1"></a><span class="co"># size</span></span>
+<span id="cb45-8"><a href="geometric-morphometrics-1.html#cb45-8" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(fit.sz.reg)</span></code></pre></div>
 <pre><code>## 
 ## Analysis of Variance, using Residual Randomization
 ## Permutation procedure: Randomization of null model residuals 
@@ -424,18 +470,18 @@ div.csl-indent {
 ## 
 ## Call: procD.lm(f1 = size ~ region, iter = 9999, data = gdf, print.progress = FALSE)</code></pre>
 </div>
-<div id="modularity" class="section level2" number="3.6">
-<h2><span class="header-section-number">3.6</span> Modularity</h2>
-<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="geometric-morphometrics-1.html#cb49-1" aria-hidden="true" tabindex="-1"></a>land.gps <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;A&quot;</span>,<span class="st">&quot;A&quot;</span>,<span class="st">&quot;B&quot;</span>,<span class="st">&quot;B&quot;</span>,<span class="st">&quot;B&quot;</span>,<span class="st">&quot;A&quot;</span>,<span class="st">&quot;A&quot;</span>,<span class="st">&quot;A&quot;</span>,<span class="st">&quot;A&quot;</span>,<span class="st">&quot;A&quot;</span>,<span class="st">&quot;A&quot;</span>,<span class="st">&quot;A&quot;</span>,<span class="st">&quot;A&quot;</span>,<span class="st">&quot;A&quot;</span>,</span>
-<span id="cb49-2"><a href="geometric-morphometrics-1.html#cb49-2" aria-hidden="true" tabindex="-1"></a>              <span class="st">&quot;B&quot;</span>,<span class="st">&quot;B&quot;</span>,<span class="st">&quot;B&quot;</span>,<span class="st">&quot;B&quot;</span>,<span class="st">&quot;B&quot;</span>,<span class="st">&quot;B&quot;</span>,<span class="st">&quot;B&quot;</span>,<span class="st">&quot;B&quot;</span>,<span class="st">&quot;A&quot;</span>,<span class="st">&quot;A&quot;</span>,<span class="st">&quot;A&quot;</span>,<span class="st">&quot;A&quot;</span>,<span class="st">&quot;A&quot;</span>,<span class="st">&quot;A&quot;</span>,</span>
-<span id="cb49-3"><a href="geometric-morphometrics-1.html#cb49-3" aria-hidden="true" tabindex="-1"></a>              <span class="st">&quot;A&quot;</span>,<span class="st">&quot;A&quot;</span>)</span>
-<span id="cb49-4"><a href="geometric-morphometrics-1.html#cb49-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb49-5"><a href="geometric-morphometrics-1.html#cb49-5" aria-hidden="true" tabindex="-1"></a>mod <span class="ot">&lt;-</span> <span class="fu">modularity.test</span>(Y.gpa<span class="sc">$</span>coords,</span>
-<span id="cb49-6"><a href="geometric-morphometrics-1.html#cb49-6" aria-hidden="true" tabindex="-1"></a>                       <span class="at">partition.gp =</span> land.gps,</span>
-<span id="cb49-7"><a href="geometric-morphometrics-1.html#cb49-7" aria-hidden="true" tabindex="-1"></a>                       <span class="at">iter =</span> <span class="dv">9999</span>,</span>
-<span id="cb49-8"><a href="geometric-morphometrics-1.html#cb49-8" aria-hidden="true" tabindex="-1"></a>                       <span class="at">print.progress =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb49-9"><a href="geometric-morphometrics-1.html#cb49-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb49-10"><a href="geometric-morphometrics-1.html#cb49-10" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mod)</span></code></pre></div>
+<div id="modularity" class="section level2" number="3.7">
+<h2><span class="header-section-number">3.7</span> Modularity</h2>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="geometric-morphometrics-1.html#cb47-1" aria-hidden="true" tabindex="-1"></a>land.gps <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;A&quot;</span>,<span class="st">&quot;A&quot;</span>,<span class="st">&quot;B&quot;</span>,<span class="st">&quot;B&quot;</span>,<span class="st">&quot;B&quot;</span>,<span class="st">&quot;A&quot;</span>,<span class="st">&quot;A&quot;</span>,<span class="st">&quot;A&quot;</span>,<span class="st">&quot;A&quot;</span>,<span class="st">&quot;A&quot;</span>,<span class="st">&quot;A&quot;</span>,<span class="st">&quot;A&quot;</span>,<span class="st">&quot;A&quot;</span>,<span class="st">&quot;A&quot;</span>,</span>
+<span id="cb47-2"><a href="geometric-morphometrics-1.html#cb47-2" aria-hidden="true" tabindex="-1"></a>              <span class="st">&quot;B&quot;</span>,<span class="st">&quot;B&quot;</span>,<span class="st">&quot;B&quot;</span>,<span class="st">&quot;B&quot;</span>,<span class="st">&quot;B&quot;</span>,<span class="st">&quot;B&quot;</span>,<span class="st">&quot;B&quot;</span>,<span class="st">&quot;B&quot;</span>,<span class="st">&quot;A&quot;</span>,<span class="st">&quot;A&quot;</span>,<span class="st">&quot;A&quot;</span>,<span class="st">&quot;A&quot;</span>,<span class="st">&quot;A&quot;</span>,<span class="st">&quot;A&quot;</span>,</span>
+<span id="cb47-3"><a href="geometric-morphometrics-1.html#cb47-3" aria-hidden="true" tabindex="-1"></a>              <span class="st">&quot;A&quot;</span>,<span class="st">&quot;A&quot;</span>)</span>
+<span id="cb47-4"><a href="geometric-morphometrics-1.html#cb47-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-5"><a href="geometric-morphometrics-1.html#cb47-5" aria-hidden="true" tabindex="-1"></a>mod <span class="ot">&lt;-</span> <span class="fu">modularity.test</span>(Y.gpa<span class="sc">$</span>coords,</span>
+<span id="cb47-6"><a href="geometric-morphometrics-1.html#cb47-6" aria-hidden="true" tabindex="-1"></a>                       <span class="at">partition.gp =</span> land.gps,</span>
+<span id="cb47-7"><a href="geometric-morphometrics-1.html#cb47-7" aria-hidden="true" tabindex="-1"></a>                       <span class="at">iter =</span> <span class="dv">9999</span>,</span>
+<span id="cb47-8"><a href="geometric-morphometrics-1.html#cb47-8" aria-hidden="true" tabindex="-1"></a>                       <span class="at">print.progress =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb47-9"><a href="geometric-morphometrics-1.html#cb47-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-10"><a href="geometric-morphometrics-1.html#cb47-10" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mod)</span></code></pre></div>
 <pre><code>## 
 ## Call:
 ## modularity.test(A = Y.gpa$coords, partition.gp = land.gps, iter = 9999,      print.progress = FALSE) 
@@ -449,18 +495,18 @@ div.csl-indent {
 ## Effect Size: -4.7686
 ## 
 ## Based on 10000 random permutations</code></pre>
-<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="geometric-morphometrics-1.html#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="do">## modularity plot</span></span>
-<span id="cb51-2"><a href="geometric-morphometrics-1.html#cb51-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(mod)</span></code></pre></div>
+<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="geometric-morphometrics-1.html#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="do">## modularity plot</span></span>
+<span id="cb49-2"><a href="geometric-morphometrics-1.html#cb49-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(mod)</span></code></pre></div>
 <p><img src="supp_files/figure-html/mod-1.png" width="100%" /></p>
 </div>
-<div id="morphological-integration" class="section level2" number="3.7">
-<h2><span class="header-section-number">3.7</span> Morphological integration</h2>
-<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="geometric-morphometrics-1.html#cb52-1" aria-hidden="true" tabindex="-1"></a>it <span class="ot">&lt;-</span> <span class="fu">integration.test</span>(Y.gpa<span class="sc">$</span>coords,</span>
-<span id="cb52-2"><a href="geometric-morphometrics-1.html#cb52-2" aria-hidden="true" tabindex="-1"></a>                       <span class="at">partition.gp =</span> land.gps,</span>
-<span id="cb52-3"><a href="geometric-morphometrics-1.html#cb52-3" aria-hidden="true" tabindex="-1"></a>                       <span class="at">print.progress =</span> <span class="cn">FALSE</span>,</span>
-<span id="cb52-4"><a href="geometric-morphometrics-1.html#cb52-4" aria-hidden="true" tabindex="-1"></a>                       <span class="at">iter =</span> <span class="dv">9999</span>)</span>
-<span id="cb52-5"><a href="geometric-morphometrics-1.html#cb52-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-6"><a href="geometric-morphometrics-1.html#cb52-6" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(it)</span></code></pre></div>
+<div id="morphological-integration" class="section level2" number="3.8">
+<h2><span class="header-section-number">3.8</span> Morphological integration</h2>
+<div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="geometric-morphometrics-1.html#cb50-1" aria-hidden="true" tabindex="-1"></a>it <span class="ot">&lt;-</span> <span class="fu">integration.test</span>(Y.gpa<span class="sc">$</span>coords,</span>
+<span id="cb50-2"><a href="geometric-morphometrics-1.html#cb50-2" aria-hidden="true" tabindex="-1"></a>                       <span class="at">partition.gp =</span> land.gps,</span>
+<span id="cb50-3"><a href="geometric-morphometrics-1.html#cb50-3" aria-hidden="true" tabindex="-1"></a>                       <span class="at">print.progress =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb50-4"><a href="geometric-morphometrics-1.html#cb50-4" aria-hidden="true" tabindex="-1"></a>                       <span class="at">iter =</span> <span class="dv">9999</span>)</span>
+<span id="cb50-5"><a href="geometric-morphometrics-1.html#cb50-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-6"><a href="geometric-morphometrics-1.html#cb50-6" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(it)</span></code></pre></div>
 <pre><code>## 
 ## Call:
 ## integration.test(A = Y.gpa$coords, partition.gp = land.gps, iter = 9999,      print.progress = FALSE) 
@@ -474,34 +520,34 @@ div.csl-indent {
 ## P-value: 1e-04
 ## 
 ## Based on 10000 random permutations</code></pre>
-<div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb54-1"><a href="geometric-morphometrics-1.html#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="do">## integration plot</span></span>
-<span id="cb54-2"><a href="geometric-morphometrics-1.html#cb54-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(it)</span></code></pre></div>
+<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="geometric-morphometrics-1.html#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="do">## integration plot</span></span>
+<span id="cb52-2"><a href="geometric-morphometrics-1.html#cb52-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(it)</span></code></pre></div>
 <p><img src="supp_files/figure-html/integ-1.png" width="100%" /></p>
 </div>
-<div id="mean-shapes" class="section level2" number="3.8">
-<h2><span class="header-section-number">3.8</span> Mean shapes</h2>
-<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="geometric-morphometrics-1.html#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="co"># subset landmark coordinates to produce mean shapes</span></span>
-<span id="cb55-2"><a href="geometric-morphometrics-1.html#cb55-2" aria-hidden="true" tabindex="-1"></a>new.coords <span class="ot">&lt;-</span> <span class="fu">coords.subset</span>(<span class="at">A =</span> Y.gpa<span class="sc">$</span>coords,</span>
-<span id="cb55-3"><a href="geometric-morphometrics-1.html#cb55-3" aria-hidden="true" tabindex="-1"></a>                            <span class="at">group =</span> qdata<span class="sc">$</span>region)</span>
-<span id="cb55-4"><a href="geometric-morphometrics-1.html#cb55-4" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(new.coords)</span></code></pre></div>
+<div id="mean-shapes" class="section level2" number="3.9">
+<h2><span class="header-section-number">3.9</span> Mean shapes</h2>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="geometric-morphometrics-1.html#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="co"># subset landmark coordinates to produce mean shapes</span></span>
+<span id="cb53-2"><a href="geometric-morphometrics-1.html#cb53-2" aria-hidden="true" tabindex="-1"></a>new.coords <span class="ot">&lt;-</span> <span class="fu">coords.subset</span>(<span class="at">A =</span> Y.gpa<span class="sc">$</span>coords,</span>
+<span id="cb53-3"><a href="geometric-morphometrics-1.html#cb53-3" aria-hidden="true" tabindex="-1"></a>                            <span class="at">group =</span> qdata<span class="sc">$</span>region)</span>
+<span id="cb53-4"><a href="geometric-morphometrics-1.html#cb53-4" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(new.coords)</span></code></pre></div>
 <pre><code>## [1] &quot;north&quot; &quot;south&quot;</code></pre>
-<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="geometric-morphometrics-1.html#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="co"># group shape means</span></span>
-<span id="cb57-2"><a href="geometric-morphometrics-1.html#cb57-2" aria-hidden="true" tabindex="-1"></a>mean <span class="ot">&lt;-</span> <span class="fu">lapply</span>(new.coords, mshape)</span>
-<span id="cb57-3"><a href="geometric-morphometrics-1.html#cb57-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb57-4"><a href="geometric-morphometrics-1.html#cb57-4" aria-hidden="true" tabindex="-1"></a><span class="do">## plot mean shape north</span></span>
-<span id="cb57-5"><a href="geometric-morphometrics-1.html#cb57-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(mean<span class="sc">$</span>north)</span></code></pre></div>
+<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="geometric-morphometrics-1.html#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="co"># group shape means</span></span>
+<span id="cb55-2"><a href="geometric-morphometrics-1.html#cb55-2" aria-hidden="true" tabindex="-1"></a>mean <span class="ot">&lt;-</span> <span class="fu">lapply</span>(new.coords, mshape)</span>
+<span id="cb55-3"><a href="geometric-morphometrics-1.html#cb55-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-4"><a href="geometric-morphometrics-1.html#cb55-4" aria-hidden="true" tabindex="-1"></a><span class="do">## plot mean shape north</span></span>
+<span id="cb55-5"><a href="geometric-morphometrics-1.html#cb55-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(mean<span class="sc">$</span>north)</span></code></pre></div>
 <p><img src="supp_files/figure-html/mshape-1.png" width="100%" /></p>
-<div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb58-1"><a href="geometric-morphometrics-1.html#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="do">## plot mean shape south</span></span>
-<span id="cb58-2"><a href="geometric-morphometrics-1.html#cb58-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(mean<span class="sc">$</span>south)</span></code></pre></div>
+<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="geometric-morphometrics-1.html#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="do">## plot mean shape south</span></span>
+<span id="cb56-2"><a href="geometric-morphometrics-1.html#cb56-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(mean<span class="sc">$</span>south)</span></code></pre></div>
 <p><img src="supp_files/figure-html/mshape-2.png" width="100%" /></p>
-<div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="geometric-morphometrics-1.html#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="do">## comparison plot</span></span>
-<span id="cb59-2"><a href="geometric-morphometrics-1.html#cb59-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plotRefToTarget</span>(mean<span class="sc">$</span>north,</span>
-<span id="cb59-3"><a href="geometric-morphometrics-1.html#cb59-3" aria-hidden="true" tabindex="-1"></a>                mean<span class="sc">$</span>south,</span>
-<span id="cb59-4"><a href="geometric-morphometrics-1.html#cb59-4" aria-hidden="true" tabindex="-1"></a>                <span class="at">method =</span> <span class="st">&quot;points&quot;</span>,</span>
-<span id="cb59-5"><a href="geometric-morphometrics-1.html#cb59-5" aria-hidden="true" tabindex="-1"></a>                <span class="at">mag =</span> <span class="dv">2</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="geometric-morphometrics-1.html#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="do">## comparison plot</span></span>
+<span id="cb57-2"><a href="geometric-morphometrics-1.html#cb57-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plotRefToTarget</span>(mean<span class="sc">$</span>north,</span>
+<span id="cb57-3"><a href="geometric-morphometrics-1.html#cb57-3" aria-hidden="true" tabindex="-1"></a>                mean<span class="sc">$</span>south,</span>
+<span id="cb57-4"><a href="geometric-morphometrics-1.html#cb57-4" aria-hidden="true" tabindex="-1"></a>                <span class="at">method =</span> <span class="st">&quot;points&quot;</span>,</span>
+<span id="cb57-5"><a href="geometric-morphometrics-1.html#cb57-5" aria-hidden="true" tabindex="-1"></a>                <span class="at">mag =</span> <span class="dv">2</span>)</span></code></pre></div>
 <p><img src="supp_files/figure-html/mshape-3.png" width="100%" /></p>
-<div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="geometric-morphometrics-1.html#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="do">## composite figure</span></span>
-<span id="cb60-2"><a href="geometric-morphometrics-1.html#cb60-2" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">&#39;figures/gm-mshape.jpg&#39;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb58-1"><a href="geometric-morphometrics-1.html#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="do">## composite figure</span></span>
+<span id="cb58-2"><a href="geometric-morphometrics-1.html#cb58-2" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">&#39;figures/gm-mshape.jpg&#39;</span>)</span></code></pre></div>
 <p><img src="figures/gm-mshape.jpg" width="100%" /></p>
 
 </div>
