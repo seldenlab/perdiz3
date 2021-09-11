@@ -31,4 +31,5 @@ procrustes-anova-allometry
 procrustes-anova-shape-and-size
 modularity
 morphological-integration
+morphological-disparity
 mean-shapes
