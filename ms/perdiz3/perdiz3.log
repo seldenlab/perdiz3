@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.9)  10 SEP 2021 16:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.9)  11 SEP 2021 06:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -579,7 +579,7 @@ Package rerunfilecheck Info: File `perdiz3.out' has not changed.
 Here is how much of TeX's memory you used:
  8686 strings out of 480559
  129565 string characters out of 5901529
- 447260 words of memory out of 5000000
+ 448260 words of memory out of 5000000
  26130 multiletter control sequences out of 15000+600000
  410862 words of font info for 53 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -600,7 +600,7 @@ fonts/cm/cmti10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti8.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTe
 X/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/Users/seldenjrz/AppD
 ata/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on perdiz3.pdf (11 pages, 9492726 bytes).
+Output written on perdiz3.pdf (11 pages, 9492885 bytes).
 PDF statistics:
  406 PDF objects out of 1000 (max. 8388607)
  280 compressed objects within 3 object streams
