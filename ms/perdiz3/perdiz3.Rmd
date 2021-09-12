@@ -100,8 +100,6 @@ knitr::include_graphics("ms-figs/figure5.jpg")
 
 The _shape boundary_ empirically delineates two discrete _behavioral regions_ in the ancestral Caddo area. That the Perdiz arrow points recovered from Caddo burials north and south of the _shape boundary_ were found to differ significantly, expands the scope of the _behavioral regions_ to include a third class of artifacts (Caddo bottles, bifaces, and—now—arrow points) (Selden Jr, et al. 2021; Selden Jr. 2018a, 2018b, 2019, 2021b; Selden Jr., et al. 2020; Selden Jr., et al. 2018). This study clearly illustrates that those morphological differences among Perdiz arrow points found in the northern and southern _behavioral regions_ are predictable, and can be identified using the standard suite of linear metrics regularly collected as part of cultural resource management endeavors. The geometric morphometric analysis demonstrated significant morphological differences in basal morphology for Perdiz arrow points from the two _behavioral regions_.
 
-
-
 # Acknowledgments {-}
 
 We express our gratitude to the Caddo Nation of Oklahoma and the Anthropology and Archaeology Laboratory at Stephen F. Austin State University for the requisite permissions and access to the NAGPRA objects from the Washington Square Mound site and Turner collections, and to Tom A. Middlebrook for brokering access to the Perdiz arrow points from burials at the Morse Mound site. Thanks also to the editor and reviewers for their useful comments and constructive criticisms, which further improved this manuscript.
