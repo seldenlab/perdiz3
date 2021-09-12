@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.16)  12 SEP 2021 04:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.16)  12 SEP 2021 04:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -443,19 +443,22 @@ Package pdftex.def Info: ms-figs/figure4.jpg  used on input line 329.
 (pdftex.def)             Requested size: 338.0pt x 353.20929pt.
 [5] [6 <./ms-figs/figure2.pdf>]
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 3
-34.
+41.
 (c:/Users/selde/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 334.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 341.
 <ms-figs/figure5.jpg, id=303, 1913.7096pt x 938.0646pt>
 File: ms-figs/figure5.jpg Graphic file (type jpg)
 <use ms-figs/figure5.jpg>
-Package pdftex.def Info: ms-figs/figure5.jpg  used on input line 347.
+Package pdftex.def Info: ms-figs/figure5.jpg  used on input line 354.
 (pdftex.def)             Requested size: 338.0pt x 165.68102pt.
-[7 <./ms-figs/figure3.jpg>]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[7 <./ms-figs/figure3.jpg>]
+Underfull \vbox (badness 3735) has occurred while \output is active []
 
 [8 <./ms-figs/figure4.jpg>] (./perdiz3.bbl [9 <./ms-figs/figure5.jpg>]
 Underfull \hbox (badness 3219) in paragraph at lines 106--112
@@ -553,7 +556,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 222--229
 . 1111 / 2041 -[] 210X . 13029https :
  []
 
-
+[11]
 Underfull \hbox (badness 5607) in paragraph at lines 242--248
 []\OT1/cmr/m/n/8 M.L. Col-lyer, D.J. Sekora, D.C. Adams, A method for anal-y-si
 s of phe-
@@ -577,7 +580,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 242--248
  www . ncbi . nlm . nih . gov / pmc /
  []
 
-[11]) [12] (./perdiz3.aux)
+) [12] (./perdiz3.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -588,11 +591,11 @@ Package rerunfilecheck Info: File `perdiz3.out' has not changed.
 Here is how much of TeX's memory you used:
  8612 strings out of 481288
  126967 string characters out of 5915637
- 433869 words of memory out of 5000000
+ 432869 words of memory out of 5000000
  25325 multiletter control sequences out of 15000+600000
  410862 words of font info for 53 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 71i,8n,74p,628b,475s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,8n,74p,628b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/Users/selde/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmbsy10.pfb><c:/Users/selde/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmbx10.pfb><c:/Users/selde/AppData/Roaming/TinyTeX/texmf-di
@@ -609,7 +612,7 @@ ata/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb><c:/Use
 rs/selde/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt
 10.pfb><c:/Users/selde/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmtt8.pfb>
-Output written on perdiz3.pdf (12 pages, 9486702 bytes).
+Output written on perdiz3.pdf (12 pages, 9487033 bytes).
 PDF statistics:
  445 PDF objects out of 1000 (max. 8388607)
  321 compressed objects within 4 object streams
