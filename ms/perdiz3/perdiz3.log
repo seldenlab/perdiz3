@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.16)  12 SEP 2021 03:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.16)  12 SEP 2021 03:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -454,12 +454,6 @@ File: ms-figs/figure5.jpg Graphic file (type jpg)
 <use ms-figs/figure5.jpg>
 Package pdftex.def Info: ms-figs/figure5.jpg  used on input line 346.
 (pdftex.def)             Requested size: 338.0pt x 165.68102pt.
-
-Overfull \hbox (2.2505pt too wide) in paragraph at lines 359--367
-[]\OT1/cmr/m/n/10 Recent ge-o-met-ric mor-pho-me-t-ric stud-ies have il-lus-tra
-ted a clearly dis-cernible
- []
-
 [7 <./ms-figs/figure3.jpg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -559,7 +553,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 227--234
 . 1111 / 2041 -[] 210X . 13029https :
  []
 
-[11]
+
 Underfull \hbox (badness 5607) in paragraph at lines 247--253
 []\OT1/cmr/m/n/8 M.L. Col-lyer, D.J. Sekora, D.C. Adams, A method for anal-y-si
 s of phe-
@@ -583,7 +577,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 247--253
  www . ncbi . nlm . nih . gov / pmc /
  []
 
-) [12] (./perdiz3.aux)
+[11]) [12] (./perdiz3.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -594,11 +588,11 @@ Package rerunfilecheck Info: File `perdiz3.out' has not changed.
 Here is how much of TeX's memory you used:
  8614 strings out of 481288
  126986 string characters out of 5915637
- 432907 words of memory out of 5000000
+ 433907 words of memory out of 5000000
  25326 multiletter control sequences out of 15000+600000
  410862 words of font info for 53 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 71i,8n,74p,628b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,8n,74p,628b,475s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/Users/selde/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmbsy10.pfb><c:/Users/selde/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmbx10.pfb><c:/Users/selde/AppData/Roaming/TinyTeX/texmf-di
@@ -615,10 +609,10 @@ ata/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb><c:/Use
 rs/selde/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt
 10.pfb><c:/Users/selde/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmtt8.pfb>
-Output written on perdiz3.pdf (12 pages, 9486918 bytes).
+Output written on perdiz3.pdf (12 pages, 9486776 bytes).
 PDF statistics:
- 448 PDF objects out of 1000 (max. 8388607)
- 323 compressed objects within 4 object streams
+ 447 PDF objects out of 1000 (max. 8388607)
+ 322 compressed objects within 4 object streams
  77 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
