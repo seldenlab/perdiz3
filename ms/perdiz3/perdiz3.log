@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.16)  13 SEP 2021 05:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.16)  13 SEP 2021 06:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -397,19 +397,19 @@ File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 75.
 
-Overfull \hbox (11.8999pt too wide) in paragraph at lines 77--113
+Overfull \hbox (11.8999pt too wide) in paragraph at lines 77--112
 \OT1/cmr/m/n/10 for dis-tinct \OT1/cmr/m/it/10 be-hav-ioral re-gions\OT1/cmr/m/
 n/10 , across which ma-te-rial cul-ture from Caddo burials---
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--113
+Underfull \hbox (badness 10000) in paragraph at lines 77--112
 
  []
 
 [1{c:/Users/selde/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdf
 tex.map}]
-Overfull \hbox (5.47282pt too wide) in paragraph at lines 138--145
+Overfull \hbox (5.47282pt too wide) in paragraph at lines 137--144
 []\OT1/cmr/m/n/10 [t]riangular blade with edges usu-ally quite straight but som
 e-times slightly
  []
@@ -417,7 +417,7 @@ e-times slightly
 <ms-figs/figure1.jpg, id=67, 4296.05pt x 3151.775pt>
 File: ms-figs/figure1.jpg Graphic file (type jpg)
 <use ms-figs/figure1.jpg>
-Package pdftex.def Info: ms-figs/figure1.jpg  used on input line 162.
+Package pdftex.def Info: ms-figs/figure1.jpg  used on input line 161.
 (pdftex.def)             Requested size: 338.0pt x 247.96313pt.
 [2] [3 <./ms-figs/figure1.jpg>] [4]
 
@@ -426,48 +426,48 @@ pdfTeX warning: pdflatex.exe (file ./ms-figs/figure2.pdf): PDF inclusion: found
 <ms-figs/figure2.pdf, id=152, 803.93753pt x 1267.34477pt>
 File: ms-figs/figure2.pdf Graphic file (type pdf)
 <use ms-figs/figure2.pdf>
-Package pdftex.def Info: ms-figs/figure2.pdf  used on input line 264.
+Package pdftex.def Info: ms-figs/figure2.pdf  used on input line 263.
 (pdftex.def)             Requested size: 321.09897pt x 506.19409pt.
 
-LaTeX Warning: Float too large for page by 8.21082pt on input line 265.
+LaTeX Warning: Float too large for page by 8.21082pt on input line 264.
 
 <ms-figs/figure3.jpg, id=193, 1012.0209pt x 617.4267pt>
 File: ms-figs/figure3.jpg Graphic file (type jpg)
 <use ms-figs/figure3.jpg>
-Package pdftex.def Info: ms-figs/figure3.jpg  used on input line 313.
+Package pdftex.def Info: ms-figs/figure3.jpg  used on input line 312.
 (pdftex.def)             Requested size: 338.0pt x 206.21036pt.
 [5] [6 <./ms-figs/figure2.pdf>]
 <ms-figs/figure4.jpg, id=320, 5281.7325pt x 5520.625pt>
 File: ms-figs/figure4.jpg Graphic file (type jpg)
 <use ms-figs/figure4.jpg>
-Package pdftex.def Info: ms-figs/figure4.jpg  used on input line 335.
+Package pdftex.def Info: ms-figs/figure4.jpg  used on input line 334.
 (pdftex.def)             Requested size: 338.0pt x 353.20929pt.
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 3
-52.
+51.
 (c:/Users/selde/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 352.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 351.
 [7 <./ms-figs/figure3.jpg>]
 <ms-figs/figure5.jpg, id=335, 1913.7096pt x 938.0646pt>
 File: ms-figs/figure5.jpg Graphic file (type jpg)
 <use ms-figs/figure5.jpg>
-Package pdftex.def Info: ms-figs/figure5.jpg  used on input line 366.
+Package pdftex.def Info: ms-figs/figure5.jpg  used on input line 365.
 (pdftex.def)             Requested size: 338.0pt x 165.68102pt.
 [8 <./ms-figs/figure4.jpg>] [9 <./ms-figs/figure5.jpg>]
 <ms-figs/figure6.pdf, id=362, 733.35884pt x 704.87444pt>
 File: ms-figs/figure6.pdf Graphic file (type pdf)
 <use ms-figs/figure6.pdf>
-Package pdftex.def Info: ms-figs/figure6.pdf  used on input line 419.
+Package pdftex.def Info: ms-figs/figure6.pdf  used on input line 418.
 (pdftex.def)             Requested size: 338.0pt x 324.87pt.
 <ms-figs/figure7.pdf, id=363, 3246.18779pt x 6412.79799pt>
 File: ms-figs/figure7.pdf Graphic file (type pdf)
 <use ms-figs/figure7.pdf>
-Package pdftex.def Info: ms-figs/figure7.pdf  used on input line 423.
+Package pdftex.def Info: ms-figs/figure7.pdf  used on input line 422.
 (pdftex.def)             Requested size: 287.30206pt x 567.5375pt.
 
-LaTeX Warning: Float too large for page by 60.05423pt on input line 424.
+LaTeX Warning: Float too large for page by 60.05423pt on input line 423.
 
 [10 <./ms-figs/figure6.pdf>] [11 <./ms-figs/figure7.pdf>] (./perdiz3.bbl [12]
 Underfull \hbox (badness 3219) in paragraph at lines 106--112
@@ -621,7 +621,7 @@ ata/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb><c:/Use
 rs/selde/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt
 10.pfb><c:/Users/selde/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmtt8.pfb>
-Output written on perdiz3.pdf (15 pages, 10859303 bytes).
+Output written on perdiz3.pdf (15 pages, 10859269 bytes).
 PDF statistics:
  551 PDF objects out of 1000 (max. 8388607)
  381 compressed objects within 4 object streams
