@@ -112,7 +112,7 @@ Whether---and to what extent---it may be possible to identify specific groups of
 knitr::include_graphics("ms-figs/figure6.pdf")
 ```
 
-```{r fig7, out.width = "100%", dpi = 300, echo=FALSE, warning=FALSE, fig.cap="Mean shapes and comparisons of morphological differences in Gahagan biface shape by site at; a, Mounds Plantation (north, gray) and Gahagan Mound (south, black); b, Mounds Plantation (north, gray) and George C. Davis (south, black); c, Gahagan Mound (south, gray) and George C. Davis (south, black) (DOI 10.17605/OSF.IO/JKXE3)."}
+```{r fig7, out.width = "85%", dpi = 300, echo=FALSE, warning=FALSE, fig.cap="Mean shapes and comparisons of morphological differences in Gahagan biface shape by site from burial contexts at the Gahagan Mound, George C. Davis, and Mounds Plantation sites, where comparisons in red reflect significant differences (DOI 10.17605/OSF.IO/2G95W)."}
 knitr::include_graphics("ms-figs/figure7.pdf")
 ```
 
