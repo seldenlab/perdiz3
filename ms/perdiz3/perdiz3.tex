@@ -238,7 +238,7 @@ Nacogdoches, and Shelby counties were used for this study
 (\href{https://seldenlab.github.io/perdiz3/}{supplementary materials}).
 A standard suite of linear metrics was collected for each specimen,
 including maximum length, width, thickness, stem length, and stem width.
-Following collection, data were imported to R
+Following collection, data were imported to R 4.1.1 \cite{RN8584}
 (\href{https://seldenlab.github.io/perdiz3/}{supplementary materials}),
 where boxplots were produced, along with a Principal Components Analysis
 (PCA) followed by analyses of variance (ANOVA) to test whether the
@@ -266,14 +266,17 @@ than a three-dimensional, study
 \subsection{\texorpdfstring{\emph{Predictive
 model}}{Predictive model}}\label{predictive-model}}
 
-For the support vector machine, linear data were imported to Python
-(\href{https://seldenlab.github.io/perdiz3/}{supplementary materials}),
-where they were split into training (75 percent) and testing (25
-percent) subsets. A standard scaler was used to decrease the sensitivity
-of the algorithm to outliers by standardizing features, and a nested
-cross validation of the training set was used to achieve unbiased
-estimates of model performance, resulting in a mean cross validation
-score of 86 percent
+The utility of support vector machines to classify archaeological
+materials has increased greatly with the rise of big data
+\cite{RN9515,RN9516,RN9514,RN9513}. All linear data were imported to
+Python and modeled using the \texttt{sklearn} package
+(\href{https://seldenlab.github.io/perdiz3/}{supplementary materials}).
+Data were subsequently split into training (75 percent) and testing (25
+percent) subsets. A \emph{standard scaler} was used to decrease the
+sensitivity of the algorithm to outliers by standardizing features, and
+a \emph{nested cross validation} of the training set was used to achieve
+unbiased estimates of model performance, resulting in a mean cross
+validation score of 86 percent
 (\href{https://seldenlab.github.io/perdiz3/}{supplementary materials}).
 The model was subsequently fit on the training set, yielding a receiver
 operator curve score of 97 percent, and an accuracy score of 94 percent
@@ -330,13 +333,15 @@ between blade and basal morphology using a z-score \cite{RN8340}.
 \end{figure}
 
 The analysis of modularity, which compares within-module covariation of
-landmarks against between-module covariation was significant (Fig. 4),
-demonstrating that Perdiz arrow point blades and bases are modular. The
-test for morphological integration was also significant (Fig. 4),
-indicating that the blades and bases of Perdiz arrow points are
-independent (modular), and integrated. These results demonstrate that
-blade and base shapes for Perdiz arrow points are predictable; a finding
-that would have great utility in studies of Perdiz arrow point
+landmarks against between-module covariation was significant (Fig. 4 and
+\href{https://seldenlab.github.io/perdiz3/}{supplementary materials}),
+demonstrating that Perdiz arrow point blades and bases are, in fact,
+modular. The test for morphological integration was also significant
+(Fig. 4 and \href{https://seldenlab.github.io/perdiz3/}{supplementary
+materials}), indicating that the blades and bases of Perdiz arrow points
+are independent (modular), and integrated. These results demonstrate
+that blade and base shapes for Perdiz arrow points are predictable; a
+finding that would have great utility in studies of Perdiz arrow point
 morphology that incorporate fragmentary specimens.
 
 A Procrustes ANOVA was used to test whether a significant difference
@@ -348,10 +353,11 @@ vs.~southern communities), and results indicate a significant difference
 (RRPP = 10,000; Rsq = 0.0536; Pr(\textgreater F) = 0.0161). A comparison
 of mean consensus configurations was used to characterize intraspecific
 shape variation of Perdiz arrow points from the northern and southern
-\emph{behavioral regions}. Differential morphology occurs in the basal
-area, where the angle between the shoulder and base is more acute, with
-a base that is generally shorter and narrower in the southern
-\emph{behavioral region} than it is to the north (Fig. 5).
+\emph{behavioral regions}. Differential morphology occurs primarily in
+the basal area, where the angle between the shoulder and base is more
+acute, with a base that is generally shorter and narrower in the
+southern \emph{behavioral region} than it is in the north (Fig. 5 and
+\href{https://seldenlab.github.io/perdiz3/}{supplementary materials}).
 
 \begin{figure}
 \includegraphics[width=1\linewidth]{ms-figs/figure5} \caption{Mean shapes for Perdiz arrow points from the northern (left), and southern (center) behavioral region. In the comparison of the two (right), the northern behavioral region is represented by gray circles, and the southern, by black. Additional information related to the mean shapes, including those data and code needed to reproduce these results, can be found in the supplemental materials at https://seldenlab.github.io/perdiz3/.}\label{fig:fig5}
@@ -365,24 +371,54 @@ The \emph{shape boundary} empirically delineates two discrete
 arrow points recovered from Caddo burials north and south of the
 \emph{shape boundary} were found to differ significantly, expands the
 scope of the \emph{behavioral regions} to include a third class of
-artifacts (Caddo bottles, bifaces, and---now---arrow points) (Selden Jr,
-et al.~2021; Selden Jr.~2018a, 2018b, 2019, 2021b; Selden Jr., et
-al.~2020; Selden Jr., et al.~2018). This study clearly illustrates that
-those morphological differences among Perdiz arrow points found in the
-northern and southern \emph{behavioral regions} are predictable, and can
-be identified using the standard suite of linear metrics regularly
-collected as part of cultural resource management endeavors.
+artifacts (Caddo bottles, bifaces, and---now---arrow points)
+\cite{RN8074,RN7927,RN8370,RN8312,RN8322,RN8158}. This study clearly
+illustrates that those morphological differences among Perdiz arrow
+points found in the northern and southern \emph{behavioral regions} are
+predictable (\href{https://seldenlab.github.io/perdiz3/}{supplementary
+materials}), and can be identified using the standard suite of linear
+metrics regularly collected in the context of cultural resource
+management endeavors.
 
 The geometric morphometric analysis demonstrated significant
-morphological differences in morphology for Perdiz arrow points from the
-two \emph{behavioral regions}. The most pronounced difference in shape
+morphological differences for Perdiz arrow points from the two
+\emph{behavioral regions}. The most pronounced difference in shape
 occurs in basal morphology (see Fig. 5). Allometry was also found to be
 significant, demonstrating that the shape of Perdiz arrow points differ
-with size. These arrow points are considered to represent design intent,
-and are not thought to exhibit retouch or resharpening. Further, the
-blades and bases of the arrow points were found to be modular, as well
-as integrated. This indicates that each module functions independently,
-and that base shape is a predictor of blade shape (and vice versa).
+with size. Those arrow points used in this study are considered to
+represent \emph{design intent}, and are not thought to exhibit retouch
+or resharpening. This finding provides additional support for the
+argument that Perdiz arrow point morphology is highly variable
+\cite{RN9364}.
+
+Whether---and to what extent---it may be possible to identify specific
+groups of makers using unmodified arrow points from similar contexts
+remains unknown. Additional complexity is added when considering that
+those Perdiz points included in Caddo burials may also have been
+manufactured and transported to the ancestral Caddo territory by Toyah
+(or other) groups from central and southwest Texas. The notion that all
+cultural material recovered from Caddo burials was manufactured and
+placed with the deceased \emph{only} by members of a Caddo polity or
+group was discarded long ago. The blades and bases of the arrow points
+were found to be modular, as well as integrated. This indicates that
+each module functions independently, and that base shape is a predictor
+of blade shape (and vice versa). More work is warranted to assess
+whether Perdiz arrow points from constituent groups posited in the
+network analysis---which operated within each \emph{behavioral
+region}---may express unique morphologies, and aid in further delimiting
+the local boundaries of Caddo polities.
+
+\hypertarget{morphologically-distinct-behavioral-regions}{%
+\subsection{\texorpdfstring{\emph{Morphologically distinct behavioral
+regions}}{Morphologically distinct behavioral regions}}\label{morphologically-distinct-behavioral-regions}}
+
+\begin{figure}
+\includegraphics[width=1\linewidth]{ms-figs/figure6} \caption{Mean shapes and comparisons of morphological differences in Caddo bottles from the northern and southern behavioral regions (DOI 10.17605/OSF.IO/8SPWC).}\label{fig:fig6}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=0.85\linewidth]{ms-figs/figure7} \caption{Mean shapes and comparisons of morphological differences in Gahagan biface shape by site from burial contexts at the Gahagan Mound, George C. Davis, and Mounds Plantation sites, where comparisons in red reflect significant differences (DOI 10.17605/OSF.IO/2G95W).}\label{fig:fig7}
+\end{figure}
 
 \hypertarget{acknowledgments}{%
 \section*{Acknowledgments}\label{acknowledgments}}
@@ -393,7 +429,7 @@ Anthropology and Archaeology Laboratory at Stephen F. Austin State
 University for the requisite permissions and access to the NAGPRA
 objects from the Washington Square Mound site and Turner collections,
 and to Tom A. Middlebrook for brokering access to the Perdiz arrow
-points from burials at the Morse Mound site. Thanks also to the editor
+points from burials at the Morse Mound site. Thanks also to the editors
 and reviewers for their useful comments and constructive criticisms,
 which further improved this manuscript.
 
