@@ -106,11 +106,19 @@ The geometric morphometric analysis demonstrated significant morphological diffe
 
 Whether---and to what extent---it may be possible to identify specific groups of makers using unmodified arrow points from similar contexts remains unknown. Additional complexity is added when considering that those Perdiz points included in Caddo burials may also have been manufactured and transported to the ancestral Caddo territory by Toyah (or other) groups from central and southwest Texas. The notion that all cultural material recovered from Caddo burials was manufactured and placed with the deceased _only_ by members of a Caddo polity or group was discarded long ago. The blades and bases of the arrow points were found to be modular, as well as integrated. This indicates that each module functions independently, and that base shape is a predictor of blade shape (and vice versa). More work is warranted to assess whether Perdiz arrow points from constituent groups posited in the network analysis---which operated within each _behavioral region_---may express unique morphologies, and aid in further delimiting the local boundaries of Caddo polities.
 
-## _Distinct morphological attributes_
+## _Morphologically distinct behavioral regions_
+
+```{r fig6, out.width = "100%", dpi = 300, echo=FALSE, warning=FALSE, fig.cap="Mean shapes and comparisons of morphological differences in Caddo bottles from the northern and southern behavioral regions (DOI 10.17605/OSF.IO/8SPWC)."}
+knitr::include_graphics("ms-figs/figure6.pdf")
+```
+
+```{r fig7, out.width = "100%", dpi = 300, echo=FALSE, warning=FALSE, fig.cap="Mean shapes and comparisons of morphological differences in Gahagan biface shape by site at; a, Mounds Plantation (north, gray) and Gahagan Mound (south, black); b, Mounds Plantation (north, gray) and George C. Davis (south, black); c, Gahagan Mound (south, gray) and George C. Davis (south, black) (DOI 10.17605/OSF.IO/JKXE3)."}
+knitr::include_graphics("ms-figs/figure7.pdf")
+```
 
 # Acknowledgments {-}
 
-We express our gratitude to the Caddo Nation of Oklahoma and the Anthropology and Archaeology Laboratory at Stephen F. Austin State University for the requisite permissions and access to the NAGPRA objects from the Washington Square Mound site and Turner collections, and to Tom A. Middlebrook for brokering access to the Perdiz arrow points from burials at the Morse Mound site. Thanks also to the editor and reviewers for their useful comments and constructive criticisms, which further improved this manuscript.
+We express our gratitude to the Caddo Nation of Oklahoma and the Anthropology and Archaeology Laboratory at Stephen F. Austin State University for the requisite permissions and access to the NAGPRA objects from the Washington Square Mound site and Turner collections, and to Tom A. Middlebrook for brokering access to the Perdiz arrow points from burials at the Morse Mound site. Thanks also to the editors and reviewers for their useful comments and constructive criticisms, which further improved this manuscript.
 
 # Data Management {-}
 
