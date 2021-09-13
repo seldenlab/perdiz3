@@ -186,6 +186,8 @@ land.gps <- c("A","A","B","B","B","A","A","A","A","A","A","A","A","A",
 mod <- modularity.test(Y.gpa$coords,
                        partition.gp = land.gps,
                        iter = 9999,
+                       seed = NULL,
+                       opt.rot = TRUE,
                        print.progress = FALSE)
 
 summary(mod)
@@ -247,7 +249,8 @@ plot(mean$south)
 plotRefToTarget(mean$north,
                 mean$south,
                 method = "points",
-                mag = 1)
+                mag = 1,
+                useRefPts = TRUE)
 
 ## composite figure
 knitr::include_graphics('figures/gm-mshape.jpg')

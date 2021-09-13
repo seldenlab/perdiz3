@@ -42,7 +42,7 @@ Perdiz arrow points generally follow two distinct manufacturing trajectories; on
 
 A social network analysis of diagnostic artifacts from Historic Caddo (post-CE 1680) sites in northeast Texas demonstrated two spatially distinct _behavioral regions_ \cite{RN8031} (Fig. 1). The network analysis was limited to Historic Caddo types; however, Formative Early Caddo (CE 800 – 1200) Gahagan bifaces and Caddo bottle types have been found to express significantly different morphologies between the same two areas \cite{RN8074,RN7927,RN8370,RN8312}, extending the temporal range of the _shape boundary_ and the prehistoric longevity of distinct _behavioral regions_. Gahagan bifaces from the ancestral Caddo area also differ significantly in shape, size, and form from those recovered at central Texas sites \cite{RN8322}, suggestive of a second _shape boundary_ between the ancestral Caddo area and central Texas.
 
-```{r fig1, out.width = "100%", dpi = 300, echo=FALSE, warning=FALSE, fig.cap="Historic Caddo network generated using ceramic and lithic types, which include Perdiz arrow points (DOI 10.17605/OSF.IO/WD2ZT), illustrating the two (north [blue] and south [red]) Caddo behavioral regions. The regions were identified using a modularity statistic to identify those nodes more densely connected to one another than to the rest of the network ."}
+```{r fig1, out.width = "100%", dpi = 300, echo=FALSE, warning=FALSE, fig.cap="Historic Caddo network generated using ceramic and lithic types, which include Perdiz arrow points (DOI 10.17605/OSF.IO/WD2ZT), illustrating the two (north [blue] and south [red]) Caddo behavioral regions. The regions were identified using a modularity statistic to identify those nodes more densely connected to one another than to the rest of the network."}
 knitr::include_graphics("ms-figs/figure1.jpg")
 ```
 
@@ -108,6 +108,32 @@ Whether---and to what extent---it may be possible to identify specific groups of
 
 ## _Morphologically distinct behavioral regions_
 
+**general**:
+
+ * morphological attributes are representative of _intentional attributes_ (Costin 2005) related to morphological characteristics
+ 
+ * dimensional standardization has utility in identifying the range of variation and overlap of product morphology in and between communities (Arnold 1991)
+ 
+ * relative dimensional standardization may imply a smaller number of production units (Costin 1991) contrasted with larger production units
+ 
+ * might there have been limits of technological/aesthetic social tolerance within/between the _behavioral regions_?
+ 
+ * ceramic production (women - assumed) = local; stone tool production (men- assumed) = non-local? if so, might that mean that women (again, old assumption) may have experienced more restricted social interactions? Caddo women were/are the community leaders; necessary to remain local for critical decisions (thus = protected)? Example of European contact - males met Europeans away from the villages to protect the leadership. Some Europeans (Spanish) assumed male leadership---to their own detriment.
+
+**bottles**:
+
+ * bottles as a complete system; stone tools as partial/components
+ 
+ * similarities/differences in bottle shapes transcend type assignments
+ 
+ * bottles from the northern _behavioral region_ express a significantly greater diversity in size; potential (size) standardization in the southern _behavioral region_?
+ 
+ * production activities more likely to be localized than exchange systems, and assumed to leave a clearer signature (Costin 1991)
+
+**bifaces**:
+
+ * bifaces from the Caddo area express a significantly greater diversity in size when compared to central Texas
+
 ```{r fig6, out.width = "100%", dpi = 300, echo=FALSE, warning=FALSE, fig.cap="Mean shapes and comparisons of morphological differences in Caddo bottles from the northern and southern behavioral regions (DOI 10.17605/OSF.IO/8SPWC)."}
 knitr::include_graphics("ms-figs/figure6.pdf")
 ```
@@ -115,6 +141,8 @@ knitr::include_graphics("ms-figs/figure6.pdf")
 ```{r fig7, out.width = "85%", dpi = 300, echo=FALSE, warning=FALSE, fig.cap="Mean shapes and comparisons of morphological differences in Gahagan biface shape by site from burial contexts at the Gahagan Mound, George C. Davis, and Mounds Plantation sites, where comparisons in red reflect significant differences (DOI 10.17605/OSF.IO/2G95W)."}
 knitr::include_graphics("ms-figs/figure7.pdf")
 ```
+
+# Conclusion
 
 # Acknowledgments {-}
 
