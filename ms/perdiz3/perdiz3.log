@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.9)  14 SEP 2021 07:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.9)  14 SEP 2021 08:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -478,6 +478,12 @@ Package pdftex.def Info: ms-figs/figure7.pdf  used on input line 471.
 
 LaTeX Warning: Float too large for page by 60.05423pt on input line 472.
 
+
+Overfull \hbox (71.27858pt too wide) in paragraph at lines 494--500
+\OT1/cmr/m/n/10 which are dig-i-tally cu-rated on the Open Sci-ence Frame-work 
+at []DOI: 10.17605/OSF.IO/UK9ZD[]. 
+ []
+
 [10] (./perdiz3.bbl [11 <./ms-figs/figure6.pdf>] [12 <./ms-figs/figure7.pdf>]
 Underfull \hbox (badness 3219) in paragraph at lines 106--112
 \OT1/cmr/m/n/8 Mul-ti-scalar Per-spec-tives on So-cial Net-works in the Late Pr
@@ -609,7 +615,7 @@ Package rerunfilecheck Info: File `perdiz3.out' has not changed.
 Here is how much of TeX's memory you used:
  8751 strings out of 480559
  130543 string characters out of 5901529
- 449362 words of memory out of 5000000
+ 448362 words of memory out of 5000000
  26167 multiletter control sequences out of 15000+600000
  410862 words of font info for 53 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -630,10 +636,10 @@ fonts/cm/cmti10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti8.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTe
 X/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/Users/seldenjrz/AppD
 ata/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on perdiz3.pdf (15 pages, 10872685 bytes).
+Output written on perdiz3.pdf (15 pages, 10872752 bytes).
 PDF statistics:
- 570 PDF objects out of 1000 (max. 8388607)
- 387 compressed objects within 4 object streams
+ 571 PDF objects out of 1000 (max. 8388607)
+ 388 compressed objects within 4 object streams
  91 named destinations out of 1000 (max. 500000)
  84 words of extra memory for PDF output out of 10000 (max. 10000000)
 

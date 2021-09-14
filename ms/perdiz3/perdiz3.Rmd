@@ -148,4 +148,4 @@ We express our gratitude to the Caddo Nation of Oklahoma and the Anthropology an
 
 # Data Management {-}
 
-The data and analysis code associated with this project can be accessed through the GitHub repository ([https://github.com/seldenlab/perdiz3](https://github.com/seldenlab/perdiz3)) or the supplementary materials ([https://seldenlab.github.io/perdiz3/](https://seldenlab.github.io/perdiz3/)); which are digitally curated on the Open Science Framework at \newline DOI: 10.17605/OSF.IO/UK9ZD. 
+The data and analysis code associated with this project can be accessed through the GitHub repository ([https://github.com/seldenlab/perdiz3](https://github.com/seldenlab/perdiz3)) or the supplementary materials ([https://seldenlab.github.io/perdiz3/](https://seldenlab.github.io/perdiz3/)); which are digitally curated on the Open Science Framework at [DOI: 10.17605/OSF.IO/UK9ZD](https://osf.io/vzhjr/). 
