@@ -110,29 +110,27 @@ Whether---and to what extent---it may be possible to identify specific groups of
 
 **general**:
 
- * morphological attributes are representative of _intentional attributes_ (Costin 2005) related to morphological characteristics
+ * `morphological attributes` are representative of _intentional attributes_ (Costin 2005) related to morphological characteristics
  
- * dimensional standardization has utility in identifying the range of variation and overlap of product morphology in and between communities (Arnold 1991)
+ * `dimensional standardization` has utility in identifying the `range of variation and overlap` of product morphology in and between communities (Arnold 1991)
  
- * relative dimensional standardization may imply a smaller number of production units (Costin 1991) contrasted with larger production units
+ * `relative dimensional standardization` may imply a smaller number of production units (Costin 1991) contrasted with larger production units
  
- * might there have been limits of technological/aesthetic social tolerance within/between the _behavioral regions_?
- 
- * ceramic production (women - assumed) = local; stone tool production (men- assumed) = non-local? if so, might that mean that women (again, old assumption) may have experienced more restricted social interactions? Caddo women were/are the community leaders; necessary to remain local for critical decisions (thus = protected)? Example of European contact - males met Europeans away from the villages to protect the leadership. Some Europeans (Spanish) assumed male leadership---to their own detriment.
+ * might there have been limits of technological/aesthetic `social tolerance` within/between the _behavioral regions_?
 
 **bottles**:
 
- * bottles as a complete system; stone tools as partial/components
+ * bottles as a `complete` system; stone tools as `partial/components`
  
- * similarities/differences in bottle shapes transcend type assignments
+ * similarities/differences in bottle shapes `transcend` type assignments
  
- * bottles from the northern _behavioral region_ express a significantly greater diversity in size; potential (size) standardization in the southern _behavioral region_?
+ * bottles from the northern _behavioral region_ express a significantly greater diversity in size; potential (size) `standardization` in the southern _behavioral region_
  
- * production activities more likely to be localized than exchange systems, and assumed to leave a clearer signature (Costin 1991)
+ * `production activities` more likely to be localized than exchange systems, and assumed to leave a clearer signature (Costin 1991)
 
 **bifaces**:
 
- * bifaces from the Caddo area express a significantly greater diversity in size when compared to central Texas
+ * bifaces from the Caddo area express a significantly `greater diversity in size` when compared to central Texas
 
 ```{r fig6, out.width = "100%", dpi = 300, echo=FALSE, warning=FALSE, fig.cap="Mean shapes and comparisons of morphological differences in Caddo bottles from the northern and southern behavioral regions (DOI 10.17605/OSF.IO/8SPWC)."}
 knitr::include_graphics("ms-figs/figure6.pdf")
