@@ -116,7 +116,7 @@ It is entirely possible that there are no _communities of practice_ at all for c
 
 # Conclusion
 
-This study enlisted a combined analytical approach that incorporated social network analysis, linear metrics, machine learning, and geometric morphometrics that expanded the support for two discrete Caddo behavioral regions from three categories of Caddo material culture. While evidence from one category---Caddo bottles---supports discussions of production, the other two---bifaces---more readily articulate with production activities outside of the ancestral Caddo area. Further work is warranted to expand the scope of this research program to include analyses of differential production within the two _behavioral regions_ outlined in this study using a greater diversity of diagnostic artifact types.
+This study enlisted a combined analytical approach that incorporated social network analysis, linear metrics, machine learning, and geometric morphometrics, which expanded support for two discrete Caddo behavioral regions to include a third category of Caddo material culture. While evidence from one category---Caddo bottles---supports discussions of production, the other two---bifaces---more readily articulate with production activities outside of the ancestral Caddo area. Further work is warranted to expand the scope of this research program to include analyses of differential production within the two _behavioral regions_ outlined in this study using a greater diversity of diagnostic artifact types.
 
 # Acknowledgments {-}
 
@@ -125,3 +125,4 @@ We express our gratitude to the Caddo Nation of Oklahoma and the Anthropology an
 # Data Management {-}
 
 The data and analysis code associated with this project can be accessed through the GitHub repository ([https://github.com/seldenlab/perdiz3](https://github.com/seldenlab/perdiz3)) or the supplementary materials ([https://seldenlab.github.io/perdiz3/](https://seldenlab.github.io/perdiz3/)); which are digitally curated on the Open Science Framework at \newline DOI: 10.17605/OSF.IO/UK9ZD. 
+\newpage
