@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.16)  16 SEP 2021 13:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.16)  16 SEP 2021 13:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -465,7 +465,7 @@ File: ms-figs/figure5.jpg Graphic file (type jpg)
 Package pdftex.def Info: ms-figs/figure5.jpg  used on input line 365.
 (pdftex.def)             Requested size: 338.0pt x 165.68102pt.
 [8 <./ms-figs/figure4.jpg>] [9 <./ms-figs/figure5.jpg>] [10]
-Overfull \hbox (71.27858pt too wide) in paragraph at lines 540--546
+Overfull \hbox (71.27858pt too wide) in paragraph at lines 542--548
 \OT1/cmr/m/n/10 which are dig-i-tally cu-rated on the Open Sci-ence Frame-work 
 at []DOI: 10.17605/OSF.IO/UK9ZD[]. 
  []
@@ -628,7 +628,7 @@ fonts/cm/cmti10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti8.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTe
 X/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/Users/seldenjrz/AppD
 ata/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on perdiz3.pdf (15 pages, 9511663 bytes).
+Output written on perdiz3.pdf (15 pages, 9511784 bytes).
 PDF statistics:
  534 PDF objects out of 1000 (max. 8388607)
  376 compressed objects within 4 object streams
