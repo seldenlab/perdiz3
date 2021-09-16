@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.16)  16 SEP 2021 13:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.16)  16 SEP 2021 13:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -459,13 +459,13 @@ File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 351.
 [7 <./ms-figs/figure3.jpg>]
-<ms-figs/figure5.jpg, id=339, 1913.7096pt x 938.0646pt>
+<ms-figs/figure5.jpg, id=340, 1913.7096pt x 938.0646pt>
 File: ms-figs/figure5.jpg Graphic file (type jpg)
 <use ms-figs/figure5.jpg>
 Package pdftex.def Info: ms-figs/figure5.jpg  used on input line 365.
 (pdftex.def)             Requested size: 338.0pt x 165.68102pt.
 [8 <./ms-figs/figure4.jpg>] [9 <./ms-figs/figure5.jpg>] [10]
-Overfull \hbox (71.27858pt too wide) in paragraph at lines 542--548
+Overfull \hbox (71.27858pt too wide) in paragraph at lines 543--549
 \OT1/cmr/m/n/10 which are dig-i-tally cu-rated on the Open Sci-ence Frame-work 
 at []DOI: 10.17605/OSF.IO/UK9ZD[]. 
  []
@@ -628,10 +628,10 @@ fonts/cm/cmti10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti8.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTe
 X/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/Users/seldenjrz/AppD
 ata/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on perdiz3.pdf (15 pages, 9511784 bytes).
+Output written on perdiz3.pdf (15 pages, 9511862 bytes).
 PDF statistics:
- 534 PDF objects out of 1000 (max. 8388607)
- 376 compressed objects within 4 object streams
+ 535 PDF objects out of 1000 (max. 8388607)
+ 377 compressed objects within 4 object streams
  93 named destinations out of 1000 (max. 500000)
  74 words of extra memory for PDF output out of 10000 (max. 10000000)
 
