@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.14)  16 SEP 2021 10:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.16)  16 SEP 2021 12:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -425,7 +425,7 @@ e-times slightly
 <ms-figs/figure1.jpg, id=71, 4296.05pt x 3151.775pt>
 File: ms-figs/figure1.jpg Graphic file (type jpg)
 <use ms-figs/figure1.jpg>
-Package pdftex.def Info: ms-figs/figure1.jpg  used on input line 161.
+Package pdftex.def Info: ms-figs/figure1.jpg  used on input line 160.
 (pdftex.def)             Requested size: 338.0pt x 247.96313pt.
 [2] [3 <./ms-figs/figure1.jpg>] [4]
 
@@ -445,7 +445,7 @@ File: ms-figs/figure3.jpg Graphic file (type jpg)
 Package pdftex.def Info: ms-figs/figure3.jpg  used on input line 312.
 (pdftex.def)             Requested size: 338.0pt x 206.21036pt.
 [5] [6 <./ms-figs/figure2.pdf>]
-<ms-figs/figure4.jpg, id=323, 5281.7325pt x 5520.625pt>
+<ms-figs/figure4.jpg, id=324, 5281.7325pt x 5520.625pt>
 File: ms-figs/figure4.jpg Graphic file (type jpg)
 <use ms-figs/figure4.jpg>
 Package pdftex.def Info: ms-figs/figure4.jpg  used on input line 334.
@@ -464,21 +464,18 @@ File: ms-figs/figure5.jpg Graphic file (type jpg)
 <use ms-figs/figure5.jpg>
 Package pdftex.def Info: ms-figs/figure5.jpg  used on input line 365.
 (pdftex.def)             Requested size: 338.0pt x 165.68102pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 [8 <./ms-figs/figure4.jpg>] [9 <./ms-figs/figure5.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 453--467
+Underfull \hbox (badness 10000) in paragraph at lines 452--466
 
  []
 
 [10]
-Overfull \hbox (71.27858pt too wide) in paragraph at lines 537--543
+Overfull \hbox (71.27858pt too wide) in paragraph at lines 536--542
 \OT1/cmr/m/n/10 which are dig-i-tally cu-rated on the Open Sci-ence Frame-work 
 at []DOI: 10.17605/OSF.IO/UK9ZD[]. 
  []
 
-[11] (./perdiz3.bbl [12]
+(./perdiz3.bbl [11] [12]
 Underfull \hbox (badness 3219) in paragraph at lines 106--112
 \OT1/cmr/m/n/8 Mul-ti-scalar Per-spec-tives on So-cial Net-works in the Late Pr
 e-his-panic South-
@@ -613,13 +610,13 @@ Package rerunfilecheck Info: File `perdiz3.out' has not changed.
 (rerunfilecheck)             Checksum: EBF8B09E248A146479DA7008EEC76DCC;674.
  ) 
 Here is how much of TeX's memory you used:
- 8733 strings out of 480559
- 130101 string characters out of 5901528
+ 8731 strings out of 480559
+ 129956 string characters out of 5901444
  450961 words of memory out of 5000000
  26151 multiletter control sequences out of 15000+600000
  410862 words of font info for 53 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 60i,8n,66p,628b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,9n,66p,628b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmbsy10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx10.pfb><c:/Users/seldenjrz/AppData/Roaming/Tiny
@@ -636,10 +633,10 @@ fonts/cm/cmti10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti8.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTe
 X/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/Users/seldenjrz/AppD
 ata/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on perdiz3.pdf (15 pages, 9511599 bytes).
+Output written on perdiz3.pdf (15 pages, 9511578 bytes).
 PDF statistics:
- 531 PDF objects out of 1000 (max. 8388607)
- 373 compressed objects within 4 object streams
+ 532 PDF objects out of 1000 (max. 8388607)
+ 374 compressed objects within 4 object streams
  91 named destinations out of 1000 (max. 500000)
  74 words of extra memory for PDF output out of 10000 (max. 10000000)
 
