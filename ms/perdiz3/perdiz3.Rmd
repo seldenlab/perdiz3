@@ -114,33 +114,9 @@ Three categories of Caddo material culture differ north and south of the _shape 
 
 It is entirely possible that there are no _communities of practice_ at all for chipped stone artifacts recovered from Caddo mortuary contexts. However, there do appear to have been _communities of practice_ associated with Perdiz arrow points recovered from non-mortuary contexts in the ancestral Caddo area, which may more readily reflect the distinct retouch/resharpening approaches employed by Caddo knappers \cite{RN9364}. Similar interpretations can be applied to Gahagan bifaces, as few have been reported outside of Caddo mortuary contexts. It may be more fitting to perceive of Perdiz arrow points and Gahagan bifaces as indicative of _communities of identity_ rather than _communities of practice_, due to the contextual discrepancy evinced through mortuary and non-mortuary settings. The provenance of bifaces from Caddo mortuary contexts can most assuredly be considered non-local, or produced outside of the ancestral Caddo region, based on multiple factors that include raw material, workmanship, morphology, and context.
 
-## _Caddo landscapes of practice_
-
-**general**:
-
- * `morphological attributes` are representative of _intentional attributes_ (Costin 2005) related to morphological characteristics
- 
- * `dimensional standardization` has utility in identifying the `range of variation and overlap` of product morphology in and between communities (Arnold 1991)
- 
- * `relative dimensional standardization` may imply a smaller number of production units (Costin 1991) contrasted with larger production units
- 
- * might there have been limits of technological/aesthetic `social tolerance` within/between the _behavioral regions_?
-
-**bottles**:
-
- * bottles as a `complete` system; stone tools as `partial/components`
- 
- * similarities/differences in bottle shapes `transcend` type assignments
- 
- * bottles from the northern _behavioral region_ express a significantly greater diversity in size; potential (size) `standardization` in the southern _behavioral region_
- 
- * `production activities` more likely to be localized than exchange systems, and assumed to leave a clearer signature (Costin 1991)
-
-**bifaces**:
-
- * bifaces from the Caddo area express a significantly `greater diversity in size` when compared to central Texas
-
 # Conclusion
+
+This study enlisted a combined analytical approach that incorporated social network analysis, linear metrics, machine learning, and geometric morphometrics that expanded the support for two discrete Caddo behavioral regions from three categories of Caddo material culture. While evidence from one category---Caddo bottles---supports discussions of production, the other two---bifaces---more readily articulate with production activities outside of the ancestral Caddo area. Further work is warranted to expand the scope of this research program to include analyses of differential production within the two _behavioral regions_ outlined in this study using a greater diversity of diagnostic artifact types.
 
 # Acknowledgments {-}
 
@@ -148,4 +124,4 @@ We express our gratitude to the Caddo Nation of Oklahoma and the Anthropology an
 
 # Data Management {-}
 
-The data and analysis code associated with this project can be accessed through the GitHub repository ([https://github.com/seldenlab/perdiz3](https://github.com/seldenlab/perdiz3)) or the supplementary materials ([https://seldenlab.github.io/perdiz3/](https://seldenlab.github.io/perdiz3/)); which are digitally curated on the Open Science Framework at [DOI: 10.17605/OSF.IO/UK9ZD](https://osf.io/vzhjr/). 
+The data and analysis code associated with this project can be accessed through the GitHub repository ([https://github.com/seldenlab/perdiz3](https://github.com/seldenlab/perdiz3)) or the supplementary materials ([https://seldenlab.github.io/perdiz3/](https://seldenlab.github.io/perdiz3/)); which are digitally curated on the Open Science Framework at \newline DOI: 10.17605/OSF.IO/UK9ZD. 
