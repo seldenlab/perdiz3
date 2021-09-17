@@ -116,6 +116,30 @@ It is entirely possible that there are no _communities of practice_ at all for c
 
 # Conclusion
 
+**general**:
+
+ * `morphological attributes` are representative of _intentional attributes_ (Costin 2005) related to morphological characteristics
+ 
+ * `dimensional standardization` has utility in identifying the `range of variation and overlap` of product morphology in and between communities (Arnold 1991)
+ 
+ * `relative dimensional standardization` may imply a smaller number of production units (Costin 1991) contrasted with larger production units
+ 
+ * might there have been limits of technological/aesthetic `social tolerance` within/between the _behavioral regions_?
+
+**bottles**:
+
+ * bottles as a `complete` system; stone tools as `partial/components`
+ 
+ * similarities/differences in bottle shapes `transcend` type assignments
+ 
+ * bottles from the northern _behavioral region_ express a significantly greater diversity in size; potential (size) `standardization` in the southern _behavioral region_
+ 
+ * `production activities` more likely to be localized than exchange systems, and assumed to leave a clearer signature (Costin 1991)
+
+**bifaces**:
+
+ * bifaces from the Caddo area express a significantly `greater diversity in size` when compared to central Texas
+
 This study enlisted a combined analytical approach that incorporated social network analysis, linear metrics, machine learning, and geometric morphometrics, which expanded support for two discrete Caddo behavioral regions to include a third category of Caddo material culture. While evidence from one category---Caddo bottles---supports discussions of production, the other two---bifaces---more readily articulate with production activities outside of the ancestral Caddo area. Further work is warranted to expand the scope of this research program to include analyses of differential production within the two _behavioral regions_ outlined in this study using a greater diversity of diagnostic artifact types.
 
 # Acknowledgments {-}
