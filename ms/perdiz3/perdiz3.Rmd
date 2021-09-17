@@ -106,6 +106,12 @@ The geometric morphometric analysis demonstrated significant morphological diffe
 
 The blades and bases of the arrow points were found to be modular, as well as integrated. This indicates that each module functions independently, and that base shape is a predictor of blade shape, and vice-versa. Further work is warranted to assess whether Perdiz arrow points from those constituent groups within the northern and southern _behavioral regions_ may express unique morphologies, aiding in delimiting local boundaries associated with constituent Caddo groups. Whether, and to what extent, it may be possible to identify specific groups of makers using unmodified arrow points from similar contexts remains unknown. Additional complexity is introduced when considering that Perdiz arrow points included in Caddo burials may have been manufactured and transported to the ancestral Caddo territory, and (potentially) placed in burials by members of non-Caddo groups. This challenges the concept that all cultural material recovered from Caddo burials were manufactured by, and placed with the deceased, _only_ by members of a specific Caddo family, group, or polity.
 
+## _Standardization and/or specialization_
+
+Morphological attributes are representative of _intentional attributes_ related to morphological characteristics \cite{RN7051}, and dimensional standardization has utility in identifying the range of variation and overlap of product morphology both within and between communities \cite{RN5779}. Further, relative dimensional standardization may imply a smaller number of production units contrasted with larger production units \cite{RN7051}.
+
+While the Caddo bottles are representative of a complete system---or unit---the function of a biface (Perdiz arrow points and Gahagan bifaces in this context) is more limited, in that they represent a single component of a more dynamic system. Dimensional standardization in size has been identified for both the Caddo bottles and Gahagan bifaces. The similarities and differences in bottle shapes were found to transcend typological assignments, and bottles from the northern _behavioral region_ were found to express a significantly greater diversity in size, yielding evidence for size standardization in the southern _behavioral region_. It is also the case that Gahagan bifaces from the Caddo area were found to express a significantly greater diversity in size compared to those from central Texas. These findings suggest that there may have been local limits on the social tolerance for specific technological or aesthetic traits found to occur in and/or between the _behavioral regions_.  
+ 
 ## _Morphologically-distinct behavioral regions_
 
 In considering the role(s) of artifacts as aspects of _social identity_, it is important not to lose sight of the fact that people and artifacts are active agents in the production and maintenance of _social identity(ies)_. Both categories of artifacts (bottles and bifaces) contribute to local and regional _communities of identity_ and _communities of practice_ \cite{RN8061}. Generally, this concept may be more easily applied to bottles since they were manufactured and used by individuals sharing collective _Caddo identities_. Bifaces (Perdiz arrow points and Gahagan bifaces) potentially represent multiple _identities_---those being the Caddo, as users; and non-Caddo, as producers---at least with regard to chipped stone tools incorporated in mortuary contexts. This idea lends defensible credence to the concept of morphologically-distinct _behavioral regions_ among the Caddo, while integrating the possibility of understanding interactions between Caddo and non-Caddo groups, to include the movement of material culture between Caddo _behavioral regions_.
@@ -116,31 +122,7 @@ It is entirely possible that there are no _communities of practice_ at all for c
 
 # Conclusion
 
-**general**:
-
- * `morphological attributes` are representative of _intentional attributes_ (Costin 2005) related to morphological characteristics
- 
- * `dimensional standardization` has utility in identifying the `range of variation and overlap` of product morphology in and between communities (Arnold 1991)
- 
- * `relative dimensional standardization` may imply a smaller number of production units (Costin 1991) contrasted with larger production units
- 
- * might there have been limits of technological/aesthetic `social tolerance` within/between the _behavioral regions_?
-
-**bottles**:
-
- * bottles as a `complete` system; stone tools as `partial/components`
- 
- * similarities/differences in bottle shapes `transcend` type assignments
- 
- * bottles from the northern _behavioral region_ express a significantly greater diversity in size; potential (size) `standardization` in the southern _behavioral region_
- 
- * `production activities` more likely to be localized than exchange systems, and assumed to leave a clearer signature (Costin 1991)
-
-**bifaces**:
-
- * bifaces from the Caddo area express a significantly `greater diversity in size` when compared to central Texas
-
-This study enlisted a combined analytical approach that incorporated social network analysis, linear metrics, machine learning, and geometric morphometrics, which expanded support for two discrete Caddo behavioral regions to include a third category of Caddo material culture. While evidence from one category---Caddo bottles---supports discussions of production, the other two---bifaces---more readily articulate with production activities outside of the ancestral Caddo area. Further work is warranted to expand the scope of this research program to include analyses of differential production within the two _behavioral regions_ outlined in this study using a greater diversity of diagnostic artifact types.
+This exploratory study demonstrated that traditional linear metrics collected for Perdiz arrow points support the _shape boundary_ posited in recent social network and geometric morphometric analyses, and determined that the same metrics can be used to predict regional membership. Those morphological features that discriminate between Perdiz arrow points recovered from each _behavioral region_ were identified using geometric morphometrics, with the most substantial differences found to occur in size (smaller in the north; larger in the south) and basal morphology. Blade and base shape were found to be both modular and morphologically integrated, suggesting that blade and base shapes are predictable. While evidence from one category---Caddo bottles---supports discussions of Caddo production, the other two---bifaces---more readily articulate with production activities outside of the region by non-Caddo makers. Such production activity is more likely to be localized than exchange systems, thus assumed to leave a clearer signature \cite{RN7019}. Further work is warranted to expand the scope of this research program to include analyses of differential production within the two _behavioral regions_ outlined in this study using, while including a greater diversity of diagnostic Caddo artifact types.
 
 # Acknowledgments {-}
 
