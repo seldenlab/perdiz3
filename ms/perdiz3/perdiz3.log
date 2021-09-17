@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.16)  17 SEP 2021 07:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.16)  17 SEP 2021 07:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -464,8 +464,8 @@ File: ms-figs/figure5.jpg Graphic file (type jpg)
 <use ms-figs/figure5.jpg>
 Package pdftex.def Info: ms-figs/figure5.jpg  used on input line 365.
 (pdftex.def)             Requested size: 338.0pt x 165.68102pt.
-[8 <./ms-figs/figure4.jpg>] [9 <./ms-figs/figure5.jpg>] [10] [11] [12] (./perdi
-z3.bbl
+[8 <./ms-figs/figure4.jpg>] [9 <./ms-figs/figure5.jpg>] [10] [11] (./perdiz3.bb
+l [12]
 Underfull \hbox (badness 3219) in paragraph at lines 106--112
 \OT1/cmr/m/n/8 Mul-ti-scalar Per-spec-tives on So-cial Net-works in the Late Pr
 e-his-panic South-
@@ -555,7 +555,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 216--223
 om / doi / pdfdirect / 10 .
  []
 
-[14]
+
 Underfull \hbox (badness 10000) in paragraph at lines 262--269
 \OT1/cmtt/m/n/8 / / besjournals . onlinelibrary . wiley . com / doi / pdf / 10 
 . 1111 / 2041 -[] 210X . 13029https :
@@ -585,7 +585,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 282--288
  www . ncbi . nlm . nih . gov / pmc /
  []
 
-
+[14]
 Underfull \hbox (badness 2035) in paragraph at lines 311--318
 []\OT1/cmr/m/n/8 S.L. Eck-ert, K.L. Schle-her, W.D. James, Com-mu-ni-ties of Id
 en-tity, Com-mu-ni-
@@ -602,7 +602,7 @@ Package rerunfilecheck Info: File `perdiz3.out' has not changed.
 Here is how much of TeX's memory you used:
  8731 strings out of 480559
  129956 string characters out of 5901444
- 448961 words of memory out of 5000000
+ 450961 words of memory out of 5000000
  26151 multiletter control sequences out of 15000+600000
  410862 words of font info for 53 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -623,7 +623,7 @@ fonts/cm/cmti10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti8.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTe
 X/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/Users/seldenjrz/AppD
 ata/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on perdiz3.pdf (15 pages, 9512228 bytes).
+Output written on perdiz3.pdf (15 pages, 9512314 bytes).
 PDF statistics:
  532 PDF objects out of 1000 (max. 8388607)
  374 compressed objects within 4 object streams
