@@ -74,7 +74,7 @@ Heritage Department, Jean Monnet University \\
 \maketitle
 
 \begin{abstract}
-Recent research in the ancestral Caddo area has yielded evidence for
+Recent research in the ancestral Caddo area yielded evidence for
 distinct \emph{behavioral regions}, across which material culture from
 Caddo burials---bottles and Gahagan bifaces---has been found to express
 significant morphological differences. This inquiry assesses whether
@@ -82,7 +82,7 @@ Perdiz arrow points from Caddo burials, assumed to reflect design
 intent, may differ across the same geography, and extend the pattern of
 shape differences to a third category of Caddo material culture. Perdiz
 arrow points collected from the geographies of the northern and southern
-Caddo \emph{behavioral regions} defined in a recent social network
+Caddo \emph{behavioral regions} defined in a neoteric social network
 analysis were employed to test the hypothesis that morphological
 attributes differ, and are predictable, between the two communities.
 Results indicate significant between-community differences in maximum
@@ -103,6 +103,7 @@ across three categories of Caddo material culture.
         American Southeast \and
         Caddo \and
         Texas \and
+        anthroinformatics \and
         archaeoinformatics \and
         computational archaeology \and
         machine learning \and
@@ -148,16 +149,16 @@ A social network analysis of diagnostic artifacts from Historic Caddo
 distinct \emph{behavioral regions} \cite{RN8031} (Fig. 1). The network
 analysis was limited to Historic Caddo types; however, Formative Early
 Caddo (CE 800 -- 1200) Gahagan bifaces and Caddo bottle types have been
-found to express significantly different morphologies between the same
-two areas \cite{RN8074,RN7927,RN8370,RN8312}, extending the prehistoric
-longevity of distinct \emph{behavioral regions}. Gahagan bifaces from
-the ancestral Caddo area also differ significantly in shape, size, and
-form compared with those recovered from central Texas sites
-\cite{RN8322}, suggesting a second \emph{shape boundary} between the
-ancestral Caddo area and central Texas.
+found to express significantly morphological variability following the
+same geographic extent \cite{RN8074,RN7927,RN8370,RN8312}, extending the
+prehistoric longevity for the \emph{behavioral regions} based on local
+alterity. Gahagan bifaces from the ancestral Caddo area also differ
+significantly in shape, size, and form compared with those recovered
+from central Texas sites \cite{RN8322}, suggesting a second \emph{shape
+boundary} between the ancestral Caddo area and central Texas.
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{ms-figs/figure1} \caption{Historic Caddo network generated using ceramic and lithic types, which include Perdiz arrow points (DOI 10.17605/OSF.IO/WD2ZT), illustrating the two (north [blue] and south [red]) Caddo behavioral regions. The regions were identified using a modularity statistic to identify those nodes more densely connected to one another than to the rest of the network.}\label{fig:fig1}
+\includegraphics[width=1\linewidth]{ms-figs/figure1} \caption{Historic Caddo network generated using ceramic and lithic types, which include Perdiz arrow points (DOI 10.17605/OSF.IO/WD2ZT), illustrating the two (north [blue] and south [red]) Caddo behavioral regions. The regions were identified using a modularity statistic to secern those nodes more densely connected to one another than to the rest of the network.}\label{fig:fig1}
 \end{figure}
 
 The goal of this exploratory endeavor was to assess whether traditional
@@ -203,13 +204,13 @@ The co-presence of diagnostic artifact and attribute types has been used
 to define Caddo phases and periods, which serve as a heuristic tool
 aiding archaeologists in explaining the local cultural landscape, as
 well as regional differences between local landscapes. The Historic
-Caddo network expands those efforts, augmenting the previously defined
-phases and periods, and emphasizing the dynamic and manifold relational
-connections that reinforce and transcend the currently-defined
-categories \cite{RN8031}. This was achieved by enlisting a multi-scalar
-methodological approach \cite{RN5644,RN8039}, where northern and
-southern communities were parsed into constituent groups using
-diagnostic types paired with a modularity statistic
+Caddo network expands on those efforts, augmenting the previously
+defined phases and periods, and emphasizing the dynamic and manifold
+relational connections that reinforce and transcend the
+currently-defined categories \cite{RN8031}. This was achieved by
+enlisting a multi-scalar methodological approach \cite{RN5644,RN8039},
+where northern and southern communities were parsed into constituent
+groups using diagnostic types paired with a modularity statistic
 \cite{RN8051,RN8024}. A number of the constituent groups identified in
 the network analysis were found to articulate with known Caddo polities,
 while others were not \cite{RN8031}.
@@ -235,8 +236,8 @@ comprehensive analysis of Caddo bottles \cite{RN8312}.
 \section{Methods and results}\label{methods-and-results}}
 
 Sixty seven intact Perdiz arrow points recovered from Caddo burial
-contexts in Camp, Nacogdoches, and Shelby counties were used for this
-study (\href{https://seldenlab.github.io/perdiz3/}{supplementary
+contexts in Camp, Nacogdoches, and Shelby counties comprise the basis of
+this study (\href{https://seldenlab.github.io/perdiz3/}{supplementary
 materials}). A standard suite of linear metrics was collected for each
 specimen, including maximum length, width, thickness, stem length, and
 stem width. Following collection, data were imported to R 4.1.1
@@ -249,7 +250,7 @@ shape boundary (Fig.2).
 Boxplots illustrate the distribution and mean for each of the five
 variables (Fig. 2a-e), and the PCA (Fig. 2f) illustrates over 92 percent
 of the variation in the sample among PC1 (84.65 percent) and PC2 (11.71
-percent). The ANOVAs demonstrate significant differences in Perdiz arrow
+percent). ANOVAs demonstrate significant differences in Perdiz arrow
 point morphology among four of the five variables (maximum length,
 width, stem length, and stem width)
 (\href{https://seldenlab.github.io/perdiz3/}{supplementary materials}).
@@ -269,9 +270,9 @@ model}}{Predictive model}}\label{predictive-model}}
 
 The utility of support vector machines to classify archaeological
 materials has increased greatly with the rise of big data
-\cite{RN9515,RN9516,RN9514,RN9513}. All linear data were imported to
-Python and modeled using the \texttt{scikit-learn} package
-\cite{scikit-learn,sklearn_api}
+\cite{RN9515,RN9516,RN9514,RN9513}. For this effort, all linear data
+were imported and modeled using the \texttt{scikit-learn} package in
+Python \cite{scikit-learn,sklearn_api}
 (\href{https://seldenlab.github.io/perdiz3/}{supplementary materials}).
 Data were subsequently split into training (75 percent) and testing (25
 percent) subsets. A \emph{standard scaler} was used to decrease the
@@ -291,11 +292,11 @@ morphometrics}}{Geometric morphometrics}}\label{geometric-morphometrics}}
 Each of the arrow points was imaged using a flatbed scanner (HP Scanjet
 G4050) at 600 dpi. The landmarking protocol developed for this study
 (\href{https://seldenlab.github.io/perdiz3/}{supplementary materials})
-includes six landmarks and 24 equidistant semilandmarks to characterize
-Perdiz arrow point shape, and were applied using the
-\texttt{StereoMorph} package in R \cite{RN8973}. The characteristic
-points and tangents used in the landmarking protocol were inspired by
-the work of Birkhoff \cite{RN5700}.
+included six landmarks and 24 equidistant semilandmarks to characterize
+Perdiz arrow point shape, applied using the \texttt{StereoMorph} package
+in R \cite{RN8973}. The characteristic points and tangents used in the
+landmarking protocol were inspired by the work of Birkhoff
+\cite{RN5700}.
 
 Landmark data were aligned to a global coordinate system
 \cite{RN8102,RN8587,RN8384}, achieved through generalized Procrustes
@@ -347,17 +348,16 @@ utility in studies of Perdiz arrow point morphology that incorporate
 fragmentary specimens.
 
 A Procrustes ANOVA was used to test whether a significant difference
-exists in Perdiz arrow point (centroid) size, and results were
-significant difference (RRPP = 10,000; Rsq = 0.30681; Pr(\textgreater F)
-= 1e-04). A second Procrustes ANOVA was used to test whether a
-significant difference exists in arrow point shape by region (northern
-vs.~southern communities) (RRPP = 10,000; Rsq = 0.0536;
+exists in Perdiz arrow point (centroid) size (RRPP = 10,000; Rsq =
+0.30681; Pr(\textgreater F) = 1e-04), followed by a second to test
+whether a significant difference exists in arrow point shape by region
+(northern vs.~southern communities) (RRPP = 10,000; Rsq = 0.0536;
 Pr(\textgreater F) = 0.0161). A comparison of mean consensus
 configurations was used to characterize intraspecific shape variation of
 Perdiz arrow points from the northern and southern \emph{behavioral
-regions}. Differential morphology occurs primarily in the basal area,
-where the angle between the shoulder and base is more acute, with a base
-that is generally shorter and narrower in the southern \emph{behavioral
+regions}. Diacritical morphology occurs primarily in basal shape, where
+the angle between the shoulder and base is more acute, and a base that
+is generally shorter and narrower in the southern \emph{behavioral
 region} than it is in the north (Fig. 5 and
 \href{https://seldenlab.github.io/perdiz3/}{supplementary materials}).
 
@@ -374,11 +374,11 @@ arrow points recovered from Caddo burials north and south of the
 \emph{shape boundary} were found to differ significantly, expands the
 scope of the \emph{behavioral regions} to include three classes of
 artifacts (Caddo bottles, bifaces, and---now---arrow points)
-\cite{RN8074,RN7927,RN8370,RN8312,RN8322,RN8158}. This study clearly
-illustrates that those morphological differences among Perdiz arrow
+\cite{RN8074,RN7927,RN8370,RN8312,RN8322,RN8158}. Results clearly
+illustrate that those morphological differences among Perdiz arrow
 points found in the northern and southern \emph{behavioral regions} are
 predictable (\href{https://seldenlab.github.io/perdiz3/}{supplementary
-materials}), and can be identified using the standard suite of linear
+materials}), and can be disaggregated using the standard suite of linear
 metrics regularly collected in the context of cultural resource
 management endeavors.
 
@@ -459,23 +459,23 @@ groups, to include the movement of material culture between Caddo
 \emph{behavioral regions}.
 
 Three categories of Caddo material culture differ north and south of the
-\emph{shape boundary}, indicating regionally-distinct perspectives
-related to production (bottles), and/or aesthetic choice/cultural
-interaction (bifaces). These differing perspectives incorporate group
-decisions that include shape, size, form, and decorative expression,
-which likely represent the culmination of generational perspectives
-\cite{RN5610}. Simply stated, such perspectives are representative of
-tradition. Eckert and colleagues \cite{RN8061} indicate that provenance,
-the origin or source of an item, is a significant component of
-understanding the interrelatedness of \emph{communities of identity} and
-\emph{communities of practice}. Perdiz arrow points and Gahagan bifaces
-recovered north and south of the \emph{shape boundary} are
-morphologically distinct. A second \emph{shape boundary} demonstrates
-that Gahagan bifaces differ significantly between the ancestral Caddo
-region and central Texas, where they are currently thought to have been
-manufactured. This suggests that those \emph{communities of practice}
-that articulate with the production of chipped stone artifacts recovered
-from Caddo internments, are not Caddo.
+\emph{shape boundary}, indicate a haecceity of regionally-distinct
+perspectives related to production (bottles), and/or aesthetic
+choice/cultural interaction (bifaces). These differing perspectives
+incorporate group decisions that include shape, size, form, and
+decorative expression, which likely represent the culmination of
+generational perspectives \cite{RN5610}. Simply stated, such
+perspectives are representative of tradition. Eckert and colleagues
+\cite{RN8061} indicate that provenance, the origin or source of an item,
+is a significant component of understanding the interrelatedness of
+\emph{communities of identity} and \emph{communities of practice}.
+Perdiz arrow points and Gahagan bifaces recovered north and south of the
+\emph{shape boundary} are morphologically distinct. A second \emph{shape
+boundary} demonstrates that Gahagan bifaces differ significantly between
+the ancestral Caddo region and central Texas, where they are currently
+thought to have been manufactured. This suggests that those
+\emph{communities of practice} that articulate with the production of
+chipped stone artifacts recovered from Caddo internments, are not Caddo.
 
 It is entirely possible that there are no \emph{communities of practice}
 at all for chipped stone artifacts recovered from Caddo mortuary
@@ -497,19 +497,18 @@ context.
 \hypertarget{conclusion}{%
 \section{Conclusion}\label{conclusion}}
 
-This exploratory study demonstrated that traditional linear metrics
-collected for Perdiz arrow points support the \emph{shape boundary}
-posited in recent social network and geometric morphometric analyses,
-and determined that the same metrics can be used to predict regional
-membership. Those morphological features that discriminate between
-Perdiz arrow points recovered from each \emph{behavioral region} were
-identified using geometric morphometrics, with the most substantial
-differences found to occur in size (smaller in the north; larger in the
-south) and basal morphology. Blade and base shape were found to be both
-modular and morphologically integrated, suggesting that blade and base
-shapes are predictable. While evidence from one category---Caddo
-bottles---supports discussions of Caddo production, the other
-two---bifaces---more readily articulate with production activities
+This exploratory study demonstrated that linear metrics collected for
+Perdiz arrow points support the \emph{shape boundary} posited in recent
+social network and geometric morphometric analyses, and determined that
+the same metrics can be used to predict regional membership. Those
+morphological features that discriminate between Perdiz arrow points
+recovered from each \emph{behavioral region} were identified using
+geometric morphometrics, with the most substantial differences found to
+occur in size and basal morphology. Blade and base shape were found to
+be both modular and morphologically integrated, suggesting that blade
+and base shapes are predictable. While evidence from one
+category---Caddo bottles---supports discussions of Caddo production, the
+other two---bifaces---more readily articulate with production activities
 outside of the region by non-Caddo makers. Such production activity is
 more likely to be localized than exchange systems, thus assumed to leave
 a clearer signature \cite{RN7019}. Further work is warranted to expand
@@ -526,9 +525,9 @@ Anthropology and Archaeology Laboratory at Stephen F. Austin State
 University for the requisite permissions and access to the NAGPRA
 objects from the Washington Square Mound site and Turner collections,
 and to Tom A. Middlebrook for brokering access to the Perdiz arrow
-points from burials at the Morse Mound site. Thanks also to the editors
-and reviewers for their useful comments and constructive criticisms,
-which further improved this manuscript.
+points from burials at the Morse Mound site. Thanks also to the editors,
+contributors, and reviewers for their useful comments and constructive
+criticisms, which further improved this manuscript.
 
 \hypertarget{data-management}{%
 \section*{Data Management}\label{data-management}}
