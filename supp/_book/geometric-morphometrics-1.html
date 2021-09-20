@@ -24,7 +24,7 @@
 <meta name="author" content="Robert Z. Selden, Jr. and John E. Dockall" />
 
 
-<meta name="date" content="2021-09-14" />
+<meta name="date" content="2021-09-19" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +33,7 @@
   
 <link rel="prev" href="machine-learning-1.html"/>
 <link rel="next" href="references.html"/>
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -312,30 +312,34 @@ div.csl-indent {
 ## Number of vectors 58 
 ## 
 ## Importance of Components:
-##                              Comp1       Comp2      Comp3        Comp4        Comp5        Comp6        Comp7        Comp8        Comp9       Comp10       Comp11
-## Eigenvalues            0.005773408 0.004263677 0.00110953 0.0002718422 0.0002235284 0.0001238687 9.341316e-05 5.630102e-05 3.794795e-05 3.555976e-05 3.274869e-05
-## Proportion of Variance 0.475367265 0.351059970 0.09135581 0.0223827748 0.0184047395 0.0101990267 7.691394e-03 4.635678e-03 3.124534e-03 2.927897e-03 2.696441e-03
-## Cumulative Proportion  0.475367265 0.826427234 0.91778304 0.9401658161 0.9585705557 0.9687695824 9.764610e-01 9.810967e-01 9.842212e-01 9.871491e-01 9.898455e-01
-##                              Comp12       Comp13       Comp14       Comp15       Comp16       Comp17       Comp18       Comp19       Comp20       Comp21
-## Eigenvalues            2.100995e-05 1.673629e-05 1.558522e-05 0.0000146522 9.479467e-06 8.202708e-06 6.581542e-06 5.623302e-06 4.551824e-06 4.004696e-06
-## Proportion of Variance 1.729904e-03 1.378022e-03 1.283246e-03 0.0012064237 7.805144e-04 6.753894e-04 5.419068e-04 4.630079e-04 3.747852e-04 3.297361e-04
-## Cumulative Proportion  9.915754e-01 9.929535e-01 9.942367e-01 0.9954431225 9.962236e-01 9.968990e-01 9.974409e-01 9.979039e-01 9.982787e-01 9.986085e-01
-##                              Comp22       Comp23       Comp24       Comp25       Comp26       Comp27       Comp28       Comp29       Comp30       Comp31
-## Eigenvalues            2.780295e-06 2.539899e-06 2.053898e-06 1.684806e-06 1.383734e-06 1.008708e-06 9.296041e-07 7.104462e-07 6.995574e-07 5.611282e-07
-## Proportion of Variance 2.289221e-04 2.091286e-04 1.691126e-04 1.387225e-04 1.139330e-04 8.305433e-05 7.654116e-05 5.849627e-05 5.759972e-05 4.620182e-05
-## Cumulative Proportion  9.988374e-01 9.990465e-01 9.992156e-01 9.993543e-01 9.994683e-01 9.995513e-01 9.996279e-01 9.996864e-01 9.997440e-01 9.997902e-01
-##                              Comp32       Comp33       Comp34       Comp35       Comp36       Comp37       Comp38       Comp39       Comp40       Comp41
-## Eigenvalues            4.574896e-07 3.740460e-07 3.295267e-07 3.023244e-07 2.819142e-07 1.822967e-07 1.544787e-07 1.175824e-07 1.003652e-07 8.345271e-08
-## Proportion of Variance 3.766849e-05 3.079797e-05 2.713236e-05 2.489260e-05 2.321208e-05 1.500983e-05 1.271937e-05 9.681424e-06 8.263810e-06 6.871277e-06
-## Cumulative Proportion  9.998278e-01 9.998586e-01 9.998858e-01 9.999107e-01 9.999339e-01 9.999489e-01 9.999616e-01 9.999713e-01 9.999796e-01 9.999864e-01
-##                              Comp42       Comp43       Comp44       Comp45       Comp46       Comp47       Comp48       Comp49       Comp50       Comp51
-## Eigenvalues            3.996616e-08 3.159475e-08 2.666575e-08 2.255638e-08 1.462538e-08 8.448002e-09 6.927099e-09 3.723904e-09 3.152719e-09 2.374219e-09
-## Proportion of Variance 3.290708e-06 2.601429e-06 2.195587e-06 1.857233e-06 1.204216e-06 6.955863e-07 5.703591e-07 3.066164e-07 2.595866e-07 1.954869e-07
-## Cumulative Proportion  9.999897e-01 9.999923e-01 9.999945e-01 9.999964e-01 9.999976e-01 9.999983e-01 9.999988e-01 9.999991e-01 9.999994e-01 9.999996e-01
-##                              Comp52       Comp53       Comp54       Comp55       Comp56       Comp57       Comp58
-## Eigenvalues            1.963601e-09 1.208301e-09 6.656422e-10 4.846033e-10 2.571792e-10 1.910708e-10 8.289472e-11
-## Proportion of Variance 1.616777e-07 9.948832e-08 5.480723e-08 3.990096e-08 2.117546e-08 1.573227e-08 6.825333e-09
-## Cumulative Proportion  9.999998e-01 9.999999e-01 9.999999e-01 1.000000e+00 1.000000e+00 1.000000e+00 1.000000e+00</code></pre>
+##                              Comp1       Comp2      Comp3        Comp4        Comp5        Comp6        Comp7        Comp8        Comp9       Comp10
+## Eigenvalues            0.005773408 0.004263677 0.00110953 0.0002718422 0.0002235284 0.0001238687 9.341316e-05 5.630102e-05 3.794795e-05 3.555976e-05
+## Proportion of Variance 0.475367265 0.351059970 0.09135581 0.0223827748 0.0184047395 0.0101990267 7.691394e-03 4.635678e-03 3.124534e-03 2.927897e-03
+## Cumulative Proportion  0.475367265 0.826427234 0.91778304 0.9401658161 0.9585705557 0.9687695824 9.764610e-01 9.810967e-01 9.842212e-01 9.871491e-01
+##                              Comp11       Comp12       Comp13       Comp14       Comp15       Comp16       Comp17       Comp18       Comp19
+## Eigenvalues            3.274869e-05 2.100995e-05 1.673629e-05 1.558522e-05 0.0000146522 9.479467e-06 8.202708e-06 6.581542e-06 5.623302e-06
+## Proportion of Variance 2.696441e-03 1.729904e-03 1.378022e-03 1.283246e-03 0.0012064237 7.805144e-04 6.753894e-04 5.419068e-04 4.630079e-04
+## Cumulative Proportion  9.898455e-01 9.915754e-01 9.929535e-01 9.942367e-01 0.9954431225 9.962236e-01 9.968990e-01 9.974409e-01 9.979039e-01
+##                              Comp20       Comp21       Comp22       Comp23       Comp24       Comp25       Comp26       Comp27       Comp28
+## Eigenvalues            4.551824e-06 4.004696e-06 2.780295e-06 2.539899e-06 2.053898e-06 1.684806e-06 1.383734e-06 1.008708e-06 9.296041e-07
+## Proportion of Variance 3.747852e-04 3.297361e-04 2.289221e-04 2.091286e-04 1.691126e-04 1.387225e-04 1.139330e-04 8.305433e-05 7.654116e-05
+## Cumulative Proportion  9.982787e-01 9.986085e-01 9.988374e-01 9.990465e-01 9.992156e-01 9.993543e-01 9.994683e-01 9.995513e-01 9.996279e-01
+##                              Comp29       Comp30       Comp31       Comp32       Comp33       Comp34       Comp35       Comp36       Comp37
+## Eigenvalues            7.104462e-07 6.995574e-07 5.611282e-07 4.574896e-07 3.740460e-07 3.295267e-07 3.023244e-07 2.819142e-07 1.822967e-07
+## Proportion of Variance 5.849627e-05 5.759972e-05 4.620182e-05 3.766849e-05 3.079797e-05 2.713236e-05 2.489260e-05 2.321208e-05 1.500983e-05
+## Cumulative Proportion  9.996864e-01 9.997440e-01 9.997902e-01 9.998278e-01 9.998586e-01 9.998858e-01 9.999107e-01 9.999339e-01 9.999489e-01
+##                              Comp38       Comp39       Comp40       Comp41       Comp42       Comp43       Comp44       Comp45       Comp46
+## Eigenvalues            1.544787e-07 1.175824e-07 1.003652e-07 8.345271e-08 3.996616e-08 3.159475e-08 2.666575e-08 2.255638e-08 1.462538e-08
+## Proportion of Variance 1.271937e-05 9.681424e-06 8.263810e-06 6.871277e-06 3.290708e-06 2.601429e-06 2.195587e-06 1.857233e-06 1.204216e-06
+## Cumulative Proportion  9.999616e-01 9.999713e-01 9.999796e-01 9.999864e-01 9.999897e-01 9.999923e-01 9.999945e-01 9.999964e-01 9.999976e-01
+##                              Comp47       Comp48       Comp49       Comp50       Comp51       Comp52       Comp53       Comp54       Comp55
+## Eigenvalues            8.448002e-09 6.927099e-09 3.723904e-09 3.152719e-09 2.374219e-09 1.963601e-09 1.208301e-09 6.656422e-10 4.846033e-10
+## Proportion of Variance 6.955863e-07 5.703591e-07 3.066164e-07 2.595866e-07 1.954869e-07 1.616777e-07 9.948832e-08 5.480723e-08 3.990096e-08
+## Cumulative Proportion  9.999983e-01 9.999988e-01 9.999991e-01 9.999994e-01 9.999996e-01 9.999998e-01 9.999999e-01 9.999999e-01 1.000000e+00
+##                              Comp56       Comp57       Comp58
+## Eigenvalues            2.571792e-10 1.910708e-10 8.289472e-11
+## Proportion of Variance 2.117546e-08 1.573227e-08 6.825333e-09
+## Cumulative Proportion  1.000000e+00 1.000000e+00 1.000000e+00</code></pre>
 <div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="geometric-morphometrics-1.html#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co"># set plot parameters</span></span>
 <span id="cb43-2"><a href="geometric-morphometrics-1.html#cb43-2" aria-hidden="true" tabindex="-1"></a>pch.gps <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">15</span>,<span class="dv">17</span>)[<span class="fu">as.factor</span>(region)]</span>
 <span id="cb43-3"><a href="geometric-morphometrics-1.html#cb43-3" aria-hidden="true" tabindex="-1"></a>col.gps <span class="ot">&lt;-</span> pal[<span class="fu">as.factor</span>(region)]</span>
