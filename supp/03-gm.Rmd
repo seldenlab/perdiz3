@@ -1,6 +1,7 @@
 # Geometric morphometrics
 
 ## Load packages + data
+
 ```{r load, echo=TRUE, warning=FALSE}
 # download most recent software version
 devtools::install_github("geomorphR/geomorph", ref = "Stable", build_vignettes = TRUE)
@@ -152,7 +153,6 @@ plotAllometry(fit.size,
               pch = pch.gps, 
               col = col.gps)
 ```
-
 
 ## Procrustes ANOVA: Shape and size
 
