@@ -250,6 +250,7 @@ div.csl-indent {
 <span id="cb5-6"><a href="linear-morphometrics-1.html#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="co">#devtools::install_github(&quot;daattali/ggExtra&quot;)</span></span>
 <span id="cb5-7"><a href="linear-morphometrics-1.html#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-8"><a href="linear-morphometrics-1.html#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="co"># load libraries</span></span>
+<<<<<<< HEAD
 <span id="cb5-9"><a href="linear-morphometrics-1.html#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span>
 <span id="cb5-10"><a href="linear-morphometrics-1.html#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
 <span id="cb5-11"><a href="linear-morphometrics-1.html#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RRPP)</span>
@@ -258,6 +259,25 @@ div.csl-indent {
 <span id="cb5-14"><a href="linear-morphometrics-1.html#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(cluster)</span>
 <span id="cb5-15"><a href="linear-morphometrics-1.html#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(wesanderson)</span>
 <span id="cb5-16"><a href="linear-morphometrics-1.html#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggExtra)</span></code></pre></div>
+=======
+<span id="cb5-9"><a href="linear-morphometrics-1.html#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span></code></pre></div>
+<pre><code>## here() starts at D:/github/perdiz3/supp</code></pre>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="linear-morphometrics-1.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div>
+<pre><code>## -- Attaching packages -------------------------------------------------- tidyverse 1.3.1 --</code></pre>
+<pre><code>## v ggplot2 3.3.5     v purrr   0.3.4
+## v tibble  3.1.4     v dplyr   1.0.7
+## v tidyr   1.1.3     v stringr 1.4.0
+## v readr   2.0.1     v forcats 0.5.1</code></pre>
+<pre><code>## -- Conflicts ----------------------------------------------------- tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()</code></pre>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="linear-morphometrics-1.html#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RRPP)</span>
+<span id="cb11-2"><a href="linear-morphometrics-1.html#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggpubr)</span>
+<span id="cb11-3"><a href="linear-morphometrics-1.html#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggfortify)</span>
+<span id="cb11-4"><a href="linear-morphometrics-1.html#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(cluster)</span>
+<span id="cb11-5"><a href="linear-morphometrics-1.html#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(wesanderson)</span>
+<span id="cb11-6"><a href="linear-morphometrics-1.html#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggExtra)</span></code></pre></div>
+>>>>>>> 83f83060538e5f08f43d12c0cf7bafcfd0b27d0a
 <div id="read-data-and-define-variables" class="section level2" number="1.1">
 <h2><span class="header-section-number">1.1</span> Read data and define variables</h2>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="linear-morphometrics-1.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># read data</span></span>
@@ -325,9 +345,9 @@ div.csl-indent {
 <div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="linear-morphometrics-1.html#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="do">## plot figure</span></span>
 <span id="cb9-2"><a href="linear-morphometrics-1.html#cb9-2" aria-hidden="true" tabindex="-1"></a>regionfigure</span></code></pre></div>
 <div class="figure"><span style="display:block;" id="fig:boxregion"></span>
-<img src="supp_files/figure-html/boxregion-1.png" alt="Boxplots for maximum length, width, thickness, stem length, and stem width for Perdiz arrow points." width="100%" />
+<img src="supp_files/figure-html/boxregion-1.png" alt="Boxplots for maximum length, width, thickness, stem length, and stem width for Perdiz arrow points recovered from the northern and southern behavioral regions." width="100%" />
 <p class="caption">
-Figure 1.1: Boxplots for maximum length, width, thickness, stem length, and stem width for Perdiz arrow points.
+Figure 1.1: Boxplots for maximum length, width, thickness, stem length, and stem width for Perdiz arrow points recovered from the northern and southern behavioral regions.
 </p>
 </div>
 </div>
@@ -356,9 +376,9 @@ Figure 1.1: Boxplots for maximum length, width, thickness, stem length, and stem
 <span id="cb10-21"><a href="linear-morphometrics-1.html#cb10-21" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-22"><a href="linear-morphometrics-1.html#cb10-22" aria-hidden="true" tabindex="-1"></a><span class="fu">ggMarginal</span>(pca, <span class="at">groupColour =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
 <div class="figure"><span style="display:block;" id="fig:pcaregion"></span>
-<img src="supp_files/figure-html/pcaregion-1.png" alt="Principal components analysis by raw material." width="100%" />
+<img src="supp_files/figure-html/pcaregion-1.png" alt="Principal components analysis by north/south behavioral region." width="100%" />
 <p class="caption">
-Figure 1.2: Principal components analysis by raw material.
+Figure 1.2: Principal components analysis by north/south behavioral region.
 </p>
 </div>
 </div>
@@ -387,7 +407,8 @@ Figure 1.2: Principal components analysis by raw material.
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 ## 
-## Call: lm.rrpp(f1 = maxl ~ region, iter = 9999, SS.type = &quot;I&quot;, data = data,      print.progress = FALSE)</code></pre>
+## Call: lm.rrpp(f1 = maxl ~ region, iter = 9999, SS.type = &quot;I&quot;, data = data,  
+##     print.progress = FALSE)</code></pre>
 </div>
 <div id="maximum-width-of-perdiz-arrow-points" class="section level3" number="1.4.2">
 <h3><span class="header-section-number">1.4.2</span> <em>Maximum width</em> of Perdiz arrow points</h3>
@@ -413,7 +434,8 @@ Figure 1.2: Principal components analysis by raw material.
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 ## 
-## Call: lm.rrpp(f1 = maxw ~ region, iter = 9999, SS.type = &quot;I&quot;, data = data,      print.progress = FALSE)</code></pre>
+## Call: lm.rrpp(f1 = maxw ~ region, iter = 9999, SS.type = &quot;I&quot;, data = data,  
+##     print.progress = FALSE)</code></pre>
 </div>
 <div id="maximum-thickness-of-perdiz-arrow-points" class="section level3" number="1.4.3">
 <h3><span class="header-section-number">1.4.3</span> <em>Maximum thickness</em> of Perdiz arrow points</h3>
@@ -437,7 +459,8 @@ Figure 1.2: Principal components analysis by raw material.
 ## Residuals 65 17.3577 0.267041 0.99726                       
 ## Total     66 17.4054                                        
 ## 
-## Call: lm.rrpp(f1 = maxth ~ region, iter = 9999, SS.type = &quot;I&quot;, data = data,      print.progress = FALSE)</code></pre>
+## Call: lm.rrpp(f1 = maxth ~ region, iter = 9999, SS.type = &quot;I&quot;, data = data,  
+##     print.progress = FALSE)</code></pre>
 </div>
 <div id="maximum-stem-length-of-perdiz-arrow-points" class="section level3" number="1.4.4">
 <h3><span class="header-section-number">1.4.4</span> <em>Maximum stem length</em> of Perdiz arrow points</h3>
@@ -463,7 +486,8 @@ Figure 1.2: Principal components analysis by raw material.
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 ## 
-## Call: lm.rrpp(f1 = maxstl ~ region, iter = 9999, SS.type = &quot;I&quot;, data = data,      print.progress = FALSE)</code></pre>
+## Call: lm.rrpp(f1 = maxstl ~ region, iter = 9999, SS.type = &quot;I&quot;, data = data,  
+##     print.progress = FALSE)</code></pre>
 </div>
 <div id="maximum-stem-width-of-perdiz-arrow-points" class="section level3" number="1.4.5">
 <h3><span class="header-section-number">1.4.5</span> <em>Maximum stem width</em> of Perdiz arrow points</h3>
@@ -489,7 +513,8 @@ Figure 1.2: Principal components analysis by raw material.
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 ## 
-## Call: lm.rrpp(f1 = maxstw ~ region, iter = 9999, SS.type = &quot;I&quot;, data = data,      print.progress = FALSE)</code></pre>
+## Call: lm.rrpp(f1 = maxstw ~ region, iter = 9999, SS.type = &quot;I&quot;, data = data,  
+##     print.progress = FALSE)</code></pre>
 
 </div>
 </div>

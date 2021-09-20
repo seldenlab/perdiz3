@@ -36,7 +36,7 @@ reg <- data$region # region
 
 ## Boxplots for _variable_ by _raw material_
 
-```{r boxregion, out.width = "100%", dpi = 300, echo=TRUE, warning=FALSE, fig.cap = "Boxplots for maximum length, width, thickness, stem length, and stem width for Perdiz arrow points."}
+```{r boxregion, out.width = "100%", dpi = 300, echo=TRUE, warning=FALSE, fig.cap = "Boxplots for maximum length, width, thickness, stem length, and stem width for Perdiz arrow points recovered from the northern and southern behavioral regions."}
 # boxplot of maximum length ~ region
 regionmaxl <- ggplot(data, aes(x = region, y = maxl, color = region)) + 
   geom_boxplot(notch = TRUE) +
@@ -88,7 +88,7 @@ regionfigure
 
 ## Principal Components Analysis
 
-```{r pcaregion, out.width = "100%", dpi = 300, echo=TRUE, warning=FALSE, fig.cap = "Principal components analysis by raw material."}
+```{r pcaregion, out.width = "100%", dpi = 300, echo=TRUE, warning=FALSE, fig.cap = "Principal components analysis by north/south behavioral region."}
 # attributes for plot
 df<-data[c(4:8)]
 pch.gps.gp <- c(15,16)[as.factor(reg)]
