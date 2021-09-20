@@ -40,6 +40,5 @@ generalised-procrustes-analysis-1
 boxplot-centroid-size-1
 principal-components-analysis-2
 minimamaxima-of-pc12-with-warp-grids-1
-composite-pca-with-warp-grids-1
 procrustes-anova-shape-and-size-1
 mean-shapes-1

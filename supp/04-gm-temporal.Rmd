@@ -136,13 +136,6 @@ plotRefToTarget(pca$shapes$shapes.comp2$max,
                 mean.shape)
 ```
 
-### Composite PCA with warp grids
-
-```{r composite.pca-temporal, out.width = "100%", dpi = 300, echo=TRUE}
-## plot composite pca with PC1/2 max/min
-#knitr::include_graphics('figures/gm-pca-temporal.jpg')
-```
-
 ## Procrustes ANOVA: Shape and size
 
 ```{r ss-temporal, echo=TRUE, out.width = "100%", dpi = 300, warning=FALSE}
