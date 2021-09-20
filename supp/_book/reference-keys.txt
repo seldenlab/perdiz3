@@ -20,7 +20,7 @@ maximum-thickness-of-perdiz-arrow-points
 maximum-stem-length-of-perdiz-arrow-points
 maximum-stem-width-of-perdiz-arrow-points
 machine-learning-1
-geometric-morphometrics-1
+geometric-morphometrics---spatial
 load-packages-data
 generalised-procrustes-analysis
 boxplot-centroid-size
@@ -33,3 +33,13 @@ modularity
 morphological-integration
 morphological-disparity
 mean-shapes
+geometric-morphometrics---temporal
+load-packages-data-1
+temporal-attributes
+generalised-procrustes-analysis-1
+boxplot-centroid-size-1
+principal-components-analysis-2
+minimamaxima-of-pc12-with-warp-grids-1
+composite-pca-with-warp-grids-1
+procrustes-anova-shape-and-size-1
+mean-shapes-1

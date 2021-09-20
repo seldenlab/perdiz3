@@ -1,4 +1,4 @@
-# Geometric morphometrics
+# Geometric morphometrics - spatial
 
 ## Load packages + data
 ```{r load, echo=TRUE, warning=FALSE}

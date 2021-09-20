@@ -1,0 +1,192 @@
+# Geometric morphometrics - temporal
+
+## Load packages + data
+
+```{r load-temporal, echo=TRUE, warning=FALSE}
+# load analysis packages
+library(here)
+library(StereoMorph)
+library(geomorph)
+library(ggplot2)
+library(dplyr)
+library(wesanderson)
+
+# read shape data and define number of sLMs
+shapes <- readShapes("shapes-temporal")
+shapesGM <- readland.shapes(shapes, nCurvePts = c(10,3,5,5,3,10))
+
+# read qualitative data
+qdata <- read.csv("qdata-temporal.csv",
+                  header = TRUE,
+                  row.names = 1)
+```
+
+## Temporal attributes
+
+```{r temporal-chron, echo=TRUE, out.width = "100%", dpi = 300, warning=FALSE}
+# temporal attributes
+pal <- wes_palette("Moonrise2", 5, type = "continuous")
+
+# gantt chart of relative dates for perdiz arrow points
+temp<-data.frame(Site = c('41CP5, Tuck Carpenter','41CP12, Johns','41CP20, BJ Horton','41NA49, Washington Square Mound', '41SY27, Morse Mound'),
+                 Date_Range_CE = c(1430,1430,1500,1238,1456), # in years CE
+                 end = c(1500,1600,1550,1445,1488) # in years CE
+)
+
+# reorder types by beginning of relative date range
+temp$Site <- factor(temp$Site, levels = temp$Site[order(temp$Date_Range_CE)])
+# arrange figure
+type.time <- ggplot(temp, 
+                    aes(x = Date_Range_CE, 
+                        xend = end, 
+                        y = factor(Site,
+                                   levels = rev(levels(factor(Site)))), 
+                        yend = Site, 
+                        color = Site)) +
+  geom_segment(size = 2.5) +
+  scale_colour_manual(values = pal) +
+  theme(legend.position = "none") +
+  labs(y = "Site", x = "Date Range CE")
+
+# render figure
+type.time
+```
+
+## Generalised Procrustes Analysis
+
+```{r gpa-temporal, echo=TRUE, out.width = "100%", dpi = 300, warning=FALSE}
+# gpa
+Y.gpa <- gpagen(shapesGM, print.progress = FALSE)
+
+## plot
+plot(Y.gpa)
+
+# dataframe
+gdf <- geomorph.data.frame(shape = Y.gpa$coords,
+                           size = Y.gpa$Csize,
+                           site = qdata$site)
+
+# add centroid size to qdata
+qdata$csz <- Y.gpa$Csize
+```
+
+## Boxplot (centroid size)
+
+```{r box-temporal, echo=TRUE, out.width = "100%", dpi = 300, warning=FALSE}
+# attributes
+csz <- qdata$csz
+site <- qdata$site
+
+# palette
+pal = wes_palette("Moonrise2")
+
+# boxplot of Perdiz arrow points by site
+csz.temp <- ggplot(qdata, aes(x = site, y = csz, color = site)) +
+  geom_boxplot() +
+  geom_dotplot(binaxis = 'y', stackdir = 'center', dotsize = 0.3) +
+  scale_color_manual(values = pal) +
+  theme(legend.position = "none") +
+  labs(x = 'Site', y = 'Centroid Size')
+
+## render plot
+csz.temp
+```
+
+## Principal Components Analysis
+
+```{r pca-temporal, echo=TRUE, out.width = "100%", dpi = 300, warning=FALSE}
+# pca
+pca <- gm.prcomp(Y.gpa$coords)
+summary(pca)
+
+# set plot parameters
+pch.gps <- c(15,17)[as.factor(site)]
+col.gps <- pal[as.factor(site)]
+col.hull <- c("#798E87", "#C27D38")
+
+## pca plot
+pc.plot <- plot(pca,
+                asp = 1,
+                pch = pch.gps,
+                col = col.gps)
+shapeHulls(pc.plot,
+           groups = site,
+           group.cols = col.hull)
+```
+
+### Minima/maxima of PC1/2 with warp grids
+
+```{r min.max-temporal, echo=TRUE, out.width = "100%", dpi = 300, warning=FALSE}
+# plot x/y maxima/minima
+## x - minima
+mean.shape <- mshape(Y.gpa$coords)
+plotRefToTarget(pca$shapes$shapes.comp1$min, 
+                mean.shape)
+
+## x - maxima
+plotRefToTarget(pca$shapes$shapes.comp1$max, 
+                mean.shape)
+
+## y - minima
+plotRefToTarget(pca$shapes$shapes.comp2$min, 
+                mean.shape)
+
+## y - maxima
+plotRefToTarget(pca$shapes$shapes.comp2$max, 
+                mean.shape)
+```
+
+### Composite PCA with warp grids
+
+```{r composite.pca-temporal, out.width = "100%", dpi = 300, echo=TRUE}
+## plot composite pca with PC1/2 max/min
+#knitr::include_graphics('figures/gm-pca-temporal.jpg')
+```
+
+## Procrustes ANOVA: Shape and size
+
+```{r ss-temporal, echo=TRUE, out.width = "100%", dpi = 300, warning=FALSE}
+# shape
+fit.sh.reg <- procD.lm(shape ~ site,
+                       data = gdf,
+                       print.progress = FALSE,
+                       iter = 9999)
+
+# shape
+anova(fit.sh.reg)
+
+# size
+fit.sz.reg <- procD.lm(size ~ site,
+                       data = gdf,
+                       print.progress = FALSE,
+                       iter = 9999)
+
+# size
+anova(fit.sz.reg)
+```
+
+## Mean shapes
+
+```{r mshape-temporal, echo=TRUE, out.width = "100%", dpi = 300, warning=FALSE}
+# subset landmark coordinates to produce mean shapes
+new.coords <- coords.subset(A = Y.gpa$coords,
+                            group = qdata$site)
+names(new.coords)
+
+# group shape means
+mean <- lapply(new.coords, mshape)
+
+## plot mean shape 41na49
+plot(mean$`41na49`)
+
+## plot mean shape 41sy27
+plot(mean$`41sy27`)
+
+## comparison plot
+plotRefToTarget(mean$`41na49`,
+                mean$`41sy27`,
+                method = "points",
+                mag = 1,
+                useRefPts = TRUE)
+
+```
