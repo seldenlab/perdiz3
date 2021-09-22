@@ -104,7 +104,7 @@ knitr::include_graphics("ms-figs/figure5.jpg")
 The _shape boundary_ empirically delineates two discrete _behavioral regions_ in the ancestral Caddo area. That the Perdiz arrow points recovered from Caddo burials north and south of the _shape boundary_ were found to differ significantly, expands the scope of the _behavioral regions_ to include three classes of artifacts (Caddo bottles, bifaces, and—now—arrow points) \cite{RN8074,RN7927,RN8370,RN8312,RN8322,RN8158}. In other words, for material culture offerings included in burial contexts, the Caddo were _selecting_ for significant morphological differences in bottles and bifaces recovered from either side of the _shape boundary_ (Fig. 6). Results clearly illustrate that those morphological differences among Perdiz arrow points found in the northern and southern _behavioral regions_ are predictable ([supplementary materials](https://seldenlab.github.io/perdiz3/)), and can be disaggregated using the standard suite of linear metrics regularly collected in the context of cultural resource management endeavors.
 
 
-```{r fig6, out.width = "100%", dpi = 300, echo=FALSE, warning=FALSE, fig.cap="Mean shapes and comparisons for a, Formative/Early Caddo bottles; b, Late/Historic Caddo bottles; c, Gahagan bifaces; and d, Perdiz arrow points."}
+```{r fig6, out.width = "100%", dpi = 300, echo=FALSE, warning=FALSE, fig.cap="Mean shapes and comparisons for a, Formative/Early Caddo bottles; b, Late/Historic Caddo bottles; c, Gahagan bifaces; and d, Perdiz arrow points from the northern and southern behavioral regions."}
 knitr::include_graphics("ms-figs/figure6.png")
 ```
 
