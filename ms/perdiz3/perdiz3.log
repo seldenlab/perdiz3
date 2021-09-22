@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.9)  22 SEP 2021 16:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.9)  22 SEP 2021 16:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -461,13 +461,10 @@ File: ms-figs/figure6.png Graphic file (type png)
 <use ms-figs/figure6.png>
 Package pdftex.def Info: ms-figs/figure6.png  used on input line 386.
 (pdftex.def)             Requested size: 338.0pt x 330.91637pt.
+[9]
+Underfull \vbox (badness 7238) has occurred while \output is active []
 
-Underfull \hbox (badness 2376) in paragraph at lines 386--386
-[]\OT1/cmr/bx/n/8 Fig. 5|[]\OT1/cmr/m/n/8 Mean shapes and com-par-isons for a, 
-For-ma-tive/Early Caddo bot-tles; b,
- []
-
-[9] [10 <./ms-figs/figure6.png (PNG copy)>] [11] (./perdiz3.bbl [12]
+[10 <./ms-figs/figure6.png (PNG copy)>] [11] (./perdiz3.bbl [12]
 Underfull \hbox (badness 3219) in paragraph at lines 106--112
 \OT1/cmr/m/n/8 Mul-ti-scalar Per-spec-tives on So-cial Net-works in the Late Pr
 e-his-panic South-
@@ -616,7 +613,7 @@ Package rerunfilecheck Info: File `perdiz3.out' has not changed.
 Here is how much of TeX's memory you used:
  8739 strings out of 480559
  130058 string characters out of 5901445
- 451976 words of memory out of 5000000
+ 451964 words of memory out of 5000000
  26153 multiletter control sequences out of 15000+600000
  410862 words of font info for 53 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -637,7 +634,7 @@ fonts/cm/cmti10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti8.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTe
 X/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/Users/seldenjrz/AppD
 ata/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on perdiz3.pdf (16 pages, 9151070 bytes).
+Output written on perdiz3.pdf (16 pages, 9151044 bytes).
 PDF statistics:
  553 PDF objects out of 1000 (max. 8388607)
  390 compressed objects within 4 object streams
