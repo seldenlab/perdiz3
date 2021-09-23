@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.9)  23 SEP 2021 09:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.23)  23 SEP 2021 10:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -411,187 +411,187 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--112
 
 [1{c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap
 /pdftex.map}] [2]
-Overfull \hbox (5.47282pt too wide) in paragraph at lines 189--196
+Overfull \hbox (5.47282pt too wide) in paragraph at lines 192--199
 []\OT1/cmr/m/n/10 [t]riangular blade with edges usu-ally quite straight but som
 e-times slightly
  []
 
-<ms-figs/figure1.jpg, id=77, 4296.05pt x 3151.775pt>
+<ms-figs/figure1.jpg, id=117, 4296.05pt x 3151.775pt>
 File: ms-figs/figure1.jpg Graphic file (type jpg)
 <use ms-figs/figure1.jpg>
-Package pdftex.def Info: ms-figs/figure1.jpg  used on input line 212.
+Package pdftex.def Info: ms-figs/figure1.jpg  used on input line 215.
 (pdftex.def)             Requested size: 338.0pt x 247.96313pt.
 [3] [4 <./ms-figs/figure1.jpg>] [5]
 
 pdfTeX warning: pdflatex.exe (file ./ms-figs/figure2.pdf): PDF inclusion: found
  PDF version <1.6>, but at most version <1.5> allowed
-<ms-figs/figure2.pdf, id=161, 803.93753pt x 1267.34477pt>
+<ms-figs/figure2.pdf, id=204, 803.93753pt x 1267.34477pt>
 File: ms-figs/figure2.pdf Graphic file (type pdf)
 <use ms-figs/figure2.pdf>
-Package pdftex.def Info: ms-figs/figure2.pdf  used on input line 315.
+Package pdftex.def Info: ms-figs/figure2.pdf  used on input line 318.
 (pdftex.def)             Requested size: 321.09897pt x 506.19409pt.
 
-LaTeX Warning: Float too large for page by 8.21082pt on input line 316.
+LaTeX Warning: Float too large for page by 8.21082pt on input line 319.
 
-<ms-figs/figure3.jpg, id=202, 1012.0209pt x 617.4267pt>
+<ms-figs/figure3.jpg, id=245, 1012.0209pt x 617.4267pt>
 File: ms-figs/figure3.jpg Graphic file (type jpg)
 <use ms-figs/figure3.jpg>
-Package pdftex.def Info: ms-figs/figure3.jpg  used on input line 364.
+Package pdftex.def Info: ms-figs/figure3.jpg  used on input line 367.
 (pdftex.def)             Requested size: 338.0pt x 206.21036pt.
 [6] [7 <./ms-figs/figure2.pdf>]
-<ms-figs/figure4.jpg, id=330, 5281.7325pt x 5520.625pt>
+<ms-figs/figure4.jpg, id=374, 5281.7325pt x 5520.625pt>
 File: ms-figs/figure4.jpg Graphic file (type jpg)
 <use ms-figs/figure4.jpg>
-Package pdftex.def Info: ms-figs/figure4.jpg  used on input line 386.
+Package pdftex.def Info: ms-figs/figure4.jpg  used on input line 389.
 (pdftex.def)             Requested size: 338.0pt x 353.20929pt.
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 4
-03.
+06.
 
 (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 403.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 406.
 [8 <./ms-figs/figure3.jpg>] [9 <./ms-figs/figure4.jpg>]
-<ms-figs/figure6.png, id=365, 976.6086pt x 956.1321pt>
+<ms-figs/figure6.png, id=408, 976.6086pt x 956.1321pt>
 File: ms-figs/figure6.png Graphic file (type png)
 <use ms-figs/figure6.png>
-Package pdftex.def Info: ms-figs/figure6.png  used on input line 437.
+Package pdftex.def Info: ms-figs/figure6.png  used on input line 440.
 (pdftex.def)             Requested size: 338.0pt x 330.91637pt.
-[10 <./ms-figs/figure6.png (PNG copy)>] [11] [12] (./perdiz3.bbl [13]
-Underfull \hbox (badness 3219) in paragraph at lines 106--112
+[10 <./ms-figs/figure6.png (PNG copy)>] [11] [12] (./perdiz3.bbl [13] [14]
+Underfull \hbox (badness 3219) in paragraph at lines 161--167
 \OT1/cmr/m/n/8 Mul-ti-scalar Per-spec-tives on So-cial Net-works in the Late Pr
 e-his-panic South-
  []
 
 
-Underfull \hbox (badness 4713) in paragraph at lines 106--112
+Underfull \hbox (badness 4713) in paragraph at lines 161--167
 \OT1/cmr/m/n/8 west, Amer-i-can An-tiq-uity \OT1/cmr/bx/n/8 80\OT1/cmr/m/n/8 (1
 ), 3 (2015).  DOI $10 . 7183 / 0002 -[] 7316 . 79 . 4 . 3$.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--112
+Underfull \hbox (badness 10000) in paragraph at lines 161--167
 \OT1/cmr/m/n/8 URL []$\OT1/cmtt/m/n/8 https : / / www . cambridge . org / core 
 / journals / american -[] antiquity / article /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--112
+Underfull \hbox (badness 10000) in paragraph at lines 161--167
 \OT1/cmtt/m/n/8 multiscalar -[] perspectives -[] on -[] social -[] networks -[]
  in -[] the -[] late -[] prehispanic -[]
  []
 
-[14]
-Underfull \hbox (badness 6094) in paragraph at lines 114--120
+
+Underfull \hbox (badness 6094) in paragraph at lines 169--175
 []\OT1/cmr/m/n/8 V.D. Blon-del, J.L. Guil-laume, R. Lam-biotte, E. Lefeb-vre, F
 ast Un-fold-ing
  []
 
 
-Underfull \hbox (badness 4595) in paragraph at lines 114--120
+Underfull \hbox (badness 4595) in paragraph at lines 169--175
 \OT1/cmr/m/n/8 of Com-mu-ni-ties in Large Net-works, Jour-nal of Sta-tis-ti-cal
  Me-chan-ics: The-
  []
 
 
-Underfull \hbox (badness 1460) in paragraph at lines 114--120
+Underfull \hbox (badness 1460) in paragraph at lines 169--175
 \OT1/cmr/m/n/8 ory and Ex-per-i-ment \OT1/cmr/bx/n/8 2008\OT1/cmr/m/n/8 (10), P
 10008 (2008).  DOI $10 . 1088 / 1742 -[] 5468 / 2008 /
  []
 
-
-Underfull \hbox (badness 3229) in paragraph at lines 195--202
+[15]
+Underfull \hbox (badness 3229) in paragraph at lines 250--257
 []\OT1/cmr/m/n/8 D.G. Kendall, Shape man-i-folds, pro-crustean met-rics, and co
 m-plex pro-jec-tive
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--202
+Underfull \hbox (badness 10000) in paragraph at lines 250--257
 \OT1/cmtt/m/n/8 16 . 2 . 81 / abstracthttps : / / londmathsoc . onlinelibrary .
  wiley . com / doi / abs / 10 .
  []
 
 
-Underfull \hbox (badness 1448) in paragraph at lines 209--214
+Underfull \hbox (badness 1448) in paragraph at lines 264--269
 []\OT1/cmr/m/n/8 F.J. Rohlf, D.E. Slice, Ex-ten-sions of the Pro-crustes Method
  for the Op-ti-mal
  []
 
-[15]
-Underfull \hbox (badness 5847) in paragraph at lines 216--223
+
+Underfull \hbox (badness 5847) in paragraph at lines 271--278
 []\OT1/cmr/m/n/8 D.C. Adams, E. Otarola-Castillo, ge-o-morph: An R Pack-age for
  the Col-
  []
 
 
-Underfull \hbox (badness 4995) in paragraph at lines 216--223
+Underfull \hbox (badness 4995) in paragraph at lines 271--278
 \OT1/cmr/m/n/8 lec-tion and Anal-y-sis of Ge-o-met-ric Mor-pho-me-t-ric Shape D
 ata, Meth-ods in
  []
 
 
-Underfull \hbox (badness 7576) in paragraph at lines 216--223
+Underfull \hbox (badness 7576) in paragraph at lines 271--278
 \OT1/cmr/m/n/8 Ecol-ogy and Evo-lu-tion \OT1/cmr/bx/n/8 4\OT1/cmr/m/n/8 (4), 39
 3 (2013).  DOI $10 . 1111 / 2041 -[] 210x . 12035$.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--223
+Underfull \hbox (badness 10000) in paragraph at lines 271--278
 \OT1/cmr/m/n/8 URL []$\OT1/cmtt/m/n/8 https : / / besjournals . onlinelibrary .
  wiley . com / doi / full / 10 . 1111 / 2041 -[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--223
+Underfull \hbox (badness 10000) in paragraph at lines 271--278
 \OT1/cmtt/m/n/8 210X . 12035https : / / besjournals . onlinelibrary . wiley . c
 om / doi / pdfdirect / 10 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--269
+Underfull \hbox (badness 10000) in paragraph at lines 317--324
 \OT1/cmtt/m/n/8 / / besjournals . onlinelibrary . wiley . com / doi / pdf / 10 
 . 1111 / 2041 -[] 210X . 13029https :
  []
 
-
-Underfull \hbox (badness 5607) in paragraph at lines 282--288
+[16]
+Underfull \hbox (badness 5607) in paragraph at lines 337--343
 []\OT1/cmr/m/n/8 M.L. Col-lyer, D.J. Sekora, D.C. Adams, A method for anal-y-si
 s of phe-
  []
 
 
-Underfull \hbox (badness 6063) in paragraph at lines 282--288
+Underfull \hbox (badness 6063) in paragraph at lines 337--343
 \OT1/cmr/m/n/8 no-typic change for phe-no-types de-scribed by high-dimensional 
 data, Hered-
  []
 
 
-Underfull \hbox (badness 4242) in paragraph at lines 282--288
+Underfull \hbox (badness 4242) in paragraph at lines 337--343
 \OT1/cmr/m/n/8 ity (Ed-inb) \OT1/cmr/bx/n/8 115\OT1/cmr/m/n/8 (4), 357 (2015). 
  DOI $10 . 1038 / hdy . 2014 . 75$.  URL []$\OT1/cmtt/m/n/8 http :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--288
+Underfull \hbox (badness 10000) in paragraph at lines 337--343
 \OT1/cmtt/m/n/8 / / www . ncbi . nlm . nih . gov / pubmed / 25204302https : / /
  www . ncbi . nlm . nih . gov / pmc /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 319--324
+Underfull \hbox (badness 10000) in paragraph at lines 374--379
 \OT1/cmr/m/n/8 URL []$\OT1/cmtt/m/n/8 https : / / www . cambridge . org / core 
 / journals / latin -[] american -[] antiquity /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 319--324
+Underfull \hbox (badness 10000) in paragraph at lines 374--379
 \OT1/cmtt/m/n/8 article / dimensional -[] standardization -[] and -[] productio
 n -[] scale -[] in -[] mesoamerican -[]
  []
 
-[16]
-Underfull \hbox (badness 2035) in paragraph at lines 351--358
+
+Underfull \hbox (badness 2035) in paragraph at lines 406--413
 []\OT1/cmr/m/n/8 S.L. Eck-ert, K.L. Schle-her, W.D. James, Com-mu-ni-ties of Id
 en-tity, Com-mu-ni-
  []
@@ -605,13 +605,13 @@ Package rerunfilecheck Info: File `perdiz3.out' has not changed.
 (rerunfilecheck)             Checksum: EBF8B09E248A146479DA7008EEC76DCC;674.
  ) 
 Here is how much of TeX's memory you used:
- 8755 strings out of 480559
- 130233 string characters out of 5901445
- 451210 words of memory out of 5000000
- 26160 multiletter control sequences out of 15000+600000
+ 8777 strings out of 480559
+ 130442 string characters out of 5901444
+ 449529 words of memory out of 5000000
+ 26171 multiletter control sequences out of 15000+600000
  410862 words of font info for 53 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 60i,9n,66p,628b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,8n,66p,628b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmbsy10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx10.pfb><c:/Users/seldenjrz/AppData/Roaming/Tiny
@@ -628,10 +628,10 @@ fonts/cm/cmti10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti8.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTe
 X/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/Users/seldenjrz/AppD
 ata/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on perdiz3.pdf (17 pages, 9156963 bytes).
+Output written on perdiz3.pdf (17 pages, 9160131 bytes).
 PDF statistics:
- 580 PDF objects out of 1000 (max. 8388607)
- 409 compressed objects within 5 object streams
- 106 named destinations out of 1000 (max. 500000)
+ 626 PDF objects out of 1000 (max. 8388607)
+ 439 compressed objects within 5 object streams
+ 117 named destinations out of 1000 (max. 500000)
  74 words of extra memory for PDF output out of 10000 (max. 10000000)
 
