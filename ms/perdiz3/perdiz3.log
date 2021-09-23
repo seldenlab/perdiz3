@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.9)  23 SEP 2021 03:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.9)  23 SEP 2021 09:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -461,7 +461,7 @@ File: ms-figs/figure6.png Graphic file (type png)
 <use ms-figs/figure6.png>
 Package pdftex.def Info: ms-figs/figure6.png  used on input line 385.
 (pdftex.def)             Requested size: 338.0pt x 330.91637pt.
-[9] [10 <./ms-figs/figure6.png (PNG copy)>] [11] (./perdiz3.bbl [12]
+[9] [10 <./ms-figs/figure6.png (PNG copy)>] [11] [12] (./perdiz3.bbl [13]
 Underfull \hbox (badness 3219) in paragraph at lines 106--112
 \OT1/cmr/m/n/8 Mul-ti-scalar Per-spec-tives on So-cial Net-works in the Late Pr
 e-his-panic South-
@@ -503,7 +503,7 @@ Underfull \hbox (badness 1460) in paragraph at lines 114--120
 10008 (2008).  DOI $10 . 1088 / 1742 -[] 5468 / 2008 /
  []
 
-[13]
+
 Underfull \hbox (badness 3229) in paragraph at lines 195--202
 []\OT1/cmr/m/n/8 D.G. Kendall, Shape man-i-folds, pro-crustean met-rics, and co
 m-plex pro-jec-tive
@@ -515,7 +515,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--202
  wiley . com / doi / abs / 10 .
  []
 
-
+[14]
 Underfull \hbox (badness 1448) in paragraph at lines 209--214
 []\OT1/cmr/m/n/8 F.J. Rohlf, D.E. Slice, Ex-ten-sions of the Pro-crustes Method
  for the Op-ti-mal
@@ -551,7 +551,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 216--223
 om / doi / pdfdirect / 10 .
  []
 
-[14]
+
 Underfull \hbox (badness 10000) in paragraph at lines 262--269
 \OT1/cmtt/m/n/8 / / besjournals . onlinelibrary . wiley . com / doi / pdf / 10 
 . 1111 / 2041 -[] 210X . 13029https :
@@ -581,25 +581,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 282--288
  www . ncbi . nlm . nih . gov / pmc /
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 315--320
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 319--324
 \OT1/cmr/m/n/8 URL []$\OT1/cmtt/m/n/8 https : / / www . cambridge . org / core 
 / journals / latin -[] american -[] antiquity /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--320
+Underfull \hbox (badness 10000) in paragraph at lines 319--324
 \OT1/cmtt/m/n/8 article / dimensional -[] standardization -[] and -[] productio
 n -[] scale -[] in -[] mesoamerican -[]
  []
 
 
-Underfull \hbox (badness 2035) in paragraph at lines 322--329
+Underfull \hbox (badness 2035) in paragraph at lines 351--358
 []\OT1/cmr/m/n/8 S.L. Eck-ert, K.L. Schle-her, W.D. James, Com-mu-ni-ties of Id
 en-tity, Com-mu-ni-
  []
 
-[15]) [16] (./perdiz3.aux)
+) [16] (./perdiz3.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -608,13 +608,13 @@ Package rerunfilecheck Info: File `perdiz3.out' has not changed.
 (rerunfilecheck)             Checksum: EBF8B09E248A146479DA7008EEC76DCC;674.
  ) 
 Here is how much of TeX's memory you used:
- 8739 strings out of 480559
- 130058 string characters out of 5901445
- 451959 words of memory out of 5000000
- 26153 multiletter control sequences out of 15000+600000
+ 8751 strings out of 480559
+ 130172 string characters out of 5901445
+ 451133 words of memory out of 5000000
+ 26159 multiletter control sequences out of 15000+600000
  410862 words of font info for 53 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 60i,9n,66p,628b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,8n,66p,628b,475s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmbsy10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx10.pfb><c:/Users/seldenjrz/AppData/Roaming/Tiny
@@ -631,10 +631,10 @@ fonts/cm/cmti10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti8.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTe
 X/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/Users/seldenjrz/AppD
 ata/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on perdiz3.pdf (16 pages, 9151089 bytes).
+Output written on perdiz3.pdf (16 pages, 9153303 bytes).
 PDF statistics:
- 553 PDF objects out of 1000 (max. 8388607)
- 390 compressed objects within 4 object streams
- 97 named destinations out of 1000 (max. 500000)
+ 574 PDF objects out of 1000 (max. 8388607)
+ 404 compressed objects within 5 object streams
+ 103 named destinations out of 1000 (max. 500000)
  74 words of extra memory for PDF output out of 10000 (max. 10000000)
 
