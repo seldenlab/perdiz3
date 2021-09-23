@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.23)  23 SEP 2021 10:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.23)  23 SEP 2021 11:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -458,7 +458,10 @@ File: ms-figs/figure6.png Graphic file (type png)
 <use ms-figs/figure6.png>
 Package pdftex.def Info: ms-figs/figure6.png  used on input line 441.
 (pdftex.def)             Requested size: 338.0pt x 330.91637pt.
-[10 <./ms-figs/figure6.png (PNG copy)>] [11] [12] (./perdiz3.bbl [13] [14]
+
+Underfull \vbox (badness 1303) has occurred while \output is active []
+
+[10 <./ms-figs/figure6.png (PNG copy)>] [11] [12] [13] (./perdiz3.bbl [14]
 Underfull \hbox (badness 3219) in paragraph at lines 161--167
 \OT1/cmr/m/n/8 Mul-ti-scalar Per-spec-tives on So-cial Net-works in the Late Pr
 e-his-panic South-
@@ -607,7 +610,7 @@ Package rerunfilecheck Info: File `perdiz3.out' has not changed.
 Here is how much of TeX's memory you used:
  8777 strings out of 480559
  130442 string characters out of 5901444
- 450529 words of memory out of 5000000
+ 450650 words of memory out of 5000000
  26171 multiletter control sequences out of 15000+600000
  410862 words of font info for 53 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -628,7 +631,7 @@ fonts/cm/cmti10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti8.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTe
 X/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/Users/seldenjrz/AppD
 ata/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on perdiz3.pdf (17 pages, 9160473 bytes).
+Output written on perdiz3.pdf (17 pages, 9160576 bytes).
 PDF statistics:
  626 PDF objects out of 1000 (max. 8388607)
  439 compressed objects within 5 object streams
