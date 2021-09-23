@@ -126,6 +126,25 @@ fit.size <- procD.lm(shape ~ size,
 # allometry
 anova(fit.size)
 
+# common allometries
+fit.common<-procD.lm(shape ~ size + region, 
+                     data = gdf, 
+                     print.progress = FALSE, 
+                     iter = 9999)
+
+# common allometries
+anova(fit.common)
+
+# unique allometries
+fit.unique<-procD.lm(shape ~ size * region, 
+                     data = gdf, 
+                     print.progress = FALSE, 
+                     iter = 9999)
+
+# unique allometries
+anova(fit.unique)
+
+
 # allometry plots
 ## regscore (Drake and Klingenberg 2008)
 plot(fit.size, 
@@ -148,6 +167,14 @@ plotAllometry(fit.size,
               size = gdf$size, 
               logsz = TRUE, 
               method = "size.shape", 
+              pch = pch.gps, 
+              col = col.gps)
+
+## PredLine (Adams and Nistri 2010)
+plotAllometry(fit.unique, 
+              size = gdf$size, 
+              logsz = TRUE, 
+              method = "PredLine", 
               pch = pch.gps, 
               col = col.gps)
 ```

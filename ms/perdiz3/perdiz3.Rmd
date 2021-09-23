@@ -18,7 +18,6 @@ keywords:
 - American Southeast
 - Caddo
 - Texas
-- anthroinformatics
 - archaeoinformatics
 - computational archaeology
 - machine learning
@@ -27,7 +26,7 @@ keywords:
 - STEM
 
 abstract: |
-  Recent research in the ancestral Caddo area yielded evidence for distinct _behavioral regions_, across which material culture from Caddo burials—bottles and Gahagan bifaces—has been found to express significant morphological differences. This inquiry assesses whether Perdiz arrow points from Caddo burials, assumed to reflect design intent, may differ across the same geography, and extend the pattern of shape differences to a third category of Caddo material culture. Perdiz arrow points collected from the geographies of the northern and southern Caddo _behavioral regions_ defined in a neoteric social network analysis were employed to test the hypothesis that morphological attributes differ, and are predictable, between the two communities. Results indicate significant between-community differences in maximum length, width, stem length, and stem width, but not thickness. Using the same traditional metrics combined with the tools of machine learning, a predictive model---support vector machine---was designed to assess the degree to which community differences could be predicted, achieving a receiver operator curve score of 97 percent, and an accuracy score of 94 percent. The subsequent geometric morphometric analysis identified significant differences in Perdiz arrow point shape, size, and allometry, coupled with significant results for modularity and morphological integration. These findings bolster recent arguments that established two discrete _behavioral regions_ in the ancestral Caddo area defined on the basis of discernible morphological differences across three categories of Caddo material culture.
+  Recent research in the ancestral Caddo area yielded evidence for distinct _behavioral regions_, across which material culture from Caddo burials—bottles and Gahagan bifaces—has been found to express significant morphological differences. This inquiry assesses whether Perdiz arrow points from Caddo burials, assumed to reflect design intent, may differ across the same geography, and extend the pattern of shape differences to a third category of Caddo material culture. Perdiz arrow points collected from the geographies of the northern and southern Caddo _behavioral regions_ defined in a recent social network analysis were employed to test the hypothesis that morphological attributes differ, and are predictable, between the two communities. Results indicate significant between-community differences in maximum length, width, stem length, and stem width, but not thickness. Using the same traditional metrics combined with the tools of machine learning, a predictive model---support vector machine---was designed to assess the degree to which community differences could be predicted, achieving a receiver operator curve score of 97 percent, and an accuracy score of 94 percent. The subsequent geometric morphometric analysis identified significant differences in Perdiz arrow point shape, size, and allometry, coupled with significant results for modularity and morphological integration. These findings bolster recent arguments that established two discrete _behavioral regions_ in the ancestral Caddo area defined on the basis of discernible morphological differences across three categories of Caddo material culture.
 
 bibliography: mybibfile.bib
 biblio-style: spphys
@@ -99,8 +98,7 @@ A Procrustes ANOVA was used to test whether a significant difference exists in P
 
 The _shape boundary_ empirically delineates two discrete _behavioral regions_ in the ancestral Caddo area. That the Perdiz arrow points recovered from Caddo burials north and south of the _shape boundary_ were found to differ significantly, expands the scope of the _behavioral regions_ to include three classes of artifacts (Caddo bottles, bifaces, and—now—arrow points) \cite{RN8074,RN7927,RN8370,RN8312,RN8322,RN8158}. For material culture offerings included in burial contexts, the Caddo were _selecting_ for significant morphological differences in bottles and bifaces recovered from either side of the _shape boundary_ (Fig. 5). Results clearly illustrate that those morphological differences among Perdiz arrow points found in the northern and southern _behavioral regions_ (Fig. 5d) are predictable ([supplementary materials](https://seldenlab.github.io/perdiz3/)), and can be disaggregated using the standard suite of linear metrics regularly collected in the context of cultural resource management endeavors.
 
-
-```{r fig5, out.width = "100%", dpi = 300, echo=FALSE, warning=FALSE, fig.cap="Mean shapes and comparisons for a, Formative/Early bottles; b, Late/Historic bottles; c, Formative/Early Gahagan bifaces; and d, Middle/Late Perdiz arrow points from Caddo burial contexts in the northern and southern behavioral regions."}
+```{r fig5, out.width = "100%", dpi = 300, echo=FALSE, warning=FALSE, fig.cap="Mean shapes and comparisons for a, Formative/Early and b, Late/Historic bottles; c, Formative/Early Gahagan bifaces; and d, Middle/Late Perdiz arrow points from Caddo burial contexts in the northern and southern behavioral regions."}
 knitr::include_graphics("ms-figs/figure6.png")
 ```
 
