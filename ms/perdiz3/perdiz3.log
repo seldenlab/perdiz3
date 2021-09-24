@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.23)  23 SEP 2021 11:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.23)  24 SEP 2021 09:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -461,7 +461,10 @@ Package pdftex.def Info: ms-figs/figure6.png  used on input line 441.
 
 Underfull \vbox (badness 1303) has occurred while \output is active []
 
-[10 <./ms-figs/figure6.png (PNG copy)>] [11] [12] [13] (./perdiz3.bbl [14]
+[10 <./ms-figs/figure6.png (PNG copy)>] [11] [12]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[13] (./perdiz3.bbl [14]
 Underfull \hbox (badness 3219) in paragraph at lines 161--167
 \OT1/cmr/m/n/8 Mul-ti-scalar Per-spec-tives on So-cial Net-works in the Late Pr
 e-his-panic South-
@@ -551,13 +554,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 271--278
 om / doi / pdfdirect / 10 .
  []
 
-
+[16]
 Underfull \hbox (badness 10000) in paragraph at lines 317--324
 \OT1/cmtt/m/n/8 / / besjournals . onlinelibrary . wiley . com / doi / pdf / 10 
 . 1111 / 2041 -[] 210X . 13029https :
  []
 
-[16]
+
 Underfull \hbox (badness 5607) in paragraph at lines 337--343
 []\OT1/cmr/m/n/8 M.L. Col-lyer, D.J. Sekora, D.C. Adams, A method for anal-y-si
 s of phe-
@@ -593,13 +596,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 374--379
 n -[] scale -[] in -[] mesoamerican -[]
  []
 
-
-Underfull \hbox (badness 2035) in paragraph at lines 406--413
+[17]
+Underfull \hbox (badness 2035) in paragraph at lines 431--438
 []\OT1/cmr/m/n/8 S.L. Eck-ert, K.L. Schle-her, W.D. James, Com-mu-ni-ties of Id
 en-tity, Com-mu-ni-
  []
 
-) [17] (./perdiz3.aux)
+) [18] (./perdiz3.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -608,10 +611,10 @@ Package rerunfilecheck Info: File `perdiz3.out' has not changed.
 (rerunfilecheck)             Checksum: EBF8B09E248A146479DA7008EEC76DCC;674.
  ) 
 Here is how much of TeX's memory you used:
- 8777 strings out of 480559
- 130442 string characters out of 5901444
- 450650 words of memory out of 5000000
- 26171 multiletter control sequences out of 15000+600000
+ 8786 strings out of 480559
+ 130521 string characters out of 5901444
+ 451760 words of memory out of 5000000
+ 26175 multiletter control sequences out of 15000+600000
  410862 words of font info for 53 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  60i,8n,66p,628b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -631,10 +634,10 @@ fonts/cm/cmti10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti8.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTe
 X/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/Users/seldenjrz/AppD
 ata/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on perdiz3.pdf (17 pages, 9160576 bytes).
+Output written on perdiz3.pdf (18 pages, 9163628 bytes).
 PDF statistics:
- 626 PDF objects out of 1000 (max. 8388607)
- 439 compressed objects within 5 object streams
- 117 named destinations out of 1000 (max. 500000)
+ 659 PDF objects out of 1000 (max. 8388607)
+ 459 compressed objects within 5 object streams
+ 122 named destinations out of 1000 (max. 500000)
  74 words of extra memory for PDF output out of 10000 (max. 10000000)
 
