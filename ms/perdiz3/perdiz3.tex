@@ -320,11 +320,13 @@ than a three-dimensional, study
 \hypertarget{predictive-model}{%
 \subsection{Predictive model}\label{predictive-model}}
 
-The utility of support vector machines to classify archaeological
-materials has increased with the rise of big data and digital
-repositories \cite{RN9515,RN9516,RN9514,RN9513}. For this effort, linear
-data were imported and modeled using the \texttt{scikit-learn} package
-in Python \cite{scikit-learn,sklearn_api}
+A \emph{support vector machine} (SVM) is a supervised machine learning
+model that is regularly used to classify archaeological materials
+\cite{RN9515,RN9516,RN9514,RN9513}. SVMs are useful for comparing and
+classifying data from digital repositories, comparative collections, as
+well as open access reports and/or data. For this effort, linear data
+were imported and modeled using the \texttt{scikit-learn} package in
+Python \cite{scikit-learn,sklearn_api}
 (\href{https://seldenlab.github.io/perdiz3/}{supplementary materials}).
 Data were subsequently split into training (75 percent) and testing (25
 percent) subsets. A \emph{standard scaler} was used to decrease the
@@ -377,7 +379,7 @@ with size (allometry), and differs by group (region), Procrustes ANOVAs
 as standard deviates of the generated sampling distributions
 \cite{RN8477}. Procrustes variance was used to discriminate between
 regions and compare the amount of shape variation (morphological
-disparity) \cite{RN5703}, estimated as the Procrustes variance using
+disparity) \cite{RN5703}, estimated as Procrustes variance using
 residuals of linear model fit \cite{RN8314}. A pairwise comparison of
 morphological integration was used to test the strength of integration
 between blade and basal morphology using a z-score \cite{RN8340}.

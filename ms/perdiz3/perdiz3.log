@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.16)  27 SEP 2021 11:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.16)  27 SEP 2021 11:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -436,22 +436,22 @@ LaTeX Warning: Float too large for page by 8.21082pt on input line 318.
 <ms-figs/figure3.jpg, id=253, 1012.0209pt x 617.4267pt>
 File: ms-figs/figure3.jpg Graphic file (type jpg)
 <use ms-figs/figure3.jpg>
-Package pdftex.def Info: ms-figs/figure3.jpg  used on input line 364.
+Package pdftex.def Info: ms-figs/figure3.jpg  used on input line 366.
 (pdftex.def)             Requested size: 338.0pt x 206.21036pt.
 [6] [7 <./ms-figs/figure2.pdf>]
-<ms-figs/figure4.jpg, id=381, 5281.7325pt x 5520.625pt>
+<ms-figs/figure4.jpg, id=378, 5281.7325pt x 5520.625pt>
 File: ms-figs/figure4.jpg Graphic file (type jpg)
 <use ms-figs/figure4.jpg>
-Package pdftex.def Info: ms-figs/figure4.jpg  used on input line 386.
+Package pdftex.def Info: ms-figs/figure4.jpg  used on input line 388.
 (pdftex.def)             Requested size: 338.0pt x 353.20929pt.
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 4
-03.
+05.
 
 (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 403.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 405.
 [8 <./ms-figs/figure3.jpg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -459,7 +459,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <ms-figs/figure6.png, id=417, 976.6086pt x 956.1321pt>
 File: ms-figs/figure6.png Graphic file (type png)
 <use ms-figs/figure6.png>
-Package pdftex.def Info: ms-figs/figure6.png  used on input line 437.
+Package pdftex.def Info: ms-figs/figure6.png  used on input line 439.
 (pdftex.def)             Requested size: 338.0pt x 330.91637pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -637,7 +637,7 @@ fonts/cm/cmti10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti8.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTe
 X/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/Users/seldenjrz/AppD
 ata/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on perdiz3.pdf (18 pages, 9162642 bytes).
+Output written on perdiz3.pdf (18 pages, 9162808 bytes).
 PDF statistics:
  668 PDF objects out of 1000 (max. 8388607)
  465 compressed objects within 5 object streams
