@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.23)  28 SEP 2021 10:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.23)  28 SEP 2021 10:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -605,6 +605,12 @@ Underfull \hbox (badness 2035) in paragraph at lines 447--454
 en-tity, Com-mu-ni-
  []
 
+
+Underfull \hbox (badness 6708) in paragraph at lines 461--465
+\OT1/cmr/m/n/8 Ar-chae-ol-ogy \OT1/cmr/bx/n/8 1\OT1/cmr/m/n/8 , 66 (1974).  URL
+ []$\OT1/cmtt/m/n/8 https : / / docs . wixstatic . com / ugd / fefb33 _
+ []
+
 ) [18] (./perdiz3.aux)
 
 LaTeX Font Warning: Size substitutions with differences
@@ -614,10 +620,10 @@ Package rerunfilecheck Info: File `perdiz3.out' has not changed.
 (rerunfilecheck)             Checksum: EBF8B09E248A146479DA7008EEC76DCC;674.
  ) 
 Here is how much of TeX's memory you used:
- 8792 strings out of 480559
- 130578 string characters out of 5901444
- 452641 words of memory out of 5000000
- 26178 multiletter control sequences out of 15000+600000
+ 8794 strings out of 480559
+ 130597 string characters out of 5901444
+ 452670 words of memory out of 5000000
+ 26179 multiletter control sequences out of 15000+600000
  410862 words of font info for 53 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  60i,9n,66p,628b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -637,10 +643,10 @@ fonts/cm/cmti10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti8.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTe
 X/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/Users/seldenjrz/AppD
 ata/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on perdiz3.pdf (18 pages, 9162830 bytes).
+Output written on perdiz3.pdf (18 pages, 9163180 bytes).
 PDF statistics:
- 668 PDF objects out of 1000 (max. 8388607)
- 465 compressed objects within 5 object streams
- 125 named destinations out of 1000 (max. 500000)
+ 673 PDF objects out of 1000 (max. 8388607)
+ 469 compressed objects within 5 object streams
+ 126 named destinations out of 1000 (max. 500000)
  74 words of extra memory for PDF output out of 10000 (max. 10000000)
 
