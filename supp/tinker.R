@@ -8,7 +8,7 @@ library(wesanderson)
 library(ggExtra)
 
 # data
-data <- read.csv("qdata-sy27.csv")
+data <- read.csv("qdata-temporal.csv")
 
 # define variables
 maxl <- data$maxl # maximum length
@@ -16,30 +16,34 @@ maxw <- data$maxw # maximum width
 maxth <- data$maxth # maximum thickness
 maxstl <- data$maxstl # maximum stem length
 maxstw <- data$maxstw # maximum stem width
-group <- data$group # site
+site <- data$site # site
+
+# size standardize vars
+data$ss.maxw <- maxl/maxw
+data$ss.maxth <- maxl/maxth
+data$ss.maxstl <- maxl/maxstl
+data$ss.maxstw <- maxl/maxstw
 
 ggplot(data = data,
        aes(x = maxw,
-           y = maxstl,
-           colour = group)) +
+           y = maxth,
+           colour = site)) +
   geom_point(size = 2) +
-  stat_ellipse(geom = "polygon",
-               aes(fill = site),
-               alpha = 0.05)
+  geom_smooth(method = "lm", se = FALSE) +
   xlab("Width") + ylab("Stem Width")
 
   
   ## Principal Components Analysis
-  df<-data[c(4:8)]
-  pch.gps.gp <- c(15:17)[as.factor(group)]
-  col.gps.gp <- wes_palette("Moonrise2")[as.factor(group)]
+  df<-data[c(9:12)]
+  pch.gps.gp <- c(15,17)[as.factor(site)]
+  col.gps.gp <- wes_palette("Moonrise2")[as.factor(site)]
   
   ## pca plot
   pca <- autoplot(prcomp(df),
                   data = data,
                   asp = 1,
                   shape = pch.gps.gp,
-                  colour = "group",
+                  colour = "site",
                   variance_percentage = TRUE,
                   loadings = TRUE, 
                   loadings.colour = 'blue',
@@ -53,73 +57,43 @@ ggplot(data = data,
   ggMarginal(pca, groupColour = TRUE)
 
   
-  ## Analyses of Variance (ANOVA) for _variable_ ~ _region_
-  
-  ### _Maximum length_ of Perdiz arrow points
-  
-  ```{r anovaregionmaxl, out.width = "100%", dpi = 300, echo=TRUE}
-  # anova = maximum length ~ region
-  regionml <- lm.rrpp(maxl ~ group, 
-                      SS.type = "I", 
-                      data = data, iter = 9999, 
-                      print.progress = FALSE)
-  anova(regionml)
-  ```
+  ## Analyses of Variance (ANOVA) for _variable_ ~ _site_
   
   ### _Maximum width_ of Perdiz arrow points
-  
-  ```{r anovaregionmaxw, out.width = "100%", dpi = 300, echo=TRUE}
-  # anova = maximum width ~ region
-  regionmw <- lm.rrpp(maxw ~ group, 
+    # anova = maximum width ~ site
+  sitemw <- lm.rrpp(maxw ~ site, 
                       SS.type = "I", 
                       data = data, 
                       iter = 9999, 
                       print.progress = FALSE)
-  anova(regionmw)
-  ```
-  
+  anova(sitemw)
+
   ### _Maximum thickness_ of Perdiz arrow points
-  
-  ```{r anovaregionmaxth, out.width = "100%", dpi = 300, echo=TRUE}
-  # anova = maximum thickness ~ region
-  regionmth <- lm.rrpp(maxth ~ group, 
+  # anova = maximum thickness ~ site
+  sitemth <- lm.rrpp(maxth ~ site, 
                        SS.type = "I", 
                        data = data, 
                        iter = 9999, 
                        print.progress = FALSE)
-  anova(regionmth)
-  ```
-  
+  anova(sitemth)
+
   ### _Maximum stem length_ of Perdiz arrow points
-  
-  ```{r anovaregionmaxstl, out.width = "100%", dpi = 300, echo=TRUE}
-  # anova = maximum stem length ~ region
-  regionmstl <- lm.rrpp(maxstl ~ group, 
+    # anova = maximum stem length ~ site
+  sitemstl <- lm.rrpp(maxstl ~ site, 
                         SS.type = "I", 
                         data = data, 
                         iter = 9999, 
                         print.progress = FALSE)
-  anova(regionmstl)
-  ```
-  
+  anova(sitemstl)
+
   ### _Maximum stem width_ of Perdiz arrow points
-  
-  ```{r anovaregionmaxstw, out.width = "100%", dpi = 300, echo=TRUE}
-  # anova = maximum stem width ~ region
-  regionmstw <- lm.rrpp(maxstw ~ group, 
+    # anova = maximum stem width ~ site
+  sitemstw <- lm.rrpp(maxstw ~ site, 
                         SS.type = "I", 
                         data = data, 
                         iter = 9999, 
                         print.progress = FALSE)
-  anova(regionmstw)
-  ```  
-  
-  
-  
-  
-  
-# standardize vars
-#perdiz_standardized <- as.data.frame(scale(data[4:8]))
+  anova(sitemstw)
 
 # plots (change between geom_histogram/density)
 maxl <- ggplot(data, aes(x = maxl, fill = group)) +

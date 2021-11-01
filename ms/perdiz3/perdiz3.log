@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.10.21)  22 OCT 2021 09:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.10.21)  1 NOV 2021 04:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -422,7 +422,7 @@ Overfull \hbox (5.47282pt too wide) in paragraph at lines 198--205
 e-times slightly
  []
 
-<ms-figs/figure1.jpg, id=131, 4296.05pt x 3151.775pt>
+<ms-figs/figure1.jpg, id=131, 2148.025pt x 1575.8875pt>
 File: ms-figs/figure1.jpg Graphic file (type jpg)
 <use ms-figs/figure1.jpg>
 Package pdftex.def Info: ms-figs/figure1.jpg  used on input line 221.
@@ -622,7 +622,7 @@ Package rerunfilecheck Info: File `perdiz3.out' has not changed.
 Here is how much of TeX's memory you used:
  8819 strings out of 480539
  131086 string characters out of 5900800
- 454871 words of memory out of 5000000
+ 454948 words of memory out of 5000000
  26218 multiletter control sequences out of 15000+600000
  410862 words of font info for 53 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -643,7 +643,7 @@ fonts/cm/cmti10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti8.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTe
 X/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/Users/seldenjrz/AppD
 ata/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on perdiz3.pdf (19 pages, 12348789 bytes).
+Output written on perdiz3.pdf (19 pages, 12712858 bytes).
 PDF statistics:
  691 PDF objects out of 1000 (max. 8388607)
  482 compressed objects within 5 object streams
