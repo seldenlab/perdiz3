@@ -10,8 +10,6 @@
 
 \usepackage[hyphens]{url} % not crucial - just used below for the URL
 \usepackage{hyperref}
-\providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
 %
 % \usepackage{mathptmx}      % use Times fonts if available on your TeX system
@@ -31,10 +29,14 @@
 
 
 
-% Pandoc citation processing
+% tightlist command for lists without linebreak
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
 
 
 \begin{document}
+
 
 \title{Perdiz arrow points from Caddo burial contexts aid in defining
 discrete behavioral regions \thanks{This manuscript is dedicated to the
@@ -123,22 +125,18 @@ across three categories of Caddo material culture.
 \hypertarget{intro}{%
 \section{Introduction}\label{intro}}
 
-Perdiz arrow points (Fig.1) are considered the epitome of the Late
-Prehistoric Toyah lithic assemblage in Texas---which also includes
-convex end scrapers or unifaces, prismatic blades, as well as two- and
-four-beveled bifacial knives---and are representative of the Late
-Prehistoric transition to the Protohistoric \cite{RN9718}. This
-technological assemblage is typically attributed to groups of highly
-mobile bison hunters, and has been documented across the full extent of
-Texas. Our present understanding of the Toyah tool kit indicates that it
-was successfully implemented in a broad-spectrum of hunting and foraging
+Perdiz arrow points are considered the epitome of the Late Prehistoric
+Toyah lithic assemblage in Texas---which also includes convex end
+scrapers or unifaces, prismatic blades, as well as two- and four-beveled
+bifacial knives---and are representative of the Late Prehistoric
+transition to the Protohistoric \cite{RN9718}. This technological
+assemblage is typically attributed to groups of highly mobile bison
+hunters, and has been documented across the full extent of Texas. Our
+present understanding of the Toyah tool kit indicates that it was
+successfully implemented in a broad-spectrum of hunting and foraging
 lifeways that included not only bison (\emph{Bison bison}), but deer
 (\emph{Odocoileus spp.}) and numerous other animal prey species
 \cite{RN9718,RN9786}.
-
-\begin{figure}
-\includegraphics[width=1\linewidth]{ms-figs/figure0} \caption{Perdiz arrow points used in this study come from Caddo burial contexts at the Tuck Carpenter (41CP5), Johns (41CP12), B. J. Horton (41CP20), Washington Square Mound (41NA49), and Morse Mound (41SY27) sites in northeast Texas. Additional information for each Perdiz arrow point, including the option to download full-resolution 2D images of individual projectiles, can be found at https://scholarworks.sfasu.edu/ita-perdiz/.}\label{fig:fig0}
-\end{figure}
 
 While Perdiz arrow points have not been used to address more complex
 research issues, the Toyah tool kit was recognized as a potential
@@ -206,7 +204,7 @@ good, sometimes exceedingly fine with minutely serrated blade edges
 
 A social network analysis of diagnostic artifacts from Historic Caddo
 (post-CE 1680) sites in northeast Texas demonstrated two spatially
-distinct \emph{behavioral regions} \cite{RN8031} (Fig. 2). The network
+distinct \emph{behavioral regions} \cite{RN8031} (Figure 1). The network
 analysis was limited to Historic Caddo types; however, Formative Early
 Caddo (CE 800 -- 1200) Gahagan bifaces and Caddo bottle types have been
 found to express significant morphological variability following the
@@ -304,13 +302,13 @@ stem width. Following collection, data were imported to R 4.1.1
 materials}), where boxplots were produced, along with a Principal
 Components Analysis (PCA) followed by analyses of variance (ANOVA) to
 test whether the morphology of Perdiz arrow points differs across the
-shape boundary (Fig.2).
+shape boundary (see Figure 1).
 
 Boxplots illustrate the distribution and mean for each of the five
-variables (Fig. 3a-e), and the PCA (Fig. 3f) illustrates over 92 percent
-of the variation in the sample among PC1 (84.65 percent) and PC2 (11.71
-percent). ANOVAs demonstrate significant differences in Perdiz arrow
-point morphology among four of the five variables (maximum length,
+variables (Figure 2a-e), and the PCA (Figure 2f) illustrates over 92
+percent of the variation in the sample among PC1 (84.65 percent) and PC2
+(11.71 percent). ANOVAs demonstrate significant differences in Perdiz
+arrow point morphology among four of the five variables (maximum length,
 width, stem length, and stem width)
 (\href{https://seldenlab.github.io/perdiz3/}{supplementary materials}).
 Maximum thickness does not differ significantly between the northern and
@@ -360,7 +358,7 @@ landmarking protocol were inspired by the work of Birkhoff
 Landmarks were aligned to a global coordinate system
 \cite{RN8102,RN8587,RN8384}, achieved through generalized Procrustes
 superimposition \cite{RN8525}, performed in R 4.1.1 \cite{RN8584} using
-the \texttt{geomorph} package v4.0.1 \cite{RN8565,RN9565} (Fig.4).
+the \texttt{geomorph} package v4.0.1 \cite{RN8565,RN9565} (Figure 3).
 Procrustes superimposition translates, scales, and rotates the
 coordinate data allowing for comparisons among objects
 \cite{RN5698,RN8525}. The \texttt{geomorph} package uses a partial
@@ -373,7 +371,7 @@ multivariate methods that assume linear space \cite{RN8511,RN8384}.
 \end{figure}
 
 Principal components analysis \cite{RN8576,RN10875} was used to
-visualize shape variation among the arrow points (Fig. 5). The shape
+visualize shape variation among the arrow points (Figure 4). The shape
 changes described by each principal axis are commonly visualized using
 thin-plate spline warping of a reference image or 3D mesh
 \cite{RN8555,RN8553}. A residual randomization permutation procedure
@@ -396,11 +394,11 @@ z-score \cite{RN8588,RN8477,RN8340,RN10874}.
 \end{figure}
 
 The analysis of modularity, which compares within-module covariation of
-landmarks against between-module covariation was significant (Fig. 4 and
-\href{https://seldenlab.github.io/perdiz3/}{supplementary materials})
-\cite{RN10874,RN5170}, demonstrating that Perdiz arrow point blades and
-bases are, in fact, modular. The test for morphological integration was
-also significant (Fig. 4 and
+landmarks against between-module covariation was significant (Figure 5
+and \href{https://seldenlab.github.io/perdiz3/}{supplementary
+materials}) \cite{RN10874,RN5170}, demonstrating that Perdiz arrow point
+blades and bases are, in fact, modular. The test for morphological
+integration was also significant (Figure 5 and
 \href{https://seldenlab.github.io/perdiz3/}{supplementary materials}),
 indicating that the blades and bases of Perdiz arrow points are
 integrated. These results demonstrate that blade and base shapes for
@@ -434,31 +432,31 @@ artifacts (Caddo bottles, bifaces, and---now---arrow points)
 \cite{RN8074,RN7927,RN8370,RN8312,RN8322,RN8158}. For material culture
 offerings included in burial contexts, the Caddo were \emph{selecting}
 for significant morphological differences in bottles and bifaces
-recovered from either side of the \emph{shape boundary} (Fig. 6).
+recovered from either side of the \emph{shape boundary} (Figure 6).
 Results clearly illustrate that those morphological differences among
 Perdiz arrow points found in the northern and southern \emph{behavioral
-regions} (Fig. 6d) are predictable
+regions} (Figure 6d) are predictable
 (\href{https://seldenlab.github.io/perdiz3/}{supplementary materials}),
 and can be disaggregated using the standard suite of linear metrics
 regularly collected in the context of cultural resource management
 endeavors.
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{ms-figs/figure6} \caption{Mean shapes and comparisons for a, Formative/Early and b, Late/Historic bottles; c, Formative/Early Gahagan bifaces; and d, Middle/Late Perdiz arrow points from Caddo burial contexts in the northern and southern behavioral regions. In the comparisons of mean shape, the northern population appears in gray, and the southern population appears in black.}\label{fig:fig5}
+\includegraphics[width=1\linewidth]{ms-figs/figure6} \caption{Mean shapes and comparisons for a, Formative/Early and b, Late/Historic bottles; c, Formative/Early Gahagan bifaces; and d, Middle/Late Perdiz arrow points from Caddo burial contexts in the northern and southern behavioral regions. In the comparisons of mean shape, the northern population appears in gray, and the southern population appears in black.}\label{fig:fig6}
 \end{figure}
 
 The geometric morphometric analysis demonstrated significant
 morphological differences for Perdiz arrow points recovered north and
 south of the \emph{shape boundary}, where the most pronounced difference
-was found to occur in basal morphology (Fig. 6). Allometry was also
-found to be significant, demonstrating that Perdiz arrow point shape
-differs with size. Those arrow points used in this study are considered
-to represent \emph{design intent}, and are not thought to exhibit
-retouch or resharpening. This finding provides evidence in support of
-the argument that Perdiz arrow point morphology is labile \cite{RN9364}.
-The character of those morphological differences found to occur in
-Perdiz arrow points (basal morphology and size) is also suggestive of
-differential approaches to the practice of hafting.
+was found to occur in basal morphology (see Figure 6). Allometry was
+also found to be significant, demonstrating that Perdiz arrow point
+shape differs with size. Those arrow points used in this study are
+considered to represent \emph{design intent}, and are not thought to
+exhibit retouch or resharpening. This finding provides evidence in
+support of the argument that Perdiz arrow point morphology is labile
+\cite{RN9364}. The character of those morphological differences found to
+occur in Perdiz arrow points (basal morphology and size) is also
+suggestive of differential approaches to the practice of hafting.
 
 Blades and bases of Perdiz arrow points were found to be both modular
 and morphologically integrated. This indicates that each module
@@ -627,7 +625,8 @@ digitally curated on the Open Science Framework at \newline DOI:
 10.17605/OSF.IO/UK9ZD.
 
 
-\bibliographystyle{spphys}
+\bibliographystyle{spmpsci}
 \bibliography{mybibfile.bib}
+
 
 \end{document}

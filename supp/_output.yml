@@ -1,10 +1,12 @@
 bookdown::gitbook:
-  css: style.css
+  css: custom.css
   config:
     toc:
       before: |
-        <li><a href="./">perdiz3</a></li>
+        <li><a href="./">perdiz.3</a></li>
     download: ["pdf", "epub"]
+    fontsettings:
+      theme: night
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex

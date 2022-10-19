@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.10.21)  1 NOV 2021 10:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.19)  19 OCT 2022 03:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **perdiz3.tex
 (./perdiz3.tex
-LaTeX2e <2021-06-01> patch level 1
-L3 programming layer <2021-10-18> (./svjour3.cls
+LaTeX2e <2022-06-01> patch level 5
+L3 programming layer <2022-09-28> (./svjour3.cls
 Document Class: svjour3 2007/05/08 v3.2 
 LaTeX document class for Springer journals
 Class Springer-SVJour3 Info: extra/valid Springer sub-package (-> *.clo) 
@@ -31,96 +31,96 @@ LaTeX Font Info:    Redeclaring math symbol \Omega on input line 157.
 \betweenumberspace=\dimen140
 \aftertext=\dimen141
 \headlineindent=\dimen142
-\c@inst=\count182
-\c@auth=\count183
+\c@inst=\count185
+\c@auth=\count186
 \instindent=\dimen143
-\authrun=\box50
+\authrun=\box51
 \authorrunning=\toks16
-\titrun=\box51
+\titrun=\box52
 \titlerunning=\toks17
-\combirun=\box52
-\c@lastpage=\count184
+\combirun=\box53
+\c@lastpage=\count187
 \rubricwidth=\dimen144
-\c@section=\count185
-\c@subsection=\count186
-\c@subsubsection=\count187
-\c@paragraph=\count188
-\c@subparagraph=\count189
+\c@section=\count188
+\c@subsection=\count189
+\c@subsubsection=\count190
+\c@paragraph=\count191
+\c@subparagraph=\count192
 \spthmsep=\dimen145
-\c@theorem=\count190
-\c@case=\count191
-\c@conjecture=\count192
-\c@corollary=\count193
-\c@definition=\count194
-\c@example=\count195
-\c@exercise=\count196
-\c@lemma=\count197
-\c@note=\count198
-\c@problem=\count199
-\c@property=\count266
-\c@proposition=\count267
-\c@question=\count268
-\c@solution=\count269
-\c@remark=\count270
-\c@figure=\count271
-\c@table=\count272
+\c@theorem=\count193
+\c@case=\count194
+\c@conjecture=\count195
+\c@corollary=\count196
+\c@definition=\count197
+\c@example=\count198
+\c@exercise=\count199
+\c@lemma=\count266
+\c@note=\count267
+\c@problem=\count268
+\c@property=\count269
+\c@proposition=\count270
+\c@question=\count271
+\c@solution=\count272
+\c@remark=\count273
+\c@figure=\count274
+\c@table=\count275
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \figcapgap=\dimen146
 \tabcapgap=\dimen147
 \figgap=\dimen148
 \bibindent=\dimen149
-\@tempcntc=\count273
-)
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsmat
-h.sty
-Package: amsmath 2021/04/20 v2.17j AMS math features
+\@tempcntc=\count276
+) (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2022/04/08 v2.17n AMS math features
 \@mathmargin=\skip49
 For additional information on amsmath, use the `?' option.
-
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amstex
-t.sty
-Package: amstext 2000/06/29 v2.01 AMS text
-
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen
-.sty
+(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks18
 \ex@=\dimen150
-))
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy
-.sty
+)) (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen151
+) (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
 )
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn
-.sty
-Package: amsopn 2016/03/08 v2.02 operator names
-)
-\inf@bad=\count274
+\inf@bad=\count277
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count275
-\leftroot@=\count276
+\uproot@=\count278
+\leftroot@=\count279
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count277
-\DOTSCASE@=\count278
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count280
+\DOTSCASE@=\count281
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box53
-\strutbox@=\box54
+\Mathstrutbox@=\box54
+\strutbox@=\box55
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
 \big@size=\dimen152
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count279
-\c@MaxMatrixCols=\count280
+\macc@depth=\count282
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count283
 \dotsspace@=\muskip16
-\c@parentequation=\count281
-\dspbrk@lvl=\count282
+\c@parentequation=\count284
+\dspbrk@lvl=\count285
 \tag@help=\toks19
-\row@=\count283
-\column@=\count284
-\maxfields@=\count285
+\row@=\count286
+\column@=\count287
+\maxfields@=\count288
 \andhelp@=\toks20
 \eqnshift@=\dimen153
 \alignsep@=\dimen154
@@ -132,261 +132,174 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \multlinegap=\skip50
 \multlinetaggap=\skip51
 \mathdisplay@stack=\toks22
-LaTeX Info: Redefining \[ on input line 2923.
-LaTeX Info: Redefining \] on input line 2924.
-)
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graph
-icx.sty
-Package: graphicx 2020/12/05 v1.2c Enhanced LaTeX Graphics (DPC,SPQR)
-
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/keyva
-l.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+) (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks23
-)
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graph
-ics.sty
-Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
-
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.
-sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/g
-raphics.cfg
+) (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
-
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/p
-dftex.def
-File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+\stockwidth=\dimen159
+\stockheight=\dimen160
 ))
-\Gin@req@height=\dimen159
-\Gin@req@width=\dimen160
-)
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/inputenc.
-sty
+\Gin@req@height=\dimen161
+\Gin@req@width=\dimen162
+) (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks24
 \inpenc@posthook=\toks25
 ) (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyper
-ref.sty
-Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
-
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxc
-mds.sty
+) (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2022-09-22 v7.00t Hypertext links for LaTeX
+(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
-)
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.
-sty
-Package: iftex 2020/03/06 v1.0d TeX engine tests
-)
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdftexcmds/p
-dftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/infwarerr/in
-fwarerr.sty
+) (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+) (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvsetkeys/kv
-setkeys.sty
-Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-)
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvdefinekeys
-/kvdefinekeys.sty
+) (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+) (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdfescape/pd
-fescape.sty
+) (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-)
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hycolor/hycolo
-r.sty
+) (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-)
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/letltxmacro/le
-tltxmacro.sty
+) (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-)
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/auxhook/auxhoo
-k.sty
+) (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
+(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count289
 )
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvoptions/kvop
-tions.sty
-Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
-)
-\@linkdim=\dimen161
-\Hy@linkcounter=\count286
-\Hy@pagecounter=\count287
-
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1en
-c.def
-File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
+\@linkdim=\dimen163
+\Hy@linkcounter=\count290
+\Hy@pagecounter=\count291
+(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2022-09-22 v7.00t Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-)
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyper
-ref-langpatches.def
-File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel la
-nguages
-)
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/intcalc/intc
-alc.sty
+) (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
-)
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/etexcmds/ete
-xcmds.sty
+) (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count288
-
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc
-.def
-File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
+\Hy@SavedSpaceFactor=\count292
+(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2022-09-22 v7.00t Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Hyper figures OFF on input line 4192.
-Package hyperref Info: Link nesting OFF on input line 4197.
-Package hyperref Info: Hyper index ON on input line 4200.
-Package hyperref Info: Plain pages OFF on input line 4207.
-Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Hyper figures OFF on input line 4162.
+Package hyperref Info: Link nesting OFF on input line 4167.
+Package hyperref Info: Hyper index ON on input line 4170.
+Package hyperref Info: Plain pages OFF on input line 4177.
+Package hyperref Info: Backreferencing OFF on input line 4182.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count289
-LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen162
-
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bitset/bitse
-t.sty
+Package hyperref Info: Bookmarks ON on input line 4410.
+\c@Hy@tempcnt=\count293
+LaTeX Info: Redefining \url on input line 4748.
+\XeTeXLinkMargin=\dimen164
+(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
-
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bigintcalc/b
-igintcalc.sty
-Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
-)
+(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count290
-\Field@Width=\dimen163
-\Fld@charsize=\dimen164
-Package hyperref Info: Hyper figures OFF on input line 6076.
-Package hyperref Info: Link nesting OFF on input line 6081.
-Package hyperref Info: Hyper index ON on input line 6084.
-Package hyperref Info: backreferencing OFF on input line 6091.
-Package hyperref Info: Link coloring OFF on input line 6096.
-Package hyperref Info: Link coloring with OCG OFF on input line 6101.
-Package hyperref Info: PDF/A mode OFF on input line 6106.
-LaTeX Info: Redefining \ref on input line 6146.
-LaTeX Info: Redefining \pageref on input line 6150.
-
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atbegshi-
-ltx.sty
+\Fld@menulength=\count294
+\Field@Width=\dimen165
+\Fld@charsize=\dimen166
+Package hyperref Info: Hyper figures OFF on input line 6027.
+Package hyperref Info: Link nesting OFF on input line 6032.
+Package hyperref Info: Hyper index ON on input line 6035.
+Package hyperref Info: backreferencing OFF on input line 6042.
+Package hyperref Info: Link coloring OFF on input line 6047.
+Package hyperref Info: Link coloring with OCG OFF on input line 6052.
+Package hyperref Info: PDF/A mode OFF on input line 6057.
+(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count291
-\c@Item=\count292
-\c@Hfootnote=\count293
+\Hy@abspage=\count295
+\c@Item=\count296
+\c@Hfootnote=\count297
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
-
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hpdft
-ex.def
-File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
-
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atveryend
--ltx.sty
-Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
-e
+(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2022-09-22 v7.00t Hyperref driver for pdfTeX
+(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
-\Fld@listcount=\count294
-\c@bookmark@seq@number=\count295
-
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck
-/rerunfilecheck.sty
-Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
-
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/uniquecounte
-r/uniquecounter.sty
+\Fld@listcount=\count298
+\c@bookmark@seq@number=\count299
+(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-86.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
 \Hy@SectionHShift=\skip52
-)
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3ba
-ckend-pdftex.def
-File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count296
-\l__pdf_internal_box=\box55
+) (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-09-28 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count300
+\l__pdf_internal_box=\box56
 ) (./perdiz3.aux)
 \openout1 = `perdiz3.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
 Unknown journal: specify \journalname{<name of your journal>} in preambel
 
-
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/e
-pstopdf-base.sty
+(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/latexconfig/ep
-stopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 37.
-
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/namer
-ef.sty
-Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
-
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/refcount/refco
-unt.sty
-Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-)
-(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/gettitlestri
-ng/gettitlestring.sty
-Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
-)
-\c@section@level=\count297
-)
-LaTeX Info: Redefining \ref on input line 37.
-LaTeX Info: Redefining \pageref on input line 37.
-LaTeX Info: Redefining \nameref on input line 37.
+Package hyperref Info: Link coloring OFF on input line 38.
 (./perdiz3.out) (./perdiz3.out)
 \@outlinefile=\write3
 \openout3 = `perdiz3.out'.
@@ -394,260 +307,200 @@ LaTeX Info: Redefining \nameref on input line 37.
 SVJour3 warning: Missing \journalname
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <13> not available
-(Font)              size <12> substituted on input line 76.
+(Font)              size <12> substituted on input line 78.
 
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 7
-6.
-
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 78.
 (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 76.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 78.
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--113
+Underfull \hbox (badness 10000) in paragraph at lines 80--115
 
  []
 
-[1{c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap
-/pdftex.map}]
-<ms-figs/figure0.jpg, id=49, 5030.795pt x 6383.85pt>
-File: ms-figs/figure0.jpg Graphic file (type jpg)
-<use ms-figs/figure0.jpg>
-Package pdftex.def Info: ms-figs/figure0.jpg  used on input line 140.
-(pdftex.def)             Requested size: 338.0pt x 428.8944pt.
-[2] [3 <./ms-figs/figure0.jpg>]
-Overfull \hbox (5.47282pt too wide) in paragraph at lines 198--205
-[]\OT1/cmr/m/n/10 [t]riangular blade with edges usu-ally quite straight but som
-e-times slightly
+[1{c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+Overfull \hbox (5.47282pt too wide) in paragraph at lines 196--203
+[]\OT1/cmr/m/n/10 [t]riangular blade with edges usu-ally quite straight but some-times slightly
  []
 
-<ms-figs/figure1.jpg, id=131, 2148.025pt x 1575.8875pt>
+<ms-figs/figure1.jpg, id=124, 2148.025pt x 1575.8875pt>
 File: ms-figs/figure1.jpg Graphic file (type jpg)
 <use ms-figs/figure1.jpg>
-Package pdftex.def Info: ms-figs/figure1.jpg  used on input line 221.
+Package pdftex.def Info: ms-figs/figure1.jpg  used on input line 219.
 (pdftex.def)             Requested size: 338.0pt x 247.96313pt.
-[4] [5 <./ms-figs/figure1.jpg>] [6]
+[3] [4 <./ms-figs/figure1.jpg>] [5]
 
-pdfTeX warning: pdflatex.exe (file ./ms-figs/figure2.pdf): PDF inclusion: found
- PDF version <1.6>, but at most version <1.5> allowed
-<ms-figs/figure2.pdf, id=219, 803.93753pt x 1267.34477pt>
+pdfTeX warning: pdflatex.exe (file ./ms-figs/figure2.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<ms-figs/figure2.pdf, id=213, 803.93753pt x 1267.34477pt>
 File: ms-figs/figure2.pdf Graphic file (type pdf)
 <use ms-figs/figure2.pdf>
-Package pdftex.def Info: ms-figs/figure2.pdf  used on input line 323.
+Package pdftex.def Info: ms-figs/figure2.pdf  used on input line 321.
 (pdftex.def)             Requested size: 321.09897pt x 506.19409pt.
 
-LaTeX Warning: Float too large for page by 8.21082pt on input line 324.
+LaTeX Warning: Float too large for page by 8.21082pt on input line 322.
 
-<ms-figs/figure3.jpg, id=266, 1012.0209pt x 617.4267pt>
+<ms-figs/figure3.jpg, id=260, 1012.0209pt x 617.4267pt>
 File: ms-figs/figure3.jpg Graphic file (type jpg)
 <use ms-figs/figure3.jpg>
-Package pdftex.def Info: ms-figs/figure3.jpg  used on input line 372.
+Package pdftex.def Info: ms-figs/figure3.jpg  used on input line 370.
 (pdftex.def)             Requested size: 338.0pt x 206.21036pt.
-[7] [8 <./ms-figs/figure2.pdf>]
-<ms-figs/figure4.jpg, id=405, 5281.7325pt x 5520.625pt>
+[6] [7 <./ms-figs/figure2.pdf>]
+<ms-figs/figure4.jpg, id=398, 5281.7325pt x 5520.625pt>
 File: ms-figs/figure4.jpg Graphic file (type jpg)
 <use ms-figs/figure4.jpg>
-Package pdftex.def Info: ms-figs/figure4.jpg  used on input line 395.
+Package pdftex.def Info: ms-figs/figure4.jpg  used on input line 393.
 (pdftex.def)             Requested size: 338.0pt x 353.20929pt.
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 4
-13.
-
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 411.
 (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 413.
-[9 <./ms-figs/figure3.jpg>] [10 <./ms-figs/figure4.jpg>]
-<ms-figs/figure6.png, id=448, 976.6086pt x 956.1321pt>
-File: ms-figs/figure6.png Graphic file (type png)
-<use ms-figs/figure6.png>
-Package pdftex.def Info: ms-figs/figure6.png  used on input line 447.
-(pdftex.def)             Requested size: 338.0pt x 330.91637pt.
-
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 411.
+[8 <./ms-figs/figure3.jpg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[11 <./ms-figs/figure6.png (PNG copy)>] [12] [13] [14] (./perdiz3.bbl [15]
-Underfull \hbox (badness 3219) in paragraph at lines 176--182
-\OT1/cmr/m/n/8 Mul-ti-scalar Per-spec-tives on So-cial Net-works in the Late Pr
-e-his-panic South-
+[9 <./ms-figs/figure4.jpg>]
+<ms-figs/figure6.png, id=440, 976.6086pt x 956.1321pt>
+File: ms-figs/figure6.png Graphic file (type png)
+<use ms-figs/figure6.png>
+Package pdftex.def Info: ms-figs/figure6.png  used on input line 445.
+(pdftex.def)             Requested size: 338.0pt x 330.91637pt.
+[10]
+Underfull \vbox (badness 4403) has occurred while \output is active []
+
+[11 <./ms-figs/figure6.png (PNG copy)>] [12] [13] (./perdiz3.bbl
+Underfull \hbox (badness 4467) in paragraph at lines 40--47
+[]\OT1/cmr/m/n/8 Adams, D.C., Otarola-Castillo, E.: ge-o-morph: An R Pack-age for the Col-
  []
 
 
-Underfull \hbox (badness 4713) in paragraph at lines 176--182
-\OT1/cmr/m/n/8 west, Amer-i-can An-tiq-uity \OT1/cmr/bx/n/8 80\OT1/cmr/m/n/8 (1
-), 3 (2015).  DOI $10 . 7183 / 0002 -[] 7316 . 79 . 4 . 3$.
+Underfull \hbox (badness 2591) in paragraph at lines 40--47
+\OT1/cmr/m/n/8 lec-tion and Anal-y-sis of Ge-o-met-ric Mor-pho-me-t-ric Shape Data.  Meth-ods in
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--182
-\OT1/cmr/m/n/8 URL []$\OT1/cmtt/m/n/8 https : / / www . cambridge . org / core 
-/ journals / american -[] antiquity / article /
+Underfull \hbox (badness 2426) in paragraph at lines 40--47
+\OT1/cmr/m/n/8 Ecol-ogy and Evo-lu-tion \OT1/cmr/bx/n/8 4\OT1/cmr/m/n/8 (4), 393--399 (2013).  DOI $10 . 1111 / 2041 -[] 210x . 12035$.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--182
-\OT1/cmtt/m/n/8 multiscalar -[] perspectives -[] on -[] social -[] networks -[]
- in -[] the -[] late -[] prehispanic -[]
+Underfull \hbox (badness 10000) in paragraph at lines 40--47
+\OT1/cmr/m/n/8 URL []$\OT1/cmtt/m/n/8 https : / / besjournals . onlinelibrary . wiley . com / doi / full / 10 . 1111 / 2041 -[]
  []
 
 
-Underfull \hbox (badness 6094) in paragraph at lines 184--190
-[]\OT1/cmr/m/n/8 V.D. Blon-del, J.L. Guil-laume, R. Lam-biotte, E. Lefeb-vre, F
-ast Un-fold-ing
+Underfull \hbox (badness 10000) in paragraph at lines 40--47
+\OT1/cmtt/m/n/8 210X . 12035https : / / besjournals . onlinelibrary . wiley . com / doi / pdfdirect / 10 .
  []
 
 
-Underfull \hbox (badness 4595) in paragraph at lines 184--190
-\OT1/cmr/m/n/8 of Com-mu-ni-ties in Large Net-works, Jour-nal of Sta-tis-ti-cal
- Me-chan-ics: The-
+Underfull \hbox (badness 4505) in paragraph at lines 49--56
+[]\OT1/cmr/m/n/8 Adams, D.C., Peres-Neto, P.: Eval-u-at-ing mod-u-lar-ity in mor-pho-me-t-ric data:
  []
 
 
-Underfull \hbox (badness 1460) in paragraph at lines 184--190
-\OT1/cmr/m/n/8 ory and Ex-per-i-ment \OT1/cmr/bx/n/8 2008\OT1/cmr/m/n/8 (10), P
-10008 (2008).  DOI $10 . 1088 / 1742 -[] 5468 / 2008 /
+Underfull \hbox (badness 3108) in paragraph at lines 49--56
+\OT1/cmr/m/n/8 chal-lenges with the RV co-ef-fi-cient and a new test mea-sure.  Meth-ods in
+ []
+
+
+Underfull \hbox (badness 2426) in paragraph at lines 49--56
+\OT1/cmr/m/n/8 Ecol-ogy and Evo-lu-tion \OT1/cmr/bx/n/8 7\OT1/cmr/m/n/8 (5), 565--572 (2016).  DOI $10 . 1111 / 2041 -[] 210x . 12511$.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--56
+\OT1/cmr/m/n/8 URL []$\OT1/cmtt/m/n/8 https : / / besjournals . onlinelibrary . wiley . com / doi / full / 10 . 1111 / 2041 -[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--56
+\OT1/cmtt/m/n/8 210X . 12511https : / / besjournals . onlinelibrary . wiley . com / doi / pdfdirect / 10 .
+ []
+
+[14]
+Underfull \hbox (badness 3815) in paragraph at lines 86--92
+\OT1/cmr/m/n/8 i-can Ce-ram-ics.  Latin Amer-i-can An-tiq-uity \OT1/cmr/bx/n/8 2\OT1/cmr/m/n/8 (4), 363--370 (1991).  DOI 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--92
+\OT1/cmtt/m/n/8 antiquity / article / dimensional -[] standardization -[] and -[] production -[] scale -[] in -[]
+ []
+
+
+Underfull \hbox (badness 3260) in paragraph at lines 118--125
+[]\OT1/cmr/m/n/8 Blondel, V.D., Guil-laume, J.L., Lam-biotte, R., Lefeb-vre, E.: Fast Un-fold-ing
+ []
+
+
+Underfull \hbox (badness 2376) in paragraph at lines 118--125
+\OT1/cmr/m/n/8 of Com-mu-ni-ties in Large Net-works.  Jour-nal of Sta-tis-ti-cal Me-chan-ics: The-
+ []
+
+
+Underfull \hbox (badness 1460) in paragraph at lines 118--125
+\OT1/cmr/m/n/8 ory and Ex-per-i-ment \OT1/cmr/bx/n/8 2008\OT1/cmr/m/n/8 (10), P10008 (2008).  DOI $10 . 1088 / 1742 -[] 5468 / 2008 /
+ []
+
+
+Underfull \hbox (badness 1308) in paragraph at lines 127--134
+\OT1/cmr/m/n/8 2484(02 ) 00201 -[] 4$.  URL []$\OT1/cmtt/m/n/8 https : / / www . ncbi . nlm . nih . gov / pubmed / 12662941https : / /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--172
+\OT1/cmtt/m/n/8 / / besjournals . onlinelibrary . wiley . com / doi / pdf / 10 . 1111 / 2041 -[] 210X . 13029https :
+ []
+
+
+Underfull \hbox (badness 3838) in paragraph at lines 174--180
+[]\OT1/cmr/m/n/8 Collyer, M.L., Sekora, D.J., Adams, D.C.: A method for anal-y-sis of phe-
+ []
+
+
+Underfull \hbox (badness 2932) in paragraph at lines 174--180
+\OT1/cmr/m/n/8 no-typic change for phe-no-types de-scribed by high-dimensional data.  Hered-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--180
+\OT1/cmr/m/n/8 ity (Ed-inb) \OT1/cmr/bx/n/8 115\OT1/cmr/m/n/8 (4), 357--65 (2015).  DOI $10 . 1038 / hdy . 2014 . 75$.  URL
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--180
+[]$\OT1/cmtt/m/n/8 http : / / www . ncbi . nlm . nih . gov / pubmed / 25204302https : / / www . ncbi . nlm . nih . gov /
+ []
+
+[15]
+Underfull \hbox (badness 2635) in paragraph at lines 294--302
+[]\OT1/cmr/m/n/8 Kendall, D.G.: Shape man-i-folds, pro-crustean met-rics, and com-plex pro-jec-tive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--302
+\OT1/cmtt/m/n/8 2 . 81 / abstracthttps : / / londmathsoc . onlinelibrary . wiley . com / doi / abs / 10 . 1112 /
  []
 
 [16]
-Underfull \hbox (badness 3229) in paragraph at lines 276--283
-[]\OT1/cmr/m/n/8 D.G. Kendall, Shape man-i-folds, pro-crustean met-rics, and co
-m-plex pro-jec-tive
+Underfull \hbox (badness 10000) in paragraph at lines 333--340
+\OT1/cmr/m/n/8 URL []$\OT1/cmtt/m/n/8 https : / / www . cambridge . org / core / journals / american -[] antiquity / article /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 276--283
-\OT1/cmtt/m/n/8 16 . 2 . 81 / abstracthttps : / / londmathsoc . onlinelibrary .
- wiley . com / doi / abs / 10 .
- []
-
-
-Underfull \hbox (badness 1448) in paragraph at lines 290--295
-[]\OT1/cmr/m/n/8 F.J. Rohlf, D.E. Slice, Ex-ten-sions of the Pro-crustes Method
- for the Op-ti-mal
- []
-
-
-Underfull \hbox (badness 5847) in paragraph at lines 297--304
-[]\OT1/cmr/m/n/8 D.C. Adams, E. Otarola-Castillo, ge-o-morph: An R Pack-age for
- the Col-
- []
-
-
-Underfull \hbox (badness 4995) in paragraph at lines 297--304
-\OT1/cmr/m/n/8 lec-tion and Anal-y-sis of Ge-o-met-ric Mor-pho-me-t-ric Shape D
-ata, Meth-ods in
- []
-
-
-Underfull \hbox (badness 7576) in paragraph at lines 297--304
-\OT1/cmr/m/n/8 Ecol-ogy and Evo-lu-tion \OT1/cmr/bx/n/8 4\OT1/cmr/m/n/8 (4), 39
-3 (2013).  DOI $10 . 1111 / 2041 -[] 210x . 12035$.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 297--304
-\OT1/cmr/m/n/8 URL []$\OT1/cmtt/m/n/8 https : / / besjournals . onlinelibrary .
- wiley . com / doi / full / 10 . 1111 / 2041 -[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 297--304
-\OT1/cmtt/m/n/8 210X . 12035https : / / besjournals . onlinelibrary . wiley . c
-om / doi / pdfdirect / 10 .
+Underfull \hbox (badness 10000) in paragraph at lines 333--340
+\OT1/cmtt/m/n/8 multiscalar -[] perspectives -[] on -[] social -[] networks -[] in -[] the -[] late -[] prehispanic -[]
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 355--362
-\OT1/cmtt/m/n/8 / / besjournals . onlinelibrary . wiley . com / doi / pdf / 10 
-. 1111 / 2041 -[] 210X . 13029https :
+Underfull \hbox (badness 2134) in paragraph at lines 490--494
+\OT1/cmr/m/n/8 Ar-chae-ol-ogy \OT1/cmr/bx/n/8 1\OT1/cmr/m/n/8 , 66--74 (1974).  URL []$\OT1/cmtt/m/n/8 https : / / docs . wixstatic . com / ugd / fefb33 _
  []
 
-
-Underfull \hbox (badness 5607) in paragraph at lines 375--381
-[]\OT1/cmr/m/n/8 M.L. Col-lyer, D.J. Sekora, D.C. Adams, A method for anal-y-si
-s of phe-
- []
-
-
-Underfull \hbox (badness 6063) in paragraph at lines 375--381
-\OT1/cmr/m/n/8 no-typic change for phe-no-types de-scribed by high-dimensional 
-data, Hered-
- []
-
-
-Underfull \hbox (badness 4242) in paragraph at lines 375--381
-\OT1/cmr/m/n/8 ity (Ed-inb) \OT1/cmr/bx/n/8 115\OT1/cmr/m/n/8 (4), 357 (2015). 
- DOI $10 . 1038 / hdy . 2014 . 75$.  URL []$\OT1/cmtt/m/n/8 http :
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 375--381
-\OT1/cmtt/m/n/8 / / www . ncbi . nlm . nih . gov / pubmed / 25204302https : / /
- www . ncbi . nlm . nih . gov / pmc /
- []
-
-
-Underfull \hbox (badness 1308) in paragraph at lines 396--403
-\OT1/cmr/m/n/8 2484(02 ) 00201 -[] 4$.  URL []$\OT1/cmtt/m/n/8 https : / / www 
-. ncbi . nlm . nih . gov / pubmed / 12662941https : / /
- []
-
-[18]
-Underfull \hbox (badness 6284) in paragraph at lines 420--427
-[]\OT1/cmr/m/n/8 D.C. Adams, P. Peres-Neto, Eval-u-at-ing mod-u-lar-ity in mor-
-pho-me-t-ric data:
- []
-
-
-Underfull \hbox (badness 5374) in paragraph at lines 420--427
-\OT1/cmr/m/n/8 chal-lenges with the RV co-ef-fi-cient and a new test mea-sure, 
-Meth-ods in
- []
-
-
-Underfull \hbox (badness 7576) in paragraph at lines 420--427
-\OT1/cmr/m/n/8 Ecol-ogy and Evo-lu-tion \OT1/cmr/bx/n/8 7\OT1/cmr/m/n/8 (5), 56
-5 (2016).  DOI $10 . 1111 / 2041 -[] 210x . 12511$.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 420--427
-\OT1/cmr/m/n/8 URL []$\OT1/cmtt/m/n/8 https : / / besjournals . onlinelibrary .
- wiley . com / doi / full / 10 . 1111 / 2041 -[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 420--427
-\OT1/cmtt/m/n/8 210X . 12511https : / / besjournals . onlinelibrary . wiley . c
-om / doi / pdfdirect / 10 .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 437--442
-\OT1/cmr/m/n/8 URL []$\OT1/cmtt/m/n/8 https : / / www . cambridge . org / core 
-/ journals / latin -[] american -[] antiquity /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 437--442
-\OT1/cmtt/m/n/8 article / dimensional -[] standardization -[] and -[] productio
-n -[] scale -[] in -[] mesoamerican -[]
- []
-
-
-Underfull \hbox (badness 2035) in paragraph at lines 494--501
-[]\OT1/cmr/m/n/8 S.L. Eck-ert, K.L. Schle-her, W.D. James, Com-mu-ni-ties of Id
-en-tity, Com-mu-ni-
- []
-
-
-Underfull \hbox (badness 6708) in paragraph at lines 508--512
-\OT1/cmr/m/n/8 Ar-chae-ol-ogy \OT1/cmr/bx/n/8 1\OT1/cmr/m/n/8 , 66 (1974).  URL
- []$\OT1/cmtt/m/n/8 https : / / docs . wixstatic . com / ugd / fefb33 _
- []
-
-) [19] (./perdiz3.aux)
+[18]) [19] (./perdiz3.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -656,33 +509,18 @@ Package rerunfilecheck Info: File `perdiz3.out' has not changed.
 (rerunfilecheck)             Checksum: EBF8B09E248A146479DA7008EEC76DCC;674.
  ) 
 Here is how much of TeX's memory you used:
- 8827 strings out of 480539
- 131166 string characters out of 5900800
- 455057 words of memory out of 5000000
- 26222 multiletter control sequences out of 15000+600000
- 410862 words of font info for 53 fonts, out of 8000000 for 9000
+ 9193 strings out of 477031
+ 145465 string characters out of 5826140
+ 503212 words of memory out of 5000000
+ 30092 multiletter control sequences out of 15000+600000
+ 476339 words of font info for 53 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 60i,9n,66p,629b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmbsy10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmbx10.pfb><c:/Users/seldenjrz/AppData/Roaming/Tiny
-TeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/Users/seldenjrz/Ap
-pData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/U
-sers/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmmi10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Users/seldenjrz/AppData/Roami
-ng/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Users/selde
-njrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pf
-b><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmti10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/font
-s/type1/public/amsfonts/cm/cmti8.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTe
-X/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/Users/seldenjrz/AppD
-ata/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on perdiz3.pdf (19 pages, 12714635 bytes).
+ 72i,9n,77p,628b,584s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on perdiz3.pdf (19 pages, 9510243 bytes).
 PDF statistics:
- 718 PDF objects out of 1000 (max. 8388607)
- 502 compressed objects within 6 object streams
- 135 named destinations out of 1000 (max. 500000)
- 79 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 705 PDF objects out of 1000 (max. 8388607)
+ 493 compressed objects within 5 object streams
+ 134 named destinations out of 1000 (max. 500000)
+ 74 words of extra memory for PDF output out of 10000 (max. 10000000)
 
