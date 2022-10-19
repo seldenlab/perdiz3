@@ -11,8 +11,8 @@ authors:
   email: zselden@sfasu.edu
   
 - name: John E. Dockall 2
-  address: Cox|McClain Environmental Consultants, Inc.
-  email: johnd@coxmcclain.com
+  address: Stantec, Inc.
+  email: john.dockall@stantec.com
 
 keywords:
 - American Southeast
