@@ -22,6 +22,10 @@ Recent research in the ancestral Caddo area yielded evidence for distinct behavi
 
 ### Linear morphometrics
 
+```{r botjarbox, out.width = "100%", dpi = 300, echo=FALSE, warning=FALSE, fig.cap="Boxplots for a, maximum length; b, maximum width; c, maximum thickness; d, stem length; e, stem width, and f, PCA for linear metrics associated with the Perdiz arrow points."}
+knitr::include_graphics('./fig/figure2.png')
+```
+
 * Maximum length **differs significantly** by Caddo community
 * Maximum width **differs significantly** by Caddo community
 * Maximum thickness does not differ by Caddo community
@@ -35,6 +39,10 @@ Recent research in the ancestral Caddo area yielded evidence for distinct behavi
 * Model achieved an **accuracy score of 94 percent**
 
 ### Geometric morphometrics
+
+```{r gmpca, out.width = "100%", dpi = 300, echo=FALSE, warning=FALSE, fig.cap="Principal components analysis plot (PC1/PC2) for Perdiz arrow points by behavioral region/community (top; gray squares, north; orange triangles, south), and results of modularity (bottom left) and blade/base morphological integration (bottom right) analyses."}
+knitr::include_graphics('./ms/perdiz3/ms-figs/figure4.jpg')
+```
 
 * Perdiz arrow point shape **differ significantly** by Caddo community
 * Perdiz arrow point size **differs significantly** by Caddo community
