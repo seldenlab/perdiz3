@@ -18,6 +18,10 @@ description: "Morphology of Perdiz arrow points."
 
 Recent research in the ancestral Caddo area yielded evidence for distinct behavioral regions, across which material culture from Caddo burials—bottles and Gahagan bifaces—has been found to express significant morphological differences. This inquiry assesses whether Perdiz arrow points from Caddo burials, assumed to reflect design intent, may differ across the same geography, and extend the pattern of shape differences to a third category of Caddo material culture. Perdiz arrow points collected from the geographies of the northern and southern Caddo behavioral regions defined in a recent social network analysis were employed to test the hypothesis that morphological attributes differ, and are predictable, between the two communities. Results indicate significant between-community differences in maximum length, width, stem length, and stem width, but not thickness. Using the same traditional metrics combined with the tools of machine learning, a predictive model---support vector machine---was designed to assess the degree to which community differences could be predicted, achieving a receiver operator curve score of 97 percent, and an accuracy score of 94 percent. The subsequent geometric morphometric analysis identified significant differences in Perdiz arrow point shape and size, coupled with significant results for modularity and morphological integration. These findings bolster recent arguments that established two discrete behavioral regions in the ancestral Caddo area defined on the basis of discernible morphological differences across three categories of Caddo material culture.
 
+```{r map, out.width = "100%", dpi = 300, echo=FALSE, warning=FALSE, fig.cap="Location of Caddo sites with Perdiz arrow points used in this study, and the extent of the ancestral Caddo area (white), Red River basin (blue), Sabine River basin (maroon), and Angelina River basin (brown)."}
+knitr::include_graphics('./ms/perdiz3/ms-figs/figure1.png')
+```
+
 ## Primary findings
 
 ### Linear morphometrics
@@ -44,10 +48,14 @@ knitr::include_graphics('./fig/figure2.png')
 knitr::include_graphics('./ms/perdiz3/ms-figs/figure4.jpg')
 ```
 
-* Perdiz arrow point shape **differ significantly** by Caddo community
+* Perdiz arrow point shape **differs significantly** by Caddo community
 * Perdiz arrow point size **differs significantly** by Caddo community
 * Perdiz arrow points exhibit **significant** modularity
 * Perdiz arrow points exhibit **significant** blade/base morphological integration
+
+```{r fig6, out.width = "100%", dpi = 300, echo=FALSE, warning=FALSE, fig.cap="Mean shapes and comparisons for a, Formative/Early and b, Late/Historic bottles; c, Formative/Early Gahagan bifaces; and d, Middle/Late Perdiz arrow points from Caddo burial contexts in the northern and southern behavioral regions. In the comparisons of mean shape, the northern population appears in gray, and the southern population appears in black."}
+knitr::include_graphics('./ms/perdiz3/ms-figs/figure6.png')
+```
 
 ## Acknowledgments
 
@@ -59,7 +67,7 @@ Components of the analytical workflow were developed and funded by a Preservatio
 
 ## Data management
 
-This volume is written using _Markdown_, and includes all analysis code employed in the study, providing a means for others to reproduce (exactly) those results discussed and expounded upon in the following chapters. The replicable nature of this undertaking provides a means for others to critically assess and evaluate the various analytical components of this study [@RN20915;@RN20916;@RN20917], which is a necessary requirement for the production of reliable knowledge. All data and analysis code associated with this project can be accessed through this document or the [GitHub](https://seldenlab.github.io/perdiz3/) repository, and is digitally curated on the Open Science Framework ([DOI 10.17605/OSF.IO/VZHJR](https://osf.io/vzhjr/)).
+This volume is written using _Markdown_, and includes all analysis code employed in the study, providing a means for others to reproduce (exactly) those results discussed and expounded upon in the following chapters. The replicable nature of this undertaking provides a means for others to critically assess and evaluate the various analytical components of this study [@RN20915;@RN20916;@RN20917], which is a necessary requirement for the production of reliable knowledge. All data and analysis code associated with this project can be accessed through this document or the [GitHub](https://seldenlab.github.io/perdiz3/) repository, which is digitally curated on the Open Science Framework ([DOI 10.17605/OSF.IO/VZHJR](https://osf.io/vzhjr/)).
 
 Reproducibility projects in [psychology](https://osf.io/ezcuj/) and [cancer biology](https://www.cos.io/rpcb) are impacting current research practices across all domains. Examples of reproducible research are becoming more abundant in archaeology [@RN20804;@RN21009;@RN8322;@RN8980;@RN11097], and the next generation of archaeologists are learning those tools and methods needed to reproduce and/or replicate research results [@RN21007]. Reproducible and replicable research work flows are often employed at the highest levels of humanities-based inquiries to mitigate concern or doubt regarding proper execution, and is of particular import should the results have—explicitly or implicitly—a major impact on scientific progress [@RN21008].
 

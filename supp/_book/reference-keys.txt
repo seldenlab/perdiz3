@@ -1,5 +1,7 @@
+fig:map
 fig:botjarbox
 fig:gmpca
+fig:fig6
 fig:boxregion
 fig:pcaregion
 basis-of-inquiry
