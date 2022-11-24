@@ -34,7 +34,7 @@ maxstw <- data$maxstw # maximum stem width
 reg <- data$region # region
 ```
 
-## Boxplots for _variable_ by _raw material_
+## Boxplots for _variable_ by _region_
 
 ```{r boxregion, out.width = "100%", dpi = 300, echo=TRUE, warning=FALSE, fig.cap = "Boxplots for maximum length, width, thickness, stem length, and stem width for Perdiz arrow points recovered from the northern and southern behavioral regions."}
 # boxplot of maximum length ~ region
@@ -92,7 +92,6 @@ regionfigure
 # attributes for plot
 df<-data[c(4:8)]
 pch.gps.gp <- c(15,16)[as.factor(reg)]
-col.gps.gp <- wes_palette("Moonrise2")[as.factor(reg)]
 
 ## pca plot
 pca <- autoplot(prcomp(df),

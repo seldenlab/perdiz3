@@ -15,7 +15,7 @@ data-management
 colophon
 linear-morphometrics-1
 read-data-and-define-variables
-boxplots-for-variable-by-raw-material
+boxplots-for-variable-by-region
 principal-components-analysis
 analyses-of-variance-anova-for-variable-region
 maximum-length-of-perdiz-arrow-points
