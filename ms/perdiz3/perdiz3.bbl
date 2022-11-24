@@ -201,6 +201,10 @@ Febriawan, H.K., Moefti, O., Haryanto, D., Wiguna, T.: {Detection and
 \newblock Forum geografic \textbf{XIX}(1), 60--71 (2020).
 \newblock \doi{10.5775/fg.2020.054.i}
 
+\bibitem{RN20917}
+Gandrud, C.: Reproducible Research with R and RStudio.
+\newblock The R Series. CRC Press, London (2014)
+
 \bibitem{RN7046}
 Goodall, C.: {Procrustes Methods in the Statistical Analysis of Shape}.
 \newblock Journal of the Royal Statistical Society. Series B (Methodological)
@@ -212,6 +216,19 @@ Gower, J.C.: {Generalized Procrustes Analysis}.
 \newblock \doi{https://doi.org/10.1007/BF02291478}.
 \newblock
   \urlprefix\url{https://link.springer.com/article/10.1007%2FBF02291478}
+
+\bibitem{RN20915}
+Gray, C.T., Marwick, B.: Truth, Proof, and Reproducibility: There's No
+  Counter-Attack for the Codeless, book section Chapter 8, pp. 111--129.
+\newblock Communications in Computer and Information Science (2019).
+\newblock \doi{10.1007/978-981-15-1960-4_8}
+
+\bibitem{RN21009}
+Ivanovaitė, L., Serwatka, K., Hoggard, C.S., Sauer, F., Riede, F.: All these
+  fantastic cultures? research history and regionalization in the late
+  palaeolithic tanged point cultures of eastern europe.
+\newblock European Journal of Archaeology \textbf{23}(2), 162--185 (2020).
+\newblock \doi{10.1017/eaa.2019.59}
 
 \bibitem{RN9361}
 Johnson, L.: {The Life and Times of Toyah-Culture Folk: The Buckhollow
@@ -279,6 +296,19 @@ Lambiotte, R., Delvenne, J.C., Barahona, M.: {Random Walks, Markov Processes
 \newblock \doi{10.1109/tnse.2015.2391998}.
 \newblock \urlprefix\url{https://ieeexplore.ieee.org/document/7010026/}
 
+\bibitem{RN20804}
+Marwick, B.: Computational reproducibility in archaeological research: Basic
+  principles and a case study of their implementation.
+\newblock Journal of Archaeological Method and Theory \textbf{24}(2), 424--450
+  (2016).
+\newblock \doi{10.1007/s10816-015-9272-9}
+
+\bibitem{RN21007}
+Marwick, B., Wang, L.Y., Robinson, R., Loiselle, H.: How to use replication
+  assignments for teaching integrity in empirical archaeology.
+\newblock Advances in Archaeological Practice \textbf{8}(1), 78--86 (2019).
+\newblock \doi{10.1017/aap.2019.38}
+
 \bibitem{RN8039}
 Mills, B.J., Peeples, M.A., Haas~Jr., W.R., Borck, L., Clark, J.J.,
   Roberts~Jr., J.M.: {Multiscalar Perspectives on Social Networks in the Late
@@ -308,6 +338,18 @@ Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel,
   Passos, A., Cournapeau, D., Brucher, M., Perrot, M., Duchesnay, E.:
   {Scikit-learn: Machine Learning in Python}.
 \newblock Journal of Machine Learning Research \textbf{12}, 2825--2830 (2011)
+
+\bibitem{RN21008}
+Peels, R., Bouter, L.: Humanities need a replication drive too.
+\newblock Nature \textbf{558}(7710), 372 (2018).
+\newblock \doi{10.1038/d41586-018-05454-w}.
+\newblock \urlprefix\url{https://www.ncbi.nlm.nih.gov/pubmed/29921855}
+
+\bibitem{RN20916}
+Peng, R.D.: Reproducible research in computational science.
+\newblock Science \textbf{334}(6060), 1226--7 (2011).
+\newblock \doi{10.1126/science.1213847}.
+\newblock \urlprefix\url{https://www.ncbi.nlm.nih.gov/pubmed/22144613}
 
 \bibitem{RN9721}
 Prewitt, E.R.: {Culture Chronology in Texas}.
@@ -410,6 +452,14 @@ Selden~Jr, R.Z., Dockall, J.E., Bousman, C.B., Perttula, T.K.: {Shape as a
   Southeast}.
 \newblock Journal of Archaeological Science: Reports \textbf{37} (2021).
 \newblock \doi{10.1016/j.jasrep.2021.102916}
+
+\bibitem{RN8980}
+Selden~Jr., R.Z., Dockall, J.E., Bousman, C.B., Perttula, T.K.: {Supplementary
+  materials for paper: Shape as a function of time + raw material + burial
+  context? A preliminary analysis of Perdiz arrow points in the southern Caddo
+  area}.
+\newblock Open Science Framework  (2021).
+\newblock \doi{10.17605/OSF.IO/DEJ74}
 
 \bibitem{RN8322}
 Selden~Jr., R.Z., Dockall, J.E., Dubied, M.: {A quantitative assessment of
