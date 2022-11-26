@@ -11,7 +11,7 @@
 # load libraries
 library(here)
 library(tidyverse)
-library(RRPP)
+library(vegan)
 library(ggpubr)
 library(ggfortify)
 library(cluster)
@@ -97,6 +97,7 @@ pch.gps.gp <- c(15,16)[as.factor(reg)]
 pca <- autoplot(prcomp(df),
                 data = data,
                 asp = 1,
+                scale. = TRUE,
                 shape = pch.gps.gp,
                 colour = "region",
                 variance_percentage = TRUE,
@@ -112,63 +113,18 @@ pca <- autoplot(prcomp(df),
 ggMarginal(pca, groupColour = TRUE)
 ```
 
-## Analyses of Variance (ANOVA) for _variable_ ~ _region_
+## Permutational MANOVA
 
-### _Maximum length_ of Perdiz arrow points
-
-```{r anovaregionmaxl, out.width = "100%", dpi = 300, echo=TRUE}
-# anova = maximum length ~ region
-regionml <- lm.rrpp(maxl ~ region, 
-                  SS.type = "I", 
-                  data = data, iter = 9999, 
-                  print.progress = FALSE)
-anova(regionml)
-```
-
-### _Maximum width_ of Perdiz arrow points
-
-```{r anovaregionmaxw, out.width = "100%", dpi = 300, echo=TRUE}
-# anova = maximum width ~ region
-regionmw <- lm.rrpp(maxw ~ region, 
-                  SS.type = "I", 
-                  data = data, 
-                  iter = 9999, 
-                  print.progress = FALSE)
-anova(regionmw)
-```
-
-### _Maximum thickness_ of Perdiz arrow points
-
-```{r anovaregionmaxth, out.width = "100%", dpi = 300, echo=TRUE}
-# anova = maximum thickness ~ region
-regionmth <- lm.rrpp(maxth ~ region, 
-                   SS.type = "I", 
-                   data = data, 
-                   iter = 9999, 
-                   print.progress = FALSE)
-anova(regionmth)
-```
-
-### _Maximum stem length_ of Perdiz arrow points
-
-```{r anovaregionmaxstl, out.width = "100%", dpi = 300, echo=TRUE}
-# anova = maximum stem length ~ region
-regionmstl <- lm.rrpp(maxstl ~ region, 
-                    SS.type = "I", 
-                    data = data, 
-                    iter = 9999, 
-                    print.progress = FALSE)
-anova(regionmstl)
-```
-
-### _Maximum stem width_ of Perdiz arrow points
-
-```{r anovaregionmaxstw, out.width = "100%", dpi = 300, echo=TRUE}
-# anova = maximum stem width ~ region
-regionmstw <- lm.rrpp(maxstw ~ region, 
-                    SS.type = "I", 
-                    data = data, 
-                    iter = 9999, 
-                    print.progress = FALSE)
-anova(regionmstw)
+```{r manova, out.width = "100%", dpi = 300, echo=TRUE}
+# perMANOVA
+perdiz.matrix <- as.matrix(data[,4:8])
+perdiz.mat <- sqrt(perdiz.matrix)
+perdiz.dist <- vegdist(perdiz.mat,
+                       method = 'bray')
+set.seed(36)
+perdiz.ns <- adonis2(perdiz.dist~region,
+                     data = data,
+                     permutations = 9999,
+                     method = 'bray')
+perdiz.ns
 ```

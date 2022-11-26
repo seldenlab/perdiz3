@@ -1,0 +1,59 @@
+This is BibTeX, Version 0.99d (TeX Live 2022)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: perdiz3.aux
+The style file: spmpsci.bst
+Database file #1: mybibfile.bib
+Warning--entry type for "RN9357x" isn't style-file defined
+--line 307 of file mybibfile.bib
+Warning--empty journal in RN8314
+Warning--there's a number but no volume in RN8314
+Warning--missing school in RN5784
+Warning--can't use both author and editor fields in RN9718
+Warning--can't use both author and editor fields in RN7019
+Warning--missing publisher in RN20915
+Warning--can't use both author and editor fields in RN8102
+Warning--can't use both author and editor fields in RN9000
+Warning--can't use both author and editor fields in RN5610
+Warning--empty year in RN10755
+You've used 81 entries,
+            2945 wiz_defined-function locations,
+            1217 strings with 23545 characters,
+and the built_in function-call counts, 37953 in all, are:
+= -- 2989
+> -- 1177
+< -- 13
++ -- 488
+- -- 404
+* -- 2372
+:= -- 5147
+add.period$ -- 157
+call.type$ -- 81
+change.case$ -- 438
+chr.to.int$ -- 0
+cite$ -- 91
+duplicate$ -- 3455
+empty$ -- 3544
+format.name$ -- 445
+if$ -- 8133
+int.to.chr$ -- 0
+int.to.str$ -- 81
+missing$ -- 827
+newline$ -- 403
+num.names$ -- 166
+pop$ -- 1286
+preamble$ -- 1
+purify$ -- 361
+quote$ -- 0
+skip$ -- 791
+stack$ -- 0
+substring$ -- 1549
+swap$ -- 1975
+text.length$ -- 13
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 290
+warning$ -- 10
+while$ -- 234
+width$ -- 83
+write$ -- 949
+(There were 11 warnings)
