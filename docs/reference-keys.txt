@@ -19,6 +19,13 @@ boxplots-for-variable-by-region
 principal-components-analysis
 permutational-manova
 machine-learning-1
+install-analysis-packages
+select-features-and-responses
+ensure-features-and-responses-are-numeric
+split-data-for-traintest
+decrease-sensitivity-of-algorithm-to-outliers-through-standardising-features
+create-svm-classifier-with-linear-kernel
+make-predictions-evaluate-accuracy
 geometric-morphometrics---spatial
 load-packages-data
 generalised-procrustes-analysis
