@@ -226,7 +226,7 @@ div.csl-indent {
 </blockquote>
 <div id="basis-of-inquiry" class="section level2 hasAnchor" number="0.1">
 <h2><span class="header-section-number">0.1</span> Basis of inquiry<a href="index.html#basis-of-inquiry" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Recent research in the ancestral Caddo area has yielded evidence for distinct behavioral regions, across which material culture from Caddo burials—bottles and Gahagan bifaces—was found to express significant morphological differences. This inquiry asks whether Perdiz arrow points from Caddo burials, assumed to reflect design intent, may differ across the same geography, and extend the pattern of shape differences to a third category of Caddo material culture. Perdiz arrow points collected from the geographies of the northern and southern Caddo behavioral regions defined in a recent social network analysis were employed to test the hypothesis that morphological attributes differ, and are predictable, between the two communities. Results indicate significant between-community differences in maximum length, width, stem length, and stem width, but not thickness. Using the same traditional metrics combined with the tools of machine learning, a predictive model—support vector machine—was designed to assess the degree to which community differences could be predicted, achieving a receiver operator curve score of 97 percent, and an accuracy score of 94 percent. The subsequent geometric morphometric analysis identified significant differences in Perdiz arrow point shape and size, coupled with significant results for modularity and morphological integration. These findings bolster recent research that posited two distinct behavioral regions in the ancestral Caddo area defined on the basis of discernible morphological differences across three categories of Caddo material culture.</p>
+<p>Recent research in the ancestral Caddo area has yielded evidence for distinct behavioral regions, across which material culture from Caddo burials—bottles and Gahagan bifaces—was found to express significant morphological differences. This inquiry asks whether Perdiz arrow points from Caddo burials differ across the same geography, extending the pattern of shape differences to a third category of Caddo material culture. Perdiz arrow points collected from the geographies of the northern and southern Caddo behavioral regions were employed to test the hypothesis that morphological attributes differ, and are predictable, between the two communities. Results indicate a significant between-community difference in morphology. Using the same traditional metrics combined with the tools of machine learning, a predictive model—support vector machine—was designed to assess the degree to which community differences could be predicted, achieving a receiver operator curve score of 97 percent, and an accuracy score of 94 percent. The subsequent geometric morphometric analysis identified significant differences in Perdiz arrow point shape and size, coupled with significant results for modularity and morphological integration. These findings bolster recent research that posited two behavioral regions in the ancestral Caddo area defined on the basis of discernible morphological differences across three categories of Caddo material culture.</p>
 <div class="figure"><span style="display:block;" id="fig:map"></span>
 <img src="ms/perdiz3/ms-figs/figure1.png" alt="Location of Caddo sites with Perdiz arrow points used in this study, and the extent of the ancestral Caddo area (white), Red River basin (blue), Sabine River basin (maroon), and Angelina River basin (brown)." width="100%" />
 <p class="caption">
@@ -245,11 +245,7 @@ Figure 0.2: Boxplots for a, maximum length; b, maximum width; c, maximum thickne
 </p>
 </div>
 <ul>
-<li>Maximum length <strong>differs significantly</strong> by Caddo community</li>
-<li>Maximum width <strong>differs significantly</strong> by Caddo community</li>
-<li>Maximum thickness does not differ by Caddo community</li>
-<li>Maximum stem width <strong>differs significantly</strong> by Caddo community</li>
-<li>Maximum stem length <strong>differs significantly</strong> by Caddo community</li>
+<li>Perdiz arrow point morphology <strong>differs significantly</strong> by Caddo community</li>
 </ul>
 </div>
 <div id="machine-learning" class="section level3 hasAnchor" number="0.2.2">
@@ -297,10 +293,10 @@ Figure 0.4: Mean shapes and comparisons for a, Formative/Early and b, Late/Histo
 </div>
 <div id="colophon" class="section level2 hasAnchor" number="0.6">
 <h2><span class="header-section-number">0.6</span> Colophon<a href="index.html#colophon" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>This version of the analysis was generated on 2022-11-26 01:22:20 using the following computational environment and dependencies:</p>
+<p>This version of the analysis was generated on 2022-11-26 02:20:58 using the following computational environment and dependencies:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="index.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># what R packages and versions were used?</span></span>
 <span id="cb1-2"><a href="index.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="st">&quot;devtools&quot;</span> <span class="sc">%in%</span> <span class="fu">installed.packages</span>()) devtools<span class="sc">::</span><span class="fu">session_info</span>()</span></code></pre></div>
-<pre><code>## ─ Session info ──────────────────────────────────────────────────────────────────────
+<pre><code>## ─ Session info ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 ##  setting  value
 ##  version  R version 4.2.2 (2022-10-31 ucrt)
 ##  os       Windows 10 x64 (build 19045)
@@ -314,12 +310,14 @@ Figure 0.4: Mean shapes and comparisons for a, Formative/Early and b, Late/Histo
 ##  rstudio  2022.07.2+576 Spotted Wakerobin (desktop)
 ##  pandoc   2.19.2 @ C:/Program Files/RStudio/bin/quarto/bin/tools/ (via rmarkdown)
 ## 
-## ─ Packages ──────────────────────────────────────────────────────────────────────────
+## ─ Packages ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 ##  package       * version   date (UTC) lib source
 ##  abind           1.4-5     2016-07-21 [1] CRAN (R 4.2.0)
 ##  ape             5.6-2     2022-03-02 [1] CRAN (R 4.2.2)
 ##  assertthat      0.2.1     2019-03-21 [1] CRAN (R 4.2.2)
 ##  backports       1.4.1     2021-12-13 [1] CRAN (R 4.2.0)
+##  base64enc       0.1-3     2015-07-28 [1] CRAN (R 4.2.0)
+##  bezier          1.1.2     2018-12-14 [1] CRAN (R 4.2.0)
 ##  bookdown        0.30      2022-11-09 [1] CRAN (R 4.2.2)
 ##  broom           1.0.1     2022-08-29 [1] CRAN (R 4.2.2)
 ##  bslib           0.4.1     2022-11-02 [1] CRAN (R 4.2.2)
@@ -347,11 +345,13 @@ Figure 0.4: Mean shapes and comparisons for a, Formative/Early and b, Late/Histo
 ##  fs              1.5.2     2021-12-08 [1] CRAN (R 4.2.2)
 ##  gargle          1.2.1     2022-09-08 [1] CRAN (R 4.2.2)
 ##  generics        0.1.3     2022-07-05 [1] CRAN (R 4.2.2)
+##  geomorph      * 4.0.4     2022-11-13 [1] Github (geomorphR/geomorph@dd331e2)
 ##  ggExtra       * 0.10.0    2022-03-23 [1] CRAN (R 4.2.2)
 ##  ggfortify     * 0.4.15    2022-11-11 [1] CRAN (R 4.2.2)
 ##  ggplot2       * 3.4.0     2022-11-04 [1] CRAN (R 4.2.2)
 ##  ggpubr        * 0.5.0     2022-11-16 [1] CRAN (R 4.2.2)
 ##  ggsignif        0.6.4     2022-10-13 [1] CRAN (R 4.2.2)
+##  git2r           0.30.1    2022-03-16 [1] CRAN (R 4.2.2)
 ##  glue            1.6.2     2022-02-24 [1] CRAN (R 4.2.2)
 ##  googledrive     2.0.0     2021-07-08 [1] CRAN (R 4.2.2)
 ##  googlesheets4   1.0.1     2022-08-13 [1] CRAN (R 4.2.2)
@@ -365,6 +365,7 @@ Figure 0.4: Mean shapes and comparisons for a, Formative/Early and b, Late/Histo
 ##  htmlwidgets     1.5.4     2021-09-08 [1] CRAN (R 4.2.2)
 ##  httpuv          1.6.6     2022-09-08 [1] CRAN (R 4.2.2)
 ##  httr            1.4.4     2022-08-17 [1] CRAN (R 4.2.2)
+##  jpeg            0.1-9     2021-07-24 [1] CRAN (R 4.2.0)
 ##  jquerylib       0.1.4     2021-04-26 [1] CRAN (R 4.2.2)
 ##  jsonlite        1.8.3     2022-10-21 [1] CRAN (R 4.2.2)
 ##  knitr           1.41      2022-11-18 [1] CRAN (R 4.2.2)
@@ -375,7 +376,7 @@ Figure 0.4: Mean shapes and comparisons for a, Formative/Early and b, Late/Histo
 ##  lubridate       1.9.0     2022-11-06 [1] CRAN (R 4.2.2)
 ##  magrittr        2.0.3     2022-03-30 [1] CRAN (R 4.2.2)
 ##  MASS            7.3-58.1  2022-08-03 [2] CRAN (R 4.2.2)
-##  Matrix          1.5-1     2022-09-13 [2] CRAN (R 4.2.2)
+##  Matrix        * 1.5-1     2022-09-13 [2] CRAN (R 4.2.2)
 ##  memoise         2.0.1     2021-11-26 [1] CRAN (R 4.2.2)
 ##  mgcv            1.8-41    2022-10-21 [2] CRAN (R 4.2.2)
 ##  mime            0.12      2021-09-28 [1] CRAN (R 4.2.0)
@@ -388,6 +389,7 @@ Figure 0.4: Mean shapes and comparisons for a, Formative/Early and b, Late/Histo
 ##  pkgbuild        1.3.1     2021-12-20 [1] CRAN (R 4.2.2)
 ##  pkgconfig       2.0.3     2019-09-22 [1] CRAN (R 4.2.2)
 ##  pkgload         1.3.2     2022-11-16 [1] CRAN (R 4.2.2)
+##  png             0.1-7     2013-12-03 [1] CRAN (R 4.2.0)
 ##  prettyunits     1.1.1     2020-01-24 [1] CRAN (R 4.2.2)
 ##  processx        3.8.0     2022-10-26 [1] CRAN (R 4.2.2)
 ##  profvis         0.3.7     2020-11-02 [1] CRAN (R 4.2.2)
@@ -400,6 +402,8 @@ Figure 0.4: Mean shapes and comparisons for a, Formative/Early and b, Late/Histo
 ##  readxl          1.4.1     2022-08-17 [1] CRAN (R 4.2.2)
 ##  remotes         2.4.2     2021-11-30 [1] CRAN (R 4.2.2)
 ##  reprex          2.0.2     2022-08-17 [1] CRAN (R 4.2.2)
+##  rgl           * 0.110.2   2022-09-26 [1] CRAN (R 4.2.2)
+##  rjson           0.2.21    2022-01-09 [1] CRAN (R 4.2.0)
 ##  rlang           1.0.6     2022-09-24 [1] CRAN (R 4.2.2)
 ##  rmarkdown       2.18      2022-11-09 [1] CRAN (R 4.2.2)
 ##  rprojroot       2.0.3     2022-04-02 [1] CRAN (R 4.2.2)
@@ -413,12 +417,15 @@ Figure 0.4: Mean shapes and comparisons for a, Formative/Early and b, Late/Histo
 ##  scales          1.2.1     2022-08-20 [1] CRAN (R 4.2.2)
 ##  sessioninfo     1.2.2     2021-12-06 [1] CRAN (R 4.2.2)
 ##  shiny           1.7.3     2022-10-25 [1] CRAN (R 4.2.2)
+##  StereoMorph   * 1.6.7     2022-05-25 [1] CRAN (R 4.2.2)
 ##  stringi         1.7.8     2022-07-11 [1] CRAN (R 4.2.1)
 ##  stringr       * 1.4.1     2022-08-20 [1] CRAN (R 4.2.2)
+##  svgViewR        1.4.2     2022-11-03 [1] CRAN (R 4.2.2)
 ##  tibble        * 3.1.8     2022-07-22 [1] CRAN (R 4.2.2)
 ##  tidyr         * 1.2.1     2022-09-08 [1] CRAN (R 4.2.2)
 ##  tidyselect      1.2.0     2022-10-10 [1] CRAN (R 4.2.2)
 ##  tidyverse     * 1.3.2     2022-07-18 [1] CRAN (R 4.2.2)
+##  tiff            0.1-11    2022-01-31 [1] CRAN (R 4.2.0)
 ##  timechange      0.1.1     2022-11-04 [1] CRAN (R 4.2.2)
 ##  tzdb            0.3.0     2022-03-28 [1] CRAN (R 4.2.2)
 ##  urlchecker      1.0.1     2021-11-30 [1] CRAN (R 4.2.2)
@@ -436,13 +443,13 @@ Figure 0.4: Mean shapes and comparisons for a, Formative/Early and b, Late/Histo
 ##  [1] C:/Users/seldenjrz/AppData/Local/R/win-library/4.2
 ##  [2] C:/Program Files/R/R-4.2.2/library
 ## 
-## ─────────────────────────────────────────────────────────────────────────────────────</code></pre>
+## ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────</code></pre>
 <p>Current Git commit details are:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="index.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># where can I find this commit? </span></span>
 <span id="cb3-2"><a href="index.html#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="st">&quot;git2r&quot;</span> <span class="sc">%in%</span> <span class="fu">installed.packages</span>() <span class="sc">&amp;</span> git2r<span class="sc">::</span><span class="fu">in_repository</span>(<span class="at">path =</span> <span class="st">&quot;.&quot;</span>)) git2r<span class="sc">::</span><span class="fu">repository</span>(here<span class="sc">::</span><span class="fu">here</span>())  </span></code></pre></div>
 <pre><code>## Local:    main D:/github/perdiz3
 ## Remote:   main @ origin (https://github.com/seldenlab/perdiz3)
-## Head:     [04774d7] 2022-11-24: &lt;edit ms&gt;</code></pre>
+## Head:     [0119c61] 2022-11-26: &lt;edit ms&gt;</code></pre>
 
 </div>
 </div>
