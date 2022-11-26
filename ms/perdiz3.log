@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.7)  26 NOV 2022 02:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.7)  26 NOV 2022 02:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -484,12 +484,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 313--320
 \OT1/cmtt/m/n/8 multiscalar -[] perspectives -[] on -[] social -[] networks -[] in -[] the -[] late -[] prehispanic -[]
  []
 
-[16] [17]
-Underfull \hbox (badness 2134) in paragraph at lines 487--491
+[16]
+Underfull \hbox (badness 2134) in paragraph at lines 479--483
 \OT1/cmr/m/n/8 Ar-chae-ol-ogy \OT1/cmr/bx/n/8 1\OT1/cmr/m/n/8 , 66--74 (1974).  URL []$\OT1/cmtt/m/n/8 https : / / docs . wixstatic . com / ugd / fefb33 _
  []
 
-) [18] (./perdiz3.aux)
+[17]) [18] (./perdiz3.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -498,18 +498,18 @@ Package rerunfilecheck Info: File `perdiz3.out' has not changed.
 (rerunfilecheck)             Checksum: 93888F068892BB1D9D8BA4A3B62E8FEE;753.
  ) 
 Here is how much of TeX's memory you used:
- 9170 strings out of 476931
- 144888 string characters out of 5823518
- 504596 words of memory out of 5000000
- 30177 multiletter control sequences out of 15000+600000
+ 9168 strings out of 476931
+ 144869 string characters out of 5823518
+ 504567 words of memory out of 5000000
+ 30176 multiletter control sequences out of 15000+600000
  476698 words of font info for 54 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 72i,9n,77p,628b,585s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,9n,77p,628b,583s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on perdiz3.pdf (18 pages, 21376969 bytes).
+Output written on perdiz3.pdf (18 pages, 21376736 bytes).
 PDF statistics:
- 696 PDF objects out of 1000 (max. 8388607)
+ 697 PDF objects out of 1000 (max. 8388607)
  494 compressed objects within 5 object streams
- 130 named destinations out of 1000 (max. 500000)
+ 129 named destinations out of 1000 (max. 500000)
  82 words of extra memory for PDF output out of 10000 (max. 10000000)
 
