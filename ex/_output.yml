@@ -1,0 +1,16 @@
+bookdown::gitbook:
+  css: custom.css
+  config:
+    toc:
+      before: |
+        <li><a href="./">perdiz.3</a></li>
+    download: ["pdf", "epub"]
+    fontsettings:
+      theme: night
+bookdown::pdf_book:
+  includes:
+    in_header: preamble.tex
+  latex_engine: xelatex
+  citation_package: natbib
+  keep_tex: yes
+bookdown::epub_book: default

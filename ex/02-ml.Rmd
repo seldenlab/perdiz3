@@ -1,0 +1,145 @@
+# Machine learning
+
+## Install analysis packages
+
+```{r}
+library(tidyverse)
+library(reticulate)
+# run the following in terminal
+#conda create -n py3.8 python=3.9 scikit-learn-intelex pandas numpy matplotlib
+use_python("C:/Users/seldenjrz/Anaconda3/python.exe", 
+             required = TRUE)
+```
+
+
+```{python}
+# load analysis packages
+import pandas as pd
+import matplotlib
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import cross_val_score
+from sklearn import svm
+from sklearn.svm import SVC
+from sklearn.model_selection import GridSearchCV
+from sklearn.pipeline import Pipeline
+from sklearn.metrics import roc_auc_score, accuracy_score
+from sklearn import metrics
+
+# read data
+data = pd.read_csv('perdizsite.csv')
+data.head()
+```
+
+## Select features and responses
+
+```{python}
+# attributes for analysis
+feature_cols = ['maxl', 'maxw', 'maxth', 'maxstl', 'maxstw']
+X = data[feature_cols]
+
+# cast from string to int
+reg_num = {'north':0, 'south':1}
+data['reg_num'] = data.region.map(reg_num)
+data.head()
+y = data.reg_num
+```
+
+## Ensure features and responses are numeric
+```{python}
+# X vals
+X.dtypes
+# y vals
+y.dtypes
+```
+
+## Split data for train/test
+
+```{python}
+# split data into train/test sets (75/25 split)
+X_train, X_test, y_train, y_test = train_test_split(X, y,
+                                                    test_size = 0.25,
+                                                    random_state = 0)
+
+print('X_train: ', X_train.shape)
+print('X_test: ', X_test.shape)
+print('y_train:', y_train.shape)
+print('y_test: ', y_test.shape)
+```
+
+## Decrease sensitivity of algorithm to outliers through standardising features
+
+```{python}
+stdsc = StandardScaler()
+X_train_std = stdsc.fit_transform(X_train)
+X_test_std = stdsc.transform(X_test)
+```
+
+## Create SVM classifier with linear kernel
+
+```{python}
+clf = svm.SVC(kernel = 'linear')
+clf.fit(X_train_std, y_train)
+```
+
+#Grid search and nested cross validation of training dataset
+
+```{python}
+# grid search
+pipe_svc = Pipeline([('scl', StandardScaler()), ('clf', SVC(random_state = 0))])
+param_range = [0.0001, 0.001, 0.01, 0.1, 1.0, 10.0, 100.0, 1000.0]
+param_grid = [{'clf__C': param_range,
+              'clf__kernel': ['linear']},
+             {'clf__C': param_range,
+             'clf__gamma': param_range,
+             'clf__kernel': ['rbf']}]
+gs = GridSearchCV(estimator = pipe_svc,
+                  param_grid = param_grid,
+                  scoring = 'accuracy',
+                  cv = 10,
+                  n_jobs = 1)
+gs = gs.fit(X_train_std, y_train)
+print('Grid Search Best Score: ', gs.best_score_)
+print('Grid Search Best Parameters: ', gs.best_params_)
+
+# use the test dataset to estimate model performance
+clf = gs.best_estimator_
+clf.fit(X_train_std, y_train)
+clf.score(X_test_std, y_test)
+
+# nested cross validation
+gs = GridSearchCV(estimator = pipe_svc,
+                 param_grid = param_grid,
+                 scoring = 'accuracy',
+                 cv = 10,
+                 n_jobs = 1)
+scores = cross_val_score(gs, X_train_std, y_train,
+                         scoring = 'accuracy',
+                         cv = 10)
+print('Cross Validation Scores: ', scores)
+print('Cross Validation Mean Score: ', scores.mean())
+```
+
+## Make predictions + evaluate accuracy
+
+```{python}
+y_pred = clf.predict(X_test_std)
+print('Receiver Operator Curve Score: ', roc_auc_score(y_true = y_test,
+                                                       y_score = y_pred))
+print('Accuracy Score: ', accuracy_score(y_test, y_pred))
+print('Precision: ', metrics.precision_score(y_test, y_pred))
+print('Recall: ', metrics.recall_score(y_test, y_pred))
+```
+
+```{python}
+# plot ROC curve
+fpr, tpr, thresholds = metrics.roc_curve(y_test, y_pred)
+plt.plot(fpr, tpr)
+plt.xlim([0.0, 1.0])
+plt.ylim([0.0, 1.0])
+plt.title('ROC curve for Perdiz classifier')
+plt.xlabel('False Positive Rate (1 - Specificity)')
+plt.ylabel('True Positive Rate (Sensitivity)')
+plt.grid(True)
+```

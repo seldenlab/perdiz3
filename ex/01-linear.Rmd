@@ -1,0 +1,130 @@
+# Linear morphometrics
+
+```{r load packages 3, echo=TRUE, warning=FALSE}
+# install required analysis packages
+#devtools::install_github("tidyverse/tidyverse")
+#devtools::install_github("mlcollyer/RRPP")
+#devtools::install_github("kassambara/ggpubr")
+#devtools::install_github("sinhrks/ggfortify")
+#devtools::install_github("daattali/ggExtra")
+
+# load libraries
+library(here)
+library(tidyverse)
+library(vegan)
+library(ggpubr)
+library(ggfortify)
+library(cluster)
+library(wesanderson)
+library(ggExtra)
+```
+
+## Read data and define variables
+
+```{r setwd ld define variables 3, echo=TRUE}
+# read data
+data <- read.csv("qdata.csv", header = TRUE, as.is=TRUE)
+
+# define variables
+maxl <- data$maxl # maximum length
+maxw <- data$maxw # maximum width
+maxth <- data$maxth # maximum thickness
+maxstl <- data$maxstl # maximum stem length
+maxstw <- data$maxstw # maximum stem width
+reg <- data$region # region
+```
+
+## Boxplots for _variable_ by _region_
+
+```{r boxregion, out.width = "100%", dpi = 300, echo=TRUE, warning=FALSE, fig.cap = "Boxplots for maximum length, width, thickness, stem length, and stem width for Perdiz arrow points recovered from the northern and southern behavioral regions."}
+# boxplot of maximum length ~ region
+regionmaxl <- ggplot(data, aes(x = region, y = maxl, color = region)) + 
+  geom_boxplot(notch = TRUE) +
+  geom_dotplot(binaxis = 'y',stackdir = 'center',dotsize = 0.3) +
+  scale_colour_manual(values = wes_palette("Moonrise2")) +
+  theme(legend.position = "none") +
+  labs(x = 'Community', y = 'MaxL')
+
+# boxplot of maximum width ~ region
+regionmaxw <- ggplot(data, aes(x = region, y = maxw, color = region)) + 
+  geom_boxplot(notch = TRUE) +
+  geom_dotplot(binaxis = 'y',stackdir = 'center',dotsize = 0.3) +
+  scale_colour_manual(values = wes_palette("Moonrise2")) +
+  theme(legend.position = "none") +
+  labs(x = 'Community', y = 'MaxW')
+
+# boxplot of maximum thickness ~ region
+regionmaxth <- ggplot(data, aes(x = region, y = maxth, color = region)) + 
+  geom_boxplot(notch = TRUE) +
+  geom_dotplot(binaxis = 'y',stackdir = 'center',dotsize = 0.3) +
+  scale_colour_manual(values = wes_palette("Moonrise2")) +
+  theme(legend.position = "none") +
+  labs(x = 'Community', y = 'MaxTh')
+
+# boxplot of stem length ~ region
+regionmaxstl <- ggplot(data, aes(x = region, y = maxstl, color = region)) + 
+  geom_boxplot(notch = TRUE) +
+  geom_dotplot(binaxis = 'y',stackdir = 'center',dotsize = 0.3) +
+  scale_colour_manual(values = wes_palette("Moonrise2")) +
+  theme(legend.position = "none") +
+  labs(x = 'Community', y = 'StemL')
+
+# boxplot of stem width ~ region
+regionmaxstw <- ggplot(data, aes(x = region, y = maxstw, color = region)) + 
+  geom_boxplot(notch = TRUE) +
+  geom_dotplot(binaxis = 'y', stackdir = 'center', dotsize = 0.3) +
+  scale_colour_manual(values = wes_palette("Moonrise2")) +
+  theme(legend.position = "none") +
+  labs(x = 'Community', y = 'StemW')
+
+# render figure
+regionfigure <- ggarrange(regionmaxl, regionmaxw, regionmaxth, regionmaxstl, regionmaxstw,
+                  labels = c("a","b","c","d","e"),
+                  ncol = 2, nrow = 3)
+              
+## plot figure
+regionfigure
+```
+
+## Principal Components Analysis
+
+```{r pcaregion, out.width = "100%", dpi = 300, echo=TRUE, warning=FALSE, fig.cap = "Principal components analysis by north/south behavioral region."}
+# attributes for plot
+df<-data[c(4:8)]
+pch.gps.gp <- c(15,16)[as.factor(reg)]
+
+## pca plot
+pca <- autoplot(prcomp(df),
+                data = data,
+                asp = 1,
+                scale. = TRUE,
+                shape = pch.gps.gp,
+                colour = "region",
+                variance_percentage = TRUE,
+                loadings = TRUE, 
+                loadings.colour = 'blue',
+                loadings.label = TRUE,
+                loadings.label.size = 3,
+                frame = TRUE,
+                frame.type = 't') +
+  scale_fill_manual(values = wes_palette("Moonrise2")) +
+  scale_colour_manual(values = wes_palette("Moonrise2"))
+
+ggMarginal(pca, groupColour = TRUE)
+```
+
+## Permutational MANOVA
+
+```{r manova, out.width = "100%", dpi = 300, echo=TRUE}
+# perMANOVA
+perdiz.matrix <- as.matrix(data[,4:8])
+perdiz.mat <- sqrt(perdiz.matrix)
+perdiz.dist <- vegdist(perdiz.mat,
+                       method = 'bray')
+set.seed(36)
+perdiz.ns <- adonis2(perdiz.dist~region,
+                     data = data,
+                     permutations = 9999,
+                     method = 'bray')
+perdiz.ns
+```
