@@ -2,4 +2,4 @@
 title: "Machine learning"
 ---
 
-Details of the machine learning analysis can be viewed [here]().
+Details of the machine learning analysis can be viewed [here](https://github.com/seldenlab/perdiz3/blob/main/ml/perdiz-svm.ipynb).
