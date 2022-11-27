@@ -1,5 +1,5 @@
 ---
-title: "Supplementary materials for manuscript: Perdiz arrow points from Caddo burial contexts aid in defining discrete behavioral regions"
+title: "Perdiz arrow points from Caddo burial contexts aid in defining discrete behavioral regions"
 author:
   - name: Robert Z. Selden, Jr.
     affiliations:

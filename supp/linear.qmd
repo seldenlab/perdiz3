@@ -1,5 +1,5 @@
 ---
-title: "Linear morphometrics"
+title: "Linear"
 ---
 
 ```{r load packages 3, echo=TRUE, warning=FALSE}
@@ -119,14 +119,18 @@ ggMarginal(pca, groupColour = TRUE)
 
 ```{r manova, out.width = "100%", dpi = 300, echo=TRUE}
 # perMANOVA
-perdiz.matrix <- as.matrix(data[,4:8])
-perdiz.mat <- sqrt(perdiz.matrix)
+perdiz.matrix <- as.matrix(data[,4:8]) # response vars
+perdiz.mat <- sqrt(perdiz.matrix) # sqrt transform
 perdiz.dist <- vegdist(perdiz.mat,
-                       method = 'bray')
-set.seed(36)
+                       method = 'bray') # dissimilarity matrix
+set.seed(36) # make results reproducible
+
+# model: perdiz morphology as a function of behavioural region
 perdiz.ns <- adonis2(perdiz.dist~region,
                      data = data,
-                     permutations = 9999,
+                     permutations = 10000,
                      method = 'bray')
+
+## do point types differ by behavioural region?
 perdiz.ns
 ```

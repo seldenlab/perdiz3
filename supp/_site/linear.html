@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>perdiz.3 - Linear morphometrics</title>
+<title>perdiz.3 - Linear</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -146,13 +146,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <a class="nav-link" href="./index.html">Home</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./linear.html" aria-current="page">Linear morphometrics</a>
+    <a class="nav-link active" href="./linear.html" aria-current="page">Linear</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./ml.html">ml.html</a>
+    <a class="nav-link" href="./ml.html">Machine learning</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./gm.html">Untitled</a>
+    <a class="nav-link" href="./gm.html">Geometric morphometrics</a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -181,7 +181,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Linear morphometrics</h1>
+<h1 class="title">Linear</h1>
 </div>
 
 
@@ -360,27 +360,31 @@ Bin width defaults to 1/30 of the range of the data. Pick better value with
 <h2 class="anchored" data-anchor-id="permutational-manova">Permutational MANOVA</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># perMANOVA</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>perdiz.matrix <span class="ot">&lt;-</span> <span class="fu">as.matrix</span>(data[,<span class="dv">4</span><span class="sc">:</span><span class="dv">8</span>])</span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>perdiz.mat <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(perdiz.matrix)</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>perdiz.matrix <span class="ot">&lt;-</span> <span class="fu">as.matrix</span>(data[,<span class="dv">4</span><span class="sc">:</span><span class="dv">8</span>]) <span class="co"># response vars</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>perdiz.mat <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(perdiz.matrix) <span class="co"># sqrt transform</span></span>
 <span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>perdiz.dist <span class="ot">&lt;-</span> <span class="fu">vegdist</span>(perdiz.mat,</span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>                       <span class="at">method =</span> <span class="st">'bray'</span>)</span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">36</span>)</span>
-<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>perdiz.ns <span class="ot">&lt;-</span> <span class="fu">adonis2</span>(perdiz.dist<span class="sc">~</span>region,</span>
-<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>                     <span class="at">data =</span> data,</span>
-<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>                     <span class="at">permutations =</span> <span class="dv">9999</span>,</span>
-<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>                     <span class="at">method =</span> <span class="st">'bray'</span>)</span>
-<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>perdiz.ns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>                       <span class="at">method =</span> <span class="st">'bray'</span>) <span class="co"># dissimilarity matrix</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">36</span>) <span class="co"># make results reproducible</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="co"># model: perdiz morphology as a function of behavioural region</span></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>perdiz.ns <span class="ot">&lt;-</span> <span class="fu">adonis2</span>(perdiz.dist<span class="sc">~</span>region,</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>                     <span class="at">data =</span> data,</span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>                     <span class="at">permutations =</span> <span class="dv">10000</span>,</span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>                     <span class="at">method =</span> <span class="st">'bray'</span>)</span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a><span class="do">## do point types differ by behavioural region?</span></span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>perdiz.ns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Permutation test for adonis under reduced model
 Terms added sequentially (first to last)
 Permutation: free
-Number of permutations: 9999
+Number of permutations: 10000
 
-adonis2(formula = perdiz.dist ~ region, data = data, permutations = 9999, method = "bray")
-         Df SumOfSqs      R2      F Pr(&gt;F)    
-region    1 0.036243 0.29485 27.179  1e-04 ***
-Residual 65 0.086678 0.70515                  
-Total    66 0.122921 1.00000                  
+adonis2(formula = perdiz.dist ~ region, data = data, permutations = 10000, method = "bray")
+         Df SumOfSqs      R2      F    Pr(&gt;F)    
+region    1 0.036243 0.29485 27.179 9.999e-05 ***
+Residual 65 0.086678 0.70515                     
+Total    66 0.122921 1.00000                     
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>
