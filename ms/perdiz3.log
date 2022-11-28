@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.7)  26 NOV 2022 02:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.7)  28 NOV 2022 06:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -308,68 +308,68 @@ LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <13> not available
 (Font)              size <12> substituted on input line 79.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--116
+Underfull \hbox (badness 10000) in paragraph at lines 81--119
 
  []
 
 [1{c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-Overfull \hbox (5.47282pt too wide) in paragraph at lines 197--204
+Overfull \hbox (5.47282pt too wide) in paragraph at lines 200--207
 []\OT1/cmr/m/n/10 [t]riangular blade with edges usu-ally quite straight but some-times slightly
  []
 
-<ms-figs/figure1.png, id=132, 794.97pt x 614.295pt>
+<ms-figs/figure1.png, id=129, 794.97pt x 614.295pt>
 File: ms-figs/figure1.png Graphic file (type png)
 <use ms-figs/figure1.png>
-Package pdftex.def Info: ms-figs/figure1.png  used on input line 221.
+Package pdftex.def Info: ms-figs/figure1.png  used on input line 224.
 (pdftex.def)             Requested size: 338.0pt x 261.18909pt.
 [3] [4 <./ms-figs/figure1.png (PNG copy)>]
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 314.
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 317.
 (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 314.
-
-
-pdfTeX warning: pdflatex.exe (file ./ms-figs/figure2.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<ms-figs/figure2.pdf, id=209, 803.93753pt x 1267.34477pt>
-File: ms-figs/figure2.pdf Graphic file (type pdf)
-<use ms-figs/figure2.pdf>
-Package pdftex.def Info: ms-figs/figure2.pdf  used on input line 318.
-(pdftex.def)             Requested size: 321.09897pt x 506.19409pt.
-
-LaTeX Warning: Float too large for page by 8.21082pt on input line 319.
-
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 317.
 [5]
-<ms-figs/figure3.jpg, id=269, 1012.0209pt x 617.4267pt>
+<ms-figs/figure2.png, id=221, 804.1242pt x 1267.3749pt>
+File: ms-figs/figure2.png Graphic file (type png)
+<use ms-figs/figure2.png>
+Package pdftex.def Info: ms-figs/figure2.png  used on input line 321.
+(pdftex.def)             Requested size: 321.09897pt x 506.09009pt.
+
+LaTeX Warning: Float too large for page by 8.10681pt on input line 322.
+
+<ms-figs/figure3.jpg, id=269, 4216.75375pt x 5193.4025pt>
 File: ms-figs/figure3.jpg Graphic file (type jpg)
 <use ms-figs/figure3.jpg>
-Package pdftex.def Info: ms-figs/figure3.jpg  used on input line 367.
-(pdftex.def)             Requested size: 338.0pt x 206.21036pt.
-[6] [7 <./ms-figs/figure2.pdf>]
-<ms-figs/figure4.jpg, id=412, 5281.7325pt x 5520.625pt>
+Package pdftex.def Info: ms-figs/figure3.jpg  used on input line 370.
+(pdftex.def)             Requested size: 321.09897pt x 395.43175pt.
+[6] [7 <./ms-figs/figure2.png>]
+<ms-figs/figure4.jpg, id=346, 5281.7325pt x 5520.625pt>
 File: ms-figs/figure4.jpg Graphic file (type jpg)
 <use ms-figs/figure4.jpg>
-Package pdftex.def Info: ms-figs/figure4.jpg  used on input line 390.
+Package pdftex.def Info: ms-figs/figure4.jpg  used on input line 393.
 (pdftex.def)             Requested size: 338.0pt x 353.20929pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 [8 <./ms-figs/figure3.jpg>]
-Underfull \vbox (badness 3735) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [9 <./ms-figs/figure4.jpg>]
-<ms-figs/figure6.png, id=456, 976.6086pt x 956.1321pt>
+<ms-figs/figure6.png, id=388, 976.6086pt x 956.1321pt>
 File: ms-figs/figure6.png Graphic file (type png)
 <use ms-figs/figure6.png>
-Package pdftex.def Info: ms-figs/figure6.png  used on input line 441.
+Package pdftex.def Info: ms-figs/figure6.png  used on input line 450.
 (pdftex.def)             Requested size: 338.0pt x 330.91637pt.
-
-Underfull \vbox (badness 1303) has occurred while \output is active []
-
-[10 <./ms-figs/figure6.png (PNG copy)>] [11] [12]
-Overfull \hbox (30.80502pt too wide) in paragraph at lines 579--595
-\OT1/cmr/m/n/10 study are in-cluded in an open ac-cess com-par-a-tive col-lec-tion ([]$\OT1/cmtt/m/n/10 https : / / scholarworks .
+[10] [11 <./ms-figs/figure6.png (PNG copy)>] [12]
+Overfull \hbox (2.60942pt too wide) in paragraph at lines 589--605
+\OT1/cmr/m/n/10 ([]$\OT1/cmtt/m/n/10 https : / / scholarworks . sfasu . edu / ita -[] perdiz/$[]\OT1/cmr/m/n/10 ), with per-mis-sion from the
  []
 
-(./perdiz3.bbl [13]
+
+Underfull \vbox (badness 2027) has occurred while \output is active []
+
+[13] (./perdiz3.bbl
 Underfull \hbox (badness 4467) in paragraph at lines 40--47
 []\OT1/cmr/m/n/8 Adams, D.C., Otarola-Castillo, E.: ge-o-morph: An R Pack-age for the Col-
  []
@@ -419,7 +419,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--56
 \OT1/cmtt/m/n/8 210X . 12511https : / / besjournals . onlinelibrary . wiley . com / doi / pdfdirect / 10 .
  []
 
-
+[14]
 Underfull \hbox (badness 3260) in paragraph at lines 110--117
 []\OT1/cmr/m/n/8 Blondel, V.D., Guil-laume, J.L., Lam-biotte, R., Lefeb-vre, E.: Fast Un-fold-ing
  []
@@ -439,7 +439,7 @@ Underfull \hbox (badness 1308) in paragraph at lines 119--126
 \OT1/cmr/m/n/8 2484(02 ) 00201 -[] 4$.  URL []$\OT1/cmtt/m/n/8 https : / / www . ncbi . nlm . nih . gov / pubmed / 12662941https : / /
  []
 
-[14]
+
 Underfull \hbox (badness 10000) in paragraph at lines 145--152
 \OT1/cmtt/m/n/8 / / besjournals . onlinelibrary . wiley . com / doi / pdf / 10 . 1111 / 2041 -[] 210X . 13029https :
  []
@@ -474,7 +474,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 266--274
 \OT1/cmtt/m/n/8 2 . 81 / abstracthttps : / / londmathsoc . onlinelibrary . wiley . com / doi / abs / 10 . 1112 /
  []
 
-
+[16]
 Underfull \hbox (badness 10000) in paragraph at lines 313--320
 \OT1/cmr/m/n/8 URL []$\OT1/cmtt/m/n/8 https : / / www . cambridge . org / core / journals / american -[] antiquity / article /
  []
@@ -484,12 +484,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 313--320
 \OT1/cmtt/m/n/8 multiscalar -[] perspectives -[] on -[] social -[] networks -[] in -[] the -[] late -[] prehispanic -[]
  []
 
-[16]
+[17]
 Underfull \hbox (badness 2134) in paragraph at lines 479--483
 \OT1/cmr/m/n/8 Ar-chae-ol-ogy \OT1/cmr/bx/n/8 1\OT1/cmr/m/n/8 , 66--74 (1974).  URL []$\OT1/cmtt/m/n/8 https : / / docs . wixstatic . com / ugd / fefb33 _
  []
 
-[17]) [18] (./perdiz3.aux)
+[18]) [19] (./perdiz3.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -498,18 +498,18 @@ Package rerunfilecheck Info: File `perdiz3.out' has not changed.
 (rerunfilecheck)             Checksum: 93888F068892BB1D9D8BA4A3B62E8FEE;753.
  ) 
 Here is how much of TeX's memory you used:
- 9168 strings out of 476931
- 144869 string characters out of 5823518
- 504567 words of memory out of 5000000
- 30176 multiletter control sequences out of 15000+600000
+ 9171 strings out of 476931
+ 144902 string characters out of 5823518
+ 505679 words of memory out of 5000000
+ 30178 multiletter control sequences out of 15000+600000
  476698 words of font info for 54 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 72i,9n,77p,628b,583s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,8n,77p,626b,585s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on perdiz3.pdf (18 pages, 21376736 bytes).
+Output written on perdiz3.pdf (19 pages, 19715080 bytes).
 PDF statistics:
- 697 PDF objects out of 1000 (max. 8388607)
- 494 compressed objects within 5 object streams
- 129 named destinations out of 1000 (max. 500000)
+ 636 PDF objects out of 1000 (max. 8388607)
+ 465 compressed objects within 5 object streams
+ 130 named destinations out of 1000 (max. 500000)
  82 words of extra memory for PDF output out of 10000 (max. 10000000)
 

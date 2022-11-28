@@ -8,7 +8,7 @@
 
 <meta name="author" content="Robert Z. Selden, Jr.">
 <meta name="author" content="John E. Dockall">
-<meta name="dcterms.date" content="2022-11-27">
+<meta name="dcterms.date" content="2022-11-28">
 
 <title>perdiz.3 - Perdiz arrow points from Caddo burial contexts aid in defining discrete behavioral regions</title>
 <style>
@@ -191,7 +191,10 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#basis-of-inquiry" id="toc-basis-of-inquiry" class="nav-link active" data-scroll-target="#basis-of-inquiry">Basis of inquiry</a></li>
+  <li><a href="#basis-of-inquiry" id="toc-basis-of-inquiry" class="nav-link active" data-scroll-target="#basis-of-inquiry">Basis of inquiry</a>
+  <ul class="collapse">
+  <li><a href="#keywords" id="toc-keywords" class="nav-link" data-scroll-target="#keywords">Keywords</a></li>
+  </ul></li>
   <li><a href="#primary-findings" id="toc-primary-findings" class="nav-link" data-scroll-target="#primary-findings">Primary findings</a>
   <ul class="collapse">
   <li><a href="#linear-morphometrics" id="toc-linear-morphometrics" class="nav-link" data-scroll-target="#linear-morphometrics">Linear morphometrics</a></li>
@@ -242,7 +245,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 27, 2022</p>
+      <p class="date">November 28, 2022</p>
     </div>
   </div>
     
@@ -256,7 +259,10 @@ div.csl-indent {
 </blockquote>
 <section id="basis-of-inquiry" class="level2">
 <h2 class="anchored" data-anchor-id="basis-of-inquiry">Basis of inquiry</h2>
-<p>Recent research in the ancestral Caddo area has yielded evidence for distinct behavioral regions, across which material culture from Caddo burials—bottles and Gahagan bifaces—was found to express significant morphological differences. This inquiry asks whether Perdiz arrow points from Caddo burials differ across the same geography, extending the pattern of shape differences to a third category of Caddo material culture. Perdiz arrow points collected from the geographies of the northern and southern Caddo behavioral regions were employed to test the hypothesis that morphological attributes differ, and are predictable, between the two communities. Results indicate a significant between-community difference in morphology. Using the same traditional metrics combined with the tools of machine learning, a predictive model—support vector machine—was designed to assess the degree to which community differences could be predicted, achieving a receiver operator curve score of 97 percent, and an accuracy score of 94 percent. The subsequent geometric morphometric analysis identified significant differences in Perdiz arrow point shape and size, coupled with significant results for modularity and morphological integration. These findings bolster recent research that posited two behavioral regions in the ancestral Caddo area defined on the basis of discernible morphological differences across three categories of Caddo material culture.</p>
+<p>Recent research into Caddo bottle and biface morphology yielded evidence for two distinct behavioral regions, across which material culture from Caddo burials expresses significant morphological differences. This study asks whether Perdiz arrow points from Caddo burials differ across the same geography, which would extend the pattern of morphological differences to a third category of Caddo material culture. Perdiz arrow points collected from the geographies of the northern and southern Caddo behavioral regions were employed to test the hypothesis that morphological attributes differ, and are predictable, between the two communities. The analysis of linear metrics indicated a significant difference in morphology by behavioral region. Using the linear metrics combined with the tools of machine learning, a predictive model—support vector machine—was designed to assess the degree to which community differences could be predicted, achieving a receiver operator curve score of 97 percent, and an accuracy score of 94 percent. The subsequent landmark geometric morphometric analysis identified significant differences in Perdiz arrow point shape and size between the behavioral regions—one characterized by a comparatively smaller blade and larger stem (north), and the other by a comparatively larger blade and smaller stem (south)—coupled with significant results for modularity and morphological integration. These findings build directly upon recent investigations that posited two discrete Caddo behavioral regions defined on the basis of discernible morphological differences, which is expanded here to include a third category of Caddo material culture.</p>
+<section id="keywords" class="level3">
+<h3 class="anchored" data-anchor-id="keywords">Keywords</h3>
+<p>American Southeast, Caddo, NAGPRA, computational archaeology, archaeoinformatics, machine learning, museum studies, digital humanities, non-Western art history, STEM, STEAM</p>
 <div class="cell">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -268,10 +274,12 @@ div.csl-indent {
 </div>
 </div>
 </section>
+</section>
 <section id="primary-findings" class="level2">
 <h2 class="anchored" data-anchor-id="primary-findings">Primary findings</h2>
 <section id="linear-morphometrics" class="level3">
 <h3 class="anchored" data-anchor-id="linear-morphometrics">Linear morphometrics</h3>
+<p>Sixty seven whole/intact Perdiz arrow points recovered from Caddo burial contexts in Camp, Nacogdoches, and Shelby counties comprise the basis of this study. A standard suite of linear metrics were collected for each specimen, including maximum length, width, thickness, stem length, and stem width. Following collection, data were imported to R <span class="citation" data-cites="RN8584">(<a href="#ref-RN8584" role="doc-biblioref">Team 2021</a>)</span>, where boxplots were produced, along with a Principal Components Analysis (PCA), followed by a permutational multivariate analysis of variance (perMANOVA) to test whether the morphology of Perdiz arrow points differs between the behavioral regions.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -282,20 +290,40 @@ div.csl-indent {
 </div>
 </div>
 </div>
+<p>Boxplots illustrate the distribution and mean for each of the five linear variables, and the PCA illustrates over 92 percent of the variation in the sample among PC1 (84.65 percent) and PC2 (11.71 percent). The perMANOVA demonstrated that linear metrics for Perdiz arrow points differ significantly by behavioral region (permutations = 10,000; Rsq = 0.29485; Pr(&gt;F) = 1e-04).</p>
 <ul>
-<li>Perdiz arrow point morphology <strong>differs significantly</strong> by Caddo community</li>
+<li>Perdiz arrow point morphology <em>differs significantly</em> by Caddo community</li>
 </ul>
 </section>
 <section id="machine-learning" class="level3">
 <h3 class="anchored" data-anchor-id="machine-learning">Machine learning</h3>
+<p>A <em>support vector machine</em> is a supervised machine learning model regularly used in classifying archaeological materials <span class="citation" data-cites="RN9515 RN9516 RN9514 RN9513 RN10755 RN10754">(<a href="#ref-RN9515" role="doc-biblioref">S. Bhatt and P. Patalia 2017</a>; <a href="#ref-RN9516" role="doc-biblioref">Monna et al. 2020</a>; <a href="#ref-RN9514" role="doc-biblioref">Febriawan et al. 2020</a>; <a href="#ref-RN9513" role="doc-biblioref">Kadhim and Abed 2021</a>; <a href="#ref-RN10755" role="doc-biblioref">Zhang, n.d.</a>; <a href="#ref-RN10754" role="doc-biblioref">Elliot et al. 2021</a>)</span>, which has utility in comparing and classifying datasets aggregated from digital repositories, comparative collections, open access reports, as well as other digital assets. For this effort, linear data were imported and modeled using the <code>scikit-learn</code> package in Python <span class="citation" data-cites="scikit-learn sklearn_api">(<a href="#ref-scikit-learn" role="doc-biblioref">Pedregosa et al. 2011</a>; <a href="#ref-sklearn_api" role="doc-biblioref">Buitinck et al. 2013</a>)</span>, and subsequently split into training (75 percent) and testing (25 percent) subsets. A standard scaler was used to decrease the sensitivity of the algorithm to outliers by standardizing features, and a nested cross validation of the training set was used to achieve unbiased estimates of model performance.</p>
 <ul>
-<li>Model achieved a <strong>cross validation score of 86 percent</strong></li>
-<li>Model achieved a <strong>receiver operator curve score of 97 percent</strong></li>
-<li>Model achieved an <strong>accuracy score of 94 percent</strong></li>
+<li>Model achieved a <em>cross validation score of 86 percent</em></li>
+<li>Model achieved a <em>receiver operator curve score of 97 percent</em></li>
+<li>Model achieved an <em>accuracy score of 94 percent</em></li>
 </ul>
 </section>
 <section id="geometric-morphometrics" class="level3">
 <h3 class="anchored" data-anchor-id="geometric-morphometrics">Geometric morphometrics</h3>
+<p>Each of the arrow points was imaged using a flatbed scanner (HP Scanjet G4050) at 600 dpi. The landmarking protocol developed for this study included six landmarks and 24 equidistant semilandmarks to characterize Perdiz arrow point shape, and were applied using the <code>StereoMorph</code> package in R <span class="citation" data-cites="RN8973">(<a href="#ref-RN8973" role="doc-biblioref">Olsen and Westneat 2015</a>)</span>. The characteristic points and tangents used in the landmarking protocol were inspired by the work of Birkhoff <span class="citation" data-cites="RN5700">(<a href="#ref-RN5700" role="doc-biblioref">Birkhoff 1933</a>)</span>.</p>
+<section id="generalised-procrustes-analysis" class="level4">
+<h4 class="anchored" data-anchor-id="generalised-procrustes-analysis">Generalised Procrustes Analysis</h4>
+<p>Landmarks were aligned to a global coordinate system <span class="citation" data-cites="RN8102 RN8587 RN8384">(<a href="#ref-RN8102" role="doc-biblioref">Kendall 1981</a>, <a href="#ref-RN8587" role="doc-biblioref">1984</a>; <a href="#ref-RN8384" role="doc-biblioref">Slice 2001</a>)</span>, achieved through generalized Procrustes superimposition <span class="citation" data-cites="RN8525">(<a href="#ref-RN8525" role="doc-biblioref">Rohlf and Slice 1990</a>)</span>, performed in R <span class="citation" data-cites="RN8584">(<a href="#ref-RN8584" role="doc-biblioref">Team 2021</a>)</span> using the <code>geomorph</code> package <span class="citation" data-cites="RN8565 RN9565">(<a href="#ref-RN8565" role="doc-biblioref">Adams and Otarola-Castillo 2013</a>; <a href="#ref-RN9565" role="doc-biblioref">Baken et al. 2021</a>)</span>. Procrustes superimposition translates, scales, and rotates the coordinate data allowing for comparisons among objects <span class="citation" data-cites="RN5698 RN8525">(<a href="#ref-RN5698" role="doc-biblioref">Gower 1975</a>; <a href="#ref-RN8525" role="doc-biblioref">Rohlf and Slice 1990</a>)</span>. The <code>geomorph</code> package uses a partial Procrustes superimposition that projects the aligned specimens into tangent space subsequent to alignment in preparation for the use of multivariate methods that assume linear space <span class="citation" data-cites="RN8511 RN8384">(<a href="#ref-RN8511" role="doc-biblioref">Rohlf 1999</a>; <a href="#ref-RN8384" role="doc-biblioref">Slice 2001</a>)</span>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/figure3.jpg" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">Results of generalized Procrustes analysis, illustrating mean shape (black) and all specimens in the sample (gray), as well as the difference in centroid size for Perdiz arrow points from the two behavioral regions.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="principal-components-analysis" class="level4">
+<h4 class="anchored" data-anchor-id="principal-components-analysis">Principal Components Analysis</h4>
+<p>Principal components analysis [<span class="citation" data-cites="RN8576">Jolliffe (<a href="#ref-RN8576" role="doc-biblioref">2002</a>)</span>;<span class="citation" data-cites="RN10875">Revell (<a href="#ref-RN10875" role="doc-biblioref">2009</a>)</span> was used to visualize shape variation among the arrow points. Shape changes described by each principal axis are commonly visualized using thin-plate spline warping of a reference image or 3D mesh <span class="citation" data-cites="RN8555 RN8553">(<a href="#ref-RN8555" role="doc-biblioref">Klingenberg 2013</a>; <a href="#ref-RN8553" role="doc-biblioref">Sherratt et al. 2014</a>)</span>. A residual randomization permutation procedure (RRPP; n = 10,000 permutations) was used for all Procrustes ANOVAs <span class="citation" data-cites="RN8579 RN8334">(<a href="#ref-RN8579" role="doc-biblioref">Adams and Collyer 2015</a>; <a href="#ref-RN8334" role="doc-biblioref">Michael L. Collyer and Adams 2018</a>)</span>, which has higher statistical power and a greater ability to identify patterns in the data should they be present <span class="citation" data-cites="RN6995">(<a href="#ref-RN6995" role="doc-biblioref">Anderson and Ter Braak 2003</a>)</span>. To assess whether shape differs by group (region), Procrustes ANOVAs <span class="citation" data-cites="RN7046">(<a href="#ref-RN7046" role="doc-biblioref">Goodall 1991</a>)</span> were also run that enlist effect-sizes (z-scores) computed as standard deviates of the generated sampling distributions <span class="citation" data-cites="RN8477">(<a href="#ref-RN8477" role="doc-biblioref">M. L. Collyer, Sekora, and Adams 2015</a>)</span>. Procrustes variance was used to discriminate between regions and compare the amount of shape variation (morphological disparity) <span class="citation" data-cites="RN5703">(<a href="#ref-RN5703" role="doc-biblioref">Zelditch et al. 2004</a>)</span>, estimated as Procrustes variance using residuals of linear model fit <span class="citation" data-cites="RN8314">(<a href="#ref-RN8314" role="doc-biblioref">Adams et al. 2018</a>)</span>. A pairwise comparison of morphological integration was used to test the strength of integration between blade and basal morphology using a z-score [<span class="citation" data-cites="RN8588">Bookstein et al. (<a href="#ref-RN8588" role="doc-biblioref">2003</a>)</span>;<span class="citation" data-cites="RN8477">M. L. Collyer, Sekora, and Adams (<a href="#ref-RN8477" role="doc-biblioref">2015</a>)</span>;<span class="citation" data-cites="RN8340">Adams and Collyer (<a href="#ref-RN8340" role="doc-biblioref">2016</a>)</span>;<span class="citation" data-cites="RN10874">Adams and Collyer (<a href="#ref-RN10874" role="doc-biblioref">2019</a>)</span>}.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -306,11 +334,13 @@ div.csl-indent {
 </div>
 </div>
 </div>
+<p>The analysis of modularity, which compares within-module covariation of landmarks against between-module covariation was significant <span class="citation" data-cites="RN10874 RN5170">(<a href="#ref-RN10874" role="doc-biblioref">Adams and Collyer 2019</a>; <a href="#ref-RN5170" role="doc-biblioref">Adams and Peres-Neto 2016</a>)</span>, demonstrating that Perdiz arrow point blades and bases are, in fact, modular. The test for morphological integration was also significant, indicating that the blades and bases of Perdiz arrow points are integrated. These results demonstrate that blade and base shapes for Perdiz arrow points are predictable; a finding that would have utility in subsequent studies of Perdiz arrow point morphology that incorporate fragmentary specimens.</p>
+<p>A Procrustes ANOVA was used to test whether a significant difference exists in Perdiz arrow point (centroid) size (RRPP = 10,000; Rsq = 0.30681; Pr(&gt;F) = 1e-04), followed by another to test whether a significant difference exists in arrow point shape by region (northern vs.&nbsp;southern) (RRPP = 10,000; Rsq = 0.0536; Pr(&gt;F) = 0.0161). While shape and size differ significantly between behavioral regions, the Rsq value for size is just under six times larger than that for shape (smaller in the north; larger in the south), suggesting that between-region differences in Perdiz arrow point <em>size</em> may be more visually apparent than differences in <em>shape</em>. A comparison of mean consensus configurations was used to illustrate shape differences from the northern and southern behavioral regions. Diacritical morphology is characterized by a comparatively smaller blade and larger stem in the north, and by a comparatively larger blade and smaller stem in the south. Further, the angle between the shoulder and base is more acute, with a base that is generally shorter and narrower in the southern behavioral region.</p>
 <ul>
-<li>Perdiz arrow point shape <strong>differs significantly</strong> by Caddo community</li>
-<li>Perdiz arrow point size <strong>differs significantly</strong> by Caddo community</li>
-<li>Perdiz arrow points exhibit <strong>significant</strong> modularity</li>
-<li>Perdiz arrow points exhibit <strong>significant</strong> blade/base morphological integration</li>
+<li>Perdiz arrow point shape <em>differs significantly</em> by Caddo community</li>
+<li>Perdiz arrow point size <em>differs significantly</em> by Caddo community</li>
+<li>Perdiz arrow points exhibit <em>significant</em> modularity</li>
+<li>Perdiz arrow points exhibit <em>significant</em> blade/base morphological integration</li>
 </ul>
 <div class="cell">
 <div class="cell-output-display">
@@ -324,6 +354,7 @@ div.csl-indent {
 </div>
 </section>
 </section>
+</section>
 <section id="acknowledgments" class="level2">
 <h2 class="anchored" data-anchor-id="acknowledgments">Acknowledgments</h2>
 <p>We express our gratitude to the Caddo Nation of Oklahoma and the Anthropology and Archaeology Laboratory at Stephen F. Austin State University for the requisite permissions and access to the NAGPRA items from the Washington Square Mound site and Turner collection, and to Tom A. Middlebrook for brokering access to the Perdiz arrow points from Caddo burials at the Morse Mound site. Thanks also to David K. Thulman, Christian S. Hoggard, Dean C. Adams, Michael L. Collyer, Emma Sherratt, Lauren Butaric, and Kersten Bergstrom for their constructive criticisms, comments, and suggestions throughout the development of this research program, and to the editors and anonymous reviewers for their comments and constructive criticisms, which further improved the manuscript and supplementary materials.</p>
@@ -334,12 +365,12 @@ div.csl-indent {
 </section>
 <section id="data-management" class="level2">
 <h2 class="anchored" data-anchor-id="data-management">Data management</h2>
-<p>All data and analysis code associated with this project are openly available through the <a href="https://seldenlab.github.io/perdiz3/">GitHub</a> repository, which is digitally curated on the Open Science Framework (<a href="https://osf.io/vzhjr/">DOI 10.17605/OSF.IO/VZHJR</a>). This volume includes all analysis code employed in the study, providing a means for others to reproduce (exactly) those results discussed and expounded upon in the following chapters. The replicable nature of this undertaking provides a means for others to critically assess and evaluate the various analytical components of this study <span class="citation" data-cites="RN20915 RN20916 RN20917">(<a href="#ref-RN20915" role="doc-biblioref">Gray and Marwick 2019</a>; <a href="#ref-RN20916" role="doc-biblioref">Peng 2011</a>; <a href="#ref-RN20917" role="doc-biblioref">Gandrud 2014</a>)</span>, which is a necessary requirement for the production of reliable knowledge.</p>
+<p>All data and analysis code associated with this project are openly available through the <a href="https://seldenlab.github.io/perdiz3/">GitHub</a> repository, which is digitally curated on the Open Science Framework (<a href="https://osf.io/vzhjr/">DOI 10.17605/OSF.IO/VZHJR</a>). Images of all Perdiz arrow points used in this study were made available in an open access comparative collection (<a href="https://scholarworks.sfasu.edu/ita-perdiz/">https://scholarworks.sfasu.edu/ita-perdiz/</a>), with permission from the Caddo Nation of Oklahoma. These supplementary materials include all analysis data and code used in the study, providing a means for others to reproduce (exactly) those results discussed and expounded upon in this article. The replicable nature of this undertaking provides others with the means to critically assess and evaluate the various analytical components of this study <span class="citation" data-cites="RN20915 RN20916 RN20917">(<a href="#ref-RN20915" role="doc-biblioref">Gray and Marwick 2019</a>; <a href="#ref-RN20916" role="doc-biblioref">Peng 2011</a>; <a href="#ref-RN20917" role="doc-biblioref">Gandrud 2014</a>)</span>, which is a necessary requirement for the production of reliable knowledge.</p>
 <p>Reproducibility projects in <a href="https://osf.io/ezcuj/">psychology</a> and <a href="https://www.cos.io/rpcb">cancer biology</a> are impacting current research practices across all domains. Examples of reproducible research are becoming more abundant in archaeology <span class="citation" data-cites="RN20804 RN21009 RN8322 RN8980 RN11097">(<a href="#ref-RN20804" role="doc-biblioref">Marwick 2016</a>; <a href="#ref-RN21009" role="doc-biblioref">Ivanovaitė et al. 2020</a>; <a href="#ref-RN8322" role="doc-biblioref">Selden Jr., Dockall, and Dubied 2020</a>; <a href="#ref-RN8980" role="doc-biblioref">Selden Jr. et al. 2021</a>; <a href="#ref-RN11097" role="doc-biblioref">Selden 2022</a>)</span>, and the next generation of archaeologists are learning those tools and methods needed to reproduce and/or replicate research results <span class="citation" data-cites="RN21007">(<a href="#ref-RN21007" role="doc-biblioref">Marwick et al. 2019</a>)</span>. Reproducible and replicable research work flows are often employed at the highest levels of humanities-based inquiries to mitigate concern or doubt regarding proper execution, and is of particular import should the results have—explicitly or implicitly—a major impact on scientific progress <span class="citation" data-cites="RN21008">(<a href="#ref-RN21008" role="doc-biblioref">Peels and Bouter 2018</a>)</span>.</p>
 </section>
 <section id="colophon" class="level2">
 <h2 class="anchored" data-anchor-id="colophon">Colophon</h2>
-<p>This version of the analysis was generated on 2022-11-27 12:32:32 using the following computational environment and dependencies:</p>
+<p>This version of the analysis was generated on 2022-11-28 06:13:03 using the following computational environment and dependencies:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># what R packages and versions were used?</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="st">"devtools"</span> <span class="sc">%in%</span> <span class="fu">installed.packages</span>()) devtools<span class="sc">::</span><span class="fu">session_info</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -354,7 +385,7 @@ div.csl-indent {
  collate  English_United States.utf8
  ctype    English_United States.utf8
  tz       America/Chicago
- date     2022-11-27
+ date     2022-11-28
  pandoc   2.19.2 @ C:/Program Files/RStudio/bin/quarto/bin/tools/ (via rmarkdown)
 
 ─ Packages ───────────────────────────────────────────────────────────────────
@@ -418,7 +449,7 @@ div.csl-indent {
 <div class="cell-output cell-output-stdout">
 <pre><code>Local:    main D:/github/perdiz3
 Remote:   main @ origin (https://github.com/seldenlab/perdiz3)
-Head:     [e8e6005] 2022-11-27: Merge branch 'main' of https://github.com/seldenlab/perdiz3</code></pre>
+Head:     [e1c6665] 2022-11-27: &lt;edit index&gt;</code></pre>
 </div>
 </div>
 
@@ -427,8 +458,59 @@ Head:     [e8e6005] 2022-11-27: Merge branch 'main' of https://github.com/selden
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-RN8579" class="csl-entry" role="doc-biblioentry">
+Adams, Dean C., and Michael L. Collyer. 2015. <span>“<span class="nocase">Permutation Tests for Phylogenetic Comparative Analyses of High-Dimensional Shape Data: What you Shuffle Matters</span>.”</span> Journal Article. <em>Evolution</em> 69 (3): 823–29. <a href="https://doi.org/10.1111/evo.12596">https://doi.org/10.1111/evo.12596</a>.
+</div>
+<div id="ref-RN8340" class="csl-entry" role="doc-biblioentry">
+———. 2016. <span>“<span class="nocase">On the Comparison of the Strength of Morphological Integration across Morphometric Datasets</span>.”</span> Journal Article. <em>Evolution</em> 70 (11): 2623–31. <a href="https://doi.org/10.1111/evo.13045">https://doi.org/10.1111/evo.13045</a>.
+</div>
+<div id="ref-RN10874" class="csl-entry" role="doc-biblioentry">
+———. 2019. <span>“Comparing the Strength of Modular Signal, and Evaluating Alternative Modular Hypotheses, Using Covariance Ratio Effect Sizes with Morphometric Data.”</span> Journal Article. <em>Evolution</em> 73 (12): 2352–67. <a href="https://doi.org/10.1111/evo.13867">https://doi.org/10.1111/evo.13867</a>.
+</div>
+<div id="ref-RN8314" class="csl-entry" role="doc-biblioentry">
+Adams, Dean C., Michael L. Collyer, Antigoni Kaliontzopoulou, and Emma Sherratt. 2018. <span>“<span class="nocase">Package ’geomorph’: Geometric Morphometric Analyses of 2D/3D Landmark Data. R package version 3.2.1</span>.”</span> Journal Article, no. March 1, 2020. <a href="http://geomorphr.github.io/geomorph/">http://geomorphr.github.io/geomorph/</a>.
+</div>
+<div id="ref-RN8565" class="csl-entry" role="doc-biblioentry">
+Adams, Dean C., and Erik Otarola-Castillo. 2013. <span>“<span class="nocase">geomorph: An R Package for the Collection and Analysis of Geometric Morphometric Shape Data</span>.”</span> Journal Article. <em>Methods in Ecology and Evolution</em> 4 (4): 393–99. <a href="https://doi.org/10.1111/2041-210x.12035">https://doi.org/10.1111/2041-210x.12035</a>.
+</div>
+<div id="ref-RN5170" class="csl-entry" role="doc-biblioentry">
+Adams, Dean C., and Pedro Peres-Neto. 2016. <span>“<span class="nocase">Evaluating modularity in morphometric data: challenges with the RV coefficient and a new test measure</span>.”</span> Journal Article. <em>Methods in Ecology and Evolution</em> 7 (5): 565–72. <a href="https://doi.org/10.1111/2041-210x.12511">https://doi.org/10.1111/2041-210x.12511</a>.
+</div>
+<div id="ref-RN6995" class="csl-entry" role="doc-biblioentry">
+Anderson, Marti J., and Cajo J. F. Ter Braak. 2003. <span>“<span class="nocase">Permutation Tests for Multi-Factoral Analysis of Variance</span>.”</span> Journal Article. <em>Journal of Statistical Computation and Simulation</em> 73 (2): 85–113. <a href="https://doi.org/10.1080=0094965021000015558">https://doi.org/10.1080=0094965021000015558</a>.
+</div>
+<div id="ref-RN9565" class="csl-entry" role="doc-biblioentry">
+Baken, Erica K., Michael L. Collyer, Antigoni Kaliontzopoulou, and Dean C. Adams. 2021. <span>“<span class="nocase">geomorph v4.0 and gmShiny: Enhanced analytics and a new graphical interface for a comprehensive morphometric experience</span>.”</span> Journal Article. <em>Methods in Ecology and Evolution</em>. <a href="https://doi.org/10.1111/2041-210x.13723">https://doi.org/10.1111/2041-210x.13723</a>.
+</div>
+<div id="ref-RN5700" class="csl-entry" role="doc-biblioentry">
+Birkhoff, George D. 1933. <em>Aesthetic Measure</em>. Book. Cambridge: Harvard University Press.
+</div>
+<div id="ref-RN8588" class="csl-entry" role="doc-biblioentry">
+Bookstein, Fred L., Philipp Gunz, Philipp Mitterocker, Hermann Prossinger, Katrin Schaefer, and Horst Seidler. 2003. <span>“<span class="nocase">Cranial Integration in Homo: Singular Warps Analysis of the Midsagittal Plane in Ontogeny and Evolution</span>.”</span> Journal Article. <em>Journal of Human Evolution</em> 44 (2): 167–87. <a href="https://doi.org/10.1016/S0047-2484(02)00201-4">https://doi.org/10.1016/S0047-2484(02)00201-4</a>.
+</div>
+<div id="ref-sklearn_api" class="csl-entry" role="doc-biblioentry">
+Buitinck, Lars, Gilles Louppe, Mathieu Blondel, Fabian Pedregosa, Andreas Mueller, Olivier Grisel, Vlad Niculae, et al. 2013. <span>“<span>API</span> Design for Machine Learning Software: Experiences from the Scikit-Learn Project.”</span> In <em>ECML PKDD Workshop: Languages for Data Mining and Machine Learning</em>, 108–22.
+</div>
+<div id="ref-RN8477" class="csl-entry" role="doc-biblioentry">
+Collyer, M. L., D. J. Sekora, and D. C. Adams. 2015. <span>“<span class="nocase">A method for analysis of phenotypic change for phenotypes described by high-dimensional data</span>.”</span> Journal Article. <em>Heredity (Edinb)</em> 115 (4): 357–65. <a href="https://doi.org/10.1038/hdy.2014.75">https://doi.org/10.1038/hdy.2014.75</a>.
+</div>
+<div id="ref-RN8334" class="csl-entry" role="doc-biblioentry">
+Collyer, Michael L., and Dean C. Adams. 2018. <span>“<span class="nocase">RRPP: An R Package for Fitting Linear Models to High-Dimensional Data using Residual Randomization</span>.”</span> Journal Article. <em>Methods in Ecology and Evolution</em> 9 (7): 1772–79. https://doi.org/<a href="https://doi.org/10.1111/2041-210X.13029">https://doi.org/10.1111/2041-210X.13029</a>.
+</div>
+<div id="ref-RN10754" class="csl-entry" role="doc-biblioentry">
+Elliot, T., R. Morse, D. Smythe, and A. Norris. 2021. <span>“<span class="nocase">Evaluating machine learning techniques for archaeological lithic sourcing: A case study of flint in Britain</span>.”</span> Journal Article. <em>Sci Rep</em> 11 (1): 10197. <a href="https://doi.org/10.1038/s41598-021-87834-3">https://doi.org/10.1038/s41598-021-87834-3</a>.
+</div>
+<div id="ref-RN9514" class="csl-entry" role="doc-biblioentry">
+Febriawan, Hendra Kurnia, Omar Moefti, Dwi Haryanto, and Taufan Wiguna. 2020. <span>“<span class="nocase">Detection and characterization of an archaeological wreck site in Sunda Strait, Indonesia</span>.”</span> Journal Article. <em>Forum Geografic</em> XIX (1): 60–71. <a href="https://doi.org/10.5775/fg.2020.054.i">https://doi.org/10.5775/fg.2020.054.i</a>.
+</div>
 <div id="ref-RN20917" class="csl-entry" role="doc-biblioentry">
 Gandrud, Christopher. 2014. <em>Reproducible Research with r and RStudio</em>. Book. The r Series. London: CRC Press.
+</div>
+<div id="ref-RN7046" class="csl-entry" role="doc-biblioentry">
+Goodall, Colin. 1991. <span>“<span class="nocase">Procrustes Methods in the Statistical Analysis of Shape</span>.”</span> Journal Article. <em>Journal of the Royal Statistical Society. Series B (Methodological)</em> 53 (2): 285–339.
+</div>
+<div id="ref-RN5698" class="csl-entry" role="doc-biblioentry">
+Gower, J. C. 1975. <span>“<span>Generalized Procrustes Analysis</span>.”</span> Journal Article. <em>Psychometrika</em> 40 (1): 33–51. https://doi.org/<a href="https://doi.org/10.1007/BF02291478">https://doi.org/10.1007/BF02291478</a>.
 </div>
 <div id="ref-RN20915" class="csl-entry" role="doc-biblioentry">
 Gray, Charles T., and Ben Marwick. 2019. <span>“Truth, Proof, and Reproducibility: There’s No Counter-Attack for the Codeless.”</span> Book Section. In <em>Statistics and Data Science</em>, 111–29. Communications in Computer and Information Science. <a href="https://doi.org/10.1007/978-981-15-1960-4_8">https://doi.org/10.1007/978-981-15-1960-4_8</a>.
@@ -436,17 +518,53 @@ Gray, Charles T., and Ben Marwick. 2019. <span>“Truth, Proof, and Reproducibil
 <div id="ref-RN21009" class="csl-entry" role="doc-biblioentry">
 Ivanovaitė, Livija, Kamil Serwatka, Christian Steven Hoggard, Florian Sauer, and Felix Riede. 2020. <span>“All These Fantastic Cultures? Research History and Regionalization in the Late Palaeolithic Tanged Point Cultures of Eastern Europe.”</span> <em>European Journal of Archaeology</em> 23 (2): 162–85. <a href="https://doi.org/10.1017/eaa.2019.59">https://doi.org/10.1017/eaa.2019.59</a>.
 </div>
+<div id="ref-RN8576" class="csl-entry" role="doc-biblioentry">
+Jolliffe, Ian T. 2002. <em>Principal Component Analysis</em>. Book. New York: Springer.
+</div>
+<div id="ref-RN9513" class="csl-entry" role="doc-biblioentry">
+Kadhim, Israa, and Fanar Abed. 2021. <span>“<span class="nocase">The Potential of LiDAR and UAV-Photogrammetric Data Analysis to Interpret Archaeological Sites: A Case Study of Chun Castle in South-West England</span>.”</span> Journal Article. <em>ISPRS International Journal of Geo-Information</em> 10 (1). <a href="https://doi.org/10.3390/ijgi10010041">https://doi.org/10.3390/ijgi10010041</a>.
+</div>
+<div id="ref-RN8102" class="csl-entry" role="doc-biblioentry">
+Kendall, David G. 1981. <span>“<span class="nocase">The Statistics of Shape</span>.”</span> Book Section. In <em>Interpreting Multivariate Data</em>, edited by Vic Barnett, 75–80. New York: Wiley.
+</div>
+<div id="ref-RN8587" class="csl-entry" role="doc-biblioentry">
+———. 1984. <span>“Shape Manifolds, Procrustean Metrics, and Complex Projective Spaces.”</span> Journal Article. <em>Bulletin of the London Mathematical Society</em> 16 (2): 81–121. <a href="https://doi.org/10.1112/blms/16.2.81">https://doi.org/10.1112/blms/16.2.81</a>.
+</div>
+<div id="ref-RN8555" class="csl-entry" role="doc-biblioentry">
+Klingenberg, Christian Peter. 2013. <span>“<span class="nocase">Visualizations in Geometric Morphometrics: How to Read and How to Make Graphs Showing Shape Changes</span>.”</span> Journal Article. <em>Hystrix</em> 24: 15–24.
+</div>
 <div id="ref-RN20804" class="csl-entry" role="doc-biblioentry">
 Marwick, Ben. 2016. <span>“Computational Reproducibility in Archaeological Research: Basic Principles and a Case Study of Their Implementation.”</span> <em>Journal of Archaeological Method and Theory</em> 24 (2): 424–50. <a href="https://doi.org/10.1007/s10816-015-9272-9">https://doi.org/10.1007/s10816-015-9272-9</a>.
 </div>
 <div id="ref-RN21007" class="csl-entry" role="doc-biblioentry">
 Marwick, Ben, Li-Ying Wang, Ryan Robinson, and Hope Loiselle. 2019. <span>“How to Use Replication Assignments for Teaching Integrity in Empirical Archaeology.”</span> <em>Advances in Archaeological Practice</em> 8 (1): 78–86. <a href="https://doi.org/10.1017/aap.2019.38">https://doi.org/10.1017/aap.2019.38</a>.
 </div>
+<div id="ref-RN9516" class="csl-entry" role="doc-biblioentry">
+Monna, Fabrice, Jerome Magail, Tanguy Rolland, Nicolas Navarro, Josef Wilczek, Jamiyan-Ombo Gantulga, Yury Esin, Ludovic Granjon, Anne-Caroline Allard, and Carmela Chateau-Smith. 2020. <span>“Machine Learning for Rapid Mapping of Archaeological Structures Made of Dry Stones - Example of Burial Monuments from the Khirgisuur Culture, Mongolia -.”</span> Journal Article. <em>Journal of Cultural Heritage</em> 43: 118–28. <a href="https://doi.org/10.1016/j.culher.2020.01.002">https://doi.org/10.1016/j.culher.2020.01.002</a>.
+</div>
+<div id="ref-RN8973" class="csl-entry" role="doc-biblioentry">
+Olsen, Aaron M., and Mark W. Westneat. 2015. <span>“StereoMorph: An r Package for the Collection of 3D Landmarks and Curves Using a Stereo Camera Set-up.”</span> Journal Article. <em>Methods in Ecology and Evolution</em> 6 (3): 351–56. <a href="https://doi.org/10.1111/2041-210x.12326">https://doi.org/10.1111/2041-210x.12326</a>.
+</div>
+<div id="ref-scikit-learn" class="csl-entry" role="doc-biblioentry">
+Pedregosa, F., G. Varoquaux, A. Gramfort, V. Michel, B. Thirion, O. Grisel, M. Blondel, et al. 2011. <span>“<span class="nocase">Scikit-learn: Machine Learning in Python</span>.”</span> <em>Journal of Machine Learning Research</em> 12: 2825–30.
+</div>
 <div id="ref-RN21008" class="csl-entry" role="doc-biblioentry">
 Peels, Rik, and Lex Bouter. 2018. <span>“Humanities Need a Replication Drive Too.”</span> <em>Nature</em> 558 (7710): 372. <a href="https://doi.org/10.1038/d41586-018-05454-w">https://doi.org/10.1038/d41586-018-05454-w</a>.
 </div>
 <div id="ref-RN20916" class="csl-entry" role="doc-biblioentry">
 Peng, Roger D. 2011. <span>“Reproducible Research in Computational Science.”</span> Journal Article. <em>Science</em> 334 (6060): 1226–27. <a href="https://doi.org/10.1126/science.1213847">https://doi.org/10.1126/science.1213847</a>.
+</div>
+<div id="ref-RN10875" class="csl-entry" role="doc-biblioentry">
+Revell, L. J. 2009. <span>“Size-Correction and Principal Components for Interspecific Comparative Studies.”</span> Journal Article. <em>Evolution</em> 63 (12): 3258–68. <a href="https://doi.org/10.1111/j.1558-5646.2009.00804.x">https://doi.org/10.1111/j.1558-5646.2009.00804.x</a>.
+</div>
+<div id="ref-RN8511" class="csl-entry" role="doc-biblioentry">
+Rohlf, F. James. 1999. <span>“<span class="nocase">Shape Statistics: Procrustes Superimpositions and Tangent Spaces</span>.”</span> Journal Article. <em>Journal of Classification</em> 16 (2): 197–223. <a href="https://doi.org/10.1007/s003579900054">https://doi.org/10.1007/s003579900054</a>.
+</div>
+<div id="ref-RN8525" class="csl-entry" role="doc-biblioentry">
+Rohlf, F. James, and Dennis E. Slice. 1990. <span>“<span class="nocase">Extensions of the Procrustes Method for the Optimal Superimposition of Landmarks</span>.”</span> Journal Article. <em>Systematic Zoology</em> 39 (1): 40–59. <a href="https://doi.org/10.2307/2992207">https://doi.org/10.2307/2992207</a>.
+</div>
+<div id="ref-RN9515" class="csl-entry" role="doc-biblioentry">
+S. Bhatt, Malay, and Tejas P. Patalia. 2017. <span>“<span class="nocase">Indian Monuments Classification using Support Vector Machine</span>.”</span> Journal Article. <em>International Journal of Electrical and Computer Engineering</em> 7 (4). <a href="https://doi.org/10.11591/ijece.v7i4.pp1952-1963">https://doi.org/10.11591/ijece.v7i4.pp1952-1963</a>.
 </div>
 <div id="ref-RN8980" class="csl-entry" role="doc-biblioentry">
 Selden Jr., Robert Z., John E. Dockall, C. Britt Bousman, and Timothy K. Perttula. 2021. <span>“<span class="nocase">Supplementary materials for paper: Shape as a function of time + raw material + burial context? A preliminary analysis of Perdiz arrow points in the southern Caddo area</span>.”</span> Journal Article. <em>Open Science Framework</em>. <a href="https://doi.org/10.17605/OSF.IO/DEJ74">https://doi.org/10.17605/OSF.IO/DEJ74</a>.
@@ -455,7 +573,22 @@ Selden Jr., Robert Z., John E. Dockall, C. Britt Bousman, and Timothy K. Perttul
 Selden Jr., Robert Z., John E. Dockall, and Morgane Dubied. 2020. <span>“<span class="nocase">A quantitative assessment of intraspecific morphological variation in Gahagan bifaces from the southern Caddo area and central Texas</span>.”</span> Journal Article. <em>Southeastern Archaeology</em> 39 (2): 125–45. <a href="https://doi.org/10.1080/0734578x.2020.1744416">https://doi.org/10.1080/0734578x.2020.1744416</a>.
 </div>
 <div id="ref-RN11097" class="csl-entry" role="doc-biblioentry">
-Selden, Robert Z. 2022. <span>“Morphologically Similar, but Regionally Distinct: Perdiz Arrow Points from Caddo Burial Contexts in the American Southeast.”</span> Journal Article. <em>Lithic Technology</em> (in press). <a href="https://doi.org/10.1080/01977261.2022.2095492">https://doi.org/10.1080/01977261.2022.2095492</a>.
+Selden, Robert Z. 2022. <span>“<span class="nocase">Morphologically Similar, but Regionally Distinct: Perdiz Arrow Points from Caddo Burial Contexts in the American Southeast</span>.”</span> Journal Article. <em>Lithic Technology</em> (in press). <a href="https://doi.org/10.1080/01977261.2022.2095492">https://doi.org/10.1080/01977261.2022.2095492</a>.
+</div>
+<div id="ref-RN8553" class="csl-entry" role="doc-biblioentry">
+Sherratt, Emma, David J. Gower, Christian P. Klingenberg, and Mark Wilkinson. 2014. <span>“<span class="nocase">Evolution of Cranial Shape in Caecilians (Amphibia: Gymnophiona)</span>.”</span> Journal Article. <em>Evolutionary Biology</em> 41: 528–45. https://doi.org/<a href="https://doi.org/10.1007/s11692-014-9287-2">https://doi.org/10.1007/s11692-014-9287-2</a>.
+</div>
+<div id="ref-RN8384" class="csl-entry" role="doc-biblioentry">
+Slice, Dennis E. 2001. <span>“<span class="nocase">Landmark Coordinates Aligned by Procrustes Analysis Do Not Lie in Kendall’s Shape Space</span>.”</span> Journal Article. <em>Systematic Biology</em> 50 (1): 141–49. <a href="https://doi.org/10.1080/10635150119110">https://doi.org/10.1080/10635150119110</a>.
+</div>
+<div id="ref-RN8584" class="csl-entry" role="doc-biblioentry">
+Team, R Core Development. 2021. <em>R: A Language and Environment for Statistical Computing. Electronic Resource,</em>. Book. Vienna, Austria: R Foundation for Statistical Computing. <a href="http://www.R-project.org">http://www.R-project.org</a>.
+</div>
+<div id="ref-RN5703" class="csl-entry" role="doc-biblioentry">
+Zelditch, Miriam Leah, Donald L. Swiderski, H. David Sheets, and William L. Fink. 2004. <em>Geometric Morphometrics for Biologists : A Primer</em>. Book. Burlington: Elsevier Science. <a href="http://ebookcentral.proquest.com/lib/tamucs/detail.action?docID=298308">http://ebookcentral.proquest.com/lib/tamucs/detail.action?docID=298308</a>.
+</div>
+<div id="ref-RN10755" class="csl-entry" role="doc-biblioentry">
+Zhang, Ru. n.d. <span>“The Ancient Ceramics Identification Methods Based on Non-Linear Support Vector Machines.”</span> Conference Proceedings. In <em>Applied Mechanics and Materials</em>, 278:1201–4. Trans Tech Publ.
 </div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

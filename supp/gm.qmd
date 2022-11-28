@@ -62,7 +62,7 @@ ggplot(qdata, aes(x = region, y = csz, color = region)) +
   geom_dotplot(binaxis = 'y', stackdir = 'center', dotsize = 0.3) +
   scale_color_manual(values = pal) +
   theme(legend.position = "none") +
-  labs(x = 'Region', y = 'Centroid Size')
+  labs(x = 'Community', y = 'Centroid Size')
 ```
 
 ## Principal Components Analysis

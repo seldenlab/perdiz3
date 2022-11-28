@@ -34,6 +34,9 @@ maxth <- data$maxth # maximum thickness
 maxstl <- data$maxstl # maximum stem length
 maxstw <- data$maxstw # maximum stem width
 reg <- data$region # region
+
+# print table
+knitr::kable((data), 'pipe')
 ```
 
 ## Boxplots for *variable* by *region*
@@ -92,14 +95,12 @@ regionfigure
 
 ```{r pcaregion, out.width = "100%", dpi = 300, echo=TRUE, warning=FALSE, fig.cap = "Principal components analysis by north/south behavioral region."}
 # attributes for plot
-df<-data[c(4:8)]
 pch.gps.gp <- c(15,16)[as.factor(reg)]
 
-## pca plot
-pca <- autoplot(prcomp(df),
+## pca plot using correlation matrix
+pca <- autoplot(prcomp(data[,4:8], scale = TRUE),
                 data = data,
                 asp = 1,
-                scale. = TRUE,
                 shape = pch.gps.gp,
                 colour = "region",
                 variance_percentage = TRUE,
@@ -111,7 +112,7 @@ pca <- autoplot(prcomp(df),
                 frame.type = 't') +
   scale_fill_manual(values = wes_palette("Moonrise2")) +
   scale_colour_manual(values = wes_palette("Moonrise2"))
-
+# add margin plots
 ggMarginal(pca, groupColour = TRUE)
 ```
 

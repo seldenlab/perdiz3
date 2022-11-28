@@ -247,7 +247,698 @@ This is vegan 2.6-4</code></pre>
 <span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>maxth <span class="ot">&lt;-</span> data<span class="sc">$</span>maxth <span class="co"># maximum thickness</span></span>
 <span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>maxstl <span class="ot">&lt;-</span> data<span class="sc">$</span>maxstl <span class="co"># maximum stem length</span></span>
 <span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>maxstw <span class="ot">&lt;-</span> data<span class="sc">$</span>maxstw <span class="co"># maximum stem width</span></span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>reg <span class="ot">&lt;-</span> data<span class="sc">$</span>region <span class="co"># region</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>reg <span class="ot">&lt;-</span> data<span class="sc">$</span>region <span class="co"># region</span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="co"># print table</span></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>((data), <span class="st">'pipe'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="table table-sm table-striped">
+<thead>
+<tr class="header">
+<th style="text-align: left;">spec</th>
+<th style="text-align: left;">site</th>
+<th style="text-align: left;">region</th>
+<th style="text-align: right;">maxl</th>
+<th style="text-align: right;">maxw</th>
+<th style="text-align: right;">maxth</th>
+<th style="text-align: right;">maxstl</th>
+<th style="text-align: right;">maxstw</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">554</td>
+<td style="text-align: left;">41cp12</td>
+<td style="text-align: left;">north</td>
+<td style="text-align: right;">25.40</td>
+<td style="text-align: right;">12.18</td>
+<td style="text-align: right;">3.82</td>
+<td style="text-align: right;">5.75</td>
+<td style="text-align: right;">3.84</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">555</td>
+<td style="text-align: left;">41cp12</td>
+<td style="text-align: left;">north</td>
+<td style="text-align: right;">22.92</td>
+<td style="text-align: right;">12.87</td>
+<td style="text-align: right;">3.54</td>
+<td style="text-align: right;">3.71</td>
+<td style="text-align: right;">3.69</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">556</td>
+<td style="text-align: left;">41cp12</td>
+<td style="text-align: left;">north</td>
+<td style="text-align: right;">24.09</td>
+<td style="text-align: right;">11.87</td>
+<td style="text-align: right;">3.61</td>
+<td style="text-align: right;">5.15</td>
+<td style="text-align: right;">4.78</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">559</td>
+<td style="text-align: left;">41cp12</td>
+<td style="text-align: left;">north</td>
+<td style="text-align: right;">25.01</td>
+<td style="text-align: right;">10.57</td>
+<td style="text-align: right;">3.50</td>
+<td style="text-align: right;">5.84</td>
+<td style="text-align: right;">3.88</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">562</td>
+<td style="text-align: left;">41cp12</td>
+<td style="text-align: left;">north</td>
+<td style="text-align: right;">22.10</td>
+<td style="text-align: right;">10.45</td>
+<td style="text-align: right;">3.47</td>
+<td style="text-align: right;">3.77</td>
+<td style="text-align: right;">3.43</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">565</td>
+<td style="text-align: left;">41cp12</td>
+<td style="text-align: left;">north</td>
+<td style="text-align: right;">20.31</td>
+<td style="text-align: right;">10.53</td>
+<td style="text-align: right;">3.08</td>
+<td style="text-align: right;">2.01</td>
+<td style="text-align: right;">3.07</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">591</td>
+<td style="text-align: left;">41cp12</td>
+<td style="text-align: left;">north</td>
+<td style="text-align: right;">25.49</td>
+<td style="text-align: right;">13.37</td>
+<td style="text-align: right;">4.42</td>
+<td style="text-align: right;">7.04</td>
+<td style="text-align: right;">4.95</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">646</td>
+<td style="text-align: left;">41cp5</td>
+<td style="text-align: left;">north</td>
+<td style="text-align: right;">16.37</td>
+<td style="text-align: right;">10.46</td>
+<td style="text-align: right;">2.63</td>
+<td style="text-align: right;">3.85</td>
+<td style="text-align: right;">4.03</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">649</td>
+<td style="text-align: left;">41cp5</td>
+<td style="text-align: left;">north</td>
+<td style="text-align: right;">23.38</td>
+<td style="text-align: right;">13.88</td>
+<td style="text-align: right;">4.11</td>
+<td style="text-align: right;">7.33</td>
+<td style="text-align: right;">5.54</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">651</td>
+<td style="text-align: left;">41cp5</td>
+<td style="text-align: left;">north</td>
+<td style="text-align: right;">22.86</td>
+<td style="text-align: right;">13.84</td>
+<td style="text-align: right;">4.61</td>
+<td style="text-align: right;">6.16</td>
+<td style="text-align: right;">5.02</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">652</td>
+<td style="text-align: left;">41cp5</td>
+<td style="text-align: left;">north</td>
+<td style="text-align: right;">22.51</td>
+<td style="text-align: right;">12.67</td>
+<td style="text-align: right;">3.37</td>
+<td style="text-align: right;">6.33</td>
+<td style="text-align: right;">4.39</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">653</td>
+<td style="text-align: left;">41cp5</td>
+<td style="text-align: left;">north</td>
+<td style="text-align: right;">27.55</td>
+<td style="text-align: right;">17.05</td>
+<td style="text-align: right;">3.08</td>
+<td style="text-align: right;">6.83</td>
+<td style="text-align: right;">4.60</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">654</td>
+<td style="text-align: left;">41cp5</td>
+<td style="text-align: left;">north</td>
+<td style="text-align: right;">17.01</td>
+<td style="text-align: right;">10.90</td>
+<td style="text-align: right;">2.35</td>
+<td style="text-align: right;">4.64</td>
+<td style="text-align: right;">3.64</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">655</td>
+<td style="text-align: left;">41cp5</td>
+<td style="text-align: left;">north</td>
+<td style="text-align: right;">26.86</td>
+<td style="text-align: right;">13.06</td>
+<td style="text-align: right;">2.50</td>
+<td style="text-align: right;">6.10</td>
+<td style="text-align: right;">3.99</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">656</td>
+<td style="text-align: left;">41cp5</td>
+<td style="text-align: left;">north</td>
+<td style="text-align: right;">25.79</td>
+<td style="text-align: right;">12.52</td>
+<td style="text-align: right;">2.96</td>
+<td style="text-align: right;">5.43</td>
+<td style="text-align: right;">3.97</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">657</td>
+<td style="text-align: left;">41cp5</td>
+<td style="text-align: left;">north</td>
+<td style="text-align: right;">27.36</td>
+<td style="text-align: right;">12.41</td>
+<td style="text-align: right;">3.04</td>
+<td style="text-align: right;">6.56</td>
+<td style="text-align: right;">4.26</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">659</td>
+<td style="text-align: left;">41cp5</td>
+<td style="text-align: left;">north</td>
+<td style="text-align: right;">23.10</td>
+<td style="text-align: right;">11.42</td>
+<td style="text-align: right;">2.14</td>
+<td style="text-align: right;">4.74</td>
+<td style="text-align: right;">4.21</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">660</td>
+<td style="text-align: left;">41cp5</td>
+<td style="text-align: left;">north</td>
+<td style="text-align: right;">20.23</td>
+<td style="text-align: right;">9.64</td>
+<td style="text-align: right;">1.89</td>
+<td style="text-align: right;">5.70</td>
+<td style="text-align: right;">2.66</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">661</td>
+<td style="text-align: left;">41cp5</td>
+<td style="text-align: left;">north</td>
+<td style="text-align: right;">21.73</td>
+<td style="text-align: right;">10.67</td>
+<td style="text-align: right;">2.27</td>
+<td style="text-align: right;">4.91</td>
+<td style="text-align: right;">3.13</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">665</td>
+<td style="text-align: left;">41cp12</td>
+<td style="text-align: left;">north</td>
+<td style="text-align: right;">27.34</td>
+<td style="text-align: right;">15.77</td>
+<td style="text-align: right;">4.10</td>
+<td style="text-align: right;">4.69</td>
+<td style="text-align: right;">4.60</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">677</td>
+<td style="text-align: left;">41cp20</td>
+<td style="text-align: left;">north</td>
+<td style="text-align: right;">24.72</td>
+<td style="text-align: right;">13.70</td>
+<td style="text-align: right;">2.52</td>
+<td style="text-align: right;">6.98</td>
+<td style="text-align: right;">3.76</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">678</td>
+<td style="text-align: left;">41cp20</td>
+<td style="text-align: left;">north</td>
+<td style="text-align: right;">24.98</td>
+<td style="text-align: right;">13.33</td>
+<td style="text-align: right;">3.26</td>
+<td style="text-align: right;">4.19</td>
+<td style="text-align: right;">3.54</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">na49-1</td>
+<td style="text-align: left;">41na49</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">47.74</td>
+<td style="text-align: right;">15.14</td>
+<td style="text-align: right;">4.52</td>
+<td style="text-align: right;">6.82</td>
+<td style="text-align: right;">6.22</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">na49-10</td>
+<td style="text-align: left;">41na49</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">22.88</td>
+<td style="text-align: right;">12.13</td>
+<td style="text-align: right;">3.68</td>
+<td style="text-align: right;">5.73</td>
+<td style="text-align: right;">5.49</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">na49-11</td>
+<td style="text-align: left;">41na49</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">24.09</td>
+<td style="text-align: right;">12.52</td>
+<td style="text-align: right;">3.27</td>
+<td style="text-align: right;">5.36</td>
+<td style="text-align: right;">4.81</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">na49-12</td>
+<td style="text-align: left;">41na49</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">21.41</td>
+<td style="text-align: right;">10.31</td>
+<td style="text-align: right;">3.48</td>
+<td style="text-align: right;">4.64</td>
+<td style="text-align: right;">3.82</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">na49-13</td>
+<td style="text-align: left;">41na49</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">24.84</td>
+<td style="text-align: right;">11.21</td>
+<td style="text-align: right;">3.51</td>
+<td style="text-align: right;">5.19</td>
+<td style="text-align: right;">4.97</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">na49-14</td>
+<td style="text-align: left;">41na49</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">21.92</td>
+<td style="text-align: right;">9.35</td>
+<td style="text-align: right;">2.62</td>
+<td style="text-align: right;">5.22</td>
+<td style="text-align: right;">4.85</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">na49-2</td>
+<td style="text-align: left;">41na49</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">32.49</td>
+<td style="text-align: right;">12.78</td>
+<td style="text-align: right;">3.80</td>
+<td style="text-align: right;">6.80</td>
+<td style="text-align: right;">4.78</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">na49-3</td>
+<td style="text-align: left;">41na49</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">27.72</td>
+<td style="text-align: right;">13.05</td>
+<td style="text-align: right;">4.19</td>
+<td style="text-align: right;">5.99</td>
+<td style="text-align: right;">5.88</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">na49-4</td>
+<td style="text-align: left;">41na49</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">26.20</td>
+<td style="text-align: right;">10.60</td>
+<td style="text-align: right;">3.30</td>
+<td style="text-align: right;">4.67</td>
+<td style="text-align: right;">4.92</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">na49-7</td>
+<td style="text-align: left;">41na49</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">24.25</td>
+<td style="text-align: right;">12.01</td>
+<td style="text-align: right;">2.92</td>
+<td style="text-align: right;">6.01</td>
+<td style="text-align: right;">4.93</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">na49-8</td>
+<td style="text-align: left;">41na49</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">22.06</td>
+<td style="text-align: right;">14.51</td>
+<td style="text-align: right;">2.92</td>
+<td style="text-align: right;">5.67</td>
+<td style="text-align: right;">5.17</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">na49-9</td>
+<td style="text-align: left;">41na49</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">25.44</td>
+<td style="text-align: right;">13.86</td>
+<td style="text-align: right;">3.44</td>
+<td style="text-align: right;">4.74</td>
+<td style="text-align: right;">4.81</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">f2-g2-5</td>
+<td style="text-align: left;">41sy27</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">24.92</td>
+<td style="text-align: right;">16.16</td>
+<td style="text-align: right;">3.57</td>
+<td style="text-align: right;">4.44</td>
+<td style="text-align: right;">4.25</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">f2-g2-10</td>
+<td style="text-align: left;">41sy27</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">34.69</td>
+<td style="text-align: right;">16.40</td>
+<td style="text-align: right;">3.29</td>
+<td style="text-align: right;">6.12</td>
+<td style="text-align: right;">4.14</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">f2-g2-15</td>
+<td style="text-align: left;">41sy27</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">34.17</td>
+<td style="text-align: right;">20.00</td>
+<td style="text-align: right;">3.09</td>
+<td style="text-align: right;">8.34</td>
+<td style="text-align: right;">5.68</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">f2-g2-9</td>
+<td style="text-align: left;">41sy27</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">39.39</td>
+<td style="text-align: right;">16.73</td>
+<td style="text-align: right;">2.95</td>
+<td style="text-align: right;">6.28</td>
+<td style="text-align: right;">4.90</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">f2-g2-14</td>
+<td style="text-align: left;">41sy27</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">30.36</td>
+<td style="text-align: right;">15.72</td>
+<td style="text-align: right;">2.58</td>
+<td style="text-align: right;">6.11</td>
+<td style="text-align: right;">4.51</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">f2-g2-2</td>
+<td style="text-align: left;">41sy27</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">29.32</td>
+<td style="text-align: right;">15.47</td>
+<td style="text-align: right;">2.94</td>
+<td style="text-align: right;">5.59</td>
+<td style="text-align: right;">4.18</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">f2-g2-1</td>
+<td style="text-align: left;">41sy27</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">30.83</td>
+<td style="text-align: right;">16.80</td>
+<td style="text-align: right;">2.96</td>
+<td style="text-align: right;">5.83</td>
+<td style="text-align: right;">5.21</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">f2-g2-11</td>
+<td style="text-align: left;">41sy27</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">31.10</td>
+<td style="text-align: right;">15.33</td>
+<td style="text-align: right;">2.92</td>
+<td style="text-align: right;">5.60</td>
+<td style="text-align: right;">4.78</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">f2-g2-3</td>
+<td style="text-align: left;">41sy27</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">23.30</td>
+<td style="text-align: right;">15.31</td>
+<td style="text-align: right;">3.09</td>
+<td style="text-align: right;">3.87</td>
+<td style="text-align: right;">4.31</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">f2-g2-13</td>
+<td style="text-align: left;">41sy27</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">29.33</td>
+<td style="text-align: right;">18.59</td>
+<td style="text-align: right;">3.13</td>
+<td style="text-align: right;">5.54</td>
+<td style="text-align: right;">4.52</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">f2-g2-7</td>
+<td style="text-align: left;">41sy27</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">24.78</td>
+<td style="text-align: right;">15.68</td>
+<td style="text-align: right;">3.20</td>
+<td style="text-align: right;">4.60</td>
+<td style="text-align: right;">4.23</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">f2-g2-8</td>
+<td style="text-align: left;">41sy27</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">28.17</td>
+<td style="text-align: right;">18.24</td>
+<td style="text-align: right;">3.01</td>
+<td style="text-align: right;">5.99</td>
+<td style="text-align: right;">4.72</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">f2-g2-12</td>
+<td style="text-align: left;">41sy27</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">33.53</td>
+<td style="text-align: right;">15.83</td>
+<td style="text-align: right;">3.18</td>
+<td style="text-align: right;">5.55</td>
+<td style="text-align: right;">4.23</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">f2-g2-6</td>
+<td style="text-align: left;">41sy27</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">23.74</td>
+<td style="text-align: right;">16.12</td>
+<td style="text-align: right;">2.92</td>
+<td style="text-align: right;">5.53</td>
+<td style="text-align: right;">4.34</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">f2-g1-20</td>
+<td style="text-align: left;">41sy27</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">37.46</td>
+<td style="text-align: right;">16.78</td>
+<td style="text-align: right;">3.28</td>
+<td style="text-align: right;">7.53</td>
+<td style="text-align: right;">5.54</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">f2-g1-10</td>
+<td style="text-align: left;">41sy27</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">27.32</td>
+<td style="text-align: right;">18.39</td>
+<td style="text-align: right;">3.10</td>
+<td style="text-align: right;">5.37</td>
+<td style="text-align: right;">4.54</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">f2-g1-19</td>
+<td style="text-align: left;">41sy27</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">31.44</td>
+<td style="text-align: right;">19.62</td>
+<td style="text-align: right;">3.13</td>
+<td style="text-align: right;">5.44</td>
+<td style="text-align: right;">5.75</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">f2-g1-17</td>
+<td style="text-align: left;">41sy27</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">32.75</td>
+<td style="text-align: right;">19.34</td>
+<td style="text-align: right;">3.34</td>
+<td style="text-align: right;">6.29</td>
+<td style="text-align: right;">5.31</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">f2-g1-16</td>
+<td style="text-align: left;">41sy27</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">34.97</td>
+<td style="text-align: right;">16.81</td>
+<td style="text-align: right;">3.39</td>
+<td style="text-align: right;">5.90</td>
+<td style="text-align: right;">5.49</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">f2-g1-11</td>
+<td style="text-align: left;">41sy27</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">33.18</td>
+<td style="text-align: right;">17.45</td>
+<td style="text-align: right;">3.36</td>
+<td style="text-align: right;">6.47</td>
+<td style="text-align: right;">5.12</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">f2-g1-13</td>
+<td style="text-align: left;">41sy27</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">31.61</td>
+<td style="text-align: right;">18.57</td>
+<td style="text-align: right;">3.07</td>
+<td style="text-align: right;">5.75</td>
+<td style="text-align: right;">5.04</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">f2-g1-15</td>
+<td style="text-align: left;">41sy27</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">38.50</td>
+<td style="text-align: right;">20.34</td>
+<td style="text-align: right;">3.40</td>
+<td style="text-align: right;">8.85</td>
+<td style="text-align: right;">6.16</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">f2-g1-18</td>
+<td style="text-align: left;">41sy27</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">30.02</td>
+<td style="text-align: right;">17.33</td>
+<td style="text-align: right;">3.21</td>
+<td style="text-align: right;">7.05</td>
+<td style="text-align: right;">5.18</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">f2-g1-3</td>
+<td style="text-align: left;">41sy27</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">29.45</td>
+<td style="text-align: right;">18.84</td>
+<td style="text-align: right;">3.16</td>
+<td style="text-align: right;">5.58</td>
+<td style="text-align: right;">5.32</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">f2-g1-7</td>
+<td style="text-align: left;">41sy27</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">32.44</td>
+<td style="text-align: right;">18.20</td>
+<td style="text-align: right;">3.28</td>
+<td style="text-align: right;">5.80</td>
+<td style="text-align: right;">4.76</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">f2-g1-4</td>
+<td style="text-align: left;">41sy27</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">28.33</td>
+<td style="text-align: right;">17.49</td>
+<td style="text-align: right;">2.98</td>
+<td style="text-align: right;">7.29</td>
+<td style="text-align: right;">4.83</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">f2-g1-12</td>
+<td style="text-align: left;">41sy27</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">32.17</td>
+<td style="text-align: right;">18.47</td>
+<td style="text-align: right;">3.47</td>
+<td style="text-align: right;">5.44</td>
+<td style="text-align: right;">5.20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">f2-g1-8</td>
+<td style="text-align: left;">41sy27</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">31.03</td>
+<td style="text-align: right;">17.05</td>
+<td style="text-align: right;">3.10</td>
+<td style="text-align: right;">7.41</td>
+<td style="text-align: right;">5.11</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">f2-g1-9</td>
+<td style="text-align: left;">41sy27</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">27.56</td>
+<td style="text-align: right;">21.12</td>
+<td style="text-align: right;">3.47</td>
+<td style="text-align: right;">6.84</td>
+<td style="text-align: right;">5.07</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">f2-g3-1</td>
+<td style="text-align: left;">41sy27</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">27.21</td>
+<td style="text-align: right;">17.41</td>
+<td style="text-align: right;">3.52</td>
+<td style="text-align: right;">7.70</td>
+<td style="text-align: right;">5.35</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">f2-g3-3</td>
+<td style="text-align: left;">41sy27</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">24.31</td>
+<td style="text-align: right;">16.35</td>
+<td style="text-align: right;">3.00</td>
+<td style="text-align: right;">7.08</td>
+<td style="text-align: right;">5.10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">f2-g3-6</td>
+<td style="text-align: left;">41sy27</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">30.58</td>
+<td style="text-align: right;">18.03</td>
+<td style="text-align: right;">3.56</td>
+<td style="text-align: right;">7.37</td>
+<td style="text-align: right;">4.81</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">f2-g3-2</td>
+<td style="text-align: left;">41sy27</td>
+<td style="text-align: left;">south</td>
+<td style="text-align: right;">27.63</td>
+<td style="text-align: right;">17.74</td>
+<td style="text-align: right;">2.99</td>
+<td style="text-align: right;">8.23</td>
+<td style="text-align: right;">4.82</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </section>
 <section id="boxplots-for-variable-by-region" class="level2">
@@ -325,27 +1016,25 @@ Bin width defaults to 1/30 of the range of the data. Pick better value with
 <h2 class="anchored" data-anchor-id="principal-components-analysis">Principal Components Analysis</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># attributes for plot</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>df<span class="ot">&lt;-</span>data[<span class="fu">c</span>(<span class="dv">4</span><span class="sc">:</span><span class="dv">8</span>)]</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>pch.gps.gp <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">15</span>,<span class="dv">16</span>)[<span class="fu">as.factor</span>(reg)]</span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="do">## pca plot</span></span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>pca <span class="ot">&lt;-</span> <span class="fu">autoplot</span>(<span class="fu">prcomp</span>(df),</span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>                <span class="at">data =</span> data,</span>
-<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>                <span class="at">asp =</span> <span class="dv">1</span>,</span>
-<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>                <span class="at">scale. =</span> <span class="cn">TRUE</span>,</span>
-<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>                <span class="at">shape =</span> pch.gps.gp,</span>
-<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>                <span class="at">colour =</span> <span class="st">"region"</span>,</span>
-<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>                <span class="at">variance_percentage =</span> <span class="cn">TRUE</span>,</span>
-<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>                <span class="at">loadings =</span> <span class="cn">TRUE</span>, </span>
-<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>                <span class="at">loadings.colour =</span> <span class="st">'blue'</span>,</span>
-<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>                <span class="at">loadings.label =</span> <span class="cn">TRUE</span>,</span>
-<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>                <span class="at">loadings.label.size =</span> <span class="dv">3</span>,</span>
-<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a>                <span class="at">frame =</span> <span class="cn">TRUE</span>,</span>
-<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>                <span class="at">frame.type =</span> <span class="st">'t'</span>) <span class="sc">+</span></span>
-<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">wes_palette</span>(<span class="st">"Moonrise2"</span>)) <span class="sc">+</span></span>
-<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_colour_manual</span>(<span class="at">values =</span> <span class="fu">wes_palette</span>(<span class="st">"Moonrise2"</span>))</span>
-<span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a><span class="fu">ggMarginal</span>(pca, <span class="at">groupColour =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>pch.gps.gp <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">15</span>,<span class="dv">16</span>)[<span class="fu">as.factor</span>(reg)]</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="do">## pca plot using correlation matrix</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>pca <span class="ot">&lt;-</span> <span class="fu">autoplot</span>(<span class="fu">prcomp</span>(data[,<span class="dv">4</span><span class="sc">:</span><span class="dv">8</span>], <span class="at">scale =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>                <span class="at">data =</span> data,</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>                <span class="at">asp =</span> <span class="dv">1</span>,</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>                <span class="at">shape =</span> pch.gps.gp,</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>                <span class="at">colour =</span> <span class="st">"region"</span>,</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>                <span class="at">variance_percentage =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>                <span class="at">loadings =</span> <span class="cn">TRUE</span>, </span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>                <span class="at">loadings.colour =</span> <span class="st">'blue'</span>,</span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>                <span class="at">loadings.label =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>                <span class="at">loadings.label.size =</span> <span class="dv">3</span>,</span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>                <span class="at">frame =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>                <span class="at">frame.type =</span> <span class="st">'t'</span>) <span class="sc">+</span></span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">wes_palette</span>(<span class="st">"Moonrise2"</span>)) <span class="sc">+</span></span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_colour_manual</span>(<span class="at">values =</span> <span class="fu">wes_palette</span>(<span class="st">"Moonrise2"</span>))</span>
+<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a><span class="co"># add margin plots</span></span>
+<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a><span class="fu">ggMarginal</span>(pca, <span class="at">groupColour =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">

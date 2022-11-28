@@ -78,27 +78,30 @@ Heritage Department, Jean Monnet University \\
 \maketitle
 
 \begin{abstract}
-Recent research in the ancestral Caddo area has yielded evidence for
-distinct behavioral regions, across which material culture from Caddo
-burials---bottles and Gahagan bifaces---was found to express significant
-morphological differences. This inquiry asks whether Perdiz arrow points
-from Caddo burials differ across the same geography, extending the
-pattern of shape differences to a third category of Caddo material
-culture. Perdiz arrow points collected from the geographies of the
-northern and southern Caddo behavioral regions were employed to test the
-hypothesis that morphological attributes differ, and are predictable,
-between the two communities. Results indicate a significant
-between-community difference in morphology. Using the same traditional
-metrics combined with the tools of machine learning, a predictive
+Recent research into Caddo bottle and biface morphology yielded evidence
+for two distinct behavioral regions, across which material culture from
+Caddo burials expresses significant morphological differences. This
+study asks whether Perdiz arrow points from Caddo burials differ across
+the same geography, which would extend the pattern of morphological
+differences to a third category of Caddo material culture. Perdiz arrow
+points collected from the geographies of the northern and southern Caddo
+behavioral regions were employed to test the hypothesis that
+morphological attributes differ, and are predictable, between the two
+communities. The analysis of linear metrics indicated a significant
+difference in morphology by behavioral region. Using the linear metrics
+combined with the tools of machine learning, a predictive
 model---support vector machine---was designed to assess the degree to
 which community differences could be predicted, achieving a receiver
 operator curve score of 97 percent, and an accuracy score of 94 percent.
-The subsequent geometric morphometric analysis identified significant
-differences in Perdiz arrow point shape and size, coupled with
-significant results for modularity and morphological integration. These
-findings bolster recent research that posited two behavioral regions in
-the ancestral Caddo area defined on the basis of discernible
-morphological differences across three categories of Caddo material
+The subsequent landmark geometric morphometric analysis identified
+significant differences in Perdiz arrow point shape and size between the
+behavioral regions---one characterized by a comparatively smaller blade
+and larger stem (north), and the other by a comparatively larger blade
+and smaller stem (south)---coupled with significant results for
+modularity and morphological integration. These findings build directly
+upon recent investigations that posited two discrete Caddo behavioral
+regions defined on the basis of discernible morphological differences,
+which is expanded here to include a third category of Caddo material
 culture.
 \\
 \keywords{
@@ -306,16 +309,16 @@ differs between the behavioral regions
 (\href{https://seldenlab.github.io/perdiz3/}{supplementary materials}).
 
 Boxplots illustrate the distribution and mean for each of the five
-variables (Figure \ref{fig:fig2}a-e), and the PCA (Figure
+linear variables (Figure \ref{fig:fig2}a-e), and the PCA (Figure
 \ref{fig:fig2}f) illustrates over 92 percent of the variation in the
 sample among PC1 (84.65 percent) and PC2 (11.71 percent). The perMANOVA
-domonstrates that Perdiz arrow point morphology differs significantly by
-behavioral region (permutations = 10,000; Rsq = 0.29485;
-Pr(\textgreater F) = 1e-04)
+demonstrated that linear metrics for Perdiz arrow points differ
+significantly by behavioral region (permutations = 10,000; Rsq =
+0.29485; Pr(\textgreater F) = 1e-04)
 (\href{https://seldenlab.github.io/perdiz3/}{supplementary materials}).
 
 \begin{figure}
-\includegraphics[width=0.95\linewidth]{ms-figs/figure2} \caption{Boxplots for a, maximum length; b, maximum width; c, maximum thickness; d, stem length; e, stem width, and f, PCA for linear metrics associated with the Perdiz arrow points. Additional information related to the analysis, including data and code needed to reproduce these results, can be found in the supplemental materials at https://seldenlab.github.io/perdiz3/.}\label{fig:fig2}
+\includegraphics[width=0.95\linewidth]{ms-figs/figure2} \caption{Boxplots for a, maximum length; b, maximum width; c, maximum thickness; d, stem length; e, stem width, and f, PCA for linear metrics associated with the Perdiz arrow points. Additional information related to the analysis, including all linear data and the code needed to reproduce these results, can be found in the supplemental materials at https://seldenlab.github.io/perdiz3/.}\label{fig:fig2}
 \end{figure}
 
 \hypertarget{predictive-model}{%
@@ -364,7 +367,7 @@ tangent space subsequent to alignment in preparation for the use of
 multivariate methods that assume linear space \cite{RN8511,RN8384}.
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{ms-figs/figure3} \caption{Results of generalized Procrustes analysis, illustrating mean shape (black) and all specimens in the sample (gray). Additional information related to the GPA, including those data and code needed to reproduce these results, can be found in the supplemental materials at https://seldenlab.github.io/perdiz3/.}\label{fig:fig3}
+\includegraphics[width=0.95\linewidth]{ms-figs/figure3} \caption{Results of generalized Procrustes analysis, illustrating mean shape (black) and all specimens in the sample (gray), as well as the difference in centroid size for Perdiz arrow points from the two behavioral regions. Additional information related to the GPA, including all data and code needed to reproduce these results, can be found in the supplemental materials at https://seldenlab.github.io/perdiz3/.}\label{fig:fig3}
 \end{figure}
 
 Principal components analysis \cite{RN8576,RN10875} was used to
@@ -387,7 +390,7 @@ integration between blade and basal morphology using a z-score
 \cite{RN8588,RN8477,RN8340,RN10874}.
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{ms-figs/figure4} \caption{Principal components analysis plot (PC1/PC2) for Perdiz arrow points by behavioral region/community (top; gray squares, north; orange triangles, south), and results of modularity (bottom left) and blade/base morphological integration (bottom right) analyses. Additional information related to the PCA, including the full listing of results and those data and code needed to reproduce these results, can be found in the supplemental materials at https://seldenlab.github.io/perdiz3/.}\label{fig:fig4}
+\includegraphics[width=1\linewidth]{ms-figs/figure4} \caption{Principal components analysis plot (PC1/PC2) for Perdiz arrow points by behavioral region/community (top; gray squares, north; orange triangles, south), and results of modularity (bottom left) and blade/base morphological integration (bottom right) analyses. Additional information related to the PCA, including the full listing of results and all data and code needed to reproduce these results, can be found in the supplemental materials at https://seldenlab.github.io/perdiz3/.}\label{fig:fig4}
 \end{figure}
 
 The analysis of modularity, which compares within-module covariation of
@@ -409,12 +412,18 @@ exists in Perdiz arrow point (centroid) size (RRPP = 10,000; Rsq =
 0.30681; Pr(\textgreater F) = 1e-04), followed by another to test
 whether a significant difference exists in arrow point shape by region
 (northern vs.~southern) (RRPP = 10,000; Rsq = 0.0536; Pr(\textgreater F)
-= 0.0161). A comparison of mean consensus configurations was used to
-characterize intraspecific shape variation of Perdiz arrow points from
-the northern and southern behavioral regions. Diacritical morphology
-occurs primarily in basal shape, where the angle between the shoulder
-and base is more acute, and a base that is generally shorter and
-narrower in the southern behavioral region than it is in the north
+= 0.0161). While shape and size differ significantly between behavioral
+regions, the Rsq value for size is just under six times larger than that
+for shape (smaller in the north; larger in the south), suggesting that
+between-region differences in Perdiz arrow point \emph{size} may be more
+visually apparent than differences in \emph{shape}. A comparison of mean
+consensus configurations was used to illustrate shape differences from
+the northern and southern behavioral regions. Diacritical morphology is
+characterized by a comparatively smaller blade and larger stem in the
+north, and by a comparatively larger blade and smaller stem in the
+south. Further, the angle between the shoulder and base is more acute,
+with a base that is generally shorter and narrower in the southern
+behavioral region
 (\href{https://seldenlab.github.io/perdiz3/}{supplementary materials}).
 
 \hypertarget{discussion}{%
@@ -552,9 +561,10 @@ University for the requisite permissions and access to the NAGPRA
 objects from the Washington Square Mound site and Turner collections,
 and to Tom A. Middlebrook for brokering access to the Perdiz arrow
 points from burials at the Morse Mound site. We wish to thank Michael J.
-Shott and Casey Wayne Riggs for their useful comments and constructive
-criticisms, and to Julien Claude, Emma Sherratt, Kersten Bergstrom,
-Lauren Butaric, Dean C. Adams, and Michael L. Collyer for their
+Shott, Timothy K. Perttula, and Casey Wayne Riggs for their useful
+comments and constructive criticisms on a presubmission draft, and
+extend our gratitude to Emma Sherratt, Kersten Bergstrom, Lauren
+Butaric, Julien Claude, Dean C. Adams, and Michael L. Collyer for their
 constructive criticisms and suggestions throughout the development of
 this research program. Additional comments from the editor and three
 anonymous reviewers aided in further refining the manuscript.
@@ -582,16 +592,16 @@ through the GitHub repository
 materials (\url{https://seldenlab.github.io/perdiz3/}); which are
 digitally curated on the Open Science Framework \newline 
 (\href{https://osf.io/vzhjr/}{DOI: 10.17605/OSF.IO/VZHJR}). Images of
-Perdiz arrow points used in this study are included in an open access
-comparative collection
-(\url{https://scholarworks.sfasu.edu/ita-perdiz/}). The supplementary
-materials include all of the analysis code used in the study, providing
-a means for others to reproduce (exactly) those results discussed and
-expounded upon in this article. The replicable nature of this
-undertaking provides a means for others to critically assess and
-evaluate the various analytical components of this study, which is a
-necessary requirement for the production of reliable knowledge
-\cite{RN20915,RN20916,RN20917}.
+all Perdiz arrow points used in this study were made available in an
+open access comparative collection
+(\url{https://scholarworks.sfasu.edu/ita-perdiz/}), with permission from
+the Caddo Nation of Oklahoma. These supplementary materials include all
+analysis data and code used in the study, providing a means for others
+to reproduce (exactly) those results discussed and expounded upon in
+this article. The replicable nature of this undertaking provides others
+with the means to critically assess and evaluate the various analytical
+components of this study, which is a necessary requirement for the
+production of reliable knowledge \cite{RN20915,RN20916,RN20917}.
 
 Reproducibility projects in \href{https://osf.io/ezcuj/}{psychology} and
 \href{https://www.cos.io/rpcb}{cancer biology} are impacting current
