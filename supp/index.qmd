@@ -35,7 +35,7 @@ knitr::include_graphics('./ms/perdiz3/ms-figs/figure1.png')
 
 ### Linear morphometrics
 
-Sixty seven whole/intact Perdiz arrow points recovered from Caddo burial contexts in Camp, Nacogdoches, and Shelby counties comprise the basis of this study. A standard suite of linear metrics were collected for each specimen, including maximum length, width, thickness, stem length, and stem width. Following collection, data were imported to R [@RN8584], where boxplots were produced, along with a Principal Components Analysis (PCA), followed by a permutational multivariate analysis of variance (perMANOVA) to test whether the morphology of Perdiz arrow points differs between the behavioral regions.
+Sixty seven whole/intact Perdiz arrow points recovered from Caddo burial contexts in Camp, Nacogdoches, and Shelby counties comprise the basis of this study. A standard suite of linear metrics were collected for each specimen, including maximum length, width, thickness, stem length, and stem width. Following collection, data were imported to R [@RN8584], where boxplots were produced, along with a principal components analysis (PCA), followed by a permutational multivariate analysis of variance (perMANOVA) to test whether the morphology of Perdiz arrow points differs between the behavioral regions.
 
 ```{r botjarbox, out.width = "100%", dpi = 300, echo=FALSE, warning=FALSE, fig.cap="Boxplots for a, maximum length; b, maximum width; c, maximum thickness; d, stem length; e, stem width, and f, PCA for linear metrics associated with the Perdiz arrow points."}
 knitr::include_graphics('./fig/figure2.png')
