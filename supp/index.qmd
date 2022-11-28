@@ -27,7 +27,7 @@ Recent research into Caddo bottle and biface morphology yielded evidence for two
 
 American Southeast, Caddo, NAGPRA, computational archaeology, archaeoinformatics, machine learning, museum studies, digital humanities, non-Western art history, STEM, STEAM
 
-```{r map, out.width = "100%", dpi = 300, echo=FALSE, warning=FALSE, fig.cap="Location of Caddo sites with Perdiz arrow points used in this study, and the extent of the ancestral Caddo area (white), Red River basin (blue), Sabine River basin (maroon), and Angelina River basin (brown)."}
+```{r map, out.width = "100%", dpi = 300, echo=FALSE, warning=FALSE, fig.cap="Location of Caddo sites with Perdiz arrow points used in this study, the extent of the ancestral Caddo area (white), and the Red River basin (blue), Sabine River basin (maroon), and Angelina River basin (brown)."}
 knitr::include_graphics('./ms/perdiz3/ms-figs/figure1.png')
 ```
 

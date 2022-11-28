@@ -56,7 +56,7 @@ Perdiz arrow points generally follow two manufacturing trajectories; one that en
 
 A social network analysis of diagnostic artifacts from Historic Caddo (post-CE 1680) sites in northeast Texas demonstrated two spatially discrete behavioral regions based on the co-presence of diagnostic types \cite[Figure 12.4]{RN8031}. The network analysis was limited to Historic Caddo types; however, Formative/Early Caddo (CE 800 – 1200) Gahagan bifaces and Caddo bottle types have been found to express significant morphological differences across the same spatial extent as the behavioral regions \cite{RN8074,RN7927,RN8370,RN8312}, extending the prehistoric longevity for the behavioral regions based on local alterity. Gahagan bifaces from the ancestral Caddo area also differ significantly in shape, size, and form compared with those recovered from central Texas sites \cite{RN8322}, suggesting a second shape boundary between the ancestral Caddo area and central Texas.
 
-```{r fig1, out.width = "100%", dpi = 300, echo=FALSE, warning=FALSE, fig.cap="Location of Caddo sites with Perdiz arrow points used in this study, and the extent of the ancestral Caddo area (white), Red River basin (blue), Sabine River basin (maroon), and Angelina River basin (brown)."}
+```{r fig1, out.width = "100%", dpi = 300, echo=FALSE, warning=FALSE, fig.cap="Location of Caddo sites with Perdiz arrow points used in this study, the extent of the ancestral Caddo area (white), and the Red River basin (blue), Sabine River basin (maroon), and Angelina River basin (brown)."}
 knitr::include_graphics("ms-figs/figure1.png")
 ```
 
