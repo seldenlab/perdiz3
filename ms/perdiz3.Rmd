@@ -60,7 +60,7 @@ A social network analysis of diagnostic artifacts from Historic Caddo (post-CE 1
 knitr::include_graphics("ms-figs/figure1.png")
 ```
 
-The goal of this exploratory endeavor was to assess whether metrics collected for Perdiz arrow points support the shape boundary posited in recent social network and geometric morphometric analyses, to determine whether linear metrics and shape variables might be useful predictors of regional membership, and—if so—to identify those morphological features that articulate with each behavioral region. It is assumed that complete Perdiz arrow points included as offerings in Caddo burials represent the design intent of the maker. Should the analysis yield significant results, it would bolster the argument for at least two discrete Caddo behavioral regions in northeast Texas; each empirically defined by discernible morphological differences across three discrete categories of Caddo material culture (Figure \ref{fig:fig1}).
+The goal of this exploratory endeavor was to assess whether metrics collected for Perdiz arrow points support the shape boundary posited in recent social network and geometric morphometric analyses, to determine whether linear metrics and shape variables might be useful predictors of regional membership, and—if so—to identify those morphological features that articulate with each behavioral region. Should the analysis yield significant results, it would bolster the argument for at least two discrete Caddo behavioral regions in northeast Texas; each empirically defined by discernible morphological differences across three discrete categories of Caddo material culture (Figure \ref{fig:fig1}).
 
 ## Caddo behavioral regions
 
