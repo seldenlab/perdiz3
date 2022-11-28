@@ -17,7 +17,7 @@ Warning--can't use both author and editor fields in RN5610
 Warning--empty year in RN10755
 You've used 80 entries,
             2945 wiz_defined-function locations,
-            1211 strings with 23231 characters,
+            1211 strings with 23237 characters,
 and the built_in function-call counts, 37507 in all, are:
 = -- 2956
 > -- 1155
