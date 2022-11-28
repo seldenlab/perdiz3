@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.7)  28 NOV 2022 08:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.7)  28 NOV 2022 08:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -365,7 +365,7 @@ Underfull \vbox (badness 1303) has occurred while \output is active []
 Underfull \vbox (badness 1776) has occurred while \output is active []
 
 [11 <./ms-figs/figure6.png (PNG copy)>] [12]
-Overfull \hbox (2.60942pt too wide) in paragraph at lines 587--603
+Overfull \hbox (2.60942pt too wide) in paragraph at lines 584--600
 \OT1/cmr/m/n/10 ([]$\OT1/cmtt/m/n/10 https : / / scholarworks . sfasu . edu / ita -[] perdiz/$[]\OT1/cmr/m/n/10 ), with per-mis-sion from the
  []
 
@@ -474,7 +474,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 266--274
 \OT1/cmtt/m/n/8 2 . 81 / abstracthttps : / / londmathsoc . onlinelibrary . wiley . com / doi / abs / 10 . 1112 /
  []
 
-[16]
+
 Underfull \hbox (badness 10000) in paragraph at lines 313--320
 \OT1/cmr/m/n/8 URL []$\OT1/cmtt/m/n/8 https : / / www . cambridge . org / core / journals / american -[] antiquity / article /
  []
@@ -484,7 +484,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 313--320
 \OT1/cmtt/m/n/8 multiscalar -[] perspectives -[] on -[] social -[] networks -[] in -[] the -[] late -[] prehispanic -[]
  []
 
-[17]
+[16] [17]
 Underfull \hbox (badness 2134) in paragraph at lines 479--483
 \OT1/cmr/m/n/8 Ar-chae-ol-ogy \OT1/cmr/bx/n/8 1\OT1/cmr/m/n/8 , 66--74 (1974).  URL []$\OT1/cmtt/m/n/8 https : / / docs . wixstatic . com / ugd / fefb33 _
  []
@@ -506,7 +506,7 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  72i,9n,77p,626b,585s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on perdiz3.pdf (18 pages, 19714931 bytes).
+Output written on perdiz3.pdf (18 pages, 19714794 bytes).
 PDF statistics:
  632 PDF objects out of 1000 (max. 8388607)
  462 compressed objects within 5 object streams
