@@ -80,7 +80,7 @@ Sixty seven whole/intact Perdiz arrow points recovered from Caddo burial context
 
 Boxplots illustrate the distribution and mean for each of the five linear variables (Figure \ref{fig:fig2}a-e), and the PCA (Figure \ref{fig:fig2}f) illustrates over 92 percent of the variation in the sample among PC1 (84.65 percent) and PC2 (11.71 percent). The perMANOVA demonstrated that linear metrics for Perdiz arrow points differ significantly by behavioral region (permutations = 10,000; Rsq = 0.29485; Pr(>F) = 1e-04) ([supplementary materials](https://seldenlab.github.io/perdiz3/)).
 
-```{r fig2, out.width = "95%", dpi = 300, echo=FALSE, warning=FALSE, fig.cap="Boxplots for a, maximum length; b, maximum width; c, maximum thickness; d, stem length; e, stem width, and f, PCA for linear metrics associated with the Perdiz arrow points. Additional information related to the analysis, including all linear data and the code needed to reproduce these results, can be found in the supplemental materials at https://seldenlab.github.io/perdiz3/."}
+```{r fig2, out.width = "95%", dpi = 300, echo=FALSE, warning=FALSE, fig.cap="Boxplots for a, maximum length; b, maximum width; c, maximum thickness; d, stem length; e, stem width, and f, PCA [on correlation matrix] for linear metrics associated with the Perdiz arrow points. Additional information related to the analysis, including all linear data and the code needed to reproduce these results, can be found in the supplemental materials at https://seldenlab.github.io/perdiz3/."}
 knitr::include_graphics("ms-figs/figure2.png")
 ```
 
