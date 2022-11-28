@@ -14,46 +14,45 @@ Warning--missing publisher in RN20915
 Warning--can't use both author and editor fields in RN8102
 Warning--can't use both author and editor fields in RN9000
 Warning--can't use both author and editor fields in RN5610
-Warning--empty year in RN10755
 You've used 80 entries,
             2945 wiz_defined-function locations,
             1211 strings with 23237 characters,
-and the built_in function-call counts, 37507 in all, are:
-= -- 2956
+and the built_in function-call counts, 37516 in all, are:
+= -- 2959
 > -- 1155
 < -- 13
 + -- 479
 - -- 396
-* -- 2345
-:= -- 5081
+* -- 2344
+:= -- 5084
 add.period$ -- 155
 call.type$ -- 80
 change.case$ -- 431
 chr.to.int$ -- 0
-cite$ -- 90
-duplicate$ -- 3414
-empty$ -- 3509
+cite$ -- 89
+duplicate$ -- 3415
+empty$ -- 3510
 format.name$ -- 436
-if$ -- 8043
+if$ -- 8047
 int.to.chr$ -- 0
 int.to.str$ -- 80
 missing$ -- 817
 newline$ -- 398
 num.names$ -- 164
-pop$ -- 1266
+pop$ -- 1263
 preamble$ -- 1
 purify$ -- 355
 quote$ -- 0
 skip$ -- 783
 stack$ -- 0
 substring$ -- 1544
-swap$ -- 1955
+swap$ -- 1957
 text.length$ -- 13
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 286
-warning$ -- 10
+warning$ -- 9
 while$ -- 232
 width$ -- 82
-write$ -- 938
-(There were 11 warnings)
+write$ -- 939
+(There were 10 warnings)
