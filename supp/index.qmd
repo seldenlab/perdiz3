@@ -90,9 +90,19 @@ The analysis of modularity demonstrated that Perdiz arrow point blades and bases
 * Perdiz arrow points exhibit *significant* modularity
 * Perdiz arrow points exhibit *significant* blade/base morphological integration
 
+## Discussion
+
+The shape boundary empirically delineates two discrete behavioral regions in the ancestral Caddo area. That the Perdiz arrow points recovered from Caddo burials north and south of the shape boundary were found to differ significantly, expands the scope of the behavioral regions to include three classes of artifacts (Caddo bottles, bifaces, and—now—arrow points) [@RN8074;@RN7927;@RN8370;@RN8312;@RN8322;@RN8158;@RN11097]. 
+
+For material culture included in burial contexts, the Caddo were selecting for significant morphological differences in bottles, bifaces, and arrow points recovered from either side of the shape boundary. Results clearly illustrate that morphological differences among Perdiz arrow points found in the northern and southern behavioral regions are predictable, and can be disaggregated using a standard suite of linear metrics regularly collected for cultural resource management endeavors.
+
 ```{r fig6, out.width = "100%", dpi = 300, echo=FALSE, warning=FALSE, fig.cap="Mean shapes and comparisons for a, Formative/Early and b, Late/Historic bottles; c, Formative/Early Gahagan bifaces; and d, Middle/Late Perdiz arrow points from Caddo burial contexts in the northern and southern behavioral regions. In the comparisons of mean shape, the northern population appears in gray, and the southern population appears in black."}
 knitr::include_graphics('./ms/perdiz3/ms-figs/figure6.png')
 ```
+
+This study demonstrated that linear metrics and shape variables collected for Perdiz arrow points support the shape boundary posited in recent social network and geometric morphometric analyses, and determined that those same metrics can be used to predict regional membership. Morphological features that discriminate between Perdiz arrow points recovered from each behavioral region were identified using geometric morphometrics, with substantive differences found to occur in size and basal morphology. 
+
+Blade and base shape were found to be both modular and morphologically integrated, suggesting that blade and base shapes are predictable. While evidence from one category---Caddo bottles---supports discussions of Caddo production, the other two---bifaces and arrow points---more readily articulate with production activities outside of the region by non-Caddo makers. Such production activity is more likely to be localized than exchange systems, thus assumed to leave a clearer signature [@RN7019]. Further work is warranted to expand the scope of this research program to include analyses of differential production in the two behavioral regions using a greater diversity of diagnostic Caddo artifact types.
 
 ## Acknowledgments
 
