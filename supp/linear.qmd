@@ -25,7 +25,9 @@ library(ggExtra)
 
 ```{r setwd ld define variables 3, echo=TRUE}
 # read data
-data <- read.csv("qdata.csv", header = TRUE, as.is=TRUE)
+data <- read.csv("qdata.csv", 
+                 header = TRUE, 
+                 as.is=TRUE)
 
 # define variables
 maxl <- data$maxl # maximum length
@@ -124,10 +126,10 @@ perdiz.matrix <- as.matrix(data[,4:8]) # response vars
 perdiz.mat <- sqrt(perdiz.matrix) # sqrt transform
 perdiz.dist <- vegdist(perdiz.mat,
                        method = 'bray') # dissimilarity matrix
-set.seed(36) # make results reproducible
+set.seed(10) # make results reproducible
 
 # model: perdiz morphology as a function of behavioural region
-perdiz.ns <- adonis2(perdiz.dist~region,
+perdiz.ns <- adonis2(perdiz.dist ~ region,
                      data = data,
                      permutations = 10000,
                      method = 'bray')
