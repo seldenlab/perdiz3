@@ -92,7 +92,7 @@ The analysis of modularity demonstrated that Perdiz arrow point blades and bases
 
 ## Discussion
 
-The shape boundary empirically delineates two discrete behavioral regions in the ancestral Caddo area. That the Perdiz arrow points recovered from Caddo burials north and south of the shape boundary were found to differ significantly, expands the scope of the behavioral regions to include three classes of artifacts (Caddo bottles, bifaces, and—now—arrow points) [@RN8074;@RN7927;@RN8370;@RN8312;@RN8322;@RN8158;@RN11097]. 
+The shape boundary empirically delineates two discrete behavioral regions in the ancestral Caddo area. That the Perdiz arrow points recovered from Caddo burials north and south of the shape boundary were found to differ significantly, expands the scope of the behavioral regions to include three classes of artifacts (Caddo bottles, bifaces, and—now—arrow points) [@RN8074;@RN7927;@RN8370;@RN8312;@RN11097;@RN8322;@RN8158]. 
 
 For material culture included in burial contexts, the Caddo were selecting for significant morphological differences in bottles, bifaces, and arrow points recovered from either side of the shape boundary. Results clearly illustrate that morphological differences among Perdiz arrow points found in the northern and southern behavioral regions are predictable, and can be disaggregated using a standard suite of linear metrics regularly collected for cultural resource management endeavors.
 
