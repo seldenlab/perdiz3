@@ -169,7 +169,10 @@ it <- integration.test(Y.gpa$coords,
 summary(it)
 
 ## integration plot
-plot(it)
+plot(it,
+     pch = 21,
+     bg = qdata$clr,
+     cex = 1.1)
 ```
 
 ## Morphological disparity
