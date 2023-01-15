@@ -7,52 +7,49 @@ Warning--entry type for "RN9357x" isn't style-file defined
 --line 307 of file mybibfile.bib
 Warning--empty journal in RN8314
 Warning--there's a number but no volume in RN8314
-Warning--missing school in RN5784
-Warning--can't use both author and editor fields in RN9718
 Warning--can't use both author and editor fields in RN7019
 Warning--missing publisher in RN20915
 Warning--can't use both author and editor fields in RN8102
-Warning--can't use both author and editor fields in RN9000
 Warning--can't use both author and editor fields in RN5610
-You've used 80 entries,
+You've used 61 entries,
             2945 wiz_defined-function locations,
-            1211 strings with 23237 characters,
-and the built_in function-call counts, 37516 in all, are:
-= -- 2959
-> -- 1155
-< -- 13
-+ -- 479
-- -- 396
-* -- 2344
-:= -- 5084
-add.period$ -- 155
-call.type$ -- 80
-change.case$ -- 431
+            1085 strings with 19594 characters,
+and the built_in function-call counts, 29944 in all, are:
+= -- 2372
+> -- 967
+< -- 11
++ -- 399
+- -- 336
+* -- 1933
+:= -- 4056
+add.period$ -- 131
+call.type$ -- 61
+change.case$ -- 346
 chr.to.int$ -- 0
-cite$ -- 89
-duplicate$ -- 3415
-empty$ -- 3510
-format.name$ -- 436
-if$ -- 8047
+cite$ -- 67
+duplicate$ -- 2689
+empty$ -- 2750
+format.name$ -- 372
+if$ -- 6404
 int.to.chr$ -- 0
-int.to.str$ -- 80
-missing$ -- 817
-newline$ -- 398
-num.names$ -- 164
-pop$ -- 1263
+int.to.str$ -- 61
+missing$ -- 644
+newline$ -- 318
+num.names$ -- 126
+pop$ -- 971
 preamble$ -- 1
-purify$ -- 355
+purify$ -- 287
 quote$ -- 0
-skip$ -- 783
+skip$ -- 600
 stack$ -- 0
-substring$ -- 1544
-swap$ -- 1957
-text.length$ -- 13
+substring$ -- 1238
+swap$ -- 1576
+text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 286
-warning$ -- 9
-while$ -- 232
-width$ -- 82
-write$ -- 939
-(There were 10 warnings)
+type$ -- 222
+warning$ -- 6
+while$ -- 181
+width$ -- 63
+write$ -- 745
+(There were 7 warnings)

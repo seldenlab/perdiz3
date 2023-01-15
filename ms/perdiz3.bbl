@@ -61,38 +61,12 @@ Anderson, M.J., Ter~Braak, C.J.F.: {Permutation Tests for Multi-Factoral
   85--113 (2003).
 \newblock \doi{10.1080=0094965021000015558}
 
-\bibitem{RN9716}
-Arnn~III, J.W.: {Chronology, Technology, and Subsistence: Is That All There
-  Is?}
-\newblock Council of Texas Archeologists Newsletter \textbf{29}(2), 17--28
-  (2005)
-
-\bibitem{RN5784}
-Arnn~III, J.W.: Transformation and persistence of indigenous cultural identity
-  during the early colonial and late prehistoric periods in texas.
-\newblock Thesis (2007)
-
-\bibitem{RN9718}
-Arnn~III, J.W.: {Defining Hunter-Gatherer Sociocultural Identity and
-  Interaction at a Regional Scale}, pp. 44--75.
-\newblock Texas A\&M University Press, College Station (2012)
-
-\bibitem{RN9717}
-Arnn~III, J.W.: Land of the Tejas: Native American Identity and Interaction in
-  Texas, A.D. 1300 - 1700.
-\newblock The University of Texas Press, Austin (2012)
-
 \bibitem{RN9565}
 Baken, E.K., Collyer, M.L., Kaliontzopoulou, A., Adams, D.C.: {geomorph v4.0
   and gmShiny: Enhanced analytics and a new graphical interface for a
   comprehensive morphometric experience}.
 \newblock Methods in Ecology and Evolution  (2021).
 \newblock \doi{10.1111/2041-210x.13723}
-
-\bibitem{RN439}
-Banks, L.D.: From Mountain Peaks to Alligator Stomachs: A Review of Lithic
-  Sources in the Trans-Mississippi South, The Southern Plains.
-\newblock Memoir No. 4. Oklahoma Anthropological Society, Norman (1990)
 
 \bibitem{RN9515}
 Bhatt, M.S., Patalia, T.P.: Indian monuments classification using support
@@ -104,14 +78,6 @@ Bhatt, M.S., Patalia, T.P.: Indian monuments classification using support
 \bibitem{RN5700}
 Birkhoff, G.D.: Aesthetic Measure.
 \newblock Harvard University Press, Cambridge (1933)
-
-\bibitem{RN9008}
-Black, S.L.: The clemente and herminia hinojosa site, 41jw8: A toyah horizon
-  campsite in southern texas.
-\newblock Report, No. 18, Center for Archaeological Research, The University of
-  Texas at San Antonio (1986).
-\newblock \doi{https://doi.org/10.21112/ita.1986.1.36}.
-\newblock \urlprefix\url{https://scholarworks.sfasu.edu/ita/vol1986/iss1/36/}
 
 \bibitem{RN8051}
 Blondel, V.D., Guillaume, J.L., Lambiotte, R., Lefebvre, E.: {Fast Unfolding of
@@ -143,11 +109,6 @@ Buitinck, L., Louppe, G., Blondel, M., Pedregosa, F., Mueller, A., Grisel, O.,
 Cassaway, L.: {Indian-Pioneer History Project for Oklahoma: Sadie Bedoka}
   (1937)
 
-\bibitem{RN9723}
-Collins, M.B.: {Forty Years of Archaeology in Central Texas}.
-\newblock Bulletin of the Texas Archeological Society \textbf{66}, 361--400
-  (1995)
-
 \bibitem{RN8334}
 Collyer, M.L., Adams, D.C.: {RRPP: An R Package for Fitting Linear Models to
   High-Dimensional Data using Residual Randomization}.
@@ -169,21 +130,6 @@ Collyer, M.L., Sekora, D.J., Adams, D.C.: {A method for analysis of phenotypic
 Costin, C.L.: {Craft Specialization: Issues in Defining, Documenting, and
   Explaining the Organization of Production}, pp. 1--56.
 \newblock University of Arizona Press, Tucson (1991)
-
-\bibitem{RN9786}
-Dering, P.: {Late Prehistoric Subsistence Economy on the Edwards Plateau}.
-\newblock Plains Anthropologist \textbf{53}(205), 59--77 (2008).
-\newblock \doi{10.1179/pan.2008.005}
-
-\bibitem{RN8999}
-Dockall, J.E., Fields, R.C., Kibler, K.W., Broehm, C.J., Budd, J., Gadus, E.F.,
-  Gardner, K.M.: {Testing and Data Recovery Excavations at the Jayroe Site
-  (41HM51), Hamilton County, Texas (Waco District, CSJ No. 0909-29-030 (Part
-  I))}.
-\newblock Tech. rep., Reports of Investigations No. 187. Prewitt and
-  Associates, Inc., Austin Texas. Archeological Studies Program, Report No.
-  184. Texas Department of Transportation, Environmental Affairs Division,
-  Archeological Studies Branch, Austin Texas (2020)
 
 \bibitem{RN8061}
 Eckert, S.L., Schleher, K.L., James, W.D.: {Communities of Identity,
@@ -237,12 +183,6 @@ Ivanovaitė, L., Serwatka, K., Hoggard, C.S., Sauer, F., Riede, F.: All these
 \newblock European Journal of Archaeology \textbf{23}(2), 162--185 (2020).
 \newblock \doi{10.1017/eaa.2019.59}
 
-\bibitem{RN9361}
-Johnson, L.: {The Life and Times of Toyah-Culture Folk: The Buckhollow
-  Encampment Site 41KM16, Kimble County, Texas}.
-\newblock Report, Texas Department of Transportation and Office of the State
-  Archeologist Report 38. Austin, Texas (1994)
-
 \bibitem{RN8576}
 Jolliffe, I.T.: Principal Component Analysis.
 \newblock Springer, New York (2002)
@@ -253,17 +193,6 @@ Kadhim, I., Abed, F.: {The Potential of LiDAR and UAV-Photogrammetric Data
   South-West England}.
 \newblock ISPRS International Journal of Geo-Information \textbf{10}(1) (2021).
 \newblock \doi{10.3390/ijgi10010041}
-
-\bibitem{RN9719}
-Kelley, J.C.: {The cultural affiliations and chronological position of the
-  Clear Fork focus}.
-\newblock American Antiquity \textbf{13}(2), 97--109 (1947)
-
-\bibitem{RN9720}
-Kelley, J.C.: {The Lehmann Rock Shelter: A Stratified Site of the Toyah,
-  Uvalde, and Round Rock Foci}.
-\newblock Bulletin of the Texas Archeological and Paleontological Society
-  \textbf{18}, 115--128 (1947)
 
 \bibitem{RN8102}
 Kendall, D.G.: {The Statistics of Shape}, pp. 75--80.
@@ -358,35 +287,12 @@ Peng, R.D.: Reproducible research in computational science.
 \newblock \doi{10.1126/science.1213847}.
 \newblock \urlprefix\url{https://www.ncbi.nlm.nih.gov/pubmed/22144613}
 
-\bibitem{RN9721}
-Prewitt, E.R.: {Culture Chronology in Texas}.
-\newblock Bulletin of the Texas Archeological Society \textbf{52}, 65--89
-  (1981)
-
-\bibitem{RN9722}
-Prewitt, E.R.: {From Circleville to Toyah: Comments on Central Texas
-  Chronology}.
-\newblock Bulletin of the Texas Archeological Society \textbf{54}, 201--238
-  (1985)
-
 \bibitem{RN10875}
 Revell, L.J.: Size-correction and principal components for interspecific
   comparative studies.
 \newblock Evolution \textbf{63}(12), 3258--68 (2009).
 \newblock \doi{10.1111/j.1558-5646.2009.00804.x}.
 \newblock \urlprefix\url{https://www.ncbi.nlm.nih.gov/pubmed/19663993}
-
-\bibitem{RN9000}
-Ricklis, R.A.: {Toyah Components: Evidence for Occupation in the Project Area
-  during the Latter Part of the Late Prehistoric Period}, pp. 207--316.
-\newblock Studies in Archeology 19. Vol. 1, Texas Archeological Research
-  Laboratory, University of Texas, Austin, Texas (1994)
-
-\bibitem{RN9724}
-Ricklis, R.A.: {The Spread of a Late Prehistoric Bison Hunting Complex:
-  Evidence from the South-Central Coastal Prairie of Texas}.
-\newblock Plains Anthropologist \textbf{37}(140), 261--273 (2017).
-\newblock \doi{10.1080/2052546.1992.11909654}
 
 \bibitem{RN8511}
 Rohlf, F.J.: {Shape Statistics: Procrustes Superimpositions and Tangent
@@ -500,27 +406,11 @@ Stark, M.T.: {Glaze Ware Technology, the Social Lives of Pots, and Communities
   of Practice in the Late Prehistoric Southwest}, pp. 17--33.
 \newblock University of Arizona Press, Tucson (2006)
 
-\bibitem{RN7795}
-Suhm, D.A., Jelks, E.B.: {Handbook of Texas Archeology: Type Descriptions}.
-\newblock Special Publication No. 1. Texas Archeological Society and Bulletin
-  No. 4, Texas Memorial Museum, Austin (1962)
-
-\bibitem{RN5769}
-Suhm, D.A., Krieger, A.D., Jelks, E.B.: {An Introductory Handbook of Texas
-  Archeology}.
-\newblock Bulletin of the Texas Archeological Society \textbf{25}, 1--562
-  (1954)
-
 \bibitem{RN8584}
 Team, R.C.D.: R: A Language and Environment for Statistical Computing.
   Electronic resource,.
 \newblock R Foundation for Statistical Computing, Vienna, Austria (2021).
 \newblock \urlprefix\url{http://www.R-project.org}
-
-\bibitem{RN3149}
-Turner, E.S., Hester, T.R., McReynolds, R.L.: Stone Artifacts of Texas Indians:
-  Completely Revised Third Edition.
-\newblock Taylor Trade Publishing, Lanham, Maryland (2011)
 
 \bibitem{RN5703}
 Zelditch, M.L., Swiderski, D.L., Sheets, H.D., Fink, W.L.: Geometric

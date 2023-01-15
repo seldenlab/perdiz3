@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.7)  2 DEC 2022 08:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.15)  15 JAN 2023 07:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **perdiz3.tex
 (./perdiz3.tex
-LaTeX2e <2022-11-01>
-L3 programming layer <2022-11-02> (./svjour3.cls
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2022-12-17> (./svjour3.cls
 Document Class: svjour3 2007/05/08 v3.2 
 LaTeX document class for Springer journals
 Class Springer-SVJour3 Info: extra/valid Springer sub-package (-> *.clo) 
@@ -64,8 +64,8 @@ LaTeX Font Info:    Redeclaring math symbol \Omega on input line 157.
 \c@remark=\count273
 \c@figure=\count274
 \c@table=\count275
-\abovecaptionskip=\skip47
-\belowcaptionskip=\skip48
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
 \figcapgap=\dimen148
 \tabcapgap=\dimen149
 \figgap=\dimen150
@@ -73,7 +73,7 @@ LaTeX Font Info:    Redeclaring math symbol \Omega on input line 157.
 \@tempcntc=\count276
 ) (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
-\@mathmargin=\skip49
+\@mathmargin=\skip50
 For additional information on amsmath, use the `?' option.
 (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
@@ -129,8 +129,8 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \totwidth@=\dimen159
 \lineht@=\dimen160
 \@envbody=\toks21
-\multlinegap=\skip50
-\multlinetaggap=\skip51
+\multlinegap=\skip51
+\multlinetaggap=\skip52
 \mathdisplay@stack=\toks22
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
@@ -263,13 +263,13 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
-\Hy@SectionHShift=\skip52
+\Hy@SectionHShift=\skip53
 ) (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
-\LTleft=\skip53
-\LTright=\skip54
-\LTpre=\skip55
-\LTpost=\skip56
+\LTleft=\skip54
+\LTright=\skip55
+\LTpre=\skip56
+\LTpost=\skip57
 \LTchunksize=\count300
 \LTcapwidth=\dimen167
 \LT@head=\box56
@@ -307,8 +307,8 @@ Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 \ar@mcellbox=\box61
 \extrarowheight=\dimen182
 \NC@list=\toks27
-\extratabsurround=\skip57
-\backup@length=\skip58
+\extratabsurround=\skip58
+\backup@length=\skip59
 \ar@cellbox=\box62
 ) (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
@@ -316,12 +316,12 @@ Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Bcount=\count310
 \calc@Adimen=\dimen183
 \calc@Bdimen=\dimen184
-\calc@Askip=\skip59
-\calc@Bskip=\skip60
+\calc@Askip=\skip60
+\calc@Bskip=\skip61
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count311
-\calc@Cskip=\skip61
+\calc@Cskip=\skip62
 ) (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count312
@@ -329,31 +329,35 @@ Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
 \fn@notes=\box63
 \fn@width=\dimen185
-) (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+)
+\cslhangindent=\skip63
+\csllabelwidth=\skip64
+\cslentryspacingunit=\skip65
+(c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count313
 \l__pdf_internal_box=\box64
 ) (./perdiz3.aux)
 \openout1 = `perdiz3.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
 Unknown journal: specify \journalname{<name of your journal>} in preambel
 
 (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
@@ -362,7 +366,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 49.
+Package hyperref Info: Link coloring OFF on input line 78.
 (./perdiz3.out) (./perdiz3.out)
 \@outlinefile=\write3
 \openout3 = `perdiz3.out'.
@@ -370,74 +374,131 @@ Package hyperref Info: Link coloring OFF on input line 49.
 SVJour3 warning: Missing \journalname
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <13> not available
-(Font)              size <12> substituted on input line 91.
+(Font)              size <12> substituted on input line 120.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--131
+Underfull \hbox (badness 10000) in paragraph at lines 122--160
 
  []
 
 [1{c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-Overfull \hbox (5.47282pt too wide) in paragraph at lines 211--218
+Overfull \hbox (5.47282pt too wide) in paragraph at lines 241--248
 []\OT1/cmr/m/n/10 [t]riangular blade with edges usu-ally quite straight but some-times slightly
  []
 
-<ms-figs/figure1.png, id=129, 794.97pt x 614.295pt>
+<ms-figs/figure1.png, id=56, 794.97pt x 614.295pt>
 File: ms-figs/figure1.png Graphic file (type png)
 <use ms-figs/figure1.png>
-Package pdftex.def Info: ms-figs/figure1.png  used on input line 236.
+Package pdftex.def Info: ms-figs/figure1.png  used on input line 266.
 (pdftex.def)             Requested size: 338.0pt x 261.18909pt.
 [3] [4 <./ms-figs/figure1.png (PNG copy)>]
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 316.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 348.
 (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 316.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 348.
 [5] [6]
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 412.
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 444.
 (c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 412.
-<ms-figs/figure2.png, id=226, 804.1242pt x 1267.3749pt>
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 444.
+<ms-figs/figure2.png, id=89, 804.1242pt x 1267.3749pt>
 File: ms-figs/figure2.png Graphic file (type png)
 <use ms-figs/figure2.png>
-Package pdftex.def Info: ms-figs/figure2.png  used on input line 416.
+Package pdftex.def Info: ms-figs/figure2.png  used on input line 448.
 (pdftex.def)             Requested size: 321.09897pt x 506.09009pt.
 
-LaTeX Warning: Float too large for page by 8.10681pt on input line 417.
+LaTeX Warning: Float too large for page by 8.10681pt on input line 449.
+
+
+Underfull \vbox (badness 1688) has occurred while \output is active []
 
 [7] [8 <./ms-figs/figure2.png>]
-<ms-figs/figure3.jpg, id=294, 4216.75375pt x 5193.4025pt>
+<ms-figs/figure3.jpg, id=107, 4216.75375pt x 5193.4025pt>
 File: ms-figs/figure3.jpg Graphic file (type jpg)
 <use ms-figs/figure3.jpg>
-Package pdftex.def Info: ms-figs/figure3.jpg  used on input line 465.
+Package pdftex.def Info: ms-figs/figure3.jpg  used on input line 499.
 (pdftex.def)             Requested size: 321.09897pt x 395.43175pt.
-<ms-figs/figure4.jpg, id=326, 5281.7325pt x 5520.625pt>
+[9] [10 <./ms-figs/figure3.jpg>]
+<ms-figs/figure4.jpg, id=124, 5281.7325pt x 5520.625pt>
 File: ms-figs/figure4.jpg Graphic file (type jpg)
 <use ms-figs/figure4.jpg>
-Package pdftex.def Info: ms-figs/figure4.jpg  used on input line 488.
+Package pdftex.def Info: ms-figs/figure4.jpg  used on input line 525.
 (pdftex.def)             Requested size: 338.0pt x 353.20929pt.
-[9] [10 <./ms-figs/figure3.jpg>]
+
 Underfull \vbox (badness 2951) has occurred while \output is active []
 
 [11 <./ms-figs/figure4.jpg>]
-<ms-figs/figure6.png, id=398, 976.6086pt x 956.1321pt>
+<ms-figs/figure6.png, id=137, 976.6086pt x 956.1321pt>
 File: ms-figs/figure6.png Graphic file (type png)
 <use ms-figs/figure6.png>
-Package pdftex.def Info: ms-figs/figure6.png  used on input line 545.
+Package pdftex.def Info: ms-figs/figure6.png  used on input line 583.
 (pdftex.def)             Requested size: 338.0pt x 330.91637pt.
-[12]
-Underfull \vbox (badness 1303) has occurred while \output is active []
+[12] [13 <./ms-figs/figure6.png (PNG copy)>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[13 <./ms-figs/figure6.png (PNG copy)>] [14]
-Overfull \hbox (2.60942pt too wide) in paragraph at lines 678--694
+[14]
+Overfull \hbox (2.60942pt too wide) in paragraph at lines 714--731
 \OT1/cmr/m/n/10 ([]$\OT1/cmtt/m/n/10 https : / / scholarworks . sfasu . edu / ita -[] perdiz/$[]\OT1/cmr/m/n/10 ), with per-mis-sion from the
  []
 
-[15] (./perdiz3.bbl
+[15] [16]
+Overfull \hbox (3.03241pt too wide) in paragraph at lines 795--799
+\OT1/cmr/m/n/10 That All There Is?'' Jour-nal Ar-ti-cle. \OT1/cmr/m/it/10 Coun-cil of Texas Arche-ol-o-gists Newslet-
+ []
+
+
+Overfull \hbox (61.75037pt too wide) in paragraph at lines 839--844
+\OT1/cmr/m/n/10 Ar-chae-o-log-i-cal Re-search, The Uni-ver-sity of Texas at San An-to-nio. https://doi.org/[]$\OT1/cmtt/m/n/10 https :
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[17]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[18]
+Overfull \hbox (4.54237pt too wide) in paragraph at lines 933--937
+[]\OT1/cmr/m/n/10 Goodall, Colin. 1991. ``Pro-crustes Meth-ods in the Sta-tis-ti-cal Anal-y-sis of Shape.''
+ []
+
+
+Overfull \hbox (39.54337pt too wide) in paragraph at lines 938--942
+\OT1/cmr/m/it/10 chome-trika \OT1/cmr/m/n/10 40 (1): 33--51. https://doi.org/[]$\OT1/cmtt/m/n/10 https : / / doi . org / 10 . 1007 / BF02291478$[]\OT1/cmr/m/n/10 . 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[19]
+Overfull \hbox (10.834pt too wide) in paragraph at lines 1037--1045
+[]\OT1/cmr/m/n/10 Monna, Fab-rice, Jerome Ma-g-ail, Tan-guy Rol-land, Nico-las Navarro, Josef Wilczek,
+ []
+
+
+Overfull \hbox (2.63945pt too wide) in paragraph at lines 1072--1076
+[]\OT1/cmr/m/n/10 ---------. 1985. ``From Cir-cleville to Toyah: Com-ments on Cen-tral Texas Chronol-
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[20]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[21]
+Overfull \hbox (26.23694pt too wide) in paragraph at lines 1182--1188
+\OT1/cmr/m/n/10 son. 2014. ``Evo-lu-tion of Cra-nial Shape in Cae-cil-ians (Am-phibia: Gymnophiona).''
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[22] (./perdiz3.bbl
 Underfull \hbox (badness 4467) in paragraph at lines 40--47
 []\OT1/cmr/m/n/8 Adams, D.C., Otarola-Castillo, E.: ge-o-morph: An R Pack-age for the Col-
  []
@@ -487,97 +548,97 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--56
 \OT1/cmtt/m/n/8 210X . 12511https : / / besjournals . onlinelibrary . wiley . com / doi / pdfdirect / 10 .
  []
 
-[16]
-Underfull \hbox (badness 3260) in paragraph at lines 117--124
+
+Underfull \hbox (badness 3260) in paragraph at lines 83--90
 []\OT1/cmr/m/n/8 Blondel, V.D., Guil-laume, J.L., Lam-biotte, R., Lefeb-vre, E.: Fast Un-fold-ing
  []
 
 
-Underfull \hbox (badness 2376) in paragraph at lines 117--124
+Underfull \hbox (badness 2376) in paragraph at lines 83--90
 \OT1/cmr/m/n/8 of Com-mu-ni-ties in Large Net-works.  Jour-nal of Sta-tis-ti-cal Me-chan-ics: The-
  []
 
 
-Underfull \hbox (badness 1460) in paragraph at lines 117--124
+Underfull \hbox (badness 1460) in paragraph at lines 83--90
 \OT1/cmr/m/n/8 ory and Ex-per-i-ment \OT1/cmr/bx/n/8 2008\OT1/cmr/m/n/8 (10), P10008 (2008).  DOI $10 . 1088 / 1742 -[] 5468 / 2008 /
  []
 
-
-Underfull \hbox (badness 1308) in paragraph at lines 126--133
+[23]
+Underfull \hbox (badness 1308) in paragraph at lines 92--99
 \OT1/cmr/m/n/8 2484(02 ) 00201 -[] 4$.  URL []$\OT1/cmtt/m/n/8 https : / / www . ncbi . nlm . nih . gov / pubmed / 12662941https : / /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--159
+Underfull \hbox (badness 10000) in paragraph at lines 113--120
 \OT1/cmtt/m/n/8 / / besjournals . onlinelibrary . wiley . com / doi / pdf / 10 . 1111 / 2041 -[] 210X . 13029https :
  []
 
 
-Underfull \hbox (badness 3838) in paragraph at lines 161--167
+Underfull \hbox (badness 3838) in paragraph at lines 122--128
 []\OT1/cmr/m/n/8 Collyer, M.L., Sekora, D.J., Adams, D.C.: A method for anal-y-sis of phe-
  []
 
 
-Underfull \hbox (badness 2932) in paragraph at lines 161--167
+Underfull \hbox (badness 2932) in paragraph at lines 122--128
 \OT1/cmr/m/n/8 no-typic change for phe-no-types de-scribed by high-dimensional data.  Hered-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--167
+Underfull \hbox (badness 10000) in paragraph at lines 122--128
 \OT1/cmr/m/n/8 ity (Ed-inb) \OT1/cmr/bx/n/8 115\OT1/cmr/m/n/8 (4), 357--65 (2015).  DOI $10 . 1038 / hdy . 2014 . 75$.  URL
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--167
+Underfull \hbox (badness 10000) in paragraph at lines 122--128
 []$\OT1/cmtt/m/n/8 http : / / www . ncbi . nlm . nih . gov / pubmed / 25204302https : / / www . ncbi . nlm . nih . gov /
  []
 
-[17]
-Underfull \hbox (badness 2635) in paragraph at lines 273--281
+
+Underfull \hbox (badness 2635) in paragraph at lines 202--210
 []\OT1/cmr/m/n/8 Kendall, D.G.: Shape man-i-folds, pro-crustean met-rics, and com-plex pro-jec-tive
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 273--281
+Underfull \hbox (badness 10000) in paragraph at lines 202--210
 \OT1/cmtt/m/n/8 2 . 81 / abstracthttps : / / londmathsoc . onlinelibrary . wiley . com / doi / abs / 10 . 1112 /
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 320--327
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 249--256
 \OT1/cmr/m/n/8 URL []$\OT1/cmtt/m/n/8 https : / / www . cambridge . org / core / journals / american -[] antiquity / article /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--327
+Underfull \hbox (badness 10000) in paragraph at lines 249--256
 \OT1/cmtt/m/n/8 multiscalar -[] perspectives -[] on -[] social -[] networks -[] in -[] the -[] late -[] prehispanic -[]
  []
 
-[18] [19]
-Underfull \hbox (badness 2134) in paragraph at lines 479--483
+[25]
+Underfull \hbox (badness 2134) in paragraph at lines 385--389
 \OT1/cmr/m/n/8 Ar-chae-ol-ogy \OT1/cmr/bx/n/8 1\OT1/cmr/m/n/8 , 66--74 (1974).  URL []$\OT1/cmtt/m/n/8 https : / / docs . wixstatic . com / ugd / fefb33 _
  []
 
-) [20] (./perdiz3.aux)
+) [26] (./perdiz3.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
 Package rerunfilecheck Info: File `perdiz3.out' has not changed.
-(rerunfilecheck)             Checksum: 93888F068892BB1D9D8BA4A3B62E8FEE;753.
+(rerunfilecheck)             Checksum: DA7705E6FE9337E463CF7945BB968CC4;877.
  ) 
 Here is how much of TeX's memory you used:
- 9906 strings out of 476931
- 156176 string characters out of 5823518
- 544605 words of memory out of 5000000
- 30887 multiletter control sequences out of 15000+600000
- 476698 words of font info for 54 fonts, out of 8000000 for 9000
+ 9971 strings out of 478053
+ 156889 string characters out of 5838980
+ 1894787 words of memory out of 5000000
+ 29760 multiletter control sequences out of 15000+600000
+ 519726 words of font info for 58 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 72i,9n,77p,627b,594s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,9n,77p,627b,595s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/Users/seldenjrz/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on perdiz3.pdf (20 pages, 19718546 bytes).
+Output written on perdiz3.pdf (26 pages, 19754478 bytes).
 PDF statistics:
- 642 PDF objects out of 1000 (max. 8388607)
- 470 compressed objects within 5 object streams
- 132 named destinations out of 1000 (max. 500000)
- 82 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 597 PDF objects out of 1000 (max. 8388607)
+ 534 compressed objects within 6 object streams
+ 202 named destinations out of 1000 (max. 500000)
+ 90 words of extra memory for PDF output out of 10000 (max. 10000000)
 
