@@ -3,7 +3,7 @@ project:
 
 website:
   margin-header: |
-    ![](/fig/slab.png)
+    ![](sfasu.png)
   navbar:
     logo: "sfasu.png"
     right:
